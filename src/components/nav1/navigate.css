@@ -1,0 +1,44 @@
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(4){
+    color: #AB7A19;
+}
+ nav ul li:nth-child(5){
+    color: #53B175;
+}
+.navigate{
+    /* max-width: 1220px;
+    margin: auto; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #D6ECDF;
+    padding: 5px;
+    margin: 5px;
+}
+select{
+    border: 0px;
+    outline: 0px;
+    background-color: #D6ECDF;
+}
+.navigate2{
+    display: flex;
+}
+.lokatsa{
+    width: 20px;
+    background-image: url(C:\Users\User\Desktop\test\src\images\Vector.png);
+}
+.profil{
+    width: 20px;
+    background-image: url(C:\Users\User\Desktop\test\src\images\profile.png);
+
+}
+.uz{
+    background-image: url(C:\Users\User\Desktop\test\src\images\flag_uzb-logo.png);
+
+}
