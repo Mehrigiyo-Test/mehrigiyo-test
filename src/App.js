@@ -7,6 +7,7 @@ function App() {
   return (
     <>
     <Router>
+      
       <Navigate/>
       <Routes>
         {/* <Route path='/' element={}/> */}
@@ -14,6 +15,7 @@ function App() {
         {/* <Route path='/' element={}/> */}
       </Routes>
       <Footer/>
+      
     </Router>
     </>
   );

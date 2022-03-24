@@ -12,27 +12,43 @@ nav ul li:nth-child(4){
     color: #53B175;
 }
 .navigate{
-    display: flex;
-    width: 100%;
     justify-content: space-between;
     background-color: #D6ECDF;
     padding: 5px;
     
 }
+.navigate__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 select{
     border: 0px;
     outline: 0px;
     background-color: #D6ECDF;
+    border-right: solid 2px #B0B7C366;
+
+    
 }
 .navigate2{
     display: flex;
 }
+
+.location{
+    display: flex;
+    border-right: solid 2px #B0B7C366;
+    padding: 0 10px;
+}
+.login{
+    display: flex;
+    padding-left: 10px;
+}
 .lokatsa{
     width: 10px;
-    padding-left: 15px;
+    padding:0 10px;
 }
 .profil{
     width: 10px;
+    padding: 0 10px;
 }
 .uz{
     background-image: url(C:\Users\User\Desktop\Mehrigiyo-test\src\images\flag_uzb-logo.png);

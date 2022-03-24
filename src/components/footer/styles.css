@@ -4,7 +4,7 @@
 
 .section1{
     color: #D4D4D4;
-    padding: 100px 50px;
+    padding: 80px 0px;
 }
 .logo{
     background: no-repeat
@@ -17,4 +17,24 @@
     /* justify-content: start; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+.icons{
+    display: flex;
+    width: 399px;
+    gap: 30px;
+}
+
+.telegram{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 40px;
+    background-color: #3d3d3d;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.icon{
+
 }
