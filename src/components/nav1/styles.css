@@ -12,14 +12,12 @@ nav ul li:nth-child(4){
     color: #53B175;
 }
 .navigate{
-    /* max-width: 1220px;
-    margin: auto; */
     display: flex;
     width: 100%;
     justify-content: space-between;
     background-color: #D6ECDF;
     padding: 5px;
-    margin: 5px;
+    
 }
 select{
     border: 0px;
@@ -30,15 +28,13 @@ select{
     display: flex;
 }
 .lokatsa{
-    width: 20px;
-    background-image: url(C:\Users\User\Desktop\test\src\images\Vector.png);
+    width: 10px;
+    padding-left: 15px;
 }
 .profil{
-    width: 20px;
-    background-image: url(C:\Users\User\Desktop\test\src\images\profile.png);
-
+    width: 10px;
 }
 .uz{
-    background-image: url(C:\Users\User\Desktop\test\src\images\flag_uzb-logo.png);
+    background-image: url(C:\Users\User\Desktop\Mehrigiyo-test\src\images\flag_uzb-logo.png);
 
 }

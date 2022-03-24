@@ -1,0 +1,20 @@
+.footer{
+    background-color: #282828;
+}
+
+.section1{
+    color: #D4D4D4;
+    padding: 100px 50px;
+}
+.logo{
+    background: no-repeat
+}
+
+.section1 ul li{
+    padding: 30px 0 ; 
+    width: 399px; 
+    font-size: 16px;
+    /* justify-content: start; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

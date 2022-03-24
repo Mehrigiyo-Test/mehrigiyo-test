@@ -1,8 +1,8 @@
 
 import './App.css';
 import Navigate from './components/nav1/navigate';
+import Footer from './components/footer/footer'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Footer from './components/footer/footer';
 function App() {
   return (
     <>

@@ -1,6 +1,9 @@
 import React from 'react'
-import "./navigate.css" 
-
+import "./styles.css" 
+import lokatsa from '../../images/Vector.png'
+import profile from '../../images/profile.png'
+// import flag_uzb from '../../images/flag_uzb-logo.png'
+// import 
 
 
 function Navigate(){
@@ -38,15 +41,16 @@ function Navigate(){
    <option className='ru'>ru</option>
    <option className='en'>en</option>
  </select>
-   <div>
+   <div> 
  |      Toshkent shahar   
    </div>
    <div className='lokatsa'></div>
-   <img />
+   <img src={lokatsa}/>
  <div >
  |      Kirish   
  </div>
  <div className='profil'></div>
+ <img src={profile}/>
  </div>
   </div>
   )
