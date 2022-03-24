@@ -4,17 +4,16 @@
 
 .section1{
     color: #D4D4D4;
-    padding: 80px 0px;
+    padding: 50px 0 0 0;
 }
 .logo{
     background: no-repeat
 }
 
 .section1 ul li{
-    padding: 30px 0 ; 
+    padding: 10px 0 ; 
     width: 399px; 
     font-size: 16px;
-    /* justify-content: start; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -22,7 +21,8 @@
 .icons{
     display: flex;
     width: 399px;
-    gap: 30px;
+    padding-top: 20px;
+    gap: 20px;
 }
 
 .telegram{
@@ -35,6 +35,126 @@
     height: 40px;
 }
 
-.icon{
+.sections{
+    position: relative;
+    display: flex;
+    height: 397px;
+    justify-content: space-between;
+}
 
+.green-place{
+    margin-top: 22px;
+    display: flex;
+    background-color: #53B175;
+    padding: 21px 37px;
+    border-radius: 25px 25px 0px 0px;
+    gap: 50px;
+    width: 553px;
+}
+
+.first{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B3CABB;
+    padding-bottom: 5px;
+}
+
+.next{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+}
+.legalty{
+    color: #F4F5F7;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 15px 0;
+}
+.section2{
+    padding: 79px 107px;
+    width: 429px;
+
+}
+.homeimg{
+    position: absolute;
+    right: 150px;
+    width: 690px;
+    height: 127px;
+    padding:0 50px ;
+}
+    
+.parag{
+    padding:10px 0;
+    color: #B0B7C3;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.buttons{
+    width: 162px;
+    height: 48px;
+    padding: 20px 0;
+}
+.imgbutton{
+    width: 162px;
+    border-radius: 5px;
+}
+.section3{
+    padding: 79px 100px;
+}
+.grid{
+    display: grid;
+    row-gap: 15px;
+}
+.footer_h3{
+    width: 173px;
+    color: #F4F5F7;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.white_panel{
+    background-color: white;
+    display: flex;
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.footer-menu{
+    display: flex;
+    gap: 28px;
+}
+.dons{
+    /* width: 529px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+.menu-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color:  #282938;
+    cursor: pointer;
 }

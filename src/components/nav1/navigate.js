@@ -43,7 +43,7 @@ function Navigate() {
             <option className='en'>en</option>
           </select>
           <div className='location'>
-            <p>
+            <p className='locat'>
               Toshkent shahar
             </p>
             <div className='lokatsa'>
@@ -51,7 +51,7 @@ function Navigate() {
             </div>
           </div>
           <div className='login'>
-            <p>
+            <p className='locat'>
               Kirish
             </p>
             <div className='profil'> <img src={profile} /></div>
