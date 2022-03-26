@@ -1,10 +1,7 @@
 import React from 'react'
-import "./styles.css"
+import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
-// import flag_uzb from '../../images/flag_uzb-logo.png'
-// import 
-
 
 function Navigate() {
   const nav = [
