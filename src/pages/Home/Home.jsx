@@ -2,10 +2,7 @@ import React from 'react'
 import './HomeStyle.css'
 import NewsCard from './../../components/slider/slider'
 import sliderEx from './../../images/sliderEx.png'
-
-
-
-
+import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
 
 function Home() {
     const slide  = [
@@ -62,7 +59,9 @@ function Home() {
   return (
     <>
     <div className='pageStyle1'>
+    <ApplicationSec />
     <div className='GlobalWrapper '>
+
         <div>
     <div className='nostyle'><h3>So'nggi yangiliklar</h3></div>
         <div><nav className='navigate3'>
@@ -86,13 +85,11 @@ function Home() {
        />
         ))}
         </div>
-    
- 
     </div>
     </div>
   
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
