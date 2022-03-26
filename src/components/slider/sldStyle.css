@@ -5,6 +5,11 @@
     background-color: white;
     border-radius: 25px;
 }
+.img_wrapper{
+    height: 249px;
+    overflow: hidden ;
+    border-radius: 25px 25px 0  0;
+}
 .arrow{
     color: #53B175;
     width: 40px;
@@ -65,4 +70,16 @@
 }
 .category p{
     padding-right: 5px;
+}
+
+.sldImg{
+    
+    
+    transition: 0.3s;
+    opacity: 1.3;
+    /* background-color: aliceblue;      */
+}
+.sldImg:hover{
+ opacity: 0.6;
+ transform: scale(1.2);
 }
