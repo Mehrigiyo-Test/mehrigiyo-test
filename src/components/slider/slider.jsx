@@ -1,11 +1,10 @@
 import React from 'react'
 import './sldStyle.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 
 
-function slider({
+function NewsCard({
     img,
     category,
     time,
@@ -32,4 +31,4 @@ function slider({
   )
 }
 
-export default slider
+export default NewsCard

@@ -1,16 +1,11 @@
 import React from 'react'
 import './HomeStyle.css'
-import Slider from './../../components/slider/slider'
+import NewsCard from './../../components/slider/slider'
 import sliderEx from './../../images/sliderEx.png'
-import {HiOutlineArrowNarrowRight} from "react-icons/hi"
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 
-// import "./styles.css";
 
-// import required modules
-import { Pagination } from "swiper";
+
+
 
 function Home() {
     const slide  = [
@@ -82,7 +77,7 @@ function Home() {
             </nav></div></div>
        
             <div className='slideComp'> {slide.map(item => (
-       <Slider
+       <NewsCard
        img={item.img}
        category={item.category}
        time={item.time}
