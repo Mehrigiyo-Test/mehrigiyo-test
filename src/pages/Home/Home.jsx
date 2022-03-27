@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeStyle.css'
-import NewsCard from './../../components/slider/slider'
+import NewsCard from '../../components/NewsCard/NewsCard'
 import sliderEx from './../../images/sliderEx.png'
 import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
 

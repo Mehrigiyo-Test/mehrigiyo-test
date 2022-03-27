@@ -1,5 +1,5 @@
 import React from 'react'
-import './sldStyle.css'
+import './NewsCardStyle.css'
 
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 

@@ -36,11 +36,11 @@ function footer() {
           <div className='green-place'>
           <div className='green_innter-text'>
             <div className='first'>E-mail</div>
-            <div className='next'>info@mehrigiyo.uz</div>
+            <a href='info@mehrigiyo.uz' className='next'>info@mehrigiyo.uz</a>
           </div>
           <div className='green_innter-text'>
             <div className='first'>Bizga qo'ng'iroq qiling</div>
-            <div className='next'>+99898 125 31 03</div>
+            <a href="tel: +99898 125 31 03" className='next'>+99898 125 31 03</a>
           </div>
           </div>
         </div>

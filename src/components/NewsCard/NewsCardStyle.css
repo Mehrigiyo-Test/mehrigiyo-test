@@ -1,8 +1,11 @@
 .wrapper{
     width: 347px;
+    position: relative;
     margin: 20px 0;
     background-color: white;
     border-radius: 25px;
+    height: 543px;
+    align-items: baseline;
 }
 .img_wrapper{
     height: 249px;
@@ -25,6 +28,9 @@
     line-height: 21px;
 }
 .more{
+    position: absolute;
+    top: 470px;
+    cursor: pointer;
     padding-top: 20px;
     align-items: center;
     display: flex;
@@ -34,10 +40,18 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    justify-content: center;
+    align-items: center;
 }
 .more p{
     color: #53B175;
-    ;
+    
+}
+.more:hover{
+    color: #78d49a;
+    background-color: #d8f5e3;
+    border-radius: 25px;
+    
 }
 .wrapper .txt{
     padding: 20px 20px 35px 20px;
