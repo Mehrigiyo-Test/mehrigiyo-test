@@ -1,7 +1,9 @@
 
 import './App.css';
 import Navigate from './components/nav1/navigate';
-import Footer from './components/footer/footer'
+import Footer from './components/footer/footer';
+import OrganicPlantation from './components/SectionPlantation/OrganicPlantation';
+import OnlineDoctor from './components/OnlineDoctor/OnlineDoctor';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         {/* <Route path='/' element={}/> */}
         {/* <Route path='/' element={}/> */}
       </Routes>
+      <OnlineDoctor />
+      <OrganicPlantation />
       <Footer/>
     </Router>
     </>
