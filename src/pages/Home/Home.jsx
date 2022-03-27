@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import './HomeStyle.css'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import sliderEx from './../../images/sliderEx.png'
@@ -6,6 +7,12 @@ import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
 import OrganicPlantation from './../../components/SectionPlantation/OrganicPlantation';
 import OnlineDoctor from './../../components/OnlineDoctor/OnlineDoctor';
 import Ambulance from './../../components/Ambulance/Ambulance';
+=======
+import Bannerinput from '../../components/bannerInput/bannerInput';
+import Banner from '../Banner/Banner';
+import Infosection from '../InfoSection/InfoSection';
+import Bannercard from './../../components/bannerCard/bannerCard';
+>>>>>>> 4b5226cbdf7a1ac157f012e007932330b1e2b986
 
 function Home() {
     const slide  = [
@@ -61,6 +68,7 @@ function Home() {
     
   return (
     <>
+<<<<<<< HEAD
     <div className='pageStyle1'>
     <OnlineDoctor />
     <OrganicPlantation />
@@ -94,6 +102,13 @@ function Home() {
     </div>
     </div>
   
+=======
+      <Banner/>
+      <Bannerinput/>
+      <Bannercard/>
+      <Infosection/>
+      {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}
+>>>>>>> 4b5226cbdf7a1ac157f012e007932330b1e2b986
     </>
   );
 }
