@@ -1,0 +1,45 @@
+.App-sec {
+    display: flex;
+
+    &__text {
+        width: 60%;
+        padding-top: 100px;
+
+        &__paragraphOne {
+            font-weight: 600, Semi Bold;
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 20px;
+            width: 654px;
+
+            span {
+                color: #53B175;
+            }
+        }
+
+        &__paragraphTwo {
+            color: grey;
+            font-weight: 400, Regular;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 54px;
+
+        }
+
+        &__paragraphThree {
+            font-weight: 600, Semi Bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__btns {
+            display: flex;
+            margin-top: 40px;
+            gap: 28px;
+        }
+    }
+
+    &__img {
+        width: 40%;
+    }
+}

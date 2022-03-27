@@ -1,5 +1,5 @@
 import React from 'react'
-import "./styles.css"
+import "./footerStyles.css"
 import mexrigiyo from '../../images/Mehrigiyo_logo.png'
 import { FaTelegramPlane } from 'react-icons/fa'
 import { GrFacebookOption } from "react-icons/gr";

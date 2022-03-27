@@ -1,0 +1,16 @@
+.pageStyle1{
+    background-color: #E5E5E5;
+}
+
+.nostyle{
+    list-style: none;
+    padding: 20px 0;
+
+}
+.slideComp{
+    display: flex;
+    gap: 30px;
+}
+.navigate3{
+    padding: 15px 0;
+}
