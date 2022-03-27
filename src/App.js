@@ -4,7 +4,8 @@ import Navigate from './components/nav1/navigate';
 import Footer from './components/footer/footer';
 import OrganicPlantation from './components/SectionPlantation/OrganicPlantation';
 import OnlineDoctor from './components/OnlineDoctor/OnlineDoctor';
-import Footer from './components/footer/footer'
+import Ambulance from './components/Ambulance/Ambulance';
+// import Footer from './components/footer/footer';
 import Home from './pages/Home/Home' 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 function App() {
@@ -19,6 +20,7 @@ function App() {
       </Routes>
       <OnlineDoctor />
       <OrganicPlantation />
+      <Ambulance />
       <Footer/>
     </Router>
     </>

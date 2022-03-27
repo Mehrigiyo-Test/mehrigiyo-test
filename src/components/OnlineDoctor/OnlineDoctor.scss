@@ -8,6 +8,7 @@
     .onlineDoctorContainer {
         font-family: 'Poppins';
         width: 870px;
+        height: 420px;
         align-items: center;
         text-align: center;
         margin: auto;
@@ -16,6 +17,9 @@
         flex-direction: column;
         .boxOnline {
             display: flex;
+            position: absolute;
+            z-index: 9;
+            top: 190px;
             margin-bottom: 60px;
             justify-content: space-between;
         }
@@ -45,6 +49,8 @@
             margin-bottom: 60px;
         }
         .btnDoctor {
+            position: absolute;
+            top: 370px;
             display: flex;
             justify-content: space-between;
             padding: 0 22px;
