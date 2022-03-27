@@ -1,5 +1,6 @@
 .footer{
     background-color: #282828;
+    position: relative;
 }
 
 .section1{
@@ -50,6 +51,8 @@
 }
 
 .green-place{
+    position: absolute;
+    top: 280px;
     margin-top: 22px;
     display: flex;
     background-color: #53B175;
