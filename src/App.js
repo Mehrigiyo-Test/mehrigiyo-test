@@ -2,10 +2,6 @@
 import './App.css';
 import Navigate from './components/nav1/navigate';
 import Footer from './components/footer/footer';
-import OrganicPlantation from './components/SectionPlantation/OrganicPlantation';
-import OnlineDoctor from './components/OnlineDoctor/OnlineDoctor';
-import Ambulance from './components/Ambulance/Ambulance';
-// import Footer from './components/footer/footer';
 import Home from './pages/Home/Home' 
 import OnlineDoctor from './pages/OnlineDoctor/OnlineDoctor'
 import Products from './pages/Products/Products'
@@ -26,9 +22,6 @@ function App() {
         <Route path='/News' element={<News/>}/>
         <Route path='/Help' element={<Help/>}/>
       </Routes>
-      <OnlineDoctor />
-      <OrganicPlantation />
-      <Ambulance />
       <Footer/>
     </Router>
     </>

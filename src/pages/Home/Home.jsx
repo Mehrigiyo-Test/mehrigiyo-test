@@ -3,6 +3,9 @@ import './HomeStyle.css'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import sliderEx from './../../images/sliderEx.png'
 import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
+import OrganicPlantation from './../../components/SectionPlantation/OrganicPlantation';
+import OnlineDoctor from './../../components/OnlineDoctor/OnlineDoctor';
+import Ambulance from './../../components/Ambulance/Ambulance';
 
 function Home() {
     const slide  = [
@@ -59,6 +62,9 @@ function Home() {
   return (
     <>
     <div className='pageStyle1'>
+    <OnlineDoctor />
+    <OrganicPlantation />
+    <Ambulance />
     <ApplicationSec />
     <div className='GlobalWrapper '>
 
