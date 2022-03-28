@@ -1,0 +1,18 @@
+.boxOnline {
+    display: flex;
+    position: absolute;
+    z-index: 9;
+    top: 190px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+.doctorBox {
+    text-align: center;
+    width: 186px;
+    height: 118px;
+    margin-left: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 60px #1616161a;
+    border-radius: 15px;
+    margin-bottom: 73px;
+}
