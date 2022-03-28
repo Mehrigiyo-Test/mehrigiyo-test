@@ -9,7 +9,7 @@ export default function OrganicPlantation() {
 
     return (
         <>
-            <div className="organicContiner">
+            <div    className="organicContiner GlobalWrapper">
                 <div className="organicText">
                     <div className="organicBody">
                         <p className="organicWelcome">MEHRIGIYOGA Xush kelibsiz</p>
