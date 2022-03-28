@@ -2,15 +2,14 @@ import React from 'react';
 import BannerInputIcon from '../../images/BannerInputIcon.png';
 import BannerInputLupa from '../../images/lupa.png';
 import MainPhoto from '../../images/main.png'
-// import Barg from '../../images/barg.png';
 import './style.css';
 
-const Bannerinput = () => {
+const Bannerinput = ({type}) => {
     return (
         <div className='banner-input bc-color bc-color2'>
             <div className='GlobalWrapper'>
                 <form className='form'>
-                    <input className='banner-input__input' type="text" placeholder='Nima izlayapsiz?' />
+                    <input className='banner-input__input' type={type} placeholder='Nima izlayapsiz?' />
                     <img className='banner-input__icon' src={BannerInputIcon} alt="icon" />
                     <button className='banner-input-btn'>
                         <img src={BannerInputLupa} alt="icon" />
