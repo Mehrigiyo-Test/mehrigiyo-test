@@ -6,6 +6,12 @@ import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
 import OrganicPlantation from './../../components/SectionPlantation/OrganicPlantation';
 import OnlineDoctor from './../../components/OnlineDoctor/OnlineDoctor';
 import Ambulance from './../../components/Ambulance/Ambulance';
+import BannerForm from '../../components/bannerForm/bannerForm';
+
+import BannerInputIcon from '../../images/BannerInputIcon.png';
+import BannerButtonIcon from '../../images/lupa.png';
+
+
 import Bannerinput from '../../components/bannerInput/bannerInput';
 import Banner from '../Banner/Banner';
 import Infosection from '../InfoSection/InfoSection';
@@ -66,7 +72,10 @@ function Home() {
     return (
         <>
             <div className='pageStyle1'>
-            <Banner />
+            <Banner/>
+      <BannerForm type="text" placeholder="Nima izlayapsiz?" textBtn="Qidirish" img={BannerInputIcon} img2={BannerButtonIcon}/>
+
+      
                     <Bannerinput />
                     <Bannercard />
                     <Infosection />
