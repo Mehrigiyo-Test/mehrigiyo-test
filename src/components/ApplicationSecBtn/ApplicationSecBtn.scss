@@ -1,0 +1,25 @@
+.App-sec__text__btns__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 16px;
+    background: rgba(83, 177, 117, 0.1);
+    border-radius: 60px;
+    width: 239px;
+    height: 75px;
+    .App-sec__text__btns__items__text{
+        text-align: start;
+        .App-sec__text__btns__items__text__little{
+            color: #7C8087;
+            font-weight: 400, Regular;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        .App-sec__text__btns__items__text__bigger{
+            font-weight: 600, Semi Bold;
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
+}

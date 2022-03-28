@@ -6,6 +6,7 @@ nav ul{
 }
 
 nav ul li{
+    list-style: none;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -13,10 +14,10 @@ nav ul li{
     line-height: 18px;
 }
 
-nav ul li:nth-child(4){
+.nav1 ul li:nth-child(4){
     color: #AB7A19;
 }
- nav ul li:nth-child(5){
+.nav1 ul li:nth-child(5){
     color: #53B175;
 }
 .navigate{
@@ -67,7 +68,3 @@ select{
     width: 10px;
     padding: 0 10px;
 }
-/* .uz{
-    background-image: url(C:\Users\User\Desktop\Mehrigiyo-test\src\images\flag_uzb-logo.png);
-
-} */
