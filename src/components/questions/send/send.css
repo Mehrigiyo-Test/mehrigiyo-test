@@ -1,0 +1,40 @@
+.send{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.input-div{
+    border-bottom: 1px solid #B0B7C3;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.send-h3{
+    color: #53B175;
+    font-size: 16px;
+    font-weight: 400;
+}
+.send-h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.input-h5{
+    font-size: 14px;
+    color: #B0B7C3;
+    font-weight: 400;
+}
+.name{
+    border: none;
+}
+.more-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #53b17533;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 180px;
+  }
