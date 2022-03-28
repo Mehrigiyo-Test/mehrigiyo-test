@@ -2,8 +2,8 @@ import React from "react";
 import './OrganicPlantation.scss';
 import Organic from '../../images/organicLogos1.png';
 import GroupOrganic from '../../images/BackgroundBubble.png';
-import Vector from '../../images/Vector(1).png';
 import PlayButton from '../../images/PlayButton.png';
+import Global from "../GlobalBtn/GlobalBtn";
 
 export default function OrganicPlantation() {
 
@@ -18,9 +18,7 @@ export default function OrganicPlantation() {
                         <img src={Organic} alt="organic" />
                     </div>
                     <div className="organicSection">
-                        <button>Batafsil
-                            <img src={Vector} />
-                        </button>
+                    <Global text="Batafsil" width={'200px'}/>
                         <img src={PlayButton} alt="play button" />
                     </div>
                 </div>
