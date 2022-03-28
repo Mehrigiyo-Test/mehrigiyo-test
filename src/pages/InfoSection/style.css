@@ -1,0 +1,49 @@
+.line{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.info-section{
+    padding-top: 200px;
+}
+
+.line-group{
+    text-align: center;
+}
+
+.lg2{
+    margin-bottom: 187px;
+}
+
+.info-section__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section__card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 300px;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.info-section__card__titles{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-section__card__titles__title{
+    font-weight: 500;
+    font-size: 18px;
+    color: #1D1D1F;
+}
+
+.info-section__card__titles__text{
+    font-weight: 400;
+    font-size: 14px;
+    color: #1D1D1F;
+    opacity: 0.75;
+}

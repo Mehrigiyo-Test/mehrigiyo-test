@@ -9,11 +9,14 @@ import AboutUs from './pages/AboutUs/AboutUs'
 import News from './pages/News/News'
 import Help from './pages/Help/Help'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Navigate2 from './components/nav2/navigate2';
+
 function App() {
   return (
     <>
     <Router>
       <Navigate/>
+      <Navigate2/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/OnlineDoctor' element={<OnlineDoctor/>}/>
