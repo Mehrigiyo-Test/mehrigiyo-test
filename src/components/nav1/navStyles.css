@@ -1,14 +1,23 @@
 nav ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     cursor: pointer;
 }
 
-nav ul li:nth-child(4){
+nav ul li{
+    list-style: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.nav1 ul li:nth-child(4){
     color: #AB7A19;
 }
- nav ul li:nth-child(5){
+.nav1 ul li:nth-child(5){
     color: #53B175;
 }
 .navigate{
@@ -20,6 +29,7 @@ nav ul li:nth-child(4){
 .navigate__wrapper{
     display: flex;
     justify-content: space-between;
+    padding-top: 5px;
 }
 select{
     border: 0px;
@@ -32,15 +42,23 @@ select{
 .navigate2{
     display: flex;
 }
-
+.locat{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
 .location{
     display: flex;
     border-right: solid 2px #B0B7C366;
     padding: 0 10px;
+    cursor: pointer;
 }
 .login{
     display: flex;
     padding-left: 10px;
+    cursor: pointer;
 }
 .lokatsa{
     width: 10px;
@@ -53,4 +71,8 @@ select{
 /* .uz{
     background-image: url(C:\Users\User\Desktop\Mehrigiyo-test\src\images\flag_uzb-logo.png);
 
+<<<<<<< HEAD:src/components/nav1/styles.css
 } */
+=======
+} */
+>>>>>>> 839697fd43aee02d9200dced888cb9ff80436e66:src/components/nav1/navStyles.css

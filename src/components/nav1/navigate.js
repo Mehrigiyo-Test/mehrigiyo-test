@@ -1,10 +1,7 @@
 import React from 'react'
-import "./styles.css"
+import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
-// import flag_uzb from '../../images/flag_uzb-logo.png'
-// import 
-
 
 function Navigate() {
   const nav = [
@@ -43,7 +40,7 @@ function Navigate() {
             <option className='en'>en</option>
           </select>
           <div className='location'>
-            <p>
+            <p className='locat'>
               Toshkent shahar
             </p>
             <div className='lokatsa'>
@@ -51,7 +48,7 @@ function Navigate() {
             </div>
           </div>
           <div className='login'>
-            <p>
+            <p className='locat'>
               Kirish
             </p>
             <div className='profil'> <img src={profile} /></div>

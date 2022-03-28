@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.organicContiner {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    .organicBody {
+        margin-bottom: 68px;
+        img {
+            width: 315px;
+            height: 77px;
+        }
+    }
+    .organicWelcome {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #B0B7C3;
+        margin-bottom: 6px;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 26px;
+        color: #282828;
+        margin-bottom: 15px;
+    }
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        color: #B0B7C3;
+        margin-bottom: 41px;
+    }
+    .organicSection {
+        display: flex;
+        button {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 22px;
+            align-items: center;
+            text-align: center;
+            width: 200px;
+            height: 44px;
+            background: #53b1751a;
+            border-radius: 50px;
+            border: none;
+            color: #181725;
+            margin-right: 30px;
+        }
+    }
+    .organicImg {
+        img {
+            object-fit: cover;
+        }
+    }
+}

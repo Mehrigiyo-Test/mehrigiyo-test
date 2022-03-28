@@ -1,0 +1,79 @@
+.banner-input{
+    text-align: center;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.banner-input__input{
+    width: 613px;
+    padding: 12px 22px;
+    background: #FFFFFF;
+    border: 1px solid #F1F4F7;
+    border-radius: 100px;
+}
+
+.banner-input__input:focus{
+    outline: none;
+}
+
+
+.form{
+    padding-bottom: 60px;
+    padding-left: 75px;
+    text-align: center;
+}
+
+.bc-color{
+    background-color: #9ad3ae;
+}
+
+.bc-color2{
+    /* background-image: url("../../images/Group.png"); */
+    border-radius: 0 0 49% 51% / 92% 92% 8% 8%;
+    -webkit-box-shadow: 0px 42px 17px 6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 42px 17px 6px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 42px 17px 6px rgba(34, 60, 80, 0.2);
+    max-height: 550px;
+}
+
+
+
+
+
+.banner-input-btn{
+    align-items: center;
+    background: #53B175;
+    border-radius: 100px;
+    padding: 7px 14px;
+    cursor: pointer;
+    position: relative;
+    left: -130px;
+    top: 0.8px;
+    border: transparent;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.banner-input-btn img{
+    position: relative;
+    margin-right: 6px;
+    top: 2px;
+}
+
+.banner-input__icon{
+    position: relative;
+    left: -140px;
+    top: 5.5px;
+    cursor: pointer;
+}
+/* 
+.barg{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: 1;
+} */
+
+/* .main-photo{
+    position: relative;
+} */
