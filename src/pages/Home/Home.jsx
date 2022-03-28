@@ -10,6 +10,12 @@ import ApplicationSec from '../../components/ApplicationSec/ApplicationSec'
 import OrganicPlantation from './../../components/SectionPlantation/OrganicPlantation';
 import OnlineDoctor from './../../components/OnlineDoctor/OnlineDoctor';
 import Ambulance from './../../components/Ambulance/Ambulance';
+import BannerForm from '../../components/bannerForm/bannerForm';
+
+import BannerInputIcon from '../../images/BannerInputIcon.png';
+import BannerButtonIcon from '../../images/lupa.png';
+
+
 
 function Home() {
     const slide  = [
@@ -66,7 +72,10 @@ function Home() {
   return (
     <>
       <Banner/>
+      <BannerForm type="text" placeholder="Nima izlayapsiz?" textBtn="Qidirish" img={BannerInputIcon} img2={BannerButtonIcon}/>
+
       <Bannerinput/>
+
       <Bannercard/>
       <Infosection/>
       {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}

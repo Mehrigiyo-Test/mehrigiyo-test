@@ -1,0 +1,57 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.banner-input{
+    text-align: center;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.banner-input__input{
+    width: 613px;
+    padding: 12px 22px;
+    background: #FFFFFF;
+    border: 1px solid #F1F4F7;
+    border-radius: 100px;
+}
+
+.banner-input__input:focus{
+    outline: none;
+}
+
+
+.form{
+    padding-bottom: 60px;
+    padding-left: 75px;
+    text-align: center;
+}
+
+.banner-input-btn{
+    align-items: center;
+    background: #53B175;
+    border-radius: 100px;
+    padding: 7px 14px;
+    cursor: pointer;
+    position: relative;
+    left: -130px;
+    top: 0.8px;
+    border: transparent;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.banner-input-btn img{
+    position: relative;
+    margin-right: 6px;
+    top: 2px;
+}
+
+.banner-input__icon{
+    position: relative;
+    left: -140px;
+    top: 5.5px;
+    cursor: pointer;
+}
