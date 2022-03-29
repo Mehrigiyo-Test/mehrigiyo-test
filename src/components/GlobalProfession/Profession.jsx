@@ -8,7 +8,7 @@ export default function Profession({data}) {
                 <h5>{data.title}</h5>
                 <p>{data.text}</p>
                 {data.img2}
-        
+            
             </div>
         </div>
     )

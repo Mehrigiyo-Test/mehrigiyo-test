@@ -14,3 +14,6 @@
 .navigate3{
     padding: 15px 0;
 }
+.swiper-pagination-bullet {
+    background-color: #53B175 !important;
+}

@@ -8,6 +8,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     padding-top: 40px;
     align-items: center;
+    // padding-left: 110px;
 }
 .bc-color{
     background-color: #9ad3ae;
@@ -50,12 +51,12 @@ input::-webkit-inner-spin-button {
 .banner-input-btn img{
     position: relative;
     margin-right: 6px;
-    top: 2px;
+    top: 0px;
 }
 
 .banner-input__icon{
     position: relative;
     left: -140px;
-    top: 5.5px;
+    top: 0.7px;
     cursor: pointer;
 }
