@@ -1,22 +1,18 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
 .organicContiner {
-    max-width: 1440px;
-    margin: auto;
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    // margin-left: 100px;
     font-family: 'Poppins';
     .organicBody {
         margin-bottom: 68px;
-        img {
-            width: 315px;
-            height: 77px;
-        }
+        padding-left: 61px;
     }
+    
     .organicWelcome {
         font-weight: 500;
         font-size: 16px;
@@ -54,6 +50,7 @@
         }
     }
     .organicImg {
+        padding-left: 130px;
         img {
             object-fit: cover;
         }

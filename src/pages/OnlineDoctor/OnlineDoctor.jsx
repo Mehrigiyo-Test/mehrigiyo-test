@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import FreeAdvice from '../../components/FreeAdvice/FreeAdvice';
+import Ambulance from '../../components/Ambulance/Ambulance';
 
 function OnlineDoctor() {
+  
   return (
-    <h1>OnlineDoctor</h1>
+    <>
+      <FreeAdvice />
+      <Ambulance />
+    </>
   )
 }
 

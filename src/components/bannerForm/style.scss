@@ -9,9 +9,11 @@ input::-webkit-inner-spin-button {
     padding-top: 40px;
     align-items: center;
 }
+.bc-color{
+    background-color: #9ad3ae;
+}
 
 .banner-input__input{
-    width: 613px;
     padding: 12px 22px;
     background: #FFFFFF;
     border: 1px solid #F1F4F7;
@@ -22,12 +24,14 @@ input::-webkit-inner-spin-button {
     outline: none;
 }
 
-
-.form{
+.bannerInput{
     padding-bottom: 60px;
     padding-left: 75px;
     text-align: center;
 }
+
+
+
 
 .banner-input-btn{
     align-items: center;
