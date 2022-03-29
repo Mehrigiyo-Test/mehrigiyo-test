@@ -1,8 +1,7 @@
 import React from 'react';
 import BannerCardImg1 from '../../images/bannerCard-icon1.png';
 import BannerCardImg2 from '../../images/bannerCard-icon2.png';
-import CallIcon from '../../images/call-icon.png';
-import MessageIcon from '../../images/message-icon.png';
+
 import './style.css';
 
 const Bannercard = () => {
@@ -23,10 +22,7 @@ const Bannercard = () => {
                 </div>
                 <p className='banner-card__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper in et amet.</p>
             </div>
-            <div className='banner-card__icons'>
-                <img src={CallIcon} alt="icon" />
-                <img src={MessageIcon} alt="icon" />
-            </div>
+            
         </div>
     );
 }

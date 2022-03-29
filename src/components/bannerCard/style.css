@@ -42,12 +42,3 @@
     text-align: left;
 }
 
-.banner-card__icons{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: -75px;
-    /* left: 600px; */
-    cursor: pointer;
-}

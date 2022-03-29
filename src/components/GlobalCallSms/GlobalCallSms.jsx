@@ -1,10 +1,15 @@
-import React from 'react'
-import "./GlobalCallSms.scss"
+import React from 'react';
+import CallIcon from '../../images/call-icon.png';
+import MessageIcon from '../../images/message-icon.png';
+import "./GlobalCallSms.scss";
 
 
 const GlobalCallSms = () => {
   return (
-    <div>GlobalCallSms</div>
+    <div className='banner-card__icons'>
+      <img src={CallIcon} alt="icon" />
+      <img src={MessageIcon} alt="icon" />
+    </div>
   )
 }
 

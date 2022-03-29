@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Asked from './components/questions/asked/asked';
 import Send from './components/questions/send/send';
 import Navigate2 from './components/nav2/navigate2';
+import GlobalCallSms from './components/GlobalCallSms/GlobalCallSms';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Router>
       <Navigate/>
       <Navigate2/>
+      <GlobalCallSms/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/onlineDoctor' element={<OnlineDoctor/>}/>
