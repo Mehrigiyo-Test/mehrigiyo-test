@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import FreeAdvice from '../../components/FreeAdvice/FreeAdvice';
 
 function OnlineDoctor() {
   
   return (
     <>
-    
+      <FreeAdvice />
     </>
   )
 }

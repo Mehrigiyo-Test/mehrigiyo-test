@@ -1,8 +1,7 @@
 .boxOnline {
     display: flex;
-    position: absolute;
+    position: relative;
     z-index: 9;
-    top: 190px;
     margin-bottom: 60px;
     justify-content: space-between;
 }
