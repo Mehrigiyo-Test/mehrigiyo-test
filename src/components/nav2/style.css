@@ -3,24 +3,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
     padding-top: 30px;
-    z-index: 99;
 }
-
+.nav-logo-wrapper{
+   width: 10%;
+}
 .nav-logo{
     cursor: pointer;
+    width: 100%;
 }
 
 .nav__wrapper ul{
+    width: 75%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 26px;
-    font-family: 'Poppins', sans-serif; z-index: 99;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.nav__wrapper ul li{
+.nav__wrapper ul a{
     display: flex;
     align-items: center;
     gap: 6px;
@@ -28,6 +31,7 @@
     font-size: 16px;
     color: #000;
     opacity: 0.4;
+    font-size: 16px;
 }
 
 .nav__wrapper ul li:focus{
@@ -44,6 +48,8 @@
     align-items: center;
     margin-left: 150px;
     gap: 15px;
+    width: 15%;
+
 }
 
 .nav-icons__icon{

@@ -1,6 +1,16 @@
 import React from "react";
 
-export const GlobalGreenBtn = ({ text, width, height, color, bcgColor, fonSize, lineHei, fontW, brdRadius }) => {
+export const GlobalGreenBtn = ({
+  text,
+  width,
+  height,
+  color,
+  bcgColor,
+  fonSize,
+  lineHei,
+  fontW,
+  brdRadius,
+}) => {
   return (
     <>
       <button
@@ -17,10 +27,10 @@ export const GlobalGreenBtn = ({ text, width, height, color, bcgColor, fonSize, 
           border: "none",
           display: "flex",
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
-          {text}
+        {text}
       </button>
     </>
   );

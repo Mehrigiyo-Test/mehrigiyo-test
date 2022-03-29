@@ -12,7 +12,9 @@ const Navigate2 = () => {
     return (
         <div className='nav2 bc-color'>
             <div className='nav__wrapper GlobalWrapper'>
+                <div className='nav-logo-wrapper'>
                 <img className='nav-logo' src={Logo} alt="logo" />
+                </div>
 
                 <ul>
                     <Link to='/' className='nav-link'>Bosh sahifa</Link>
