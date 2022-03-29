@@ -12,6 +12,7 @@ export default function FreeAdvice() {
     return (
         <div className="adviceDoctor GlobalWrapper">
             <img src={Leaves} />
+            <div></div>
             <div className="adviceText">
                 <p className="headText">Bosh sahifa  /  <span> Onlayn shifokorlar </span></p>
                 <h3>Bepul shifokor maslahatini oling</h3>
