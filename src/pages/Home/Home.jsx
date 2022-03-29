@@ -15,6 +15,7 @@ import Bannerinput from "../../components/bannerInput/bannerInput";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
+import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 
 function Home() {
   const slide = [
@@ -75,6 +76,7 @@ function Home() {
           placeholder="Nima izlayapsiz?"
           textBtn="Qidirish"
           width="613px"
+          value="helloo world"
           img={BannerInputIcon}
           img2={BannerButtonIcon}
         />
@@ -120,7 +122,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <OnlineRecommend />
       {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}
     </>
   );
