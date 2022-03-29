@@ -1,17 +1,17 @@
 
+
 .nav__wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding-top: 30px;
+    padding: 20px 0;
 }
 .nav-logo-wrapper{
    width: 10%;
 }
 .nav-logo{
     cursor: pointer;
-    width: 100%;
 }
 
 .nav__wrapper ul{
