@@ -13,6 +13,7 @@ const ApplicationSec = () => {
             <p className='App-sec__text__paragraphTwo'>O’zbekistonning yetakchi shifokorlari bilan videokonsultatsiyadan foydalaning.</p>
             <p className='App-sec__text__paragraphThree'>Ilovani yuklab olish uchun havolani oling</p>
             <div className='App-sec__text__btns'>
+              
             <ApplicationSecBtn  text1="Download on the" text2="App Store" img={Appstore}/>
             <ApplicationSecBtn  text1="Get it on" text2="Google Play" img={Playstore}/>
             </div>

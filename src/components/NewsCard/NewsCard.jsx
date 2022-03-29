@@ -1,6 +1,5 @@
 import React from 'react'
 import './NewsCardStyle.css'
-
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 
 
@@ -16,7 +15,9 @@ function NewsCard({
   return (
     <>
    <div className='wrapper'>
-       <div className='img_wrapper'><img className='sldImg' src={img}/></div>
+       <div className='img_wrapper'><img className='sldImg' src={img}/>
+        
+       </div>
        <div className='txt'>
            <div className='category'><p>{category}</p>
            <li>{time}</li></div>

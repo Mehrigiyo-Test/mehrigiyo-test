@@ -1,8 +1,8 @@
 .containerDoctor {
-    max-width: 1440px;
-    margin: auto;
     margin-top: 187px;
-    display: block;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 10;
     .onlineDoctorContainer {
@@ -35,12 +35,11 @@
     }
     .bacgroundImg {
         position: absolute;
+        top: 50px;
         width: 545px;
         height: 365px;
         z-index: 1;
         opacity: .1;
-        bottom: 0;
-        left: 0;
         background: no-repeat;
         background-image: url('../../images/GroupBacground(1).png');
         cursor: pointer;
@@ -48,6 +47,10 @@
     .bacgroundImg2 {
         position: absolute;
         right: 0;
-        top: -80px;
+        top: -120px;
+    }
+    .boxContainer {
+        display: flex;
+        gap: 40px;
     }
 }

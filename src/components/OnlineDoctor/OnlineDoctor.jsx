@@ -14,41 +14,42 @@ export default function OnlineDoctor() {
     const data = [
         {
             img: img1,
-            title: '1',
-            text: 'text',
+            title: 'Nevropatolog',
+            text: '2029 shifokor',
         },
         {
             img: img2,
-            title: '2',
-            text: 'tsxt',
+            title: 'Genetika',
+            text: '1,870 shifokor',
         },
         {
             img: img3,
-            title: '3',
-            text: 'text',
+            title: 'Stomatologiya',
+            text: '1,064 shifokor',
         },
         {
             img: img4,
-            img2: <h1 style={{background: 'red'}}>asdasdas</h1>,
-
-            title: '4',
-            text: 'text',
+            // img2: <h1 style={{background: 'red'}}>asdasdas</h1>,
+            title: 'Jarrohlik',
+            text: '1,064 shifokor',
         }
     ]
-
+    
     return (
-        <div className="containerDoctor">
+        <div className="containerDoctor GlobalWrapper">
+            <div className="bacgroundImg"></div>
             <div className="onlineDoctorContainer">
                 <h3>Har qanday sog'liq bilan bog'liq muammolar uchun
                     <span className="greenDoctor"> onlayn shifokorlarga</span> murojaat qiling</h3>
                 <p>Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>
-                {data.map(item => (
-                    <Profession key={item.text} data={item} />
-                ))
+                <div className="boxContainer">
+                    {data.map(item => (
+                        <Profession key={item.text} data={item} />
+                    ))
                 }
+                </div>
                 <Global text="Bepul maslahat olish" width={'260px'} position={'absolute'} top={'368px'} />
             </div>
-            <div className="bacgroundImg"></div>
             <div className="bacgroundImg2"><img src={Bacground} /></div>
         </div>
     )

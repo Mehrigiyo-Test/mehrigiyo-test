@@ -1,0 +1,36 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 96px;
+    z-index: 9;
+}
+
+.banner-titles{
+    margin-bottom: 5px; 
+    z-index: 35;
+}
+
+.banner-titles__title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #000;
+    cursor: pointer;   
+}
+
+.banner-titles__text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    cursor: default;
+}
+
+.banner-titles__text span{
+    color: #53B175;
+    border-bottom: 1px solid #53B175;
+    cursor: pointer;
+}
+
+
+
