@@ -17,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     gap: 26px;
-    font-family: 'Poppins', sans-serif; z-index: 99;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav__wrapper ul li{
