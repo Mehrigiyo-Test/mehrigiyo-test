@@ -4,8 +4,13 @@
 
 .banner-card{
     position: absolute;
+<<<<<<< HEAD
     top: -280px;
     left: 157px;
+=======
+    top: -283px;
+    left: 168px;
+>>>>>>> 829fd1d2336141b595dc009a3ae65f5ea2753574
     max-width: 188px;
     min-height: 118px;
     padding: 19px 17px;
@@ -16,8 +21,13 @@
 
 .card2{
     position: absolute;
+<<<<<<< HEAD
     top: -131px;
     left: 1080px;
+=======
+    top: -130px;
+    left: 1070px;
+>>>>>>> 829fd1d2336141b595dc009a3ae65f5ea2753574
 }
 
 .banner-card__titles{

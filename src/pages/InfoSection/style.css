@@ -1,7 +1,6 @@
-/* .line{
+.line{
     margin-top: 100px;
-    margin-bottom: 100px;
-} */
+}
 
 .info-section{
     padding-top: 200px;
@@ -9,12 +8,8 @@
 
 .line-group{
     text-align: center;
-    margin-top: 100px;
     margin-bottom: 100px;
-}
-
-.lg2{
-    margin-bottom: 187px;
+    padding-bottom: 20px;
 }
 
 .info-section__cards{
