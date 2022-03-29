@@ -18,6 +18,7 @@ input::-webkit-inner-spin-button {
     background: #FFFFFF;
     border: 1px solid #F1F4F7;
     border-radius: 100px;
+    margin-left: 125px;
 }
 
 .banner-input__input:focus{
@@ -50,12 +51,12 @@ input::-webkit-inner-spin-button {
 .banner-input-btn img{
     position: relative;
     margin-right: 6px;
-    top: 2px;
+    top: 0;
 }
 
 .banner-input__icon{
     position: relative;
     left: -140px;
-    top: 5.5px;
+    top: 0;
     cursor: pointer;
 }

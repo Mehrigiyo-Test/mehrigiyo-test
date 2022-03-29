@@ -3,9 +3,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
     padding-top: 30px;
-    z-index: 99;
 }
 
 .nav-logo{
@@ -16,11 +15,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 26px;
+    gap: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
-.nav__wrapper ul li{
+.nav__wrapper ul a{
     display: flex;
     align-items: center;
     gap: 6px;
