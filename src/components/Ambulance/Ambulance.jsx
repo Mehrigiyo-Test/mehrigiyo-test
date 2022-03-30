@@ -3,8 +3,8 @@ import './Ambulance.scss';
 import DoctorImg from "../../images/imageDoctor.png";
 import Barg from '../../images/Group1.png';
 import Logo from '../../images/online1.png';
-import Vector from '../../images/Vector(1).png';
 import { Container, Row, Col } from "reactstrap";
+import Global from "../GlobalBtn/GlobalBtn";
 
 export default function Ambulance() {
     
@@ -17,7 +17,7 @@ export default function Ambulance() {
                         <h3>Shoshilinch onlayn yordam</h3>
                         <p>Bizga shoshilinch sog'liq bo'yicha maslahatchini ayting
                          va biz 60 soniya ichida eng yaxshi shifokorni tayinlaymiz.</p>
-                         <button className="btnAmbulance">Onlayn uchrashuv belgilash <img src={Vector}></img></button>
+                         <Global text="Onlayn uchrashuv belgilash" width={'306px'}/>
                     </Col>
                     <Col className="imgBox" md="5">
                         <div className="logodiv">

@@ -1,5 +1,5 @@
 .pageStyle1{
-    background-color: #E5E5E5;
+    background-color: #FAFBFC;
 }
 
 .nostyle{
@@ -13,4 +13,7 @@
 }
 .navigate3{
     padding: 15px 0;
+}
+.swiper-pagination-bullet {
+    background-color: #53B175 !important;
 }

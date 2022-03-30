@@ -1,6 +1,5 @@
 .line{
     margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .info-section{
@@ -9,10 +8,8 @@
 
 .line-group{
     text-align: center;
-}
-
-.lg2{
-    margin-bottom: 187px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 .info-section__cards{

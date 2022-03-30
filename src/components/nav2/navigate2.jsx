@@ -4,6 +4,7 @@ import NavVector from '../../images/nav2_vector.png';
 import NavIcon1 from '../../images/nav-icon1.png';
 import NavIcon2 from '../../images/nav-icon2.png';
 import NavIcon3 from '../../images/nav-icon3.png';
+import { Link } from 'react-router-dom';
 
 import './style.css'
 
@@ -11,23 +12,25 @@ const Navigate2 = () => {
     return (
         <div className='nav2 bc-color'>
             <div className='nav__wrapper GlobalWrapper'>
-                <img className='nav-logo' src={Logo} alt="logo" />
+                <Link to='/' className='nav-logo' >
+                    <img src={Logo} alt="logo" />
+                </Link>
 
                 <ul>
-                    <li className='nav-link'>Bosh sahifa</li>
-                    <li>Onlayn shifokorlar
+                    <Link to='/' className='nav-link'>Bosh sahifa</Link>
+                    <Link to='/onlineDoctor'>Onlayn shifokorlar
                         <img src={NavVector} alt="icon" />
-                    </li>
-                    <li className='nav-link'>Mahsulotlar
+                    </Link>
+                    <Link to='/products' className='nav-link'>Mahsulotlar
                         <img src={NavVector} alt="icon" />
-                    </li>
-                    <li className='nav-link'>Biz haqimizda</li>
-                    <li className='nav-link'>Yangiliklar
+                    </Link>
+                    <Link to='/aboutUs' className='nav-link'>Biz haqimizda</Link>
+                    <Link to='/news' className='nav-link'>Yangiliklar
                         <img src={NavVector} alt="icon" />
-                    </li>
-                    <li className='nav-link'>Yordam
+                    </Link>
+                    <Link to='/help' className='nav-link'>Yordam
                         <img src={NavVector} alt="icon" />
-                    </li>
+                    </Link>
                 </ul>
 
                 <div className='nav-icons'>

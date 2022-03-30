@@ -1,0 +1,76 @@
+.OnlineRecommend {
+    background: linear-gradient(274.36deg, #FFDEC2 0.52%, #FEE0C8 21.68%, #F9E9DD 96.53%);
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 80px 254px 10px 49px;
+    display: flex;
+    margin-top: 185px;
+    margin-bottom: 145px;
+    &__img{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img{
+            width: 230px;
+            height: 295px;
+        }
+        .imgPos{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                top: -20px;
+                
+            }
+        }
+    }
+    &__text{
+        width: 60%;
+        position: relative;
+        &__paragraph{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            margin-top: 20px;
+            margin-bottom: 36px;
+        }
+        .imgPos2{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 200px;
+                top: -40px;
+            }
+        }
+        .imgPos3{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: -100px;
+                bottom: 55px;
+            }
+        }
+        .imgPos4{
+            width: 30px;
+            height: 30px;
+            img{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                bottom: 151px;
+                left: 226px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.banner-input{
+    text-align: center;
+    padding-top: 40px;
+    align-items: center;
+    // padding-left: 110px;
+}
+.bc-color{
+    background-color: #9ad3ae;
+}
+
+.banner-input__input{
+    // padding: 12px 22px;
+    background: #FFFFFF;
+    border: 1px solid #F1F4F7;
+    border-radius: 100px;
+    // margin-left: 125px;
+}
+
+.banner-input__input:focus{
+    outline: none;
+}
+
+.bannerInput{
+    padding-bottom: 60px;
+    padding-left: 75px;
+    text-align: center;
+}
+
+
+
+
+.banner-input-btn{
+    align-items: center;
+    background: #53B175;
+    border-radius: 100px;
+    padding: 8px 14px;
+    cursor: pointer;
+    position: relative;
+    left: -130px;
+    top: 0px;
+    border: transparent;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.banner-input-btn img{
+    position: relative;
+    margin-right: 6px;
+    top: 0;
+}
+
+.banner-input__icon{
+    position: relative;
+    left: -140px;
+    top: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.boxOnline {
+    display: flex;
+    // margin-bottom: 60px;
+    
+    h5 {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 7px 0;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    .doctorBox {
+        padding: 15px;
+        width: 186px;
+        height: 118px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 60px #1616161a;
+        border-radius: 15px;
+        margin-bottom: 73px;
+    }
+    .logoDoc {
+        position: relative;
+        top: -8px;
+        right: -47px;
+    }
+}

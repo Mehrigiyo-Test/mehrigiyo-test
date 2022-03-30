@@ -1,8 +1,17 @@
-import React from 'react'
-
+import React from 'react';
+import FreeAdvice from '../../components/FreeAdvice/FreeAdvice';
+import Ambulance from '../../components/Ambulance/Ambulance';
+import TypeDoctor from '../../components/TypesOfDoctors/TypeDoctor';
+import Warning from '../../components/Warning/Warning';
 function OnlineDoctor() {
+  
   return (
-    <h1>OnlineDoctor</h1>
+    <>
+      <Warning />
+      <FreeAdvice />
+      <TypeDoctor />
+      <Ambulance />
+    </>
   )
 }
 
