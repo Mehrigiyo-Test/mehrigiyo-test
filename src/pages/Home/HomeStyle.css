@@ -1,3 +1,10 @@
+.SliderWrapper{
+    margin: 0 auto;
+    max-width: 1550px;
+    margin-left: 100px;
+}
+
+
 .pageStyle1{
     background-color: #FAFBFC;
 }
@@ -5,14 +12,28 @@
 .nostyle{
     list-style: none;
     padding: 20px 0;
-
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
 }
 .slideComp{
     display: flex;
     gap: 30px;
 }
+.myH3{
+    font-weight: 600;
+}
 .navigate3{
     padding: 15px 0;
+}
+.navigate3 .Myul .Myli{
+    font-size: 18px;
+    color: grey;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.Myul .Myli:hover{
+    color: #53B175;
 }
 .swiper-pagination-bullet {
     background-color: #53B175 !important;
