@@ -2,7 +2,7 @@ import React from 'react'
 import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
-// import Dropdown from '../Dropdown/Dropdown'
+import Dropdown from '../Dropdown/Dropdown'
 
 function Navigate() {
   const nav = [
