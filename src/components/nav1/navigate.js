@@ -29,26 +29,26 @@ function Navigate() {
         <nav className='nav1'>
           <ul className='ul'>
             {nav.map(item => (
-              <li>{item.name}</li>
+              <li><a href='#'>{item.name}</a></li>
             ))}
           </ul>
         </nav>
 
         <div className='navigate2'>
-         <Dropdown/>
+         <div className='absDropdown'><Dropdown/></div>
           <div className='location'>
             <p className='locat'>
               Toshkent shahar
             </p>
             <div className='lokatsa'>
-              <img src={lokatsa} />
+              <img className='locImg' src={lokatsa} />
             </div>
           </div>
           <div className='login'>
             <p className='locat'>
               Kirish
             </p>
-            <div className='profil'> <img src={profile} /></div>
+            <div className='profil'> <img className='locImg' src={profile} /></div>
           </div>
 
         </div>
