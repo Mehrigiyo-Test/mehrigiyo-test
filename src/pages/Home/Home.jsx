@@ -16,6 +16,7 @@ import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
+import Global from "../../components/GlobalBtn/GlobalBtn";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -90,6 +91,7 @@ function Home() {
             width="613px"
             value="helloo world"
             padding="12px 22px"
+            marginLeft="130px"
             img={BannerInputIcon}
             img2={BannerButtonIcon}
           />
@@ -102,20 +104,21 @@ function Home() {
         <OrganicPlantation />
         <Ambulance />
         <ApplicationSec />
-        <div className="GlobalWrapper ">
+        <div className="SliderWrapper">
           <div>
             <div className="nostyle">
-              <h3>So'nggi yangiliklar</h3>
+              <h3 className="myH3">So'nggi yangiliklar</h3>
+              <Global text="Batafsil" width="144px"/>
             </div>
             <div>
               <nav className="navigate3">
-                <ul>
-                  <li style={{ color: "#53B175" }}>Hammasi</li>
-                  <li>Mahsulotlar haqida</li>
-                  <li>Shifokorlar tavsiya qiladilar</li>
-                  <li>Ozish</li>
-                  <li>Salomatlik</li>
-                  <li>Detoks</li>
+                <ul className="Myul">
+                  <li className="Myli" style={{ color: "#53B175" }}>Hammasi</li>
+                  <li className="Myli">Mahsulotlar haqida</li>
+                  <li className="Myli">Shifokorlar tavsiya qiladilar</li>
+                  <li className="Myli">Ozish</li>
+                  <li className="Myli">Salomatlik</li>
+                  <li className="Myli">Detoks</li>
                 </ul>
               </nav>
             </div>
@@ -133,7 +136,7 @@ function Home() {
               />
             ))} */}
             <Swiper
-              slidesPerView={3.6}
+              slidesPerView={3.7}
               spaceBetween={30}
               pagination={{
                 clickable: true,
