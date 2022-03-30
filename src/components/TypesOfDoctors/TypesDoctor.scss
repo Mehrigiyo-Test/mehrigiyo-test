@@ -1,0 +1,39 @@
+.container {
+    padding-top: 117px;
+    .headDoctor {
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+        .type {
+            font-weight: 400;
+            font-size: 16px;
+            color: #B0B7C3;
+        }
+    }
+    .typeDoctor {
+        position: relative;
+        z-index: 9;
+        padding-left: 100px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 30px 22px;
+        margin-bottom: 150px;
+    }
+    .backImg {
+        position: absolute;
+        bottom: -100px;
+        right: -50px;
+        // left: 1060px;
+        img {
+            z-index: 1;
+            opacity: .1;
+        }
+    }
+}
