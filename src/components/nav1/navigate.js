@@ -2,6 +2,7 @@ import React from 'react'
 import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
+import Dropdown from '../Dropdown/Dropdown'
 
 function Navigate() {
   const nav = [
@@ -34,11 +35,7 @@ function Navigate() {
         </nav>
 
         <div className='navigate2'>
-          <select>
-            <option className='uz'>uz</option>
-            <option className='ru'>ru</option>
-            <option className='en'>en</option>
-          </select>
+         <Dropdown/>
           <div className='location'>
             <p className='locat'>
               Toshkent shahar
