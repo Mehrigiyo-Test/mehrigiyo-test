@@ -89,6 +89,7 @@ function Home() {
             textBtn="Qidirish"
             width="613px"
             value="helloo world"
+            padding="12px 22px"
             img={BannerInputIcon}
             img2={BannerButtonIcon}
           />
