@@ -8,11 +8,6 @@ export default function Profession({data}) {
                 {data.img2}
                 <h5>{data.title}</h5>
                 <p>{data.text}</p>
-<<<<<<< HEAD
-                {data.img2}
-            
-=======
->>>>>>> e7a5dd870306da8221cd443647112d61e9e13443
             </div>
         </div>
     )
