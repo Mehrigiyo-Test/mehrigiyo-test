@@ -38,10 +38,15 @@
 }
 .telegram:hover{
     background-color: white;
+    cursor: pointer;
+
 }
+.telegram:hover .icon{
+    color: rgba(36, 35, 35, 0.74);
+    
+} 
 .icon:hover{
     transition: 0.5;
-    color: rgba(36, 35, 35, 0.74);
 }
 .sections{
     position: relative;
