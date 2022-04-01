@@ -2,6 +2,7 @@ import React from 'react'
 import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
+import Dropdown from '../Dropdown/Dropdown'
 
 function Navigate() {
   const nav = [
@@ -28,30 +29,26 @@ function Navigate() {
         <nav className='nav1'>
           <ul className='ul'>
             {nav.map(item => (
-              <li>{item.name}</li>
+              <li><a href='#'>{item.name}</a></li>
             ))}
           </ul>
         </nav>
 
         <div className='navigate2'>
-          <select>
-            <option className='uz'>uz</option>
-            <option className='ru'>ru</option>
-            <option className='en'>en</option>
-          </select>
+         <div className='absDropdown'><Dropdown/></div>
           <div className='location'>
             <p className='locat'>
               Toshkent shahar
             </p>
             <div className='lokatsa'>
-              <img src={lokatsa} />
+              <img className='locImg' src={lokatsa} />
             </div>
           </div>
           <div className='login'>
             <p className='locat'>
               Kirish
             </p>
-            <div className='profil'> <img src={profile} /></div>
+            <div className='profil'> <img className='locImg' src={profile} /></div>
           </div>
 
         </div>

@@ -4,8 +4,8 @@
 
 .banner-card{
     position: absolute;
-    top: -170px;
-    left: 140px;
+    top: -283px;
+    left: 168px;
     max-width: 188px;
     min-height: 118px;
     padding: 19px 17px;
@@ -16,8 +16,8 @@
 
 .card2{
     position: absolute;
-    top: -10px;
-    left: 1025px;
+    top: -130px;
+    left: 1070px;
 }
 
 .banner-card__titles{
@@ -42,12 +42,3 @@
     text-align: left;
 }
 
-.banner-card__icons{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: -75px;
-    /* left: 600px; */
-    cursor: pointer;
-}

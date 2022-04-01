@@ -11,7 +11,7 @@ const Infosection = (props) => {
     return (
         <div className='info-section GlobalWrapper'>
             <div className='line-group'>
-                <img className='line' src={Line} alt="line" />
+                <img className='line l2' src={Line} alt="line" />
             </div>
             <div className='info-section__cards'>
                 <div className='info-section__card'>

@@ -4,9 +4,16 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  
+}
+img{
+  vertical-align: unset;
 }
 
 .GlobalWrapper{
   max-width: 1440px;
   margin: 0 auto;
+}
+.flex{
+  display:flex;
 }
