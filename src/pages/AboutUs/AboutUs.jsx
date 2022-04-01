@@ -1,8 +1,10 @@
 import React from 'react'
+import HistoryMehrigiyo from '../../components/HistoryMehrigiyo/HistoryMehrigiyo'
+import "./AboutUs.scss"
 
 function AboutUs() {
   return (
-    <h1>AboutUs page</h1>
+    <HistoryMehrigiyo />
   )
 }
 
