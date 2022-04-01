@@ -79,6 +79,10 @@ select{
 }
 /* .uz{
     background-image: url(C:\Users\User\Desktop\Mehrigiyo-test\src\images\flag_uzb-logo.png);
+<<<<<<< HEAD
+} */
+
+=======
 
 } */
 .locImg{
@@ -89,3 +93,4 @@ select{
     top: -5px;
     right: 230px;
 }
+>>>>>>> 0737f3522ecd9f973f374f664f9f4a06710882d5
