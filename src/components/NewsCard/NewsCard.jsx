@@ -9,9 +9,9 @@ function NewsCard({ img, category, time, theme, info }) {
       <div className="wrapper">
         <div className="img_wrapper">
           <img className="sldImg" src={img} />
-          {/* <span className="imgPlay">
+          <span className="imgPlay">
             <img src={imgPlay} />
-          </span> */}
+          </span>
         </div>
         <div className="txt">
           <div className="category">

@@ -1,0 +1,30 @@
+.leafs{
+    z-index: 0;
+    position: absolute;
+    left: -100px;
+}
+.plant{
+    z-index: 0;
+    position: absolute;
+    top: 80px;
+    right: -180px;
+    width: 400px;
+    transform: rotate(30deg);
+}
+.plantImg{
+    width: 400px;
+    opacity: 0.1;
+}
+.LastNews_p{
+    z-index: 2;
+}
+.News_wrapper{
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+.News{
+    background-color: #FAFBFC;
+    z-index: -1;
+    overflow: hidden;
+}
