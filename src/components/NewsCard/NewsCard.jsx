@@ -3,7 +3,7 @@ import "./NewsCardStyle.css";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import imgPlay from "../../images/play.svg" 
 
-function NewsCard({ img, category, time, theme, info }) {
+function NewsCard({ img, category, time, theme, display, info }) {
   return (
     <>
       <div className="wrapper">
@@ -20,7 +20,7 @@ function NewsCard({ img, category, time, theme, info }) {
           </div>
           <h4>{theme}</h4>
           <h6>{info}</h6>
-          <div className="more">
+          <div style={{display: display}} className="more">
             <p>Ko'proq o'qish</p>
             <HiOutlineArrowNarrowRight size={20} className="arrow" />
           </div>

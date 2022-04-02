@@ -61,3 +61,11 @@
     font-size: 13px;
     line-height: 165%;
 }
+.UploadRow{
+    position: absolute;
+    top: 155px;
+    left: 263px;
+}
+.rowNewsWrapper{
+    margin-right: 30px;
+}

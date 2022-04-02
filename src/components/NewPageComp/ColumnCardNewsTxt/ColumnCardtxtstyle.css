@@ -1,0 +1,27 @@
+.cardNewstxt{
+    margin-top: 164px;
+}
+.newsCategori{
+    gap: 24px;
+}
+.cardNewstxt p{
+    color: #B0B7C3;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.cardNewstxt p:hover{
+    display: flex;
+    color: #53B175;
+}
+.cardNewstxt h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    padding-bottom: 30px;
+}
