@@ -17,6 +17,8 @@ import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 import Global from "../../components/GlobalBtn/GlobalBtn";
+import Asked from "../../components/questions/asked/asked";
+import Send from "../../components/questions/send/send";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -104,6 +106,8 @@ function Home() {
         <OrganicPlantation />
         <Ambulance />
         <ApplicationSec />
+        <Asked />
+        <Send />
         <div className="SliderWrapper">
           <div>
             <div className="nostyle">

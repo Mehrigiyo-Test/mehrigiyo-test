@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import AboutBox from '../../components/AboutBox/AboutBox';
 
 function AboutUs() {
   return (
-    <h1>AboutUs page</h1>
+    <>
+      <AboutBox />
+    </>
   )
 }
 
