@@ -29,8 +29,6 @@ function App() {
           <Route path='/news' element={<News />} />
           <Route path='/help' element={<Help />} />
         </Routes>
-        <Asked />
-        <Send />
         <Footer />
       </Router>
     </>
