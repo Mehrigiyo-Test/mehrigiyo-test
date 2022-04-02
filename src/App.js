@@ -19,6 +19,7 @@ function App() {
     <>
     <Router>
       <Navigate/>
+      {/* <Navigate2/> */}
       <Navigate2/>
       <GlobalCallSms/>
       <Routes>

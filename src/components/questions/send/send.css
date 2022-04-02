@@ -1,3 +1,10 @@
+
+.send-background{
+    background-image: url(../../../images/asked_background.png);
+    background-repeat: no-repeat;
+    height: 900px;
+    padding: 100px 0;
+}
 .send{
     margin-top: 200px;
     margin-bottom: 200px;
@@ -18,6 +25,8 @@
 .send-h2{
     font-size: 30px;
     font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 5px;
 }
 .input-h5{
     font-size: 14px;
@@ -26,6 +35,8 @@
 }
 .name{
     border: none;
+    outline: none;
+    background-color: transparent;
 }
 .more-btn {
     display: flex;
@@ -37,4 +48,9 @@
     padding: 10px 20px;
     border-radius: 50px;
     width: 180px;
+  }
+  .leaves{
+      position: absolute;
+      top: 500px;
+      left: 1150px;
   }

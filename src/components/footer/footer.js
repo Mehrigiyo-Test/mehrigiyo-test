@@ -15,7 +15,7 @@ function footer() {
       <div className='GlobalWrapper sections'>
         <div className='section1'>
           <div className='logo'><img src={mexrigiyo} /></div>
-          <ul>
+          <ul className='workTime'>
             <li>Bu sog'liq va hayot sifatini yaxshilash uchun mahsulotlar</li>
             <li>Ish vaqti: Har kuni 8:00 dan 18:00 gacha</li>
           </ul>
@@ -45,7 +45,7 @@ function footer() {
           </div>
         </div>
 
-    <div className='section2'>
+    <div className='section_a'>
          <h3 className='legalty'>Huquqiy</h3>
          <p className='parag'>Maxfiylik siyosati</p>
          <p className='parag'>Xizmat ko'rsatish shartlari</p>
@@ -53,7 +53,7 @@ function footer() {
          <div className='homeimg'><img  src={footerhome}/></div>
     </div>
 
-    <div className='section3'>
+    <div className='section_b'>
       <h3 className='footer_h3'>Ilovani yuklab olish</h3>
       <div className='grid'>
       <div className='buttons'><img className='imgbutton' src={Googleplay}/></div>

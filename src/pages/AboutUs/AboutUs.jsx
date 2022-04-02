@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import HistoryMehrigiyo from "../../components/HistoryMehrigiyo/HistoryMehrigiyo";
+import OriginMehrigiyo from "../../components/OriginMehrigiyo/OriginMehrigiyo";
+import "./AboutUs.scss";
 
 function AboutUs() {
   return (
-    <h1>AboutUs page</h1>
-  )
+    <>
+      <HistoryMehrigiyo />
+      <OriginMehrigiyo />
+    </>
+  );
 }
 
-export default AboutUs
+export default AboutUs;

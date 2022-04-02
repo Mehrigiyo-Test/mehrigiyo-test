@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./asked.css";
 import { BsArrowRight } from "react-icons/bs";
 import { AiOutlinePlus, AiOutlineClose } from 'react-icons/ai';
+import leaf from '../../../images/send_background.png';
 
 export default function Asked() {
   const [show, setShow] = useState(false);
@@ -26,7 +27,7 @@ export default function Asked() {
   };
 
   return (
-    <div>
+    <div className="asked-background">
       <div className="GlobalWrapper">
         <div className="asked-wrapper">
           <div className="left-div">
@@ -161,6 +162,9 @@ export default function Asked() {
           </div>
         </div>
       </div>
+            <div className="leaf">
+              <img src={leaf} alt="" />
+            </div>
     </div>
   );
 }

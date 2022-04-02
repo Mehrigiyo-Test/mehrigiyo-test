@@ -1,6 +1,7 @@
 .footer{
     background-color: #282828;
     position: relative;
+    height: 397px;
 }
 
 .section1{
@@ -17,6 +18,7 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    list-style: none;
 }
 
 .icons{
@@ -34,14 +36,19 @@
     background-color: #3d3d3d;
     border-radius: 50%;
     height: 40px;
+    transition: 0.7s;
     
 }
 .telegram:hover{
     background-color: white;
+
 }
+.telegram:hover .icon{
+    color: rgba(36, 35, 35, 0.74);
+    
+} 
 .icon:hover{
     transition: 0.5;
-    color: rgba(36, 35, 35, 0.74);
 }
 .sections{
     position: relative;
@@ -55,10 +62,10 @@
     top: 280px;
     margin-top: 22px;
     display: flex;
-    background-color: #53B175;
+    background-color: #427A56;
     padding: 21px 37px;
     border-radius: 25px 25px 0px 0px;
-    gap: 50px;
+    gap: 106px;
     width: 553px;
 }
 
@@ -79,6 +86,7 @@
     font-size: 18px;
     line-height: 27px;
     color: white;
+    text-decoration: none;
 }
 .legalty{
     color: #F4F5F7;
@@ -89,14 +97,14 @@
     line-height: 28px;
     padding: 15px 0;
 }
-.section2{
-    padding: 57px 107px;
+.section_a{
+    padding: 54px 42px 179px 207px;
     width: 429px;
 
 }
 .homeimg{
     position: absolute;
-    right: 150px;
+    right: 50px;
     width: 690px;
     height: 127px;
     padding:0 50px ;
@@ -133,7 +141,7 @@
     opacity: 1;
 
 }
-.section3{
+.section_b{
     padding: 79px 100px;
 }
 .grid{
@@ -179,4 +187,8 @@
     line-height: 28px;
     color:  #282938;
     cursor: pointer;
+}
+.workTime{
+    padding-left: 0;
+    margin-bottom: 0;
 }

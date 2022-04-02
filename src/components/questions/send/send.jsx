@@ -3,9 +3,11 @@ import "./send.css";
 import animation from "../../../images/Contact_Animations.png";
 // import { TextField } from "@mui/material";
 import {IoMdSend} from 'react-icons/io';
+import leaves from '../../../images/Groupffff.png';
 
 export default function Send() {
   return (
+    <div className="send-background">
     <div className="GlobalWrapper">
       <div className="send">
         <div className="send-img">
@@ -43,6 +45,10 @@ export default function Send() {
             </button>
         </div>
       </div>
+    </div>
+    <div className="leaves">
+      <img src={leaves} alt="" />
+    </div>
     </div>
   );
 }

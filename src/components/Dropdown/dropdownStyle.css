@@ -1,0 +1,46 @@
+.gap{
+    gap: 10px;
+    padding-right: 10px;
+    
+}
+.space-between{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.hover:hover{
+    background-color: #E5FCED;
+    cursor: pointer;
+}
+.dropdown_wrapper{
+    position: absolute;
+    background: white;
+    width: 206px;
+    top: 40px;
+    border-radius: 5px;
+}
+.ddImg{
+    padding: 5px;
+}
+.ii{
+    position: absolute;
+    top: 7px;
+    left: 24px;
+}
+.langText{
+    padding:13px 45px 8px 77px;
+}
+.centerText{
+    left: 20px;
+}
+.pdleft{
+    padding-left: 24px;
+}
+.polyAbsolutes{
+    position: absolute;
+    bottom: 98px;
+    size: 50px;
+}
+.relativ{
+    position: relative;
+}
