@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./HomeStyle.css";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
@@ -11,12 +11,21 @@ import BannerForm from "../../components/bannerForm/bannerForm";
 import BannerInputIcon from "../../images/BannerInputIcon.png";
 import BannerButtonIcon from "../../images/lupa.png";
 
-import Bannerinput from "../../components/bannerInput/bannerInput";
+import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 import Global from "../../components/GlobalBtn/GlobalBtn";
+import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
+
+import GlobalSponsorLogo1 from '../../images/globalSponsor1.png';
+import GlobalSponsorLogo2 from '../../images/globalSponsor2.png';
+import GlobalSponsorLogo3 from '../../images/globalSponsor3.png';
+import GlobalSponsorLogo4 from '../../images/globalSponsor4.png';
+import GlobalSponsorLogo5 from '../../images/globalSponsor5.png';
+import GlobalSponsorLogo6 from '../../images/globalSponsor6.png';
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -97,9 +106,10 @@ function Home() {
           />
         </div>
 
-        <Bannerinput />
+        <BannerPhoto />
         <Bannercard />
         <Infosection />
+        
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
@@ -108,7 +118,7 @@ function Home() {
           <div>
             <div className="nostyle">
               <h3 className="myH3">So'nggi yangiliklar</h3>
-              <Global text="Batafsil" width="144px"/>
+              <Global text="Batafsil" width="144px" />
             </div>
             <div>
               <nav className="navigate3">
@@ -203,7 +213,15 @@ function Home() {
         </div>
       </div>
       <OnlineRecommend />
-      {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}
+      {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}  
+      <div className="sponsors GlobalWrapper">
+          <GlobalSponsors img={GlobalSponsorLogo1} />
+          <GlobalSponsors img={GlobalSponsorLogo2} />
+          <GlobalSponsors img={GlobalSponsorLogo3} />
+          <GlobalSponsors img={GlobalSponsorLogo4} />
+          <GlobalSponsors img={GlobalSponsorLogo5} />
+          <GlobalSponsors img={GlobalSponsorLogo6} />
+        </div>  
     </>
   );
 }
