@@ -6,6 +6,7 @@
     border-radius: 25px;
     /* height: 543px; */
     align-items: baseline;
+    box-shadow: 0px 25px 50px 5px #F6F7FF;
 }
 .img_wrapper{
     height: 249px;
