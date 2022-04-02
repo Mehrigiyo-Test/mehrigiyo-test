@@ -1,0 +1,33 @@
+.RactTime{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757B87;
+}
+.RectangleCard{
+    background-color: #F0F2F4;
+    width: 240px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.Calendar{
+    align-items: center;
+    display: flex;
+}
+.alignItems{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.RactangleCardTxt{
+    padding-top: 10px;
+    color: black;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* text-transform: lowercase; */
+}
