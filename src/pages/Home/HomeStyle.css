@@ -27,6 +27,9 @@
 .navigate3{
     padding: 15px 0;
 }
+.Myul{
+    padding-left: unset;
+}
 .navigate3 .Myul .Myli{
     font-size: 18px;
     color: grey;
