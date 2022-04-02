@@ -1,0 +1,22 @@
+.threeContainer {
+    padding: 100px;
+    margin-top: 60px;
+    .text {
+        display: flex;
+        justify-content: space-between;
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        color: #000000;
+        padding-bottom: 40px;
+    }
+    p {
+        color: #B0B7C3;
+    }
+    .imgBox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,46 @@
+.boughtContainer {
+    position: relative;
+    .box{
+        padding: 0 100px 160px;
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+            padding-bottom: 30px;
+        }
+    }
+    .boughtBox {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 22px;
+        margin: auto;
+    }
+    .buyInfo {
+        position: absolute;
+        z-index: 9;
+        width: 188px;
+        position: relative;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 60px #1616161a;
+        border-radius: 15px;
+        p {
+            font-weight: 600;
+            font-size: 16px;
+            color: #458E5F;
+            padding: 15px;
+        }
+        img {
+            position: absolute;
+            right: 12px;
+            bottom: 10px;
+        }
+    }
+    .background {
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+        z-index: 1;
+        opacity: .1;
+    }
+}

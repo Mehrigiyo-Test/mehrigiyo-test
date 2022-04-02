@@ -1,9 +1,11 @@
 .adviceDoctor {
     display: flex;
-    margin-top: 46px;
+    margin-top: 96px;
     flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
     .adviceText {
-        margin: 46px 97px 116px 66px;
+        // margin: 46px 97px 116px 66px;
         .headText {
             font-size: 12px;
             color: #505050;
@@ -30,15 +32,28 @@
         }
     }
     .adviceImg {
+        position: relative;
         .ovalBig {
-            position: relative;
-            top: 120px;
-            left: 60px;
+            position: absolute;
+            bottom: -5px;
+            left: -10px;
         }
         .ovalSmall {
-            position: relative;
-            bottom: 75px;
-            right: 65px;
+            position: absolute;
+            top: 50px;
+            right: 30px;
         }
+    }
+    .doctors {
+        // position: absolute;
+        z-index: 5;
+        // bottom: 200px;
+        // right: 100px;
+    }
+    .background {
+        position: absolute;
+        right: -110px;
+        bottom: -135px;
+        opacity: .1;
     }
 }

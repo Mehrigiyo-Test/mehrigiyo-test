@@ -26,6 +26,8 @@ import GlobalSponsorLogo4 from '../../images/globalSponsor4.png';
 import GlobalSponsorLogo5 from '../../images/globalSponsor5.png';
 import GlobalSponsorLogo6 from '../../images/globalSponsor6.png';
 
+import Asked from "../../components/questions/asked/asked";
+import Send from "../../components/questions/send/send";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -114,6 +116,8 @@ function Home() {
         <OrganicPlantation />
         <Ambulance />
         <ApplicationSec />
+        <Asked />
+        <Send />
         <div className="SliderWrapper">
           <div>
             <div className="nostyle">
