@@ -8,6 +8,8 @@ function AboutUs() {
   return (
     <>
       <AboutBox />
+      <HistoryMehrigiyo />
+      <OriginMehrigiyo />
     </>
   )
 }

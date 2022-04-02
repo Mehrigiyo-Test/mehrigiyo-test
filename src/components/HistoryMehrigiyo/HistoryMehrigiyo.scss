@@ -1,6 +1,8 @@
 .HistoryMehrigiyo-S {
     position: relative;
     overflow: hidden;
+    max-width: 1520px;
+    margin: 0 auto;
 
     .HistoryMehrigiyo {
         display: flex;
@@ -13,6 +15,7 @@
         // }
         &__text {
             padding: 220px 0 0 0;
+            padding-left: 30px;
 
             &__paragraph1 {
                 color: grey;
@@ -20,6 +23,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 100px;
+                padding-right: 220px;
             }
 
             &__paragraph2 {
@@ -57,11 +61,12 @@
             border: none;
             font-size: 16px;
             line-height: 22px;
-            font-weight: 600;
+            font-weight: 400;
             border-radius: 10px;
             color: grey;
-
+            
             &:focus {
+                // font-weight: 600;
                 background-color: #DDEFE3;
                 color: #53B175;
             }
