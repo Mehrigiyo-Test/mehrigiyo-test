@@ -106,18 +106,18 @@ function Home() {
         <OrganicPlantation />
         <Ambulance />
         <ApplicationSec />
-        <Asked />
-        <Send />
         <div className="SliderWrapper">
           <div>
             <div className="nostyle">
               <h3 className="myH3">So'nggi yangiliklar</h3>
-              <Global text="Batafsil" width="144px"/>
+              <Global text="Batafsil" width="144px" />
             </div>
             <div>
               <nav className="navigate3">
                 <ul className="Myul">
-                  <li className="Myli" style={{ color: "#53B175" }}>Hammasi</li>
+                  <li className="Myli" style={{ color: "#53B175" }}>
+                    Hammasi
+                  </li>
                   <li className="Myli">Mahsulotlar haqida</li>
                   <li className="Myli">Shifokorlar tavsiya qiladilar</li>
                   <li className="Myli">Ozish</li>
@@ -207,7 +207,8 @@ function Home() {
         </div>
       </div>
       <OnlineRecommend />
-      {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}
+      <Asked />
+      <Send />
     </>
   );
 }
