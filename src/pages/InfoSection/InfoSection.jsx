@@ -7,7 +7,7 @@ import InfoSectionIcon4 from '../../images/infoCard-icon1.png';
 
 import './style.css';
 
-const Infosection = (props) => {
+const Infosection = () => {
     return (
         <div className='info-section GlobalWrapper'>
             <div className='line-group'>
