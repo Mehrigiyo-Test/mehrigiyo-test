@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import AboutBox from '../../components/AboutBox/AboutBox';
 import HistoryMehrigiyo from "../../components/HistoryMehrigiyo/HistoryMehrigiyo";
 import OriginMehrigiyo from "../../components/OriginMehrigiyo/OriginMehrigiyo";
 import "./AboutUs.scss";
@@ -6,10 +7,9 @@ import "./AboutUs.scss";
 function AboutUs() {
   return (
     <>
-      <HistoryMehrigiyo />
-      <OriginMehrigiyo />
+      <AboutBox />
     </>
-  );
+  )
 }
 
 export default AboutUs;
