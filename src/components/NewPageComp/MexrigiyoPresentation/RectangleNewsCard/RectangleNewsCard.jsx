@@ -2,7 +2,11 @@ import React from 'react'
 import "./RectangleNewsCardStyle.css"
 import CalendarIcon from "./../../../../images/CalendarIcon.png"
 
-function RectangleNewsCard() {
+function RectangleNewsCard({
+  date,
+  time,
+  info
+}) {
   return (
     <>
     <div className='RectangleCard'>
@@ -10,11 +14,11 @@ function RectangleNewsCard() {
             <div className='Calendar'>
                 <img src={CalendarIcon} alt="" />
             </div>
-            <div className='RactTime'>12.09.2021 -</div>
-            <div className='RactTime'>15:12</div>
+            <div className='RactTime'>{date} -</div>
+            <div className='RactTime'>{time}</div>
         </div>
         <div className='RactangleCardTxt'>
-        Barcha kasalliklar uchun dori, mehrigiyo kompaniyasidan "sumbul shifo" to'plami"        </div>
+        {info}       </div>
     </div>
     </>
   )

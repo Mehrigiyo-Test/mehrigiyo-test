@@ -25,7 +25,7 @@ function MexrigiyoPresentation() {
                     </div>
             <h1>Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.</h1>
             <div className='display ctM'>
-            <a>#Ziravorlar</a>
+            <a className='ctM_a'>#Ziravorlar</a>
             <li>4 min oldin</li>
             </div>
         </div>
@@ -42,7 +42,17 @@ function MexrigiyoPresentation() {
                 <div className='Ractangle'><img src={Ractangle} alt="" /></div>
                 <div className='RactNews'>So’ngi yangiliklar</div>
               </div>
-              <div className='rectangle'><RectangleNewsCard/></div>
+              <div className='rectangle'><RectangleNewsCard
+              date="12.09.2021"
+              time="15:12"
+              info='BARCHA KASALLIKLAR UCHUN DORI, MEHRIGIYO KOMPANIYASIDAN "SUMBUL SHIFO" TOPLAMI'
+              />
+              <RectangleNewsCard
+              date="12.09.2021"
+              time="15:12"
+              info='Dream Tea-choy, bir kishi orzu qilgan choy!'
+              />
+              </div>
               
             </div>
         </div>

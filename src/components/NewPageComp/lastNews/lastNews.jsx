@@ -36,7 +36,7 @@ function LastNews({img, category, time, theme, info}) {
                         <p>{category}#Ziravorlar</p>
                         <li>{time}4 min oldin</li>
                     </div>
-                    <h4>{theme}Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.</h4>
+                    <h4>{theme}Mehrigiyo kompaniyasi "Detaksioma 5- 100% tabiy vosita" mahsulotini taqdim etadi.</h4>
                     <h6>{info}Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.</h6>
                     <div >
                         <Global
