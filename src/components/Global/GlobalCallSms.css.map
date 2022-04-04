@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACf,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,EAAE;EACT,GAAG,EAAE,KAAK;EACV,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "GlobalCallSms.scss"
+    ],
+    "names": [],
+    "file": "GlobalCallSms.css"
+}

@@ -1,0 +1,97 @@
+.OnlineRecommend {
+  background: linear-gradient(274.36deg, #FFDEC2 0.52%, #FEE0C8 21.68%, #F9E9DD 96.53%);
+  -webkit-box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 80px 254px 10px 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 185px;
+  margin-bottom: 145px;
+}
+
+.OnlineRecommend__img {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.OnlineRecommend__img img {
+  width: 230px;
+  height: 295px;
+}
+
+.OnlineRecommend__img .imgPos {
+  width: 50px;
+  height: 50px;
+}
+
+.OnlineRecommend__img .imgPos img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.OnlineRecommend__text {
+  width: 60%;
+  position: relative;
+}
+
+.OnlineRecommend__text__paragraph {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+.OnlineRecommend__text .imgPos2 {
+  width: 50px;
+  height: 50px;
+}
+
+.OnlineRecommend__text .imgPos2 img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 200px;
+  top: -40px;
+}
+
+.OnlineRecommend__text .imgPos3 {
+  width: 50px;
+  height: 50px;
+}
+
+.OnlineRecommend__text .imgPos3 img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -100px;
+  bottom: 55px;
+}
+
+.OnlineRecommend__text .imgPos4 {
+  width: 30px;
+  height: 30px;
+}
+
+.OnlineRecommend__text .imgPos4 img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 151px;
+  left: 226px;
+}
+/*# sourceMappingURL=OnlineRecommend.css.map */

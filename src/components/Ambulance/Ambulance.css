@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.container {
+  max-width: 1440px !important;
+  font-family: 'Poppins';
+  margin: auto !important;
+  position: relative;
+}
+
+.container .background {
+  position: absolute;
+  left: -50px;
+  top: -40px;
+}
+
+.container .box {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.container .textBox {
+  padding: 0 68px;
+  margin-right: 190px;
+}
+
+.container h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #282828;
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #B0B7C3;
+  margin-bottom: 53px;
+}
+
+.container .imgBox {
+  position: relative;
+  display: block;
+}
+
+.container .logodiv {
+  position: absolute;
+  top: 85px;
+  right: 430px;
+  padding: 15px 15px;
+  width: 222px;
+  height: 118px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 15px 60px #1616161a;
+          box-shadow: 0px 15px 60px #1616161a;
+  border-radius: 15px;
+}
+
+.container .logodiv p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #C3C3C3;
+}
+
+.container .logoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .logoImg img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.container .logoImg h5 {
+  font-weight: 900;
+  font-size: 16px;
+  color: #000000;
+}
+
+.container .doctorImg {
+  width: 505px;
+  height: 453px;
+}
+/*# sourceMappingURL=Ambulance.css.map */
