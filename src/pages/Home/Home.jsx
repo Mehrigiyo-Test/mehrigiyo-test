@@ -28,6 +28,7 @@ import GlobalSponsorLogo6 from '../../images/globalSponsor6.png';
 
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
+import leaves from '../../images/Groupffff.png';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,6 +43,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 function Home() {
+
+  const imginfo = {img3: <img src={leaves} />}
+
   // const slide = [
   //   {
   //     img: sliderEx,
@@ -219,7 +223,7 @@ function Home() {
       <OnlineRecommend />
 
       <Asked />
-      <Send />
+      <Send overflow={'hidden'} img3={imginfo.img3} />
       <div className="sponsors GlobalWrapper">
           <GlobalSponsors img={GlobalSponsorLogo1} />
           <GlobalSponsors img={GlobalSponsorLogo2} />
