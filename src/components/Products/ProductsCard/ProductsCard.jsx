@@ -1,5 +1,5 @@
 import React from 'react'
-import './Products.scss'
+import './ProductsCard.scss'
 import Aspirine1 from '../../images/aspirine1.png'
 import Aspirine2 from '../../images/aspirine2.png'
 import Aspirine3 from '../../images/aspirine3.png'
@@ -62,7 +62,6 @@ export default function Products() {
                             </div>
                             <p className="Products-more">Tafsilotlar</p>
                         </div>
-
                         <div className="Products-aspirine">
                             <div className="aspirine-images">
                                 <img src={Aspirine3} alt="" className="aspirine1" />
