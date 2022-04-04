@@ -4,6 +4,13 @@
   padding-left: 98px;
   margin-bottom: 203px;
   margin-top: 166px;
+  .InfoBanner-img {
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 4065px;
+    opacity: 0.1;
+  }
   .InfoBanner-content {
     box-shadow: 0px 15px 60px 0px #0000001a;
     width: 1256px;
@@ -37,13 +44,17 @@
       }
     }
     .InfoBanner-center {
+        display: flex;
       .InfoBanner-center-img {
-        margin-left: -100px;
+        margin-left: -110px;
       }
     }
     .InfoBanner-right {
+        width: 263px;
+        margin-left:-20px;
+        margin-top: 50px;
       .InfoBanner-right-img {
-        margin-left: 30px;
+        width: 100%;
       }
     }
   }

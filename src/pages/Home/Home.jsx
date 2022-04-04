@@ -15,6 +15,7 @@ import Bannerinput from "../../components/bannerInput/bannerInput";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
+import Products from "./../../components/Products/Products"
 import InfoBanner from "../../components/InfoBanner/InfoBanner"
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 
@@ -102,6 +103,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
+        <Products />
         <InfoBanner />
         <ApplicationSec />
         <div className="GlobalWrapper ">
