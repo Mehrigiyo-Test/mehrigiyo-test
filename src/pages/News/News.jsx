@@ -26,7 +26,16 @@ function News() {
     time="04 авг 2021 07:55"
     theme="BARCHA KASALLIKLAR UCHUN DORI, MEHRIGIYO KOMPANIYASIDAN ..."
     txt="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-      /></div>
+      />
+      <RowNewsCard
+    img={rowImg}
+    Greenholder={Placeholder}
+    events="TADBIRLAR"
+    time="04 авг 2021 07:55"
+    theme="BARCHA KASALLIKLAR UCHUN DORI, MEHRIGIYO KOMPANIYASIDAN ..."
+    txt="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
+      />
+      </div>
      <div><ColumnCardTxt/></div>
       <div className='display NewsCardpadding'><div><NewsCard
       img={sliderEx}

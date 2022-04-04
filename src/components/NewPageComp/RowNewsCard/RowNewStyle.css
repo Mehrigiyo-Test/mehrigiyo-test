@@ -16,7 +16,7 @@
 }
 .rowImg img{
     width: 100%;
-    background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(255, 255, 255, 0) 100%);
+    
 }
 .rowTxt h4{
     font-family: 'Poppins';
@@ -51,9 +51,6 @@
     line-height: 165%;
 }
 .timeData{
-    position: absolute;
-    left: 36px;
-    bottom: 30px;
     color: white;
     font-family: 'Poppins';
     font-style: normal; 
@@ -61,11 +58,24 @@
     font-size: 13px;
     line-height: 165%;
 }
-.UploadRow{
-    position: absolute;
-    top: 155px;
-    left: 263px;
-}
 .rowNewsWrapper{
     margin-right: 30px;
+}
+.UploadRow{
+    display: flex;
+    align-items: center;
+}
+.InnerShadow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0px 13px 13px;
+    align-items: center;
+    gap: 118px;
+    top: 140px;
+    left: 20px;
+    background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(255, 255, 255, 0) 100%);
+    width: 272px;
+    height: 50px;
+
 }

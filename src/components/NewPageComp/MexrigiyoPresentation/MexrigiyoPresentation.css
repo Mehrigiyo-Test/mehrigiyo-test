@@ -18,8 +18,10 @@
     /* padding: 0px 0px 10px 290px; */
     gap: 10px;
 }
-.ctM a{
- color: #53B175;
+.ctM_a{
+    text-decoration: none;
+    color: #53B175;
+    cursor: pointer;
 }
 .ctM li{
     color: #C4C4C4;
