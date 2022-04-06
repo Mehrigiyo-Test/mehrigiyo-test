@@ -1,0 +1,22 @@
+.BeingHealthyWrapper{
+    position: relative;
+    
+}
+.BeingHealthyWrapper a li{
+    list-style: none;
+    color: #B0B7C3;
+}
+.BeingHealthyWrapper a li:hover{
+    color: #53B175;
+} 
+.BeingHealthyWrapper a{
+    text-decoration: none;
+}
+.menucl{
+    gap: 20px;
+}
+.sCardsStyle{
+    gap: 60px;
+    padding-left: 141px;
+    padding-bottom: 170px;
+}

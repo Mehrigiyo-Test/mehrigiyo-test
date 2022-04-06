@@ -3,12 +3,22 @@ import "./send.css";
 import animation from "../../../images/Contact_Animations.png";
 // import { TextField } from "@mui/material";
 import {IoMdSend} from 'react-icons/io';
-import leaves from '../../../images/Groupffff.png';
 
-export default function Send() {
+
+
+export default function Send({ top, img1, text, headtext, img2, img3, overflow }) {
+
   return (
-    <div className="send-background">
+    <div className="send-background" style={{top: top, overflow}}>
     <div className="GlobalWrapper">
+      <div className="helpDoctor" >
+        {img1}
+        <div className="textDoctor">
+          {text}
+          {headtext}
+        </div>
+        {img2}
+      </div>
       <div className="send">
         <div className="send-img">
           <img src={animation} alt="" />
@@ -47,7 +57,8 @@ export default function Send() {
       </div>
     </div>
     <div className="leaves">
-      <img src={leaves} alt="" />
+      {/* <img src={leaves} alt="" /> */}
+      {img3}
     </div>
     </div>
   );

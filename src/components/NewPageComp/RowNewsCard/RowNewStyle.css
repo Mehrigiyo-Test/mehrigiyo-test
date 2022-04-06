@@ -1,0 +1,81 @@
+.row_wrapper{
+    background-color: #FFFFFF;
+    width: 684px;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 20px;
+    position: relative;
+}
+.rowTxt{
+    width: 365px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.rowImg{
+    width: 272px;
+}
+.rowImg img{
+    width: 100%;
+    
+}
+.rowTxt h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.rowTxt p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B0B7C3;
+}
+.PLaceholderImg{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    width: 78px;
+    left: 207px;
+}
+.events{
+    color: white;
+    top: 32px;
+    left: 220px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 165%;
+}
+.timeData{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 165%;
+}
+.rowNewsWrapper{
+    margin-right: 30px;
+}
+.UploadRow{
+    display: flex;
+    align-items: center;
+}
+.InnerShadow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0px 13px 13px;
+    align-items: center;
+    gap: 118px;
+    top: 140px;
+    left: 20px;
+    background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(255, 255, 255, 0) 100%);
+    width: 272px;
+    height: 50px;
+
+}
