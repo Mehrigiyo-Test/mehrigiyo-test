@@ -18,6 +18,9 @@ import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
 import img1 from "../../images/doctorBahrom.svg";
 // import img2 from "../../images/doctorGavhar.svg";
 import imgLeaf from "../../images/leaf.png";
+
+import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
+
 import "./OnlineDoctor.scss";
 function OnlineDoctor() {
   return (
@@ -30,7 +33,7 @@ function OnlineDoctor() {
         <div className="imgLeaf"><img src={imgLeaf} /></div>
         <div className="sliderTop">
           <p className="sliderTopText">Top Shifokorlar</p>
-          <GlobalBtn text="Batafsil" width="144px"/>
+          <GlobalBtn text="Batafsil" width="144px" />
         </div>
         <Swiper
           slidesPerView={5.7}
@@ -107,6 +110,7 @@ function OnlineDoctor() {
         />
       </div> */}
       <ApplicationSec />
+      <GlobalSponsors/>
     </>
   );
 }

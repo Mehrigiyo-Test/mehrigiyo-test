@@ -1,0 +1,58 @@
+.achievements{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 200px;
+}
+
+.leaff{
+    position: relative;
+    opacity: 10;
+    top: 18px;
+    left: -35px;
+}
+
+.achievements-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.achievements__titles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.achievements__titles__title{
+    font-weight: 700;
+    font-size: 36px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+}
+
+.achievements__titles__text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #B0B7C3;
+}
+
+.achievements__number{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.achievements__number-top{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.achievements__number-top-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
