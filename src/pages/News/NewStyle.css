@@ -26,7 +26,7 @@
 }
 .News{
     background-color: #FAFBFC;
-    z-index: -1;
+    /* z-index: -1; */
     max-width: 1440px;
     margin: 0 auto;
     /* overflow: hidden; */

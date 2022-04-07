@@ -33,6 +33,7 @@ const Navigate2 = () => {
                         <img className='marImg' src={NavVector} alt="icon" />
                     </Link>
                 </ul>
+                {/* <div className='optionStyleNav2'><Option/></div> */}
 
 
                 <div className='nav-icons'>

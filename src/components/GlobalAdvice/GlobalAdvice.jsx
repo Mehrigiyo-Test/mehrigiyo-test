@@ -20,6 +20,7 @@ export default function GlobalAdvice({info}) {
                 {info.img3}
                 {info.back}
             </div>
+            
         </div>
     )
 }

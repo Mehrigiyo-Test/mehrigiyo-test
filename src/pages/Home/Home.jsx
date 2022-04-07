@@ -90,7 +90,7 @@ function Home() {
   //     category: "#Ziravorlar",
   //     time: "4 min oldin",
   //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //     info:   "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
   //   },
   // ];
 
