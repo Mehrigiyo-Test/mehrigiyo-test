@@ -1,6 +1,5 @@
 import "./Global.scss";
 import Vector from "../../images/Vector(1).png";
-import { color } from "@mui/system";
 
 export default function Global({ text, width, color, position, top }) {
   return (

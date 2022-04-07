@@ -4,7 +4,7 @@ import NaturalProduct from '../../components/Products/Products';
 import MilkTea from '../../components/MilkTea/MilkTea';
 import BuyMehrigiyo from '../../components/BuyFromMehrigiyo/BuyMehrigiyo';
 import ApplicationSec from '../../components/ApplicationSec/ApplicationSec';
-import "./Products.scss"
+import "./Products.scss";
 
 function Products() {
   return (

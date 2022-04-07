@@ -15,12 +15,12 @@ import MexrigiyoPresentation from './components/NewPageComp/MexrigiyoPresentatio
 import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
 
 function App() {
+
   return (
     <>
     <Router>
       <Navigate/>
-      {/* <Navigate2/> */}
-      <Navigate2/>
+      <Navigate2 />
       <GlobalCallSms/>
       <Routes>
         <Route path='/' element={<Home/>}/>
