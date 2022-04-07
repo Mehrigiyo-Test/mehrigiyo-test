@@ -1,3 +1,72 @@
-body{
-    background-color: #FAFBFC !important;   
+body {
+    background-color: #FAFBFC !important;
+}
+
+.now {
+    &__p1 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        color: #53B175;
+        margin-bottom: 11px;
+    }
+
+    &__p2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: grey;
+        margin-bottom: 20px;
+    }
+
+    &__p3 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: grey;
+    }
+}
+
+.products {
+    margin-bottom: 35px;
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-flow: wrap;
+        gap: 15px;
+
+    }
+}
+
+.aboutGrowing {
+    &__box {
+        display: flex;
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: grey;
+            padding-top: 60px;
+        }
+
+        &__img {
+            img {
+                position: relative;
+                top: -52px;
+            }
+        }
+    }
+    .aboutGrowingFinishText{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: grey;
+    }
 }
