@@ -1,4 +1,7 @@
-
+/* .nav2{
+    display: flex;
+    align-items: center;
+}
 
 .nav__wrapper{
     display: flex;
@@ -49,8 +52,8 @@
     opacity: 1;
     padding-bottom: 7px;
     /* border-bottom: 3px solid #3e8e41; */
-    transition: all .1s ease-in-out;
-}
+    /* transition: all .1s ease-in-out; */
+/* } */
 /* .active span a {
     display: inline-block;
     color: #07aa19;
@@ -89,51 +92,40 @@
 
 .nav-icons{
     align-items: center;
-    margin-left: 150px;
-    gap: 15px;
-    width: 15%;
+    margin: unset;
+    padding: unset;
 }
 
 .nav-icons__icon{
     cursor: pointer;
+} */
+.nav2{
+    background-color: #9ad3ae;
 }
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+
+.nav__wrapper ul{
+    display: flex;
+    gap: 26px;
+    padding: unset;
+}
+.nav-logo{
+    width: 140px;
+    height: 45px;
+}
+
+.nav__wrapper ul a{
+    padding: unset;
+    color: grey;
     font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 99;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    box-shadow: 0px 10px 30px #717c8c4d;
-    border-radius: 8px;
-    display: none;
-    position: absolute;
-    background: #FFFFFF;
-    min-width: 240px;
-    z-index: 1;
-  }
-  .dropdown-content:before {
-      position: absolute;
-      content: '';
-      width: 20px;
-      height: 20px;
-      background-color: #ffffff;
-      right: 60px;
-      top: -8px;
-      transform: rotate(45deg);
-      z-index: -1;
-  }
+    font-weight: 400;
+}
 
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -158,3 +150,12 @@
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
+.nav__wrapper ul a:hover{
+    color: unset;
+    color: black !important;
+    transition: all 0.35s;
+}
+
+.marImg{
+    margin-left: 8px;
+}
