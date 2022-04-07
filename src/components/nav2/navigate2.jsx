@@ -10,7 +10,7 @@ import './style.css'
 
 const Navigate2 = () => {
     return (
-        <div className='nav2 bc-color'>
+        <div className='nav2'>
             <div className='nav__wrapper GlobalWrapper'>
                 <Link to='/' className='nav-logo' >
                     <img src={Logo} alt="logo" />
@@ -18,20 +18,22 @@ const Navigate2 = () => {
 
                 <ul>
                     <Link to='/' className='nav-link'>Bosh sahifa</Link>
-                    <Link to='/onlineDoctor'>Onlayn shifokorlar
-                        <img src={NavVector} alt="icon" />
+
+                    <Link to='/onlineDoctor' className='nav-link'>Onlayn shifokorlar
+                        <img className='marImg' src={NavVector} alt="icon" />
                     </Link>
                     <Link to='/products' className='nav-link'>Mahsulotlar
-                        <img src={NavVector} alt="icon" />
+                        <img className='marImg' src={NavVector} alt="icon" />
                     </Link>
                     <Link to='/aboutUs' className='nav-link'>Biz haqimizda</Link>
                     <Link to='/news' className='nav-link'>Yangiliklar
-                        <img src={NavVector} alt="icon" />
+                        <img className='marImg' src={NavVector} alt="icon" />
                     </Link>
                     <Link to='/help' className='nav-link'>Yordam
-                        <img src={NavVector} alt="icon" />
+                        <img className='marImg' src={NavVector} alt="icon" />
                     </Link>
                 </ul>
+
 
                 <div className='nav-icons'>
                     <img className='nav-icons__icon' src={NavIcon1} alt="icon" />

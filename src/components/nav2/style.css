@@ -1,4 +1,7 @@
-
+/* .nav2{
+    display: flex;
+    align-items: center;
+}
 
 .nav__wrapper{
     display: flex;
@@ -43,11 +46,47 @@
 
 .nav-icons{
     align-items: center;
-    margin-left: 150px;
-    gap: 15px;
-    width: 15%;
+    margin: unset;
+    padding: unset;
 }
 
 .nav-icons__icon{
     cursor: pointer;
+} */
+.nav2{
+    background-color: #9ad3ae;
+}
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+
+.nav__wrapper ul{
+    display: flex;
+    gap: 26px;
+    padding: unset;
+}
+.nav-logo{
+    width: 140px;
+    height: 45px;
+}
+
+.nav__wrapper ul a{
+    padding: unset;
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav__wrapper ul a:hover{
+    color: unset;
+    color: black !important;
+    transition: all 0.35s;
+}
+
+.marImg{
+    margin-left: 8px;
 }
