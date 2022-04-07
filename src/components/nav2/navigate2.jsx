@@ -5,7 +5,7 @@ import NavIcon1 from '../../images/nav-icon1.png';
 import NavIcon2 from '../../images/nav-icon2.png';
 import NavIcon3 from '../../images/nav-icon3.png';
 import { Link } from 'react-router-dom';
-
+import Option from './option/option';
 import './style.css'
 
 const Navigate2 = () => {
@@ -32,7 +32,7 @@ const Navigate2 = () => {
                         <img src={NavVector} alt="icon" />
                     </Link>
                 </ul>
-
+                {/* <div className='optionStyleNav2'><Option/></div> */}
                 <div className='nav-icons'>
                     <img className='nav-icons__icon' src={NavIcon1} alt="icon" />
                     <img className='nav-icons__icon' src={NavIcon2} alt="icon" />

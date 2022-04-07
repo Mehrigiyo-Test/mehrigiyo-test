@@ -20,11 +20,12 @@ export default function NaturalProduct() {
     ]
 
     return (
-
+        <>
         <div className="NaturalContainer" style={{"margin-top": '110px'}}>
             {info.map((item) =>(
                 <GlobalAdvice key={item.text} info={item}/>
             ))}
         </div>
+        </>
     )
 }

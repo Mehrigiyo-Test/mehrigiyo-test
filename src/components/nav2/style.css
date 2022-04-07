@@ -51,3 +51,7 @@
 .nav-icons__icon{
     cursor: pointer;
 }
+.optionStyleNav2{
+    position: absolute;
+    top: 0;
+}
