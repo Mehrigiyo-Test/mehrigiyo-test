@@ -96,6 +96,9 @@ function Home() {
 
   return (
     <>
+    <div className="greenItem">
+      
+    </div>
       <div className="pageStyle1">
         <Banner />
         <div className="banner-input bc-color">
