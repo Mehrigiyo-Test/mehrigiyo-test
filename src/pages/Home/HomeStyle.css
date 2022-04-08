@@ -1,3 +1,11 @@
+.lightGreenItem{
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    background-color: #D6ECDF;
+    z-index: -1;
+}
 .greenItem{
     height: 200px;
     width: 100%;

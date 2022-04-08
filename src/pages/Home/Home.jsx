@@ -96,6 +96,7 @@ function Home() {
 
   return (
     <>
+    <div className="lightGreenItem"></div>
     <div className="greenItem">
       
     </div>

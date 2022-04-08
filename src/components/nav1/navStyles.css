@@ -28,7 +28,7 @@ nav ul li a{
 .navigate{
     position: relative;
     justify-content: space-between;
-    background-color: #D6ECDF;
+    /* background-color: #D6ECDF; */
     padding: 5px;
     
 }
