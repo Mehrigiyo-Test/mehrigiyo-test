@@ -23,6 +23,7 @@ import dala1 from "../../images/growing1.png";
 import dala2 from "../../images/growing2.png";
 import "./AboutUs.scss";
 
+import Companysupport from '../../components/CompanySupport/CompanySupport';
 function AboutUs() {
   return (
     <>
@@ -118,7 +119,9 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <History/>
       <Globlasponsors />
+      <Companysupport/>
     </>
   );
 }

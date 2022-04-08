@@ -221,17 +221,9 @@ function Home() {
         </div>
       </div>
       <OnlineRecommend />
-
       <Asked />
       <Send overflow={'hidden'} img3={imginfo.img3} />
-      <div className="sponsors GlobalWrapper">
-          <GlobalSponsors img={GlobalSponsorLogo1} />
-          <GlobalSponsors img={GlobalSponsorLogo2} />
-          <GlobalSponsors img={GlobalSponsorLogo3} />
-          <GlobalSponsors img={GlobalSponsorLogo4} />
-          <GlobalSponsors img={GlobalSponsorLogo5} />
-          <GlobalSponsors img={GlobalSponsorLogo6} />
-        </div>
+      <GlobalSponsors/>
     </>
   );
 }
