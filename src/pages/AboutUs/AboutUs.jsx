@@ -7,6 +7,7 @@ import Achievements from './../../components/Achievements/Achievements';
 import "./AboutUs.scss";
 
 import History from './../../components/History/History';
+import Companysupport from '../../components/CompanySupport/CompanySupport';
 
 function AboutUs() {
   return (
@@ -17,6 +18,7 @@ function AboutUs() {
       <Achievements />
       <History/>
       <Globlasponsors/>
+      <Companysupport/>
     </>
   )
 }
