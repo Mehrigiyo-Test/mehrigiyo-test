@@ -1,0 +1,53 @@
+.CertificatesMehrigiyo {
+    display: flex;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-left: 40px;
+
+    &__text {
+        width: 50%;
+        padding-right: 130px;
+        position: relative;
+        &__p1 {
+            color: #53B175;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__p2 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: grey;
+        }
+        &__leav{
+            img{
+                position: absolute;
+                right: -10px;
+                top: 90px;
+            }
+        }
+    }
+
+    &__img {
+        width: 50%;
+    }
+}
+.mySwiperL{
+    position: relative;
+    span{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #282828;
+        position: absolute;
+        right: 0;
+    }
+}
+// .swiper-button-prev {
+//     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+//   }
+// .swiper-button-prev {
+//     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+//   }

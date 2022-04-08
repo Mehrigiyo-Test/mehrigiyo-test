@@ -6,6 +6,7 @@ import OriginMehrigiyo from "../../components/OriginMehrigiyo/OriginMehrigiyo";
 import Achievements from "./../../components/Achievements/Achievements";
 import History from "./../../components/History/History";
 import OurProducts from "../../components/OurProducts/OurProducts";
+import CertificatesMehrigiyo from "../../components/CertificatesMehrigiyo/CertificatesMehrigiyo";
 
 import svg1 from "../../images/ourProductsImg1.svg";
 import svg2 from "../../images/OurProducts2.svg";
@@ -118,6 +119,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <CertificatesMehrigiyo />
       <Globlasponsors />
     </>
   );
