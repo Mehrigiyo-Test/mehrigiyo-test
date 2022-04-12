@@ -13,6 +13,9 @@ import Navigate2 from './components/nav2/navigate2';
 import GlobalCallSms from './components/Global/GlobalCallSms';
 import MexrigiyoPresentation from './components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation';
 import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
+import Basket from './pages/Basket/Basket';
+import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
+import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/news/MexrigiyoPresentation' element={<MexrigiyoPresentation/>}/>
         <Route path='/news/BeingHealthy' element={<BeingHealthy/>}/>
+        <Route path='/basket' element={<Basket/>}/>
+        <Route path='/favoriteDoctors' element={<FavoriteDoctors/>}/>
+        <Route path='/favoriteDrug' element={<FavoriteDrug/>}/>
       </Routes>
       <Footer/>
     </Router>

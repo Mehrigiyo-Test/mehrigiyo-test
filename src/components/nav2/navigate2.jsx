@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../images/Mehrigiyo_logo.png';
 import NavVector from '../../images/nav2_vector.png';
 import NavIcon1 from '../../images/nav-icon1.png';
@@ -7,6 +7,7 @@ import NavIcon3 from '../../images/nav-icon3.png';
 import { Link } from 'react-router-dom';
 
 import './style.css'
+import Basket from '../../pages/Basket/Basket';
 
 const Navigate2 = () => {
     return (
@@ -34,9 +35,16 @@ const Navigate2 = () => {
                 </ul>
 
                 <div className='nav-icons'>
-                    <img className='nav-icons__icon' src={NavIcon1} alt="icon" />
-                    <img className='nav-icons__icon' src={NavIcon2} alt="icon" />
-                    <img className='nav-icons__icon' src={NavIcon3} alt="icon" />
+                    <Link to='/favoriteDoctors'>
+                        <img className='nav-icons__icon' src={NavIcon1} alt="icon" />
+                    </Link>
+                    <Link to='/favoriteDrug'>
+                        <img className='nav-icons__icon' src={NavIcon2} alt="icon" />
+                    </Link>
+                    <Link to='/basket'>
+                        <img className='nav-icons__icon' src={NavIcon3} alt="icon" />
+                    </Link>
+                    
                 </div>
             </div>
         </div>
