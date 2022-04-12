@@ -39,7 +39,7 @@ const CertificatesMehrigiyo = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={10}
-        //   navigation={true}
+          // navigation={true}       
           // pagination={{
           //   clickable: true,
           // }}

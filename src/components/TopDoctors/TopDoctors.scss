@@ -34,7 +34,10 @@
         }
 
         // .imgSecond {
-            
+        //     img{
+        //         color: red;
+        //         background-color: red;
+        //     }
         // }
     }
 
@@ -64,4 +67,7 @@
         height: 40px;
         margin-top: 18px;
     }
+}
+.colorYellow:focus{
+    background-color: yellow;
 }
