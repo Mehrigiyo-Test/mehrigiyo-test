@@ -33,7 +33,7 @@ function OnlineDoctor() {
         <div className="imgLeaf"><img src={imgLeaf} /></div>
         <div className="sliderTop">
           <p className="sliderTopText">Top Shifokorlar</p>
-          <GlobalBtn text="Batafsil" width="144px" />
+          <GlobalBtn  text="Batafsil" width="144px" />
         </div>
         <Swiper
           slidesPerView={5.7}
