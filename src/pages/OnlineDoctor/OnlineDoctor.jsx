@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 import FreeAdvice from "../../components/FreeAdvice/FreeAdvice";
 import Ambulance from "../../components/Ambulance/Ambulance";
@@ -38,10 +38,13 @@ function OnlineDoctor() {
         <Swiper
           slidesPerView={5.7}
           spaceBetween={1}
+          loop={true}
+          autoplay={{delay: 2000}}
           // pagination={{
           //   clickable: true,
           // }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
+
           className="mySwiper"
         >
           <SwiperSlide>
