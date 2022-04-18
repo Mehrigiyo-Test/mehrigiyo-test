@@ -8,17 +8,17 @@ import History from "./../../components/History/History";
 import OurProducts from "../../components/OurProducts/OurProducts";
 import CertificatesMehrigiyo from "../../components/CertificatesMehrigiyo/CertificatesMehrigiyo";
 
-import svg1 from "../../images/ourProductsImg1.svg";
-import svg2 from "../../images/OurProducts2.svg";
-import svg3 from "../../images/OurProducts3.svg";
-import svg4 from "../../images/OurProducts4.svg";
-import svg5 from "../../images/OurProducts5.svg";
-import svg6 from "../../images/OurProducts6.svg";
-import svg7 from "../../images/OurProducts7.svg";
-import svg8 from "../../images/OurProducts8.svg";
-import svg9 from "../../images/OurProducts9.svg";
-import svg10 from "../../images/OurProducts10.svg";
-import svg11 from "../../images/OurProducts11.svg";
+// import svg1 from "../../images/ourProductsImg1.svg";
+// import svg2 from "../../images/OurProducts2.svg";
+// import svg3 from "../../images/OurProducts3.svg";
+// import svg4 from "../../images/OurProducts4.svg";
+// import svg5 from "../../images/OurProducts5.svg";
+// import svg6 from "../../images/OurProducts6.svg";
+// import svg7 from "../../images/OurProducts7.svg";
+// import svg8 from "../../images/OurProducts8.svg";
+// import svg9 from "../../images/OurProducts9.svg";
+// import svg10 from "../../images/OurProducts10.svg";
+// import svg11 from "../../images/OurProducts11.svg";
 
 import dala1 from "../../images/growing1.png";
 import dala2 from "../../images/growing2.png";
