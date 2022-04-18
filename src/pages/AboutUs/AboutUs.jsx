@@ -8,23 +8,23 @@ import History from "./../../components/History/History";
 import OurProducts from "../../components/OurProducts/OurProducts";
 import CertificatesMehrigiyo from "../../components/CertificatesMehrigiyo/CertificatesMehrigiyo";
 
-import svg1 from "../../images/ourProductsImg1.svg";
-import svg2 from "../../images/OurProducts2.svg";
-import svg3 from "../../images/OurProducts3.svg";
-import svg4 from "../../images/OurProducts4.svg";
-import svg5 from "../../images/OurProducts5.svg";
-import svg6 from "../../images/OurProducts6.svg";
-import svg7 from "../../images/OurProducts7.svg";
-import svg8 from "../../images/OurProducts8.svg";
-import svg9 from "../../images/OurProducts9.svg";
-import svg10 from "../../images/OurProducts10.svg";
-import svg11 from "../../images/OurProducts11.svg";
+// import svg1 from "../../images/ourProductsImg1.svg";
+// import svg2 from "../../images/OurProducts2.svg";
+// import svg3 from "../../images/OurProducts3.svg";
+// import svg4 from "../../images/OurProducts4.svg";
+// import svg5 from "../../images/OurProducts5.svg";
+// import svg6 from "../../images/OurProducts6.svg";
+// import svg7 from "../../images/OurProducts7.svg";
+// import svg8 from "../../images/OurProducts8.svg";
+// import svg9 from "../../images/OurProducts9.svg";
+// import svg10 from "../../images/OurProducts10.svg";
+// import svg11 from "../../images/OurProducts11.svg";
 
 import dala1 from "../../images/growing1.png";
 import dala2 from "../../images/growing2.png";
 import "./AboutUs.scss";
 
-import Companysupport from '../../components/CompanySupport/CompanySupport';
+import Companysupport from "../../components/CompanySupport/CompanySupport";
 function AboutUs() {
   return (
     <>
@@ -52,7 +52,8 @@ function AboutUs() {
         <div className="products">
           <p className="products__title">Bizning mahsulotlar turkumlari</p>
           <div className="products__wrapper">
-            <OurProducts svg={svg1} text="Sharbatlar" bcgColor="#E4F4DF" />
+            <OurProducts />
+            {/* <OurProducts svg={svg1} text="Sharbatlar" bcgColor="#E4F4DF" />
             <OurProducts svg={svg2} text="Sharbatlar" bcgColor="#E1F0E8" />
             <OurProducts svg={svg3} text="Sharbatlar" bcgColor="#E4F4DF" />
             <OurProducts svg={svg4} text="Sharbatlar" bcgColor="#F1DEDD" />
@@ -62,7 +63,7 @@ function AboutUs() {
             <OurProducts svg={svg8} text="Sharbatlar" bcgColor="#E4F4DF" />
             <OurProducts svg={svg9} text="Sharbatlar" bcgColor="#F9EBDE" />
             <OurProducts svg={svg10} text="Sharbatlar" bcgColor="#F0E5E0" />
-            <OurProducts svg={svg11} text="Sharbatlar" bcgColor="#EEF4FC" />
+            <OurProducts svg={svg11} text="Sharbatlar" bcgColor="#EEF4FC" /> */}
           </div>
           <div className="aboutGrowing">
             <div className="aboutGrowing__box">
@@ -122,7 +123,7 @@ function AboutUs() {
       </div>
       <CertificatesMehrigiyo />
       <Globlasponsors />
-      <Companysupport/>
+      <Companysupport />
     </>
   );
 }

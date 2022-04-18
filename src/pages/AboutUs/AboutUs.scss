@@ -29,18 +29,12 @@ body {
 
 .products {
     margin-bottom: 35px;
+
     &__title {
         font-weight: 600;
         font-size: 18px;
         line-height: 27px;
         margin-bottom: 20px;
-    }
-
-    &__wrapper {
-        display: flex;
-        flex-flow: wrap;
-        gap: 15px;
-
     }
 }
 
@@ -63,7 +57,8 @@ body {
             }
         }
     }
-    .aboutGrowingFinishText{
+
+    .aboutGrowingFinishText {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;

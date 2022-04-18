@@ -14,3 +14,9 @@
         height: 22px;
     }
 }
+.products__wrapper {
+    display: flex;
+    flex-flow: wrap;
+    gap: 15px;
+
+}

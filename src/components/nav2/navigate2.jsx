@@ -1,98 +1,99 @@
-import React, { useState } from 'react';
-import Logo from '../../images/Mehrigiyo_logo.png';
-import NavVector from '../../images/nav2_vector.png';
-import NavIcon1 from '../../images/nav-icon1.png';
-import NavIcon2 from '../../images/nav-icon2.png';
-import NavIcon3 from '../../images/nav-icon3.png';
-import { NavLink, Link } from 'react-router-dom';
-
-import './style.css'
-import Basket from '../../pages/Basket/Basket';
-
+import React from "react";
+import Logo from "../../images/Mehrigiyo_logo.png";
+// import { useNavigate } from 'react-router-dom';
+import NavIcon1 from "../../images/nav-icon1.png";
+import NavIcon2 from "../../images/nav-icon2.png";
+import NavIcon3 from "../../images/nav-icon3.png";
+import { Link } from "react-router-dom";
+import Dropdown from "../Global_Dropdown/Dropdown";
+import "./nav2.scss";
 const Navigate2 = () => {
-    return (
-        <div className='nav2'>
-            <div className='nav__wrapper GlobalWrapper'>
-                <Link to='/' className='nav-logo' >
-                    <img src={Logo} alt="logo" />
+  const navinfo = [
+    {
+      title: "Bosh sahifa",
+      link: "/",
+      // dropdown: []
+    },
+    {
+      title: "Onlayn shifokorlar",
+      link: "/onlineDoctor",
+      dropdown: [
+        { title: "Nevropolog", link: "/products" },
+        { title: "Genetika", link: "/" },
+        { title: "Stomatologiya", link: "/" },
+        { title: "Jarrohlik", link: "/" },
+        { title: "Hammasi +", link: "/" },
+      ],
+    },
+    {
+      title: "Mahsulotlar",
+      link: "/products",
+      dropdown: [
+        { title: "Choy", link: "/" },
+        { title: "Yog'lar", link: "/" },
+        { title: "Ziravorlar", link: "/" },
+        { title: "Asal", link: "/" },
+        { title: "Tabletkalar", link: "/" },
+        { title: "Hammasi +", link: "/" },
+      ],
+    },
+    {
+      title: "Biz haqimizda",
+      link: "/aboutUs",
+      // dropdown: []
+    },
+    {
+      title: "Yangiliklar",
+      link: "/news",
+      dropdown: [
+        { title: "Yangiliklar", link: "/" },
+        { title: "Salomatlik sari", link: "/" },
+      ],
+    },
+    {
+      title: "Yordam",
+      link: "/help",
+      dropdown: [
+        { title: "Yordam", link: "/" },
+        { title: `Ko'p so'raladigan savollar`, link: "/" },
+      ],
+    },
+  ];
+  return (
+    <div className="nav2  GlobalWrapper">
+      <div className="nav__wrapper">
+        <Link to="/" className="nav-logo">
+          <img src={Logo} alt="logo" />
+        </Link>
+
+        <div className="navcontainer">
+          {navinfo.map((item, index) => (
+            <div key={index} className={`nav_Head bg gb`}>
+              {item.dropdown ? (
+                <Dropdown
+                  title={item.title}
+                  link={item.link}
+                  items={item.dropdown}
+                />
+              ) : (
+                <Link className="nav_Item" to={item.link}>
+                  {item.title}
                 </Link>
-
-                <ul>
-                    <div class="dropdown">
-                        <NavLink to='/' className='nav-link tt'><span>Bosh sahifa</span>
-                        </NavLink>
-                        {/* <div className="line"></div> */}
-                    </div>
-
-                    <div class="dropdown">
-                        <NavLink to='/onlineDoctor' className='nav-link'><span>Onlayn shifokorlar</span>
-                            <img src={NavVector} alt="icon" />
-                        </NavLink>
-                        <div class="dropdown-content">
-                            <a href="#">Nevropolog</a>
-                            <a href="#">Genetika</a>
-                            <a href="#">Stomatologiya</a>
-                            <a href="#">Jarrohlik</a>
-                            <a href="#">Hammasi +</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <NavLink to='/products' className='nav-link'><span>Mahsulotlar</span>
-                            <img src={NavVector} alt="icon" />
-                        </NavLink>
-                        <div class="dropdown-content">
-                            <a href="#">Choy</a>
-                            <a href="#">Yog'lar</a>
-                            <a href="#">Ziravorlar</a>
-                            <a href="#">Asal</a>
-                            <a href="#">Tabletkalar</a>
-                            <a href="#">Hammasi +</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <NavLink to='/aboutUs' className='nav-link'><span>Biz haqimizda</span></NavLink>
-                    </div>
-
-                    <div class="dropdown">
-                        <NavLink to='/news' className='nav-link'><span>Yangiliklar</span>
-                            <img src={NavVector} alt="icon" />
-                        </NavLink>
-                        <div class="dropdown-content">
-                            <a href="#">Yangiliklar</a>
-                            <a href="#">Salomatlik sari</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <NavLink to='/help' className='nav-link'><span>Yordam</span>
-                            <img src={NavVector} alt="icon" />
-                        </NavLink>
-                        <div class="dropdown-content">
-                            <a href="#">Yordam</a>
-                            <a href="#">Ko'p so'raladigan savollar</a>
-                        </div>
-                    </div>
-                </ul>
-                {/* <div className='optionStyleNav2'><Option/></div> */}
-
-
-                <div className='nav-icons'>
-                    <Link to='/favoriteDoctors'>
-                        <img className='nav-icons__icon' src={NavIcon1} alt="icon" />
-                    </Link>
-                    <Link to='/favoriteDrug'>
-                        <img className='nav-icons__icon' src={NavIcon2} alt="icon" />
-                    </Link>
-                    <Link to='/basket'>
-                        <img className='nav-icons__icon' src={NavIcon3} alt="icon" />
-                    </Link>
-                    
-                </div>
+              )}
             </div>
+          ))}
         </div>
-    );
-}
+
+        <div className="nav-icons">
+          <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
+
+          <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
+
+          <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Navigate2;
