@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import Dropdown from '../Global_Dropdown/Dropdown';
 
 
-import './style.scss';
+import './nav2.scss';
 
 const Navigate2 = () => {
     

@@ -9,7 +9,7 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import News from './pages/News/News';
 import Help from './pages/Help/Help';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navigate2 from './components/nav2/navigate2';
+import Navigate2 from './components/nav2/Navigate2';
 import GlobalCallSms from './components/Global/GlobalCallSms';
 import MexrigiyoPresentation from './components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation';
 import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
