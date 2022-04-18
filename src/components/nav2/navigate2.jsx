@@ -7,8 +7,8 @@ import NavIcon3 from '../../images/nav-icon3.png';
 import { Link } from 'react-router-dom';
 import Dropdown from '../Global_Dropdown/Dropdown';
 
-import './style.css'
-import Basket from '../../pages/Basket/Basket';
+
+import './nav2.scss';
 
 const Navigate2 = () => {
     
