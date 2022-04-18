@@ -54,8 +54,8 @@
                 width: 0%;
                 left: 50%;
                 position: absolute;
-                transition: width .3s ease-in-out;
                 transform: translateX(-50%);
+                transition: width .3s ease-in-out;
             }
 
             .active:focus:after {
