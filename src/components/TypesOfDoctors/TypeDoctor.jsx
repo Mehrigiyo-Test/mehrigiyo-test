@@ -104,7 +104,7 @@ export default function TypeDoctor() {
                     ))}
            </div>
            <div className="backImg">
-                <img src={Backimg} alt="Background" />
+            <img src={Backimg} alt="Background" />
            </div>
         </div>
     )
