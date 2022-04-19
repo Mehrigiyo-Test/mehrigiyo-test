@@ -19,13 +19,6 @@ import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommen
 import Global from "../../components/GlobalBtn/GlobalBtn";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
-import GlobalSponsorLogo1 from '../../images/globalSponsor1.png';
-import GlobalSponsorLogo2 from '../../images/globalSponsor2.png';
-import GlobalSponsorLogo3 from '../../images/globalSponsor3.png';
-import GlobalSponsorLogo4 from '../../images/globalSponsor4.png';
-import GlobalSponsorLogo5 from '../../images/globalSponsor5.png';
-import GlobalSponsorLogo6 from '../../images/globalSponsor6.png';
-
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
 import leaves from '../../images/Groupffff.png';
@@ -100,9 +93,7 @@ function Home() {
   return (
     <>
     <div className="lightGreenItem"></div>
-    <div className="greenItem">
-      
-    </div>
+    <div className="greenItem"></div>
       <div className="pageStyle1">
         <Banner />
         <div className="banner-input bc-color">
