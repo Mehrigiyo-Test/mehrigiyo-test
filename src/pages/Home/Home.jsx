@@ -23,8 +23,6 @@ import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
 import leaves from '../../images/Groupffff.png';
 
-import Ex from "./../../components/ex/ex"
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
