@@ -57,8 +57,11 @@ function Navigate() {
         </div>
       </div>
       <Modal active={ModalACtive} setActive={setModalActive}>
-         
+        <div className='ModalLogin'>
+          asdas
+        </div>
       </Modal>
+      {/* <ModalLogin active={ModalACtive} setActive={setModalActive}/> */}
     </div>
   )
 }
