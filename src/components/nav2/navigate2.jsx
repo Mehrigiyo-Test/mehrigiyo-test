@@ -18,7 +18,7 @@ const Navigate2 = () => {
       title: "Onlayn shifokorlar",
       link: "/onlineDoctor",
       dropdown: [
-        { title: "Nevropolog", link: "/products" },
+        { title: "Nevropolog", link: "/" },
         { title: "Genetika", link: "/" },
         { title: "Stomatologiya", link: "/" },
         { title: "Jarrohlik", link: "/" },
