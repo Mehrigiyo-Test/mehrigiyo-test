@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import "./HomeStyle.css";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
@@ -19,13 +19,6 @@ import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommen
 import Global from "../../components/GlobalBtn/GlobalBtn";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
-import GlobalSponsorLogo1 from '../../images/globalSponsor1.png';
-import GlobalSponsorLogo2 from '../../images/globalSponsor2.png';
-import GlobalSponsorLogo3 from '../../images/globalSponsor3.png';
-import GlobalSponsorLogo4 from '../../images/globalSponsor4.png';
-import GlobalSponsorLogo5 from '../../images/globalSponsor5.png';
-import GlobalSponsorLogo6 from '../../images/globalSponsor6.png';
-
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
 import leaves from '../../images/Groupffff.png';
@@ -43,10 +36,13 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import Modal from "../../components/Modals/Modal/Modal";
 
 function Home() {
 
   const imginfo = {img3: <img src={leaves} />}
+
+  const [ModalACtive, setModalActive] = useState(true)
 
   // const slide = [
   //   {
@@ -99,9 +95,7 @@ function Home() {
   return (
     <>
     <div className="lightGreenItem"></div>
-    <div className="greenItem">
-      
-    </div>
+    <div className="greenItem"></div>
       <div className="pageStyle1">
         <Banner />
         <div className="banner-input bc-color">
@@ -231,6 +225,10 @@ function Home() {
       <Asked />
       <Send overflow={'hidden'} img3={imginfo.img3} />
       <GlobalSponsors/>
+      {/* <button onClick={() => setModalActive(true)}>click me</button>
+      <Modal active={ModalACtive} setActive={setModalActive}>
+            
+      </Modal> */}
     </>
   );
 }

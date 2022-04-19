@@ -43,9 +43,9 @@ b{
   width: 600px;
   padding: 10px 40px 20px 40px;
 }
-.asked-background{
+/* .asked-background{
   
-}
+} */
 .asked-heading {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -82,6 +82,6 @@ b{
 .leaf{
   opacity: 5%;
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   right: -0px;
 }
