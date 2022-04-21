@@ -16,6 +16,7 @@ import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
 import Basket from './pages/Basket/Basket';
 import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
 import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
+import BigCompListDoctor from './pages/OnlineDoctor/List/BigCompListDoctor'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/basket' element={<Basket/>}/>
         <Route path='/favoriteDoctors' element={<FavoriteDoctors/>}/>
         <Route path='/favoriteDrug' element={<FavoriteDrug/>}/>
+        <Route path='/OnlineDoctor/BigCompListDoctor' element={<BigCompListDoctor/>}/>
       </Routes>
       <Footer/>
     </Router>
