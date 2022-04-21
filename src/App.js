@@ -17,6 +17,7 @@ import Basket from './pages/Basket/Basket';
 import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
 import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
 import BigCompListDoctor from './pages/OnlineDoctor/List/BigCompListDoctor'
+// import ItemInfo from './components/Categoried/ItemInfo/ItemInfo';
 
 function App() {
 
