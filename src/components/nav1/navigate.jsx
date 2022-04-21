@@ -1,8 +1,10 @@
-import React from 'react'
+import {React, useState} from 'react'
 import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
 import Dropdown from '../Dropdown/Dropdown'
+
+import Modal from '../Modals/Modal/Modal'
 
 function Navigate() {
   const nav = [
@@ -22,6 +24,7 @@ function Navigate() {
       name: "Yangi"
     }
   ]
+  const [ModalACtive, setModalActive] = useState(false)
 
   return (
     <div className="navigate">
@@ -44,7 +47,7 @@ function Navigate() {
               <img className='locImg' src={lokatsa} />
             </div>
           </div>
-          <div className='login'>
+          <div className='login'  onClick={() => setModalActive(true)}>
             <p className='locat'>
               Kirish
             </p>
@@ -53,6 +56,12 @@ function Navigate() {
 
         </div>
       </div>
+      <Modal active={ModalACtive} setActive={setModalActive}>
+        <div className='ModalLogin'>
+          asdas
+        </div>
+      </Modal>
+      {/* <ModalLogin active={ModalACtive} setActive={setModalActive}/> */}
     </div>
   )
 }
