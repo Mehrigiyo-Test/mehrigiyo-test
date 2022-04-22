@@ -1,0 +1,41 @@
+.GreyTxt{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6B779A;
+    padding-left: 20px;
+}
+.Attention{
+    background-color: #ECEEF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px;
+}
+.AttentComp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DoctorNav{
+    padding: 40px 0 0 0;
+}
+.doc{
+    display: flex;
+    align-items: center;
+}
+.doctype{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+.doctype:focus{
+    color: #53B175;
+}
+.doctype:hover{
+    color: #53B175;
+}

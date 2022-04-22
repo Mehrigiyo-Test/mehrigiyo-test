@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Link } from "react-router-dom";
 // import "./styles.css";
 
 // import required modules
@@ -33,7 +33,7 @@ function OnlineDoctor() {
         <div className="imgLeaf"><img src={imgLeaf} /></div>
         <div className="sliderTop">
           <p className="sliderTopText">Top Shifokorlar</p>
-          <GlobalBtn text="Batafsil" width="144px" />
+          <Link to="/OnlineDoctor/BigCompListDoctor"><GlobalBtn style={{textDecoration: "none"}}  text="Batafsil" width="144px" /></Link>
         </div>
         <Swiper
           slidesPerView={5.7}

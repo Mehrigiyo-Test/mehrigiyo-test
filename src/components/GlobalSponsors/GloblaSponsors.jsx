@@ -20,7 +20,7 @@ const Globlasponsors = () => {
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
                 loop={true}
-                autoplay={{delay: 100}}
+                autoplay={{delay: 1000}}
             >
                 <SwiperSlide>
                     <img src={GlobalSponsorLogo1} alt="" />

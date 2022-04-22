@@ -1,0 +1,23 @@
+.Searchsty{
+    display: flex;
+    background-color: #ECEEF2;
+    border-radius: 100px;
+    min-width: 142px;
+    padding: 10px;
+    gap: 10px;
+    color: #B0B7C3;
+}
+.Searchsty img {
+    width: 20px;
+    height: 20px;
+}
+.Searchsty input{
+    width: 142px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.Searchsty input:focus{
+    width: 200px;
+}
