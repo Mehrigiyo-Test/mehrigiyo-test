@@ -34,7 +34,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import Modal from "../../components/Modals/Modal/Modal";
 
 function Home() {
 
