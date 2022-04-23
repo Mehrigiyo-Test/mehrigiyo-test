@@ -21,7 +21,7 @@ import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
-import leaves from '../../images/Groupffff.png';
+import leaves from '../../images/Groupffff.png';  
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

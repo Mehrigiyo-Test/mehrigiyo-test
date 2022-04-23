@@ -1,3 +1,13 @@
+.OnlineDoctorPg2GW{
+    position: relative;
+    overflow: hidden;
+}
+.Onlinewr{
+    padding-left: 100px;
+    padding-right: 50px;
+    position: relative;
+    
+}
 .GreyTxt{
     font-family: 'Poppins';
     font-style: normal;
@@ -26,6 +36,7 @@
 .doc{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .doctype{
     cursor: pointer;
@@ -38,4 +49,71 @@
 }
 .doctype:hover{
     color: #53B175;
+}
+.clearFilter{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.clearFilter img{
+    width: 20px;
+    height: 20px;
+}
+.clearFilter p{
+    color: grey;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.categoryFilter{
+    gap: 20px;
+    
+    
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.categoryFilter h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 0;    
+}
+.clearFF{
+    display: flex;
+    justify-content: space-between;
+}
+.moore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+.moore div{
+    color: #53B175;
+    text-decoration: underline;
+}
+.rowFilter{
+    /* padding-left: 222px; */
+    /* padding-right: 530px; */
+}
+.filterBg{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+}
+.DocInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-left: 80px;
+    margin-top: 25px;
+    margin-bottom: 350px;
+}
+.bak{
+    position: absolute;
+    top: 1440px;
+    left: 1000px;
+    opacity: 0.05;
 }

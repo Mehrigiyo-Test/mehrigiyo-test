@@ -30,6 +30,8 @@ nav ul li a{
     justify-content: space-between;
     /* background-color: #D6ECDF; */
     padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
     
 }
 .navigate__wrapper{

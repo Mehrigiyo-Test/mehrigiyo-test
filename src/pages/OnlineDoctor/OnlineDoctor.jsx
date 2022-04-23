@@ -22,6 +22,7 @@ import imgLeaf from "../../images/leaf.png";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
 import "./OnlineDoctor.scss";
+
 function OnlineDoctor() {
   return (
     <>
@@ -114,6 +115,7 @@ function OnlineDoctor() {
       </div> */}
       <ApplicationSec />
       <GlobalSponsors/>
+      
     </>
   );
 }
