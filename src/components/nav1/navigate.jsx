@@ -1,70 +1,88 @@
-import {React, useState} from 'react'
-import "./navStyles.css"
-import lokatsa from '../../images/Vector.png'
-import profile from '../../images/profile.png'
-import Dropdown from '../Dropdown/Dropdown'
+import React, { useState } from "react";
+import "./navStyles.css";
+import lokatsa from "../../images/Vector.png";
+import profile from "../../images/profile.png";
+import Dropdown from "../Dropdown/Dropdown";
 
-import Modal from '../Modals/Modal/Modal'
+import Modal from "../Modal";
+
+import Login from "./Login";
+import Verification from "./Verification";
 
 function Navigate() {
   const nav = [
     {
-      name: "Mahsulotlar katalogi"
+      name: "Mahsulotlar katalogi",
     },
     {
-      name: "Foto-lavhalar"
+      name: "Foto-lavhalar",
     },
     {
-      name: "Yetkazib berish va to'lash"
+      name: "Yetkazib berish va to'lash",
     },
     {
-      name: "Aksiya"
+      name: "Aksiya",
     },
     {
-      name: "Yangi"
-    }
-  ]
-  const [ModalACtive, setModalActive] = useState(false)
+      name: "Yangi",
+    },
+  ];
+  const [modalACtive, setModalActive] = useState("Login");
+
+  const [tab, setTab] = useState(true);
+  const [show, setShow] = useState(false);
 
   return (
     <div className="navigate">
-      <div className='navigate__wrapper GlobalWrapper'>
-        <nav className='nav1'>
-          <ul className='ul'>
-            {nav.map(item => (
-              <li><a href='#'>{item.name}</a></li>
+      <div className="navigate__wrapper GlobalWrapper">
+        <nav className="nav1">
+          <ul className="ul">
+            {nav.map((item) => (
+              <li>
+                <a href="#">{item.name}</a>
+              </li>
             ))}
           </ul>
         </nav>
 
-        <div className='navigate2'>
-         <div className='absDropdown'><Dropdown/></div>
-          <div className='location'>
-            <p className='locat'>
-              Toshkent shahar
-            </p>
-            <div className='lokatsa'>
-              <img className='locImg' src={lokatsa} />
+        <div className="navigate2">
+          <div className="absDropdown">
+            <Dropdown />
+          </div>
+          <div className="location">
+            <p className="locat">Toshkent shahar</p>
+            <div className="lokatsa">
+              <img className="locImg" src={lokatsa} />
             </div>
           </div>
-          <div className='login'  onClick={() => setModalActive(true)}>
-            <p className='locat'>
-              Kirish
-            </p>
-            <div className='profil'> <img className='locImg' src={profile} /></div>
+          <div className="login" onClick={() => setShow(true)}>
+            <p className="locat">Kirish</p>
+            <div className="profil">
+              {" "}
+              <img className="locImg" src={profile} />
+            </div>
           </div>
-
         </div>
       </div>
-      <Modal active={ModalACtive} setActive={setModalActive}>
-        <div className='ModalLogin'>
-          asdas
-        </div>
-      </Modal>
+     {show ?  <section>
+        {modalACtive === "Login" ? (
+          <Modal
+            children={
+              <Login
+                setModalActive={setModalActive}
+                tab={tab}
+                setTab={setTab}
+                setShow={setShow}
+              />
+            }
+          />
+        ) : modalACtive === "Verification" ? (
+          <Modal children={<Verification  setModalActive={setModalActive} setShoww={setShow} setTab={setTab}/>} />
+        ) : null}
+      </section> : null}
       {/* <ModalLogin active={ModalACtive} setActive={setModalActive}/> */}
     </div>
-  )
+  );
 }
 
-export default Navigate
-
+export default Navigate;
