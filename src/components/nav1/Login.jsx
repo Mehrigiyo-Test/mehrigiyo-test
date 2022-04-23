@@ -4,7 +4,7 @@ import { VscError } from "react-icons/vsc";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import imgOptinal from "../../images/imgOptinal.png";
 
-const Login = ({ setModalActive, tab, setTab,setShoww }) => {
+const Login = ({ setModalActive, tab, setTab, setShoww }) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -97,7 +97,9 @@ const Login = ({ setModalActive, tab, setTab,setShoww }) => {
                 <span> Foydalanish shartlarini qabul qilgan xisoblanasiz.</span>
               </p>
               <div className="Registration__form__btn">
-                <button onClick={()=> setModalActive('Verification')}>Ro’yxatdan o’tish</button>
+                <button onClick={() => setModalActive("Verification")}>
+                  Ro’yxatdan o’tish
+                </button>
               </div>
             </form>
           </div>
