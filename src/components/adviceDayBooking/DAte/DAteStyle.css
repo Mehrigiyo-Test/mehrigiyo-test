@@ -34,6 +34,6 @@
 .DateCard:hover{
  background-color: #E9F4EF;
 }
-.DateCard:focus{
- background-color: #53B175;
+.DateCard:focus  {
+ background-color: #6ac68c;
 }

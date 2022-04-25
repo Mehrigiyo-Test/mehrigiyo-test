@@ -17,20 +17,20 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    /* background-color: #DFE5EE; */
     border-radius: 50%;
-    background-color: #DFE5EE;
     width: 320px;
     height: 320px;
     overflow: hidden;
-    background-size: cover;
-    background: linear-gradient(360deg, #2A2A2A 0%, rgba(165, 165, 165, 0.74) 54.17%, rgba(139, 139, 139, 0) 100%);
+    /* background-size: cover; */
+    /* background: linear-gradient(360deg, #2A2A2A 0%, rgba(165, 165, 165, 0.74) 54.17%, rgba(139, 139, 139, 0) 100%); */
 }
 .BigCircleIMg img{
     /* border-radius: 50%; */
     /* width: 100%; */
-    height: 100%;
-    background-size: cover;
-    background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(51, 50, 50, 0) 100%);
+    height: 100%;   
+    /* background-size: cover; */
+    /* background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(51, 50, 50, 0) 100%); */
 }
 .selected{
     padding: 5px;
