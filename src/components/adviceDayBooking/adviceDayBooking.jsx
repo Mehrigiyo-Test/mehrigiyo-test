@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./adviceDayBookingStyle.css"
 import SelectDay from "./../../images/SelectDay.png" 
 import CAlendar from "./../../images/CalendarIcon.png"
@@ -7,8 +7,11 @@ import Time from './Time/Time'
 import close from "./../../images/Close.png"
 import TaemOfLeaf from "./../../images/TeamOfLeaf.png"
 import bgLeaf from "./../../images/GroupBacground(1).png"
+import Modal from '../Modal'
+import Waiting from '../waiting/waiting'
 
-function AdviceDayBooking() {
+function AdviceDayBooking({setOpen,setActive,set}) {
+
     const date = [
         {name: "Today",
         day: 8
@@ -54,6 +57,7 @@ function AdviceDayBooking() {
         },
         
     ]
+   
   return (
     <>
     <div className='SalectDayBgWrap'>
@@ -92,8 +96,8 @@ function AdviceDayBooking() {
                 />
             </div>
         </div>
-        <div className='close'><img src={close} alt="" /></div>
-        <div ><button className='DocButton'>Appointment</button></div>
+        <div className='close' onClick={()=> setOpen('')}><img src={close} alt="" /></div>
+        <div ><button className='DocButton' onClick={()=> setActive('waiting')}>Appointment</button></div>
         <div className='TeamLeafDate'><img src={TaemOfLeaf} alt="" /></div>
         <div className='modalBakDAte'><img src={bgLeaf} alt="" /></div>
     </div>

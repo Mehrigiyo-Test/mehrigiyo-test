@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./TopDoctors.scss";
-// import imgSave from "../../images/doctorSave.svg";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
-const TopDoctors = ({ text1, text2, img }) => {
+
+const TopDoctors = ({ text1, text2, img, setopen, func , id , setactive}) => {
   const [clickable, setclickable] = useState(0);
+  const gg = () =>{
+    setopen('open')
+    setactive('active')
+    func(id)
+  }
   return (
     <div className="topDoctors">
       <div className="topDoctors__img">
@@ -19,7 +24,7 @@ const TopDoctors = ({ text1, text2, img }) => {
       </div>
       <p className="topDoctors__paragraph1">{text1}</p>
       <p className="topDoctors__paragraph2">{text2}</p>
-      <button className="topDoctors__btn">Appoinment</button>
+      <button className="topDoctors__btn" onClick={gg}>Appoinment</button>
     </div>
   );
 };

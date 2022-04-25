@@ -4,19 +4,18 @@ import LinearProgress from '@mui/material/LinearProgress';
 import Progress from "./../../images/Progress.gif"
 
 function Waiting() {
-   const [progress, setProgress] = React.useState(0);
+   const [progress, setProgress] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
         if (oldProgress === 100) {
           return 0;
         }
-        const diff = Math.random() * 10;
+        const diff = 20;
         return Math.min(oldProgress + diff, 100);
       });
     }, 500);
-
     return () => {
       clearInterval(timer);
     };
