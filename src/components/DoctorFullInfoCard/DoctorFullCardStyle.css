@@ -1,0 +1,161 @@
+.DocFuulINWR{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FAFBFC;
+    padding-top: 180px;
+    padding-left: 180px;
+    padding-bottom: 180px;
+    position: relative;
+}
+.centerInfo{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 50px;
+}
+.BigCircleIMg{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #DFE5EE;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    background-size: cover;
+    background: linear-gradient(360deg, #2A2A2A 0%, rgba(165, 165, 165, 0.74) 54.17%, rgba(139, 139, 139, 0) 100%);
+}
+.BigCircleIMg img{
+    /* border-radius: 50%; */
+    /* width: 100%; */
+    height: 100%;
+    background-size: cover;
+    background: linear-gradient(360deg, #2A2A2A 0%, rgba(97, 97, 97, 0.739583) 54.17%, rgba(51, 50, 50, 0) 100%);
+}
+.selected{
+    padding: 5px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.DoctorName{
+    display: flex;
+    gap: 100px;
+}
+.DoctorName h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+}
+.DoctorPract{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 170px;
+    justify-content: center;
+    height: 90px;
+    align-items: center;
+    position: relative;
+}
+.twoHundred{
+    color: #FFC86D;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+}
+.five{
+    color: #53B175;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+}
+.DocInfCards{
+    display: flex;
+    gap: 25px;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 30px;
+}
+.DocPractInf{
+    background-color: #F1F3F6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 562px;
+    padding-right: 30px;
+}
+.DocPractInf h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.DocButton{
+    background-color: #53B175;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.close{
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.modalBak{
+    opacity: 0.05;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.modalBak img{
+    width: 100%;
+}
+.TeamLeaf{
+    position: absolute;
+    top: 50px;
+    left: 00px;
+}
+.doctorPractImg{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.DoctorPractINfoicon{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}

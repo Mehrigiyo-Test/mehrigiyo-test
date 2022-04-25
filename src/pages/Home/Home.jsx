@@ -21,7 +21,7 @@ import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
-import leaves from '../../images/Groupffff.png';
+import leaves from '../../images/Groupffff.png';  
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -34,7 +34,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
-import Modal from "../../components/Modals/Modal/Modal";
 
 function Home() {
 
@@ -218,6 +217,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <OnlineRecommend />
       <Asked />
       <Send overflow={'hidden'} img3={imginfo.img3} />

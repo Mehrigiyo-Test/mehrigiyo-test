@@ -1,0 +1,52 @@
+.progrWr{
+    position: relative;
+    width: 432px;
+    height: 230px;
+    background: rgb(239,237,246);
+background: linear-gradient(45deg, rgba(239,237,246,1) 0%, rgba(236,255,253,1) 61%, rgba(255,3,3,0.04555325548188027) 100%);
+
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 20PX;
+}
+.progrWr h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    width: 323px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.progstyl{
+    border-radius: 20px;
+    width: 280px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.progAnime{
+    height: 160px;
+    width: 100%;
+}
+.pregress{
+    position: absolute;
+    width: 280px;
+    top:12px;
+    overflow: hidden;
+}
+.AnimeWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9px;
+    height: 28px;
+   
+}

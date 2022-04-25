@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { Link } from "react-router-dom";
 // import "./styles.css";
 
 // import required modules
@@ -22,6 +22,7 @@ import imgLeaf from "../../images/leaf.png";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 
 import "./OnlineDoctor.scss";
+
 function OnlineDoctor() {
   return (
     <>
@@ -33,7 +34,7 @@ function OnlineDoctor() {
         <div className="imgLeaf"><img src={imgLeaf} /></div>
         <div className="sliderTop">
           <p className="sliderTopText">Top Shifokorlar</p>
-          <GlobalBtn text="Batafsil" width="144px" />
+          <Link to="/OnlineDoctor/BigCompListDoctor"><GlobalBtn style={{textDecoration: "none"}}  text="Batafsil" width="144px" /></Link>
         </div>
         <Swiper
           slidesPerView={5.7}
@@ -114,6 +115,7 @@ function OnlineDoctor() {
       </div> */}
       <ApplicationSec />
       <GlobalSponsors/>
+      
     </>
   );
 }
