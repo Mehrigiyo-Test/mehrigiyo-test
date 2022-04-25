@@ -1,8 +1,8 @@
 import React from "react";
 import "./send.css";
 import animation from "../../../images/Contact_Animations.png";
-// import { TextField } from "@mui/material";
 import {IoMdSend} from 'react-icons/io';
+import Dropdown from "../../Global_Dropdown/Dropdown";
 
 
 
@@ -35,13 +35,7 @@ export default function Send({ top, img1, text, headtext, img2, img3, overflow }
             <input className="name" type="text" />
           </div>
           <div className="input-div">
-            <h5 className="input-h5">Telefon raqam</h5>
-            <select>
-              <option className="uz">uz</option>
-              <option className="ru">ru</option>
-              <option className="en">en</option>
-            </select>
-            <input className="name" type="text" />
+            <Dropdown />
           </div>
           <div className="input-div">
             <h5 className="input-h5">Sizning savolingiz</h5>

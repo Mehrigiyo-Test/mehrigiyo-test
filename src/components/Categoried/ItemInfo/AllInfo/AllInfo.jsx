@@ -50,8 +50,8 @@ export default function AllInfo({ heading, stars, price }) {
 
       <div className="accordion2">
         <div className="section-1" onClick={handleChange}>
-          <div className="text">
-            <span className="accordion-txt2">Mahsulot haqida</span>
+          <div className="text-2">
+            <span className="accordion-txt-2">Mahsulot haqida</span>
           </div>
           {!show ? (
             <div className="plus">
@@ -74,8 +74,8 @@ export default function AllInfo({ heading, stars, price }) {
 
       <div className="accordion2">
         <div className="section-1" onClick={handleChange2}>
-          <div className="text">
-            <span className="accordion-txt2">Og’irligi</span>
+          <div className="text-3">
+            <span className="accordion-txt2-2">Og’irligi</span>
           </div>
           {!show2 ? (
             <div className="plus">
