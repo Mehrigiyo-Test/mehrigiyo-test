@@ -16,8 +16,11 @@ import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
 import Basket from './pages/Basket/Basket';
 import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
 import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
+<<<<<<< HEAD
+=======
 import BigCompListDoctor from './pages/OnlineDoctor/List/BigCompListDoctor'
 // import ItemInfo from './components/Categoried/ItemInfo/ItemInfo';
+>>>>>>> 200a520c457a01b8d53c19b8a62cfa789757f4cc
 
 function App() {
 
