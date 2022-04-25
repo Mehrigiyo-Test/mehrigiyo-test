@@ -1,7 +1,7 @@
 .DocFuulINWR{
     width: 1440px;
     margin: 0 auto;
-    background-color: aqua;
+    background-color: #FAFBFC;
     padding-top: 180px;
     padding-left: 180px;
     padding-bottom: 180px;
@@ -62,6 +62,7 @@
     justify-content: center;
     height: 90px;
     align-items: center;
+    position: relative;
 }
 .twoHundred{
     color: #FFC86D;
@@ -107,6 +108,7 @@
     border: none;
     color: white;
     padding: 15px 32px;
+    z-index: 1;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -146,4 +148,14 @@
     position: absolute;
     top: 50px;
     left: 00px;
+}
+.doctorPractImg{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.DoctorPractINfoicon{
+    position: absolute;
+    top: 5px;
+    right: 8px;
 }

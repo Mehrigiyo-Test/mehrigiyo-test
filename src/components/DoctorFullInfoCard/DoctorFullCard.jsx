@@ -7,6 +7,8 @@ import stars from "./../../images/stars.png"
 import close from "./../../images/Close.png"
 import barg from "./../../images/leafAnother.png"
 import TaemOfLeaf from "./../../images/TeamOfLeaf.png"
+import kidney from "./../../images/kidney5.png"
+import info from "./../../images/Vector1.png"
 
 function DoctorFullCard() {
   return (
@@ -38,7 +40,8 @@ function DoctorFullCard() {
                 </div>
                 <div className='DoctorPract'>
                     <div>
-                    <div><img src="" alt="" /></div>
+                        <div className='DoctorPractINfoicon'><img src={info} alt="" /></div>
+                    <div className='doctorPractImg'><img src={kidney} alt="" /></div>
                     <p>Kardiolog</p>
                     </div>
                 </div>

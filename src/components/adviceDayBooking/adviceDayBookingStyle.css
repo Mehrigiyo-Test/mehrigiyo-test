@@ -1,0 +1,54 @@
+.SalectDayBgWrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FAFBFC;
+    padding-left: 187px;
+    padding-top: 140px;
+    padding-bottom: 200px;
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.advHead{
+    display: flex;
+    
+    align-items: center;
+    gap: 385px;
+}
+.adviceDate{
+    display: flex;
+    gap: 10px;
+
+}
+.adviceDate p{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.Datestilnat{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 25px;
+}
+.Timestil{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 1300px; */
+    gap: 15px;
+}
+.TeamLeafDate{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 0;
+}
+.modalBakDAte{
+    position: absolute;
+    bottom: -90px;
+    left: -80px;
+    opacity: 0.05;
+    z-index: 0;
+}

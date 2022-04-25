@@ -11,6 +11,10 @@ import TopDoctors from '../../../components/TopDoctors/TopDoctors'
 import img1 from "./../../../images/doctorBahrom.svg";
 import Bak from "./../../../images/send_background.png"
 import DoctorFullCard from '../../../components/DoctorFullInfoCard/DoctorFullCard'
+import AdviceDayBooking from '../../../components/adviceDayBooking/adviceDayBooking'
+import Waiting from "./../../../components/waiting/waiting.jsx"
+import MeetingSucceed from '../../../components/waiting/MeetingSucceed/MeetingSucceed'
+import DoctorTtypeInfo from '../../../components/waiting/DoctorTtypeInfo/DoctorTtypeInfo'
 
 function BigCompListDoctor() {
   const cate = [
@@ -176,6 +180,10 @@ function BigCompListDoctor() {
 
     </div>
         <div><DoctorFullCard/></div>
+        <div className='AdvDay'><AdviceDayBooking/></div>
+        <div className='GlobalWrapper'><Waiting/></div>
+        <div className='AdvDay'><MeetingSucceed/></div>
+        <div className='AdvDay GlobalWrapper'><DoctorTtypeInfo/></div>
     </>
   )
 }
