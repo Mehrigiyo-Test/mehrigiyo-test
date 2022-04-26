@@ -1,0 +1,51 @@
+.App-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 205px;
+  margin-bottom: 165px;
+}
+
+.App-sec__text {
+  width: 60%;
+  padding-top: 100px;
+}
+
+.App-sec__text__paragraphOne {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  width: 654px;
+}
+
+.App-sec__text__paragraphOne span {
+  color: #53B175;
+}
+
+.App-sec__text__paragraphTwo {
+  color: grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 54px;
+}
+
+.App-sec__text__paragraphThree {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.App-sec__text__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  gap: 28px;
+}
+
+.App-sec__img {
+  width: 40%;
+}
+/*# sourceMappingURL=ApplicationSec.css.map */

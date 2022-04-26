@@ -1,0 +1,175 @@
+.Products {
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 98px;
+  margin-top: 234px;
+}
+
+.Products .Products-content .Products-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Products .Products-content .Products-top .Products-top-h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #282828;
+}
+
+.Products .Products-content .Products-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.Products .Products-content .Products-link .Products-link-p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b0b7c3;
+}
+
+.Products .Products-content .Products-link .Products-link-p-active {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #53b175;
+}
+
+.Products .Products-content .Products-medicine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine {
+  height: 378px;
+  width: 240px;
+  border-radius: 18px;
+  border: 1px solid #e2e2e2;
+  -webkit-box-shadow: 0px 6px 12px 0px #00000000;
+          box-shadow: 0px 6px 12px 0px #00000000;
+  padding: 13px;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .aspirine-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .aspirine-images .aspirine1 {
+  width: 175px;
+  height: 175px;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .aspirine-images .aspirine-like {
+  height: 19.601539611816406px;
+  width: 22.8007755279541px;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-h2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #181725;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #7c7c7c;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-price-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-price-btn .medicine-price .none-price {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #808080;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-price-btn .medicine-price .active-price {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #53b175;
+}
+
+.Products .Products-content .Products-medicine .Products-aspirine .medicine-price-btn .medicine-btn {
+  height: 45.66844940185547px;
+  width: 45.66999816894531px;
+  border-radius: 17px;
+  border: none;
+  background: #53b175;
+  color: #ffffff;
+}
+
+.Products .Products-content .Products-medicine .Products-more {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.Products .Products-content .Products-btn {
+  height: 44px;
+  width: 320px;
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 13px, 26px, 13px, 26px;
+  background: #53b1751a;
+  border: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #181725;
+}
+/*# sourceMappingURL=ProductsCard.css.map */

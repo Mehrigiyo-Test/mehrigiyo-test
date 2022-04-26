@@ -15,6 +15,7 @@ import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
+import InfoBanner from "../../components/InfoBanner/InfoBanner"
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 import Global from "../../components/GlobalBtn/GlobalBtn";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
@@ -116,6 +117,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
+        <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
           <div>

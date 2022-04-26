@@ -1,0 +1,50 @@
+.milkTeaContainer {
+  color: #FFFFFF;
+  padding: 0 95px;
+  margin-bottom: 124px;
+}
+
+.milkTeaContainer .milkBox {
+  position: relative;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(274.36deg, #53B175 0.52%, #53B175 21.68%, #63CB89 96.53%), #53B175;
+  -webkit-box-shadow: 0px 15px 60px #0000001a, 0px 15px 60px #0000001a;
+          box-shadow: 0px 15px 60px #0000001a, 0px 15px 60px #0000001a;
+  border-radius: 25px;
+}
+
+.milkTeaContainer .text {
+  padding-left: 32px;
+}
+
+.milkTeaContainer .headText {
+  margin-top: 25px;
+}
+
+.milkTeaContainer p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.milkTeaContainer h3 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.milkTeaContainer .leftImg img {
+  position: relative;
+  top: 33px;
+}
+
+.milkTeaContainer .rightImg img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=MilkTea.css.map */

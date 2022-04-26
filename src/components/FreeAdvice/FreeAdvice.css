@@ -1,0 +1,57 @@
+.adviceDoctor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 46px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.adviceDoctor .adviceText {
+  margin: 46px 97px 116px 66px;
+}
+
+.adviceDoctor .adviceText .headText {
+  font-size: 12px;
+  color: #505050;
+  margin-bottom: 20px;
+}
+
+.adviceDoctor .adviceText span {
+  color: #69fc8e;
+}
+
+.adviceDoctor .adviceText h3 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.adviceDoctor .adviceText .infoText {
+  color: #B0B7C3;
+  margin-bottom: 31px;
+}
+
+.adviceDoctor .btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.adviceDoctor .btnContainer img {
+  cursor: pointer;
+}
+
+.adviceDoctor .adviceImg .ovalBig {
+  position: relative;
+  top: 120px;
+  left: 60px;
+}
+
+.adviceDoctor .adviceImg .ovalSmall {
+  position: relative;
+  bottom: 75px;
+  right: 65px;
+}
+/*# sourceMappingURL=FreeAdvice.css.map */
