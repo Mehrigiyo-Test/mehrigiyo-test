@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import {React, useState} from "react";
 import "./HomeStyle.css";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
@@ -11,12 +11,18 @@ import BannerForm from "../../components/bannerForm/bannerForm";
 import BannerInputIcon from "../../images/BannerInputIcon.png";
 import BannerButtonIcon from "../../images/lupa.png";
 
-import Bannerinput from "../../components/bannerInput/bannerInput";
+import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
 import InfoBanner from "../../components/InfoBanner/InfoBanner"
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
+import Global from "../../components/GlobalBtn/GlobalBtn";
+import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
+
+import Asked from "../../components/questions/asked/asked";
+import Send from "../../components/questions/send/send";
+import leaves from '../../images/Groupffff.png';  
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,6 +37,11 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 function Home() {
+
+  const imginfo = {img3: <img src={leaves} />}
+
+  const [ModalACtive, setModalActive] = useState(true)
+
   // const slide = [
   //   {
   //     img: sliderEx,
@@ -75,12 +86,14 @@ function Home() {
   //     category: "#Ziravorlar",
   //     time: "4 min oldin",
   //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //     info:   "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
   //   },
   // ];
 
   return (
     <>
+    <div className="lightGreenItem"></div>
+    <div className="greenItem"></div>
       <div className="pageStyle1">
         <Banner />
         <div className="banner-input bc-color">
@@ -91,33 +104,38 @@ function Home() {
             width="613px"
             value="helloo world"
             padding="12px 22px"
+            marginLeft="130px"
             img={BannerInputIcon}
             img2={BannerButtonIcon}
           />
         </div>
 
-        <Bannerinput />
+        <BannerPhoto />
         <Bannercard />
         <Infosection />
+        
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
         <InfoBanner />
         <ApplicationSec />
-        <div className="GlobalWrapper ">
+        <div className="SliderWrapper">
           <div>
             <div className="nostyle">
-              <h3>So'nggi yangiliklar</h3>
+              <h3 className="myH3">So'nggi yangiliklar</h3>
+              <Global text="Batafsil" width="144px" />
             </div>
             <div>
               <nav className="navigate3">
-                <ul>
-                  <li style={{ color: "#53B175" }}>Hammasi</li>
-                  <li>Mahsulotlar haqida</li>
-                  <li>Shifokorlar tavsiya qiladilar</li>
-                  <li>Ozish</li>
-                  <li>Salomatlik</li>
-                  <li>Detoks</li>
+                <ul className="Myul">
+                  <li className="Myli" style={{ color: "#53B175" }}>
+                    Hammasi
+                  </li>
+                  <li className="Myli">Mahsulotlar haqida</li>
+                  <li className="Myli">Shifokorlar tavsiya qiladilar</li>
+                  <li className="Myli">Ozish</li>
+                  <li className="Myli">Salomatlik</li>
+                  <li className="Myli">Detoks</li>
                 </ul>
               </nav>
             </div>
@@ -135,7 +153,7 @@ function Home() {
               />
             ))} */}
             <Swiper
-              slidesPerView={3.6}
+              slidesPerView={3.7}
               spaceBetween={30}
               pagination={{
                 clickable: true,
@@ -201,8 +219,15 @@ function Home() {
           </div>
         </div>
       </div>
+
       <OnlineRecommend />
-      {/* <Infosection title="Tez to'lov" text="100% xavfsiz to'lov"/> */}
+      <Asked />
+      <Send overflow={'hidden'} img3={imginfo.img3} />
+      <GlobalSponsors/>
+      {/* <button onClick={() => setModalActive(true)}>click me</button>
+      <Modal active={ModalACtive} setActive={setModalActive}>
+            
+      </Modal> */}
     </>
   );
 }

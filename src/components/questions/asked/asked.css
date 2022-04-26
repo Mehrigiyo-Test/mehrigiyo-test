@@ -7,8 +7,10 @@
   src: url(../../../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 .asked-wrapper {
+  padding-top: 130px;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: center;
 }
 .accordion{
     margin-top: 100px;
@@ -41,6 +43,13 @@ b{
   width: 600px;
   padding: 10px 40px 20px 40px;
 }
+<<<<<<< HEAD
+
+=======
+/* .asked-background{
+  
+} */
+>>>>>>> 10a45680ccaaff57062503f7d0ffc55a1b32df18
 .asked-heading {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -73,4 +82,10 @@ b{
 }
 .icon-right {
   color: #53b175;
+}
+.leaf{
+  opacity: 5%;
+  position: absolute;
+  bottom: 100px;
+  right: -0px;
 }

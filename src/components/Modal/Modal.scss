@@ -1,0 +1,28 @@
+.Modal{
+    max-height: 90vh;
+    border-radius: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: red;
+}
+.Modal-content{
+    background-color: #fff;
+    position: relative;
+    pointer-events: all;
+
+}
+// .Modal-content::-webkit-scrollbar-thumb{
+//     background-color: red;
+// }
+.ModalBg{
+    position: fixed;
+    opacity: 0.25;
+    z-index: 40;
+    background-color: black;
+    inset: 0;
+}

@@ -8,18 +8,24 @@ import Products from './pages/Products/Products';
 import AboutUs from './pages/AboutUs/AboutUs';
 import News from './pages/News/News';
 import Help from './pages/Help/Help';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Asked from './components/questions/asked/asked';
-import Send from './components/questions/send/send';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigate2 from './components/nav2/navigate2';
 import GlobalCallSms from './components/Global/GlobalCallSms';
+import MexrigiyoPresentation from './components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation';
+import BeingHealthy from './components/NewPageComp/BeingHealthy/BeingHealthy';
+import Basket from './pages/Basket/Basket';
+import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
+import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
+import BigCompListDoctor from './pages/OnlineDoctor/List/BigCompListDoctor'
+// import ItemInfo from './components/Categoried/ItemInfo/ItemInfo';
 
 function App() {
+
   return (
     <>
     <Router>
       <Navigate/>
-      <Navigate2/>
+      <Navigate2 />
       <GlobalCallSms/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -28,9 +34,13 @@ function App() {
         <Route path='/aboutUs' element={<AboutUs/>}/>
         <Route path='/news' element={<News/>}/>
         <Route path='/help' element={<Help/>}/>
+        <Route path='/news/MexrigiyoPresentation' element={<MexrigiyoPresentation/>}/>
+        <Route path='/news/BeingHealthy' element={<BeingHealthy/>}/>
+        <Route path='/basket' element={<Basket/>}/>
+        <Route path='/favoriteDoctors' element={<FavoriteDoctors/>}/>
+        <Route path='/favoriteDrug' element={<FavoriteDrug/>}/>
+        <Route path='/OnlineDoctor/BigCompListDoctor' element={<BigCompListDoctor/>}/>
       </Routes>
-      <Asked />
-      <Send />
       <Footer/>
     </Router>
     </>

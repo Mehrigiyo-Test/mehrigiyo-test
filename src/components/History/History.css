@@ -1,0 +1,106 @@
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 150px;
+}
+
+.history-title{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.history-title__title{
+    font-weight: 800;
+    font-size: 30px;
+    color: #53B175;
+}
+
+.history-title__text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #B0B7C3;
+}
+
+.history-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 390px;
+    position: relative;
+}
+
+.history-bottom__titles{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.history-bottom__titles__top__title{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.history-bottom__titles__top__title__title{
+    font-weight: 700;
+    font-size: 20px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #53B175;
+}
+
+.history-bottom__texts{
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+    height: 185px;
+}
+
+.history-bottom__texts__text{
+    font-weight: 500;
+    font-size: 20px;
+    color: #B0B7C3;
+    padding-left: 36px;
+    line-height: 18px;
+}
+
+.tt5{
+    padding-left: 25px;
+}
+.tt6{
+    padding-left: 15px;
+}
+.tt7{
+    padding-left: 1px;
+}
+
+.history-bottom__card{
+    background-color: #fff;
+    box-shadow: 0px 15px 60px rgba(22, 22, 22, 0.1);
+    border-radius: 15px;
+    padding: 30px 250px 150px 30px;
+    position: relative;
+    z-index: 6;
+}
+
+.history-bottom__card__text{
+    font-weight: 400;
+    color: #18191F;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.bottom-line{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.bc-leaf{
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
+    right: -28px;
+    top: 90px;
+}

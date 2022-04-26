@@ -35,7 +35,7 @@ function Navigate() {
         </nav>
 
         <div className='navigate2'>
-         {/* <Dropdown/> */}
+         <Dropdown/>
           <div className='location'>
             <p className='locat'>
               Toshkent shahar

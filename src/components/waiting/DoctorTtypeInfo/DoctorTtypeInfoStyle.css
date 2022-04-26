@@ -1,0 +1,32 @@
+.TypeInfoWr{
+    background-color: #FFFFFF;
+    width: 1240px;
+}
+.TypeName{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    border-bottom: 1px solid #E2E2E2;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.TypeClose{
+    top: 20px;
+    right: 30px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.TypeINfoText{
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+}

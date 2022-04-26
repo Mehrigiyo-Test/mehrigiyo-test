@@ -1,0 +1,29 @@
+.input input {
+    background-color: #ECEEF2;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    z-index: 10;
+    padding: 10px 5px 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-image: url('./../../../images/Search.png');
+    background-repeat: no-repeat;
+    background-position: 10px 13px;
+    outline: none;
+    color: #000;
+    width: 142px;
+    transition: 1s;
+    cursor: pointer;
+}
+.input input::placeholder{
+    color: gray;
+}
+.input input:focus{
+    width: 400px;
+    transform: translateX(-10px);
+    transition: 1s;
+    position: absolute;
+    top: 90px;
+    right: 0; 
+}

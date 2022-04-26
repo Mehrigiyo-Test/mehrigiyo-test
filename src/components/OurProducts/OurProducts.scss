@@ -1,0 +1,22 @@
+.OurProducts {
+    display: flex;
+    align-items: center;
+    padding: 17px 30px 14px 21px;
+    // height: 60px;
+    border-radius: 18px;
+    gap: 22px;
+    cursor: pointer;
+    
+    &__text {
+        font-weight: 600;
+        line-height: 24px;
+        font-size: 16px;
+        height: 22px;
+    }
+}
+.products__wrapper {
+    display: flex;
+    flex-flow: wrap;
+    gap: 15px;
+
+}
