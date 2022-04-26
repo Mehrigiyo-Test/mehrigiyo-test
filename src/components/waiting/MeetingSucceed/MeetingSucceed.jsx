@@ -3,19 +3,19 @@ import "./MeetingSucceedStyle.css"
 import succes from "./../../../images/Succes.png"
 import close from "./../../../images/Close.png"
 
-function MeetingSucceed() {
+function MeetingSucceed({setOpen,setActive}) {
   return (
     <>
     <div className='SuccessWr'>
     <div className='succes'>
         <div><img src={succes} alt="" /></div>
-        <div>
+        <div >
             <h5>Muvaffaqiyatli uchrashuv belgilandi</h5>
             <p>Iltimos, “Upcoming Schedule” jadvalingizni tekshirib turing</p>
         </div>
-        <div className='SuccesClose'><img src={close} alt="" /></div>
+        <div className='SuccesClose' onClick={()=> setOpen(false)}><img src={close} alt="" /></div>
     </div>
-    <div className='ConsultButton'> Konsultatsiya sahifasiga o’tish</div>
+    <div className='ConsultButton' onClick={()=> setActive('info')}> Konsultatsiya sahifasiga o’tish</div>
     </div>
     </>
   )

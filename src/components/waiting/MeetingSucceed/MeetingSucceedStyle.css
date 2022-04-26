@@ -1,20 +1,21 @@
 .SuccessWr{
     margin: 0 auto;
     box-shadow: BLACK;
+    padding: 20px;
     
 }
 .succes{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+   background-color: #fff;
+   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
     gap: 10px;
     width: 496px;
-    background-color: WHITE;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 100px;
     position: relative;
-    border-radius: 13px;
+    border-radius: 25px;
 }
 .succes h5{
     font-family: 'Poppins';
@@ -43,4 +44,11 @@
     width: 496px;
     background-color: #E9F4EE;
     border-radius: 13px;
+   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+   opacity: 0.5;
+
+}
+.ConsultButton:hover{
+    cursor: pointer;
+    opacity: 1;
 }

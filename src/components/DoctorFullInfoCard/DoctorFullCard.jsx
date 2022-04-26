@@ -1,6 +1,6 @@
 import React from 'react'
 import "./DoctorFullCardStyle.css"
-import madrid from "./../../../src/images/madrid2.jpg"
+// import madrid from "./../../../src/images/madrid2.jpg"
 import selected from "./../../images/BlIzbranniy.png"
 import share from "./../../images/BlShare.png"
 import stars from "./../../images/stars.png"
@@ -10,9 +10,11 @@ import TaemOfLeaf from "./../../images/TeamOfLeaf.png"
 import kidney from "./../../images/kidney5.png"
 import info from "./../../images/Vector1.png"
 
-function DoctorFullCard({setOpen, data , props, btn, active}) {
-    const gg = ()=>
-    setOpen('')
+function DoctorFullCard({setOpen, data , props, btn, active, job}) {
+    const gg = ()=>{
+
+        setOpen('')
+    }
   return (
     <>
     <div className='DocFuulINWR'>
@@ -45,7 +47,7 @@ function DoctorFullCard({setOpen, data , props, btn, active}) {
                         <div>
                             <div className='DoctorPractINfoicon'><img src={info} alt="" /></div>
                         <div className='doctorPractImg'><img src={kidney} alt="" /></div>
-                        <p>Kardiolog</p>
+                        <p>{a.job}</p>
                         </div>
                     </div>
                     </div>

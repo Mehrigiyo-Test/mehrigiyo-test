@@ -8,7 +8,6 @@ import reload from "./../../../images/reload.png";
 import Checkbox from "./Checkbox/Checkbox";
 import down from "./../../../images/Down.png";
 import TopDoctors from "../../../components/TopDoctors/TopDoctors";
-import img1 from "./../../../images/doctorBahrom.svg";
 import Bak from "./../../../images/send_background.png";
 import DoctorFullCard from "../../../components/DoctorFullInfoCard/DoctorFullCard";
 import AdviceDayBooking from "../../../components/adviceDayBooking/adviceDayBooking";
@@ -16,13 +15,13 @@ import Waiting from "./../../../components/waiting/waiting.jsx";
 import MeetingSucceed from "../../../components/waiting/MeetingSucceed/MeetingSucceed";
 import DoctorTtypeInfo from "../../../components/waiting/DoctorTtypeInfo/DoctorTtypeInfo";
 import Modal from "../../../components/Modal";
-import madrid from "./../../../images/madrid2.jpg";
+import img1 from "../../../images/doctorBahrom.svg"
 
 function BigCompListDoctor() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("active");
   const [num, setNum] = useState("");
-  const cate = [
+  const cate = [ 
     {
       name: "Hammasi",
     },
@@ -45,6 +44,7 @@ function BigCompListDoctor() {
       name: "Dermotolog",
     },
   ];
+
   const doctors = [
     {
       id: 1,
@@ -52,6 +52,7 @@ function BigCompListDoctor() {
       text1: "A. Bahrom",
       text2: "⭐️ 4.5 (135 reviews)",
       tajriba: "5 yil",
+      job: "Nevropatolog",
       setOpen,
       setActive,
     },
@@ -61,6 +62,7 @@ function BigCompListDoctor() {
       text1: "A. Ibrohim",
       text2: "⭐️ 4.5 (135 reviews)",
       tajriba: "45 yil",
+      job: "Genetika",
       setOpen,
       setActive,
     },
@@ -69,6 +71,7 @@ function BigCompListDoctor() {
       img: img1,
       text1: "A. Xurshid",
       text2: "⭐️ 4.5 (135 reviews)",
+      job: "Jarroh",
       setOpen,
       setActive,
     },
@@ -77,6 +80,7 @@ function BigCompListDoctor() {
       img: img1,
       text1: "A. Abdulaziz",
       text2: "⭐️ 4.5 (135 reviews)",
+      job: "Kardiolog",
       setOpen,
       setActive,
     },
@@ -89,11 +93,11 @@ function BigCompListDoctor() {
   const btn = () => {
     setActive("hh");
   };
-  const set = () =>{
-    setTimeout(()=>{
-      <Waiting/>
-    },500)
-  }
+  const set = () => {
+    setTimeout(() => {
+      <Waiting />;
+    }, 500);
+  };
   return (
     <>
       <div className="GlobalWrapper Onlinewr">
@@ -189,6 +193,7 @@ function BigCompListDoctor() {
                   img={a.img}
                   text1={a.text1}
                   text2={a.text2}
+                  job={a.job}
                   setopen={a.setOpen}
                   func={func}
                   setactive={a.setActive}
@@ -201,13 +206,7 @@ function BigCompListDoctor() {
           <img className="bak" src={Bak} alt="" />
         </div>
       </div>
-      <div>
-      
 
-        <MeetingSucceed />
-
-        <DoctorTtypeInfo />
-      </div>
       {open ? (
         <div>
           {active === "active" ? (
@@ -223,8 +222,30 @@ function BigCompListDoctor() {
               }
             />
           ) : active === "hh" ? (
-            <Modal children={<AdviceDayBooking setOpen={setOpen} setActive={setActive} set={set} />} />
-          )  : active === 'waiting' ? <Modal children={<Waiting/>}/> : null}
+            <Modal
+              children={
+                <AdviceDayBooking
+                  setOpen={setOpen}
+                  setActive={setActive}
+                  set={set}
+                />
+              }
+            />
+          ) : active === "waiting" ? (
+            <Modal children={<Waiting />} />
+          ) : active === "meeting" ? (
+            <Modal
+              children={
+                <MeetingSucceed setOpen={setOpen} setActive={setActive} />
+              }
+            />
+          ) : active === "info" ? (
+            <Modal
+              children={
+                <DoctorTtypeInfo setOpen={setOpen} props={num} data={doctors} />
+              }
+            />
+          ) : null}
         </div>
       ) : null}
     </>
