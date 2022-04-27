@@ -26,4 +26,7 @@
     position: absolute;
     top: 90px;
     right: 0; 
+    background-color: transparent;
+    border-bottom: 2px solid #ECECF1;
+    border-radius: 0;
 }

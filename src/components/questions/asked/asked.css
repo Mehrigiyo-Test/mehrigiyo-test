@@ -27,13 +27,23 @@
   align-items: center;
   width: 700px;
   padding: 26px 0;
+  
 }
 .accordion-txt{
-    font-family: "Montserrat-Medium";
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 20px;
 }
 b{
     color: #53b175;
-    font-weight: 500;
+    font-family: 'Poppins';
+    font-style: normal;
+    /* font-weight: 00; */
+    font-size: 20px;
+    line-height: 36px;
 }
 .more-text,
 .more-text2,
@@ -42,14 +52,12 @@ b{
 .more-text5 {
   width: 600px;
   padding: 10px 40px 20px 40px;
+  transition: 5s;
 }
-<<<<<<< HEAD
 
-=======
 /* .asked-background{
   
 } */
->>>>>>> 10a45680ccaaff57062503f7d0ffc55a1b32df18
 .asked-heading {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -88,4 +96,11 @@ b{
   position: absolute;
   bottom: 100px;
   right: -0px;
+}
+.section-text3{
+  transition: 5s;
+}
+.text{
+  display: flex;
+  align-items: center;
 }
