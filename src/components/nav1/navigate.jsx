@@ -64,22 +64,32 @@ function Navigate() {
           </div>
         </div>
       </div>
-     {show ?  <section>
-        {modalACtive === "Login" ? (
-          <Modal
-            children={
-              <Login
-                setModalActive={setModalActive}
-                tab={tab}
-                setTab={setTab}
-                setShow={setShow}
-              />
-            }
-          />
-        ) : modalACtive === "Verification" ? (
-          <Modal children={<Verification  setModalActive={setModalActive} setShoww={setShow} setTab={setTab}/>} />
-        ) : null}
-      </section> : null}
+      {show ? (
+        <section>
+          {modalACtive === "Login" ? (
+            <Modal
+              children={
+                <Login
+                  setModalActive={setModalActive}
+                  tab={tab}
+                  setTab={setTab}
+                  setShow={setShow}
+                />
+              }
+            />
+          ) : modalACtive === "Verification" ? (
+            <Modal
+              children={
+                <Verification
+                  setModalActive={setModalActive}
+                  setShoww={setShow}
+                  setTab={setTab}
+                />
+              }
+            />
+          ) : null}
+        </section>
+      ) : null}
       {/* <ModalLogin active={ModalACtive} setActive={setModalActive}/> */}
     </div>
   );
