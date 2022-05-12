@@ -85,11 +85,15 @@ const Navigate2 = () => {
         </div>
 
         <div className="nav-icons">
-          <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
-
-          <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
-
-          <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+          <Link to={"/favoriteDoctors"}>
+            <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
+          </Link>
+          <Link to={"/favoriteDrug"}>
+            <img className="nav-icons__icon" src={NavIcon2} alt="icon" />    
+          </Link>
+          <Link to={"/basket"}>
+            <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+          </Link>
         </div>
       </div>
     </div>
