@@ -50,18 +50,19 @@ function Navigate() {
             <Dropdown />
           </div>
           <div className="location">
-            <p className="locat">Toshkent shahar</p>
+            <p className="locat">Buxoro shahar</p>
             <div className="lokatsa">
               <img className="locImg" src={lokatsa} />
             </div>
           </div>
-          <div className="login" onClick={() => setShow(true)}>
-            <p className="locat">Kirish</p>
+          {/* <div className="login" onClick={() => setShow(true)}> */}
+           {/* <a href="http://localhost:3001/">  */}
+           <p className="locat">Kirish</p>
             <div className="profil">
-              {" "}
               <img className="locImg" src={profile} />
             </div>
-          </div>
+            {/* </a> */}
+          {/* </div> */}
         </div>
       </div>
      {show ?  <section>
