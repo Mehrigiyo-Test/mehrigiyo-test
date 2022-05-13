@@ -3,7 +3,6 @@ import { NavLink, Link,} from 'react-router-dom';
 import { useState } from 'react';
 
 export default function Dropdown({ title, link, items }) {
-    console.log(link);
     const [open, setOpen] = useState(false);
 
     return (

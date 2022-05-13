@@ -67,14 +67,14 @@ export default function BuyMehrigiyo() {
                 <h3>Mehrigiyodan xarid qiling</h3>
                 <div className="boughtBox">
                     {buyinfo.map((item) => (
-                        <div className="buyInfo">
+                        <div className="buyInfo" key={item.title}>
                             <p>{item.title}</p>
-                            <img src={item.img} />
+                            <img src={item.img} alt=""/>
                         </div>
                     ))}
                 </div>
             </div>
-            <img className='background' src={Background} />
+            <img className='background' src={Background} alt="" />
         </div>
     )
 }

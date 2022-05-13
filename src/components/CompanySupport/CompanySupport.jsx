@@ -36,7 +36,7 @@ const Companysupport = () => {
       <div className="support-cards">
         {arr.map((item, index) => (
           <div key={index} className="support-cards__card">
-              <span><img src={item.img}/></span>
+              <span><img src={item.img} alt=""/></span>
               <p className="support-cards__card__text">{item.text}</p>
           </div>
         ))}

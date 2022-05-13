@@ -10,7 +10,7 @@ function DoctorTtypeInfo({ setOpen, props, data }) {
         {data
           .filter((b) => b.id === props)
           .map((a) => (
-            <div>
+            <div key={a}>
               <div className="TypeName">
                 <div>
                   <img src={Shape} alt="" />
