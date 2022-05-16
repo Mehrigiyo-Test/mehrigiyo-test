@@ -1,12 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../images/Mehrigiyo_logo.png";
-// import { useNavigate } from 'react-router-dom';
 import NavIcon1 from "../../images/nav-icon1.png";
 import NavIcon2 from "../../images/nav-icon2.png";
 import NavIcon3 from "../../images/nav-icon3.png";
-import { Link } from "react-router-dom";
 import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
+
 const Navigate2 = () => {
   const navinfo = [
     {

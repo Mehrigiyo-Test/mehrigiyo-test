@@ -9,16 +9,12 @@
         justify-content: space-between;
         align-items: center;
 
-        // gap: 26px;
         .nav_Head {
             list-style: none;
             text-decoration: none;
         }
     }
 
-    // .bg {
-
-    // }
     .gb {
         .nav_Link {
             position: relative;
@@ -62,18 +58,6 @@
                 width: 22px;
             }
         }
-
-        // .nav_Link::after {
-        //     content: url('./../../images/Vector2.png');
-        //     position: relative;
-        //     opacity: 0.4;
-        //     left: 10px;
-        //     top: -2px;
-        // }
-        // .nav_Link:focus:after {
-        //     content: url('./../../images/Vector2.png');
-        //     opacity: 1;
-        // }
 
     }
 

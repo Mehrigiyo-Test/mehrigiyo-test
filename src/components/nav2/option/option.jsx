@@ -1,19 +1,18 @@
-import React from 'react'
-import "./optionStyle.css"
-import Polygon from "./../../../images/Polygon.png"
+import React from 'react';
+import "./optionStyle.css";
+import Polygon from "./../../../images/Polygon.png";
 
 function Option(link) {
   return (
     <>
-    <div>
-        <div><img src={Polygon} alt="" /></div>
+      <div>
+        <div><img src={Polygon} alt="img"/></div>
         <select className='optionWrapper'>
-            <option className='link55'>{link}Nevropatolog</option>
-            {/* <option className='link55'>{link}Genetika</option> */}
+          <option className='link55'>{link}Nevropatolog</option>
         </select>
-    </div>
+      </div>
     </>
   )
 }
 
-export default Option
+export default Option;

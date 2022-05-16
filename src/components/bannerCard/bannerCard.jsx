@@ -7,6 +7,7 @@ import './style.css';
 const Bannercard = () => {
     return (
         <div className='banner-card-wrapper GlobalWrapper'>
+
             <div className='banner-card'>
                 <div className='banner-card__titles'>
                     <img className='banner-card__icon' src={BannerCardImg1} alt="icon" />
