@@ -53,11 +53,11 @@ function BeingHealthy() {
             </div>
             <div className='flex menucl'>
                {Menu.map((item, index) => (
-                   <a href="">
+                   <Link href="">
                        <li key={index}>
                            {item.name}
                        </li>
-                   </a>
+                   </Link>
                ))}
             </div>
            

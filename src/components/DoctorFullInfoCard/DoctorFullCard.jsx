@@ -19,7 +19,7 @@ function DoctorFullCard({setOpen, data , props, btn, active, job}) {
     <>
     <div className='DocFuulINWR'>
     {data.filter(b=> b.id === props).map(a=>(
-        <div className='centerInfo'>
+        <div className='centerInfo' key={a}>
             <div className='BigCircleIMg'><img src={a.img} alt="" /></div>
             <div>
                     <div className='DoctorName'>

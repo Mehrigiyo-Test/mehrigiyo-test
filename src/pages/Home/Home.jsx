@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React} from "react";
 import "./HomeStyle.css";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
@@ -38,9 +38,9 @@ import { Pagination } from "swiper";
 
 function Home() {
 
-  const imginfo = {img3: <img src={leaves} />}
+  const imginfo = {img3: <img src={leaves} alt="" />}
 
-  const [ModalACtive, setModalActive] = useState(true)
+  // const [ModalACtive, setModalActive] = useState(true)
 
   // const slide = [
   //   {

@@ -8,6 +8,7 @@ import Modal from "../Modal";
 
 import Login from "./Login";
 import Verification from "./Verification";
+import { Link } from "react-router-dom";
 
 function Navigate() {
   const nav = [
@@ -38,8 +39,8 @@ function Navigate() {
         <nav className="nav1">
           <ul className="ul">
             {nav.map((item) => (
-              <li>
-                <a href="#">{item.name}</a>
+              <li key={item.name}>
+                <Link href="#">{item.name}</Link>
               </li>
             ))}
           </ul>
@@ -52,14 +53,19 @@ function Navigate() {
           <div className="location">
             <p className="locat">Buxoro shahar</p>
             <div className="lokatsa">
-              <img className="locImg" src={lokatsa} />
+              <img className="locImg" src={lokatsa} alt=""/>
             </div>
           </div>
           {/* <div className="login" onClick={() => setShow(true)}> */}
            {/* <a href="http://localhost:3001/">  */}
            <p className="locat">Kirish</p>
             <div className="profil">
+<<<<<<< HEAD
               <img className="locImg" src={profile} />
+=======
+              {" "}
+              <img className="locImg" src={profile} alt=""/>
+>>>>>>> de03d314520fde97e2336a2603dd8020be993772
             </div>
             {/* </a> */}
           {/* </div> */}
