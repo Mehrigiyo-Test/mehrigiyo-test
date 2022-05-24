@@ -18,6 +18,7 @@
     width: 206px;
     top: 40px;
     border-radius: 5px;
+    z-index: 10;
 }
 .ddImg{
     padding: 5px;
@@ -43,4 +44,5 @@
 }
 .relativ{
     position: relative;
+    top: -4px;
 }
