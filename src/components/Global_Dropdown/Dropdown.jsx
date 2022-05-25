@@ -16,7 +16,6 @@ export default function Dropdown({ title, link, items }) {
                             {items.map((item, index) => (
                                 <div key={index} className="dropdown_Item" onClick={()=> setOpen(!open)} >
                                     <Link to={link}>
-                                       
                                         {item.title}
                                     </Link>
                                 </div>

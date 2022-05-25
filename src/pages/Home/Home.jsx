@@ -35,6 +35,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import ProductList from "../../components/ProductList/ProductsList";
 
 function Home() {
 
@@ -117,6 +118,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
+        <ProductList />
         <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
