@@ -35,7 +35,8 @@ export default function Send({ top, img1, text, headtext, img2, img3, overflow }
             <input className="name" type="text" />
           </div>
           <div className="input-div">
-            <Dropdown />
+          {/* <h5 className="input-h5">Telefon raqam</h5> */}
+            {/* <Dropdown />+998 */}
           </div>
           <div className="input-div">
             <h5 className="input-h5">Sizning savolingiz</h5>

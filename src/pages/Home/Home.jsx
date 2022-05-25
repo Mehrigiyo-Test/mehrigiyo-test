@@ -19,77 +19,18 @@ import InfoBanner from "../../components/InfoBanner/InfoBanner"
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 import Global from "../../components/GlobalBtn/GlobalBtn";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
-
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
 import leaves from '../../images/Groupffff.png';  
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
 import { Pagination } from "swiper";
+import ProductList from "../../components/ProductList/ProductsList";
+
 
 function Home() {
-
   const imginfo = {img3: <img src={leaves} alt="" />}
-
-  // const [ModalACtive, setModalActive] = useState(true)
-
-  // const slide = [
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info:   "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  // ];
-
   return (
     <>
     <div className="lightGreenItem"></div>
@@ -117,6 +58,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
+        <ProductList />
         <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
