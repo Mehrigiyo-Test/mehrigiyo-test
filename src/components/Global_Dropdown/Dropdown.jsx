@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Dropdown({ title, link, items }) {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="dropdown">
@@ -13,7 +13,7 @@ export default function Dropdown({ title, link, items }) {
 
       {open ? (
         <div className="dropdownBox">
-          <section className="section_Container" onClick={()=> setOpen(false)}>
+          <section className="section_Container" onClick={() => setOpen(false)}>
             {items.map((item, index) => (
               <div
                 key={index}
