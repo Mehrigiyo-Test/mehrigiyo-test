@@ -2,9 +2,8 @@ import "./Dropdown.scss";
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Dropdown({ title, link, items,setLink }) {
-  console.log(link);
-  const [open, setOpen] = useState(false);
+export default function Dropdown({ title, link, items }) {
+    const [open, setOpen] = useState(false);
 
   return (
     <div className="dropdown">
@@ -14,7 +13,7 @@ export default function Dropdown({ title, link, items,setLink }) {
 
       {open ? (
         <div className="dropdownBox">
-          <section className="section_Container" onClick={()=> setLink(false)}>
+          <section className="section_Container" onClick={()=> setOpen(false)}>
             {items.map((item, index) => (
               <div
                 key={index}
