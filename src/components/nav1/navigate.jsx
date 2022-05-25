@@ -60,12 +60,8 @@ function Navigate() {
            {/* <a href="http://localhost:3001/">  */}
            <p className="locat">Kirish</p>
             <div className="profil">
-<<<<<<< HEAD
-              <img className="locImg" src={profile} />
-=======
               {" "}
               <img className="locImg" src={profile} alt=""/>
->>>>>>> de03d314520fde97e2336a2603dd8020be993772
             </div>
             {/* </a> */}
           {/* </div> */}
