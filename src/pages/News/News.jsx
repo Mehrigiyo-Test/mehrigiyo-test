@@ -9,9 +9,12 @@ import Placeholder from "./../../images/Placeholder.png"
 import ColumnCardTxt from './../../components/NewPageComp/ColumnCardNewsTxt/ColumnCardTxt'
 import NewsCard from '../../components/NewsCard/NewsCard';
 import sliderEx from "./../../images/sliderEx.png"
+import { useSelector } from 'react-redux';
 // import MexrigiyoPresentation from '../../components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation';
 
 function News() {
+  const { data } = useSelector((state) => state.getDoctors);
+  console.log(data, "BU DATA2");
   return (
     <>
     <div className='News'>

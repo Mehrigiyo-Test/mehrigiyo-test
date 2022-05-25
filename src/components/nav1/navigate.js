@@ -3,6 +3,7 @@ import "./navStyles.css"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
 import Dropdown from '../Dropdown/Dropdown'
+import { onSubmit, onSubmit2 } from '../../api/registration'
 
 function Navigate() {
   const nav = [
@@ -45,10 +46,10 @@ function Navigate() {
             </div>
           </div>
           <div className='login'>
-            <p className='locat'>
+            <p className='locat' onClick={onSubmit}>
               Kirish
             </p>
-            <div className='profil'> <img src={profile} /></div>
+            <div className='profil' onClick={onSubmit2}> <img src={profile} /></div>
           </div>
 
         </div>
