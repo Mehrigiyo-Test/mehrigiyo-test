@@ -49,11 +49,7 @@ function Navigate() {
             <p className='locat' onClick={onSubmit}>
               Kirish
             </p>
-<<<<<<< HEAD
             <div className='profil' onClick={onSubmit2}> <img src={profile} /></div>
-=======
-            <div className='profil'> <img src={profile} alt=""/></div>
->>>>>>> 29e0f65f714946beef3dd2fc261b2f3660c2f1fa
           </div>
 
         </div>
