@@ -67,9 +67,6 @@ function AdviceDayBooking({setOpen,setActive,set}) {
             //     setOpen(false)
             // },30000 ) 
         },3000)
-       
-        console.log('waiting', 'meeting');
-     
     } 
    
   return (
@@ -87,7 +84,7 @@ function AdviceDayBooking({setOpen,setActive,set}) {
                 <p>Yanvar, 2022 yil</p>
                 <div><img src={CAlendar} alt="" /></div>
             </div>
-            <div className='Datestilnat'>{date.map((item)=>(<DAte name={item.name} day={item.day}/>))}
+            <div className='Datestilnat'>{date.map((item)=>(<DAte key={item.name} name={item.name} day={item.day}/>))}
             </div>
             <div className='Timestil'>
                 <Time

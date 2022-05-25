@@ -30,7 +30,7 @@ function Navigate() {
         <nav className='nav1'>
           <ul className='ul'>
             {nav.map(item => (
-              <li>{item.name}</li>
+              <li key={item.name}>{item.name}</li>
             ))}
           </ul>
         </nav>
@@ -42,14 +42,18 @@ function Navigate() {
               Toshkent shahar
             </p>
             <div className='lokatsa'>
-              <img src={lokatsa} />
+              <img src={lokatsa} alt=""/>
             </div>
           </div>
           <div className='login'>
             <p className='locat' onClick={onSubmit}>
               Kirish
             </p>
+<<<<<<< HEAD
             <div className='profil' onClick={onSubmit2}> <img src={profile} /></div>
+=======
+            <div className='profil'> <img src={profile} alt=""/></div>
+>>>>>>> 29e0f65f714946beef3dd2fc261b2f3660c2f1fa
           </div>
 
         </div>

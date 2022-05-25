@@ -1,0 +1,100 @@
+.ProductList {
+    margin-top: 230px;
+    padding: 0 22px 0 98px;
+    width: 1500px;
+
+    p {
+        margin: 0 !important;
+    }
+
+    .product-list-top-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 34.13px;
+        margin-bottom: 28px;
+        margin-right: 78px;
+
+        h4 {
+            display: block;
+            margin-right: auto;
+            margin-bottom: 0 !important;
+
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            color: #282828;
+
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .product-select {
+            cursor: pointer;
+            border: 0.5px solid #B0B7C3;
+            border-radius: 100px;
+
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6.5px 21.5px;
+        }
+    }
+
+    .product-list-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        margin-bottom: 40px;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+            color: #B0B7C3;
+
+            &.active {
+                font-weight: 500;
+                color: #53B175;
+            }
+        }
+    }
+
+    .products-list {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+
+    .product-list-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 76px;
+        margin-top: 50px;
+
+        .all-products {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 13px 26px;
+            border: none;
+            background: rgba(83, 177, 117, 0.1);
+            border-radius: 30px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #181725;
+        }
+
+
+    }
+}

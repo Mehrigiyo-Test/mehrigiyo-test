@@ -11,7 +11,7 @@ export default function Ambulance() {
     return (
         <>
             <Container className="container">
-                <img className="background" src={Barg} />
+                <img className="background" src={Barg} alt="" />
                 <Row className="box boxSize">
                     <Col className="textBox" md="5">
                         <h3>Shoshilinch onlayn yordam</h3>
@@ -22,7 +22,7 @@ export default function Ambulance() {
                     <Col className="imgBox" md="5">
                         <div className="logodiv">
                             <div className="logoImg">
-                                <img src={Logo} />
+                                <img src={Logo} alt="" />
                                 <h5>Onlayn shifokorlar</h5>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Ut ullamcorper in et amet.</p>

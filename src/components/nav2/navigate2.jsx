@@ -8,13 +8,12 @@ import { Link } from "react-router-dom";
 import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
 const Navigate2 = () => {
-const [link, setLink]=useState(true)
+  const [link, setLink] = useState(true);
   const navinfo = [
     {
       title: "Bosh sahifa",
       link: "/",
-      set: true
-
+      set: true,
     },
     {
       title: "Onlayn shifokorlar",
@@ -42,7 +41,7 @@ const [link, setLink]=useState(true)
     {
       title: "Biz haqimizda",
       link: "/aboutUs",
-      set : false
+      set: false,
       // dropdown: []
     },
     {
@@ -81,7 +80,11 @@ const [link, setLink]=useState(true)
                   setLink={setLink}
                 />
               ) : (
-                <Link className="nav_Item" to={item.link} onClick={()=> setLink(item.set)}>
+                <Link
+                  className="nav_Item"
+                  to={item.link}
+                  onClick={() => setLink(item.set)}
+                >
                   {item.title}
                 </Link>
               )}
@@ -94,10 +97,13 @@ const [link, setLink]=useState(true)
             <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
           </a>
 
-
           <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
-          <img className="nav-icons__icon" src={NavIcon2} alt="icon" hidden={link} />
-
+          <img
+            className="nav-icons__icon"
+            src={NavIcon2}
+            alt="icon"
+            hidden={link}
+          />
 
           <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
         </div>

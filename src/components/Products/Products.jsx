@@ -8,14 +8,14 @@ export default function NaturalProduct() {
 
     const info = [
         {
-            imgBackground: <img src={Leaves} />,
+            imgBackground: <img src={Leaves} alt=""/>,
             clickMe: <p className="headText">Bosh sahifa  /  <span> Mahsulotlar </span></p>,
             headerText: <h3>Mehrigiyo tabiiy mahsulotlari</h3>,
             text: <p className="infoText">Shifobaxsh o'simliklardan foydalanish, salomatlik va <br/>
             uzoq umr ko'rishingi uchun asosiy omildir.</p>,
             playBtn: <img src={PlayButton} alt="play button" />,
-            img2: <img className="doctors" src={Medicine} />,
-            back: <img className="background" src={BackgroundLeaves} />
+            img2: <img className="doctors" alt="" src={Medicine} />,
+            back: <img className="background" alt="" src={BackgroundLeaves} />
         }
     ]
 

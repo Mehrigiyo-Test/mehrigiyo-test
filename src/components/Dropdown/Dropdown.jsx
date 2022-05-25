@@ -13,7 +13,7 @@ function Dropdown(
     text,
 ) {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null);
+    // const [selectedOption, setSelectedOption] = useState(null);
     const [flag, setFlag] = useState(uzbFlag)
 
 
