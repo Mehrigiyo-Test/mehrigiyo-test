@@ -2,7 +2,6 @@ import MapIcon from "../../images/map-marker.svg";
 import MoneyIcon from "../../images/money_icon.svg";
 import CreditCardIcon from "../../images/credit-card-icon.svg";
 import PlusIcon from "../../images/akar-icon-plusl.svg";
-
 import "./OrderModal.scss";
 
 const OrderModal = ({ handleModal, handlePayment }) => {

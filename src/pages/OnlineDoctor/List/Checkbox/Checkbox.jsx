@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import checked from "./../../../../images/Checked.png"
-import "./CeckboxStyle.css"
+import "./CeckboxStyle.scss"
 import box from "./../../../../images/box.png"
 
 function Checkbox({name}) {

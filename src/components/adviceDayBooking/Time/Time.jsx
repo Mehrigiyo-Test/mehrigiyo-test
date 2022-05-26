@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TimeStyle.css"
+import "./TimeStyle.scss"
 
 function Time({Time}) {
   return (

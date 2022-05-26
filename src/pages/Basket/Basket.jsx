@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import "./Basket.scss";
-
 import Basket_card__img from "../../images/basket_product.png"
 import BasketEmpty from "./Empty/BasketEmpty";
 import BasketProducts from "./Empty/BasketProducts";

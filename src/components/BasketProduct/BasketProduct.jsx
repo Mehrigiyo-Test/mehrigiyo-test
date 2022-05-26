@@ -1,6 +1,5 @@
 import React from 'react'
 import "./BasketProduct.scss"
-
 import PlusIcon from "../../images/plus_icon.svg"
 import MinusIcon from "../../images/minus_icon.svg"
 import DeleteIcon from "../../images/delete_icon.svg"

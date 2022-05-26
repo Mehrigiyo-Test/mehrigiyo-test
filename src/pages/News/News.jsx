@@ -1,6 +1,6 @@
 import React from 'react';
 import Groupffff from "../../images/Groupffff.png";
-import './NewStyle.css'
+import './NewStyle.scss'
 import LastNews from '../../components/NewPageComp/lastNews/lastNews';
 import RowNewsCard from '../../components/NewPageComp/RowNewsCard/RowNewsCard';
 import Group from "./../../images/Group.png"
@@ -10,7 +10,6 @@ import ColumnCardTxt from './../../components/NewPageComp/ColumnCardNewsTxt/Colu
 import NewsCard from '../../components/NewsCard/NewsCard';
 import sliderEx from "./../../images/sliderEx.png"
 import { useSelector } from 'react-redux';
-// import MexrigiyoPresentation from '../../components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation';
 
 function News() {
   const { data } = useSelector((state) => state.getDoctors);
@@ -82,9 +81,6 @@ function News() {
       theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
       info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
       /></div></div>
-      {/* <div>
-        <MexrigiyoPresentation/>
-      </div> */}
     </div>
     </div>
     </>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewsCardStyle.css";
+import "./NewsCardStyle.scss";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import imgPlay from "../../images/play.svg" 
 

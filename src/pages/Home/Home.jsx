@@ -1,5 +1,5 @@
 import {React} from "react";
-import "./HomeStyle.css";
+import "./HomeStyle.scss";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
 import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
@@ -7,10 +7,8 @@ import OrganicPlantation from "./../../components/SectionPlantation/OrganicPlant
 import OnlineDoctor from "./../../components/OnlineDoctor/OnlineDoctor";
 import Ambulance from "./../../components/Ambulance/Ambulance";
 import BannerForm from "../../components/bannerForm/bannerForm";
-
 import BannerInputIcon from "../../images/BannerInputIcon.png";
 import BannerButtonIcon from "../../images/lupa.png";
-
 import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
@@ -84,16 +82,6 @@ function Home() {
           </div>
 
           <div className="slideComp">
-            {/* {" "}
-            {slide.map((item) => (
-              <NewsCard
-                img={item.img}
-                category={item.category}
-                time={item.time}
-                theme={item.theme}
-                info={item.info}
-              />
-            ))} */}
             <Swiper
               slidesPerView={3.7}
               spaceBetween={30}
@@ -166,10 +154,6 @@ function Home() {
       <Asked />
       <Send overflow={'hidden'} img3={imginfo.img3} />
       <GlobalSponsors/>
-      {/* <button onClick={() => setModalActive(true)}>click me</button>
-      <Modal active={ModalACtive} setActive={setModalActive}>
-            
-      </Modal> */}
     </>
   );
 }

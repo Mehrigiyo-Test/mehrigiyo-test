@@ -29,7 +29,6 @@ export default function OnlineDoctor() {
         },
         {
             img: img4,
-            // img2: <h1 style={{background: 'red'}}>asdasdas</h1>,
             title: 'Jarrohlik',
             text: '1,065 shifokor',
         }

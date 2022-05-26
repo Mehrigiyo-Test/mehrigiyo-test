@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./asked.css";
+import "./asked.scss";
 import { BsArrowRight } from "react-icons/bs";
 import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import leaf from "../../../images/send_background.png";

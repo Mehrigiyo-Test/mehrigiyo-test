@@ -1,5 +1,5 @@
 import React from "react";
-import "./DoctorTtypeInfoStyle.css";
+import "./DoctorTtypeInfoStyle.scss";
 import Shape from "./../../../images/Shape1.png";
 import close from "./../../../images/Close.png";
 

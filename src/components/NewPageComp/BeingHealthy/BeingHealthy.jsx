@@ -1,5 +1,5 @@
 import React from 'react'
-import "./BeingHealthy.css"
+import "./BeingHealthy.scss"
 import { Link } from 'react-router-dom'
 import Groupffff from "./../../../images/Groupffff.png"
 import Group from "./../../../images/Group.png"

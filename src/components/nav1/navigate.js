@@ -1,5 +1,5 @@
 import React from 'react'
-import "./navStyles.css"
+import "./navStyles.scss"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
 import Dropdown from '../Dropdown/Dropdown'
