@@ -7,6 +7,7 @@ import NavIcon3 from "../../images/nav-icon3.png";
 import { Link } from "react-router-dom";
 import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
+
 const Navigate2 = () => {
 const [link, setLink]=useState(true)
   const navinfo = [
