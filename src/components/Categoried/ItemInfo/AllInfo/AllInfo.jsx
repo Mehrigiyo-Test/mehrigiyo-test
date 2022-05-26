@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AllInfo.css";
+import "./AllInfo.scss";
 import { AiOutlineHeart, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BsShare, BsChevronDown, BsChevronRight } from "react-icons/bs";
 

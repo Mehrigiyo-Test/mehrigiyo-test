@@ -35,7 +35,7 @@ const Login = ({ setModalActive, tab, setTab, setShoww }) => {
             <div className="ModalLogin__item2__input1">
               <p>Telefon raqam</p>
               <span>
-                <img src={imgUzb} />
+                <img src={imgUzb} alt="" />
               </span>
               <input type="number" placeholder="+998 94 681 42 32" />
             </div>
@@ -62,7 +62,7 @@ const Login = ({ setModalActive, tab, setTab, setShoww }) => {
           <div className="Registration">
             <div className="Registration__parent">
               <div className="Registration__img">
-                <img src={imgOptinal} />
+                <img src={imgOptinal} alt="" />
               </div>
               <span className="Registration__span">
                 Fotosurat yuklang (optinal)

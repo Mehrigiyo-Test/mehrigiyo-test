@@ -1,5 +1,5 @@
-import {React, useState} from "react";
-import "./HomeStyle.css";
+import {React} from "react";
+import "./HomeStyle.scss";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
 import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
@@ -7,10 +7,8 @@ import OrganicPlantation from "./../../components/SectionPlantation/OrganicPlant
 import OnlineDoctor from "./../../components/OnlineDoctor/OnlineDoctor";
 import Ambulance from "./../../components/Ambulance/Ambulance";
 import BannerForm from "../../components/bannerForm/bannerForm";
-
 import BannerInputIcon from "../../images/BannerInputIcon.png";
 import BannerButtonIcon from "../../images/lupa.png";
-
 import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
 import Banner from "../Banner/Banner";
 import Infosection from "../InfoSection/InfoSection";
@@ -19,77 +17,18 @@ import InfoBanner from "../../components/InfoBanner/InfoBanner"
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
 import Global from "../../components/GlobalBtn/GlobalBtn";
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
-
 import Asked from "../../components/questions/asked/asked";
 import Send from "../../components/questions/send/send";
 import leaves from '../../images/Groupffff.png';  
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
 import { Pagination } from "swiper";
+import ProductList from "../../components/ProductList/ProductsList";
+
 
 function Home() {
-
-  const imginfo = {img3: <img src={leaves} />}
-
-  const [ModalACtive, setModalActive] = useState(true)
-
-  // const slide = [
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme:
-  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  //   {
-  //     img: sliderEx,
-  //     category: "#Ziravorlar",
-  //     time: "4 min oldin",
-  //     theme: 'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy ',
-  //     info:   "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-  //   },
-  // ];
-
+  const imginfo = {img3: <img src={leaves} alt="" />}
   return (
     <>
     <div className="lightGreenItem"></div>
@@ -117,6 +56,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
+        <ProductList />
         <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
@@ -142,16 +82,6 @@ function Home() {
           </div>
 
           <div className="slideComp">
-            {/* {" "}
-            {slide.map((item) => (
-              <NewsCard
-                img={item.img}
-                category={item.category}
-                time={item.time}
-                theme={item.theme}
-                info={item.info}
-              />
-            ))} */}
             <Swiper
               slidesPerView={3.7}
               spaceBetween={30}
@@ -224,10 +154,6 @@ function Home() {
       <Asked />
       <Send overflow={'hidden'} img3={imginfo.img3} />
       <GlobalSponsors/>
-      {/* <button onClick={() => setModalActive(true)}>click me</button>
-      <Modal active={ModalACtive} setActive={setModalActive}>
-            
-      </Modal> */}
     </>
   );
 }

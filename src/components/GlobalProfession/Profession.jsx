@@ -1,7 +1,6 @@
 import './Profession.scss';
 
 export default function Profession({data}) {
-    // console.log(data);
     return (
         <div className="boxOnline">
             <div className="doctorBox">

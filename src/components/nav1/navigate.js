@@ -1,5 +1,5 @@
 import React from 'react'
-import "./navStyles.css"
+import "./navStyles.scss"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
 import Dropdown from '../Dropdown/Dropdown'
@@ -30,7 +30,7 @@ function Navigate() {
         <nav className='nav1'>
           <ul className='ul'>
             {nav.map(item => (
-              <li>{item.name}</li>
+              <li key={item.name}>{item.name}</li>
             ))}
           </ul>
         </nav>
@@ -42,7 +42,7 @@ function Navigate() {
               Toshkent shahar
             </p>
             <div className='lokatsa'>
-              <img src={lokatsa} />
+              <img src={lokatsa} alt=""/>
             </div>
           </div>
           <div className='login'>

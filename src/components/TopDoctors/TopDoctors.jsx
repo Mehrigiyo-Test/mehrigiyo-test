@@ -3,7 +3,6 @@ import "./TopDoctors.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
 
 const TopDoctors = ({ text1, text2, img, setopen, func , id , setactive}) => {
-  // const [clickable, setclickable] = useState(0);
   const gg = () =>{
     setopen('open')
     setactive('active')
@@ -17,7 +16,6 @@ const TopDoctors = ({ text1, text2, img, setopen, func , id , setactive}) => {
           <img src={img} alt="  " />
           <button className="imgFirst__btn">TOP</button>
         </div>
-        {/* <span className='imgSecond'><img  src={imgSave}/> </span> */}
         <span className="imgSecond" >
           <MdOutlineBookmarkAdd className="colorYellow" tabIndex={1}/>
         </span>

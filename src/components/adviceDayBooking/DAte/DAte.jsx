@@ -1,5 +1,5 @@
 import React from 'react'
-import "./DAteStyle.css"
+import "./DAteStyle.scss"
 
 function DAte({name, day}) {
   return (

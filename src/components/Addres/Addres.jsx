@@ -1,5 +1,4 @@
 import './Addres.scss';
-// import Phone from '../../images/Phone.png';
 import {IoMdCall} from 'react-icons/io';
 
 export default function Addres() {

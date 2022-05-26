@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./waitingStyle.css"
+import "./waitingStyle.scss"
 import LinearProgress from '@mui/material/LinearProgress';
 import Progress from "./../../images/Progress.gif"
 

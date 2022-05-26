@@ -1,5 +1,5 @@
 import React from 'react'
-import "./RowNewStyle.css"
+import "./RowNewStyle.scss"
 import Upload2 from "./../../../images/Upload2.png"
 
 function RowNewsCard({

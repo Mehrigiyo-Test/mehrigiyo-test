@@ -6,13 +6,7 @@
 
     .HistoryMehrigiyo {
         display: flex;
-        // align-items: center;
         margin-top: 300px;
-
-        // &__img{
-        //     img{
-        //     }
-        // }
         &__text {
             padding: 220px 0 0 0;
             padding-left: 30px;
@@ -66,7 +60,6 @@
             color: grey;
             
             &:focus {
-                // font-weight: 600;
                 background-color: #DDEFE3;
                 color: #53B175;
             }

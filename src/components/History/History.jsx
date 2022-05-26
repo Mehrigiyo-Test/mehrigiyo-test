@@ -1,6 +1,5 @@
 import React from 'react';
-import './History.css';
-
+import './History.scss';
 import BackroundLeaf from '../../images/BackgroundImg.png';
 
 const History = () => {
