@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Vectorrr from "./../../../images/Vectorrr.png";
 import Close from "./../../../images/Close.png";
-import "./BigCompListDoctorStyle.css";
+import "./BigCompListDoctorStyle.scss";
 import { Link } from "react-router-dom";
 import Search from "./../Search/Search";
 import reload from "./../../../images/reload.png";

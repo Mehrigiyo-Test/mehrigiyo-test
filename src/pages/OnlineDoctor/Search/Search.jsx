@@ -1,6 +1,6 @@
 import React from "react";
 import search from "./../../../images/Search.png";
-import "./SearchStyle.css";
+import "./SearchStyle.scss";
 
 function Search() {
   return (
@@ -11,10 +11,8 @@ function Search() {
           tabIndex={1}
           type="text"
           placeholder="Qidirish"
-          // className="input"
         />
       </div>
-      {/* <img src={search} alt="" className="img" /> */}
       </div>
     </>
   );

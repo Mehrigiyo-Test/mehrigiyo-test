@@ -1,5 +1,5 @@
 import React from "react";
-import "./send.css";
+import "./send.scss";
 import animation from "../../../images/Contact_Animations.png";
 import {IoMdSend} from 'react-icons/io';
 import Dropdown from "../../Global_Dropdown/Dropdown";
@@ -35,7 +35,6 @@ export default function Send({ top, img1, text, headtext, img2, img3, overflow }
             <input className="name" type="text" />
           </div>
           <div className="input-div">
-            <Dropdown />
           </div>
           <div className="input-div">
             <h5 className="input-h5">Sizning savolingiz</h5>
@@ -51,7 +50,6 @@ export default function Send({ top, img1, text, headtext, img2, img3, overflow }
       </div>
     </div>
     <div className="leaves">
-      {/* <img src={leaves} alt="" /> */}
       {img3}
     </div>
     </div>

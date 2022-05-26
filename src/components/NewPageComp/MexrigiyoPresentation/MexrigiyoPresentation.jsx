@@ -1,7 +1,7 @@
 import React from 'react'
 import Groupffff from "./../../../images/Groupffff.png"
 import Group from "./../../../images/Group.png"
-import "./MexrigiyoPresentation.css"
+import "./MexrigiyoPresentation.scss"
 import { Link } from 'react-router-dom';
 import Madrid from "./../../../images/madrid2.jpg"
 import Ractangle from "././../../../images/Rectangle.png"

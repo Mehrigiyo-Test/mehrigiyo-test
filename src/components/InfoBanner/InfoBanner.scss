@@ -1,9 +1,11 @@
 .InfoBanner {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   padding-left: 98px;
   margin-bottom: 203px;
   margin-top: 166px;
+
   .InfoBanner-img {
     z-index: -1;
     position: absolute;
@@ -11,15 +13,27 @@
     top: 4065px;
     opacity: 0.1;
   }
+  .info-banner-back {
+    position: absolute;
+    bottom: -130px;
+    left: 0;
+    opacity: 0.05;
+    z-index: 1;
+  }
+
   .InfoBanner-content {
+    position: relative;
+    z-index: 55;
     box-shadow: 0px 15px 60px 0px #0000001a;
     width: 1256px;
     height: 300px;
     border-radius: 25px;
     display: flex;
     background: #3c3c3c;
+
     .InfoBanner-left {
       padding: 50px 0px 0 40px;
+
       .InfoBanner-h2 {
         font-family: Poppins;
         font-size: 30px;
@@ -30,6 +44,7 @@
         text-align: left;
         color: #fff;
       }
+
       .InfoBanner-p {
         width: 616px;
         margin-bottom: 47px;
@@ -43,16 +58,20 @@
         color: #b0b7c3;
       }
     }
+
     .InfoBanner-center {
-        display: flex;
+      display: flex;
+
       .InfoBanner-center-img {
         margin-left: -110px;
       }
     }
+
     .InfoBanner-right {
-        width: 263px;
-        margin-left:-20px;
-        margin-top: 50px;
+      width: 263px;
+      margin-left: -20px;
+      margin-top: 50px;
+
       .InfoBanner-right-img {
         width: 100%;
       }

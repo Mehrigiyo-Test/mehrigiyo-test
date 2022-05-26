@@ -1,5 +1,5 @@
 import React from 'react'
-import "./adviceDayBookingStyle.css"
+import "./adviceDayBookingStyle.scss"
 import SelectDay from "./../../images/SelectDay.png" 
 import CAlendar from "./../../images/CalendarIcon.png"
 import DAte from './DAte/DAte'
@@ -7,9 +7,6 @@ import Time from './Time/Time'
 import close from "./../../images/Close.png"
 import TaemOfLeaf from "./../../images/TeamOfLeaf.png"
 import bgLeaf from "./../../images/GroupBacground(1).png"
-// import Modal from '../Modal'
-// import Waiting from '../waiting/waiting'
-// import MeetingSucceed from '../waiting/MeetingSucceed/MeetingSucceed'
 
 function AdviceDayBooking({setOpen,setActive,set}) {
 
@@ -63,13 +60,7 @@ function AdviceDayBooking({setOpen,setActive,set}) {
         setActive ("waiting")
         setTimeout(()=>{
         setActive ("meeting")
-            // setInterval(function(){
-            //     setOpen(false)
-            // },30000 ) 
         },3000)
-       
-        console.log('waiting', 'meeting');
-     
     } 
    
   return (
@@ -87,7 +78,7 @@ function AdviceDayBooking({setOpen,setActive,set}) {
                 <p>Yanvar, 2022 yil</p>
                 <div><img src={CAlendar} alt="" /></div>
             </div>
-            <div className='Datestilnat'>{date.map((item)=>(<DAte name={item.name} day={item.day}/>))}
+            <div className='Datestilnat'>{date.map((item)=>(<DAte key={item.name} name={item.name} day={item.day}/>))}
             </div>
             <div className='Timestil'>
                 <Time

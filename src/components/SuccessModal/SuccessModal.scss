@@ -1,0 +1,55 @@
+.success-modal {
+    padding: 54px 40px 40px 40px;
+    img {
+        margin: 0 81.46px 50px 41.46px !important;
+    }
+
+    h3 {
+        margin: 0 !important;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #181725;
+    }
+
+    span {
+        display: block;
+        margin: 13.67px 0 64.07px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #7C7C7C;
+        text-align: center;
+    }
+
+    .success-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+    
+            &:first-child {
+                padding: 13px 39px;
+                background: rgba(176, 183, 195, 0.2);
+                font-weight: 400;
+    
+                color: #181725;
+            }
+    
+            &:last-child {
+                padding: 13px 31px;
+                background: #53B175;
+    
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+}

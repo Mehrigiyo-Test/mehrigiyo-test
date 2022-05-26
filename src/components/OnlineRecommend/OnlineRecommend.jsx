@@ -2,7 +2,6 @@ import React from "react";
 import "./OnlineRecommend.scss";
 import img from "../../images/imgDrawnDoctor.png";
 import img2 from "../../images/littleCircle.svg";
-
 import { GlobalGreenBtn } from "../GlobalGreenBtn/GlobalGreenBtn";
 
 export const OnlineRecommend = () => {

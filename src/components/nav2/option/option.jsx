@@ -1,6 +1,6 @@
-import React from 'react';
-import "./optionStyle.css";
-import Polygon from "./../../../images/Polygon.png";
+import React from 'react'
+import "./optionStyle.scss"
+import Polygon from "./../../../images/Polygon.png"
 
 function Option(link) {
   return (
@@ -8,7 +8,7 @@ function Option(link) {
       <div>
         <div><img src={Polygon} alt="img"/></div>
         <select className='optionWrapper'>
-          <option className='link55'>{link}Nevropatolog</option>
+            <option className='link55'>{link}Nevropatolog</option>
         </select>
       </div>
     </>

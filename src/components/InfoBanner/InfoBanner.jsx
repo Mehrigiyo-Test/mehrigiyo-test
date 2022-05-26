@@ -24,6 +24,10 @@ export default function InfoBanner() {
                     </div>
                 </div>
             </div>
+
+            <div className="info-banner-back">
+                <img src={Branch} alt="" />
+            </div>
         </div>
     )
 }

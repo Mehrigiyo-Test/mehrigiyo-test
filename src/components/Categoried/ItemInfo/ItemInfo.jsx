@@ -1,5 +1,5 @@
 import React from 'react'
-import './ItemInfo.css';
+import './ItemInfo.scss';
 import leaves from '../../../images/Group3.png';
 import leaves2 from '../../../images/leafAnother.png';
 import small_img from '../../../images/mehrigiyo2-500x500 1.png';

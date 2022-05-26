@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/Mehrigiyo_logo.png";
 import NavIcon1 from "../../images/nav-icon1.png";
@@ -8,11 +8,12 @@ import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
 
 const Navigate2 = () => {
+  const [link, setLink] = useState(true);
   const navinfo = [
     {
       title: "Bosh sahifa",
       link: "/",
-      // dropdown: []
+      set: true,
     },
     {
       title: "Onlayn shifokorlar",
@@ -40,6 +41,7 @@ const Navigate2 = () => {
     {
       title: "Biz haqimizda",
       link: "/aboutUs",
+      set: false,
       // dropdown: []
     },
     {
@@ -59,6 +61,7 @@ const Navigate2 = () => {
       ],
     },
   ];
+
   return (
     <div className="nav2  GlobalWrapper">
       <div className="nav__wrapper">
@@ -74,9 +77,14 @@ const Navigate2 = () => {
                   title={item.title}
                   link={item.link}
                   items={item.dropdown}
+                  setLink={setLink}
                 />
               ) : (
-                <Link className="nav_Item" to={item.link}>
+                <Link
+                  className="nav_Item"
+                  to={item.link}
+                  onClick={() => setLink(item.set)}
+                >
                   {item.title}
                 </Link>
               )}
@@ -85,9 +93,17 @@ const Navigate2 = () => {
         </div>
 
         <div className="nav-icons">
-          <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
+          <a href="http://localhost:3001/">
+            <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
+          </a>
 
           <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
+          <img
+            className="nav-icons__icon"
+            src={NavIcon2}
+            alt="icon"
+            hidden={link}
+          />
 
           <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
         </div>

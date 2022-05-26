@@ -4,7 +4,7 @@ import SupportBcg from "../../images/support-bc.png";
 import png1 from "../../images/Number-one.png";
 import png2 from "../../images/Number-two.png";
 import png3 from "../../images/Number-three.png";
-import "./style.css";
+import "./style.scss";
 
 const Companysupport = () => {
   const arr = [

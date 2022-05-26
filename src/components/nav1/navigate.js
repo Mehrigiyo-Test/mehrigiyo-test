@@ -1,8 +1,9 @@
 import React from 'react'
-import "./navStyles.css"
+import "./navStyles.scss"
 import lokatsa from '../../images/Vector.png'
 import profile from '../../images/profile.png'
 import Dropdown from '../Dropdown/Dropdown'
+import { onSubmit, onSubmit2 } from '../../api/registration'
 
 function Navigate() {
   const nav = [
@@ -29,7 +30,7 @@ function Navigate() {
         <nav className='nav1'>
           <ul className='ul'>
             {nav.map(item => (
-              <li>{item.name}</li>
+              <li key={item.name}>{item.name}</li>
             ))}
           </ul>
         </nav>
@@ -41,14 +42,14 @@ function Navigate() {
               Toshkent shahar
             </p>
             <div className='lokatsa'>
-              <img src={lokatsa} />
+              <img src={lokatsa} alt=""/>
             </div>
           </div>
           <div className='login'>
-            <p className='locat'>
+            <p className='locat' onClick={onSubmit}>
               Kirish
             </p>
-            <div className='profil'> <img src={profile} /></div>
+            <div className='profil' onClick={onSubmit2}> <img src={profile} /></div>
           </div>
 
         </div>

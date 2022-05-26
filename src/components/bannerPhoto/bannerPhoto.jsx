@@ -1,9 +1,8 @@
 import React from 'react';
 import MainPhoto from '../../images/main.png';
-import './style.css';
+import './style.scss';
 
 const Bannerinput = () => {
-
     return (
         <div className='banner-input bc-color bc-color2'>
             <div className='GlobalWrapper'>

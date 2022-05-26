@@ -1,0 +1,102 @@
+.products-container {
+    .product-item {
+        display: flex;
+        align-items: center;
+        gap: 79px;
+        padding: 24px 30px;
+        width: 860px;
+
+        border: 1px solid #E2E2E2;
+        border-radius: 18px;
+
+        .product-item__img {
+            border-radius: 13px;
+        }
+
+        p {
+            margin: 0 !important;
+        }
+
+        .product-item__title {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 145px;
+
+            p {
+                &:first-child {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+
+                    color: #181725;
+                }
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #7C7C7C;
+            }
+        }
+
+        .product-item__quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                cursor: pointer;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                width: 40px;
+                height: 40px;
+
+                border: 1px solid #E2E2E2;
+                border-radius: 13px;
+
+                font-weight: 600;
+                font-size: 18px;    
+                line-height: 18px;
+
+                color: #181725;
+            }
+        }
+
+        .product-item__price {
+            display: flex;
+            flex-direction: column;
+            width: 146px;
+
+
+            p {
+                &:first-child {
+                    font-weight: 400;
+                    font-size: 16px;    
+                    line-height: 24px;
+
+                    text-decoration-line: line-through;
+                    color: #808080;
+                }
+
+                font-weight: 700;
+                font-size: 24px;    
+                line-height: 36px;
+                color: #53B175;
+            }
+        }
+
+        .product-item__delete {
+            border: none;
+            background-color: transparent;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
