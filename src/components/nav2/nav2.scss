@@ -1,116 +1,60 @@
 .nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 45px 30px 90px;
+
+  .navcontainer {
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    padding: 30px 45px 30px 90px;
-
-    .navcontainer {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        // gap: 26px;
-        .nav_Head {
-            list-style: none;
-            text-decoration: none;
-        }
+    align-items: center;
+  }
+  .nav_Head {
+      position: relative;
+  }
+  .nav_Link {
+    a::before {
+      content: url("./../../images/Vector2.png") !important;
+      position: absolute !important;
+      top: -2px;
+      right: -15px;
     }
+  }
 
-    // .bg {
+  .nav_Item {
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    color: #282828 !important;
+    font-size: 16px;
+    opacity: 0.4;
+  }
 
-    // }
-    .gb {
-        .nav_Link {
-            position: relative;
-            a {
-                text-decoration: none;
-                list-style: none;
-                color: #282828 !important;
-                font-size: 16px;
-                opacity: 0.4;
-                
-            }
+  .nav_Item:focus {
+    color: #000000 !important;
+    opacity: 1 !important;
+    font-weight: 600;
+  }
 
-            a::before {
-                content: url('./../../images/Vector2.png') !important;
-                position: absolute !important;
-                top: -2px;
-                right: -20px;
-            }
+  .nav_Item::after {
+    content: "";
+    margin-top: 28px;
+    background-color: #53b175;
+    height: 4px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
 
-            a:focus {
-                color: #000000 !important;
-                opacity: 1;
-                font-weight: 600;
-            }
-
-
-            .active:after {
-                margin-top: 7px;
-                display: block;
-                content: "";
-                background-color: #53B175;
-                height: 4px;
-                width: 0%;
-                left: 50%;
-                position: absolute;
-                transform: translateX(-50%);
-                transition: width .3s ease-in-out;
-            }
-
-            .active:focus:after {
-                width: 22px;
-            }
-        }
-
-        // .nav_Link::after {
-        //     content: url('./../../images/Vector2.png');
-        //     position: relative;
-        //     opacity: 0.4;
-        //     left: 10px;
-        //     top: -2px;
-        // }
-        // .nav_Link:focus:after {
-        //     content: url('./../../images/Vector2.png');
-        //     opacity: 1;
-        // }
-
-    }
-
-    .nav_Item {
-        text-decoration: none;
-        position: relative;
-        list-style: none;
-        color: #282828 !important;
-        font-size: 16px;
-        opacity: 0.4 !important;
-    }
-
-    .nav_Item:focus {
-        color: #000000 !important;
-        opacity: 1 !important;
-        font-weight: 600;
-    }
-
-    .nav_Item::after {
-        content: "";
-        margin-top: 30px;
-        background-color: #53B175;
-        height: 4px;
-        width: 0%;
-        left: 50%;
-        position: absolute;
-        transition: width .3s ease-in-out;
-        transform: translateX(-50%);
-    }
-
-    .nav_Item:focus:after {
-        width: 22px;
-    }
+  .nav_Item:focus:after {
+    width: 22px;
+  }
 }
 
 .dropBackground {
-    height: 10px;
-    width: 20px;
-    background-color: red;
+  height: 10px;
+  width: 20px;
+  background-color: red;
 }

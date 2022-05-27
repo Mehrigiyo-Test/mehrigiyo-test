@@ -4,11 +4,13 @@ import Logo from "../../images/Mehrigiyo_logo.png";
 import NavIcon1 from "../../images/nav-icon1.png";
 import NavIcon2 from "../../images/nav-icon2.png";
 import NavIcon3 from "../../images/nav-icon3.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
+
 const Navigate2 = () => {
   const [link, setLink] = useState(true);
+
   const navinfo = [
     {
       title: "Bosh sahifa",
@@ -65,13 +67,13 @@ const Navigate2 = () => {
   return (
     <div className="nav2  GlobalWrapper">
       <div className="nav__wrapper">
-        <Link to="/" className="nav-logo">
+        <NavLink to="/" className="nav-logo">
           <img src={Logo} alt="logo" />
-        </Link>
+        </NavLink>
 
         <div className="navcontainer">
           {navinfo.map((item, index) => (
-            <div key={index} className={`nav_Head bg gb`}>
+            <div key={index} className={`nav_Head `}>
               {item.dropdown ? (
                 <Dropdown
                   title={item.title}
@@ -80,13 +82,13 @@ const Navigate2 = () => {
                   setLink={setLink}
                 />
               ) : (
-                <Link
+                <NavLink
                   className="nav_Item"
                   to={item.link}
                   onClick={() => setLink(item.set)}
                 >
                   {item.title}
-                </Link>
+                </NavLink>
               )}
             </div>
           ))}
