@@ -17,9 +17,8 @@ export default function Dropdown({ title, link, items }) {
         <div className="dropdownBox">
           <section className="section_Container" onClick={() => setOpen(!open)}>
             {items.map((item, index) => (
-              <Link to={link}>
+              <Link key={index} to={link}>
                 <div
-                  key={index}
                   className="dropdown_Item"
                   onClick={() => setOpen(!open)}
                 >
