@@ -15,26 +15,27 @@ function NewsCard({ img, category, time, theme, display, info }) {
       padTo2Digits(date.getDate()),
       padTo2Digits(date.getMonth() + 1),
       date.getFullYear(),
-    ].join("/");
+    ].join(".");
   }
 
   return (
     <>
       <div className="wrapper">
         <div className="img_wrapper">
-          <img className="sldImg" src={img} />
+          <img className="sldImg" src={img}  alt="" />
           <span className="imgPlay">
-            <img src={imgPlay} />
+            <img src={imgPlay} alt="" />
           </span>
         </div>
         <div className="txt">
           <div className="category">
-            <p>{category}</p>
-            <li>{formatDate(newDate)}</li>
+            <p>#{category}</p>
+            <li className="lii"></li>
+            <li className="time">{formatDate(newDate)}</li>
           </div>
           <h4>{theme}</h4>
           <h6>{info}</h6>
-          <div style={{ display: display }} className="more">
+          <div className="more">
             <p>Ko'proq o'qish</p>
             <HiOutlineArrowNarrowRight size={20} className="arrow" />
           </div>

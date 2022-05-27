@@ -1,5 +1,6 @@
 .wrapper{
     width: 347px;
+    height: 543px;
     position: relative;
     margin: 40px 0;
     background-color: white;
@@ -10,6 +11,7 @@
 }
 .img_wrapper{
     height: 249px;
+    background-color: #fff;
     overflow: hidden ;
     border-radius: 25px 25px 0  0;
     z-index: 1;
@@ -31,25 +33,20 @@
 }
 .more{
     position: absolute;
-    top: 470px;
+    bottom: 35px;
     cursor: pointer;
-    padding-top: 20px;
-    align-items: center;
     display: flex;
+    align-items: center;
     color: #53B175;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    /* line-height: 21px; */
-    justify-content: center;
-    align-items: center;
 }
 .more p{
     color: #53B175;
     display: flex;
     align-self: center;
-    padding-top: 12px;
 }
 
 .wrapper .txt{
@@ -57,12 +54,12 @@
 
 }
 .wrapper h4{
-    padding-bottom: 20px ;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    /* line-height: 27px; */
+    line-height: 27px;
+    width: 319px;
 }
 .category li{
     color: #C4C4C4;
@@ -78,17 +75,25 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 40px;
-    /* line-height: 21px; */
+    position: absolute;
+    bottom: 70px;
 }
 .category p{
-    padding-right: 5px;
+    padding-right: 8px;
 }
-
+.category .lii{
+    list-style: disc;
+}
+.category .time{
+    margin-left: -5px;
+}
 .sldImg{
     transition: 0.3s;
     opacity: 1.3;
     position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 .sldImg:hover{
     filter: brightness(60%);
