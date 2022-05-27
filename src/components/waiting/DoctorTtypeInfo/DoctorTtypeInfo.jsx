@@ -1,5 +1,5 @@
 import React from "react";
-import "./DoctorTtypeInfoStyle.css";
+import "./DoctorTtypeInfoStyle.scss";
 import Shape from "./../../../images/Shape1.png";
 import close from "./../../../images/Close.png";
 
@@ -10,7 +10,7 @@ function DoctorTtypeInfo({ setOpen, props, data }) {
         {data
           .filter((b) => b.id === props)
           .map((a) => (
-            <div>
+            <div key={a}>
               <div className="TypeName">
                 <div>
                   <img src={Shape} alt="" />

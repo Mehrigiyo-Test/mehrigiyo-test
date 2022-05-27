@@ -1,5 +1,5 @@
 import React from 'react'
-import "./MeetingSucceedStyle.css"
+import "./MeetingSucceedStyle.scss"
 import succes from "./../../../images/Succes.png"
 import close from "./../../../images/Close.png"
 

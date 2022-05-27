@@ -1,6 +1,5 @@
 import React from "react";
 import "./OurProducts.scss";
-
 import svg1 from "../../images/ourProductsImg1.svg";
 import svg2 from "../../images/OurProducts2.svg";
 import svg3 from "../../images/OurProducts3.svg";

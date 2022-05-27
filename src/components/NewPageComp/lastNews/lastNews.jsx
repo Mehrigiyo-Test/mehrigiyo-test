@@ -1,7 +1,6 @@
 import React from 'react'
-import "./LastNewsStyle.css"
+import "./LastNewsStyle.scss"
 import Madrid2 from "./../../../images/madrid2.jpg"
-// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Upload1 from "./../../../images/Upload1.png"
 import Global from '../../GlobalBtn/GlobalBtn';
 import { Link } from 'react-router-dom';

@@ -2,19 +2,13 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import "./styles.css";
 import "swiper/css";
 import "swiper/css/navigation";
-
 import { Pagination, Navigation } from "swiper";
-
 import "./CertificatesMehrigiyo.scss";
-
 import img1 from "../../images/certificate1.png";
 import img2 from "../../images/certificate2.png";
 import img3 from "../../images/certificate3.png";
-// import img4 from "../../images/certificate4.png"
 import imgLeaf from "../../images/TeamOfLeaf.png";
 
 const CertificatesMehrigiyo = () => {
@@ -39,10 +33,6 @@ const CertificatesMehrigiyo = () => {
         <Swiper
           slidesPerView={3}
           spaceBetween={10}
-          // navigation={true}       
-          // pagination={{
-          //   clickable: true,
-          // }}
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >

@@ -4,8 +4,7 @@ import InfoSectionIcon1 from '../../images/infoCard-icon1.png';
 import InfoSectionIcon2 from '../../images/infoCard-icon2.png';
 import InfoSectionIcon3 from '../../images/infoCard-icon3.png';
 import InfoSectionIcon4 from '../../images/infoCard-icon1.png';
-
-import './style.css';
+import './style.scss';
 
 const Infosection = () => {
     return (

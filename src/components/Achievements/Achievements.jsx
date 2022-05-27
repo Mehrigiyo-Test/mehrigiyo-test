@@ -4,7 +4,7 @@ import AchievementsIcon1 from '../../images/achievementsIcon1.png';
 import AchievementsIcon2 from '../../images/achievementsIcon2.png';
 import AchievementsIcon3 from '../../images/achievementsIcon3.png';
 import AchievementsIcon4 from '../../images/achievementsIcon4.png';
-import './style.css';
+import './Achievements.scss';
 
 
 

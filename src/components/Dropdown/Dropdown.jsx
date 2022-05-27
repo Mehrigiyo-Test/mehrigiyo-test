@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './dropdownStyle.css';
+import './dropdownStyle.scss';
 import uzbFlag from "./../../images/uzbFlag.png"
 import NavVector from './../../images/nav2_vector.png';
 import rusFlag from "./../../images/rusFlag.png"
@@ -8,14 +8,13 @@ import Polygon from "./../../images/Polygon.png"
 
 
 
-function Dropdown(
-    img,
-    text,
-) {
+function Dropdown(img,text) {
+    
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null);
     const [flag, setFlag] = useState(uzbFlag)
 
+
+    
     const handleClick = () => {
         setIsOpen(true)
     }
@@ -35,22 +34,6 @@ function Dropdown(
         setFlag(engFlag)
         handleClose()
     }
-    // const flags = (id) => {
-    //     if(id === "rus" ){
-    //        return setFlag(rusFlag)
-    //     }
-    //     else if (id === "uzb"){
-    //        return setFlag(uzbFlag)
-    //     }
-    //     else if (id === "eng"){
-    //        return setFlag(engFlag)
-    //     }
-    //     else{
-    //        return setFlag(uzbFlag)
-    //     }
-       
-    // }
-
     return (
         <>
             <div className="flex gap" onClick={handleClick}>

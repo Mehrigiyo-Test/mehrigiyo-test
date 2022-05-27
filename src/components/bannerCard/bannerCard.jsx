@@ -2,7 +2,7 @@ import React from 'react';
 import BannerCardImg1 from '../../images/bannerCard-icon1.png';
 import BannerCardImg2 from '../../images/bannerCard-icon2.png';
 
-import './style.css';
+import './style.scss';
 
 const Bannercard = () => {
     return (

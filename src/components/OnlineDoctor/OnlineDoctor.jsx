@@ -29,7 +29,6 @@ export default function OnlineDoctor() {
         },
         {
             img: img4,
-            // img2: <h1 style={{background: 'red'}}>asdasdas</h1>,
             title: 'Jarrohlik',
             text: '1,065 shifokor',
         }
@@ -50,7 +49,7 @@ export default function OnlineDoctor() {
                 </div>
                 <Global text="Bepul maslahat olish" width={'260px'} position={'absolute'} top={'368px'} />
             </div>
-            <div className="bacgroundImg2"><img src={Bacground} /></div>
+            <div className="bacgroundImg2"><img src={Bacground} alt=""/></div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ColumnCardtxtstyle.css"
+import "./ColumnCardtxtstyle.scss"
 
 function ColumnCardTxt() {
   return (

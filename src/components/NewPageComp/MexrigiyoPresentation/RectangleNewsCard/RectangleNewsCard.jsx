@@ -1,5 +1,5 @@
 import React from 'react'
-import "./RectangleNewsCardStyle.css"
+import "./RectangleNewsCardStyle.scss"
 import CalendarIcon from "./../../../../images/CalendarIcon.png"
 
 function RectangleNewsCard({
