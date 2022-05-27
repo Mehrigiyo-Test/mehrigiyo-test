@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./HomeStyle.scss";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
@@ -25,155 +25,181 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import ProductList from "../../components/ProductList/ProductsList";
-import magic from "./magic.mp3"
-
+import magic from "./magic.mp3";
+import Api from "../../api/requestApi";
+import { useDispatch, useSelector } from "react-redux";
+import { actionGetNews } from "../../store/getNews/action";
 
 function Home() {
   const imginfo = { img3: <img src={leaves} alt="" /> };
   const [active, setActive] = useState([]);
-  const lastNews = [
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "1 min oldin",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "ozish",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "ozish",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "about",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "health",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "detoks",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "advice",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "advice",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "4 min oldin",
-      type: "advice",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-    {
-      img: sliderEx,
-      category: "#Ziravorlar",
-      time: "44 min oldin",
-      type: "advice",
-      theme:
-        'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
-      info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
-    },
-  ];
+  // const [newsData, setNewsData] = useState([]);
+  // const lastNews = [
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "1 min oldin",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "ozish",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "ozish",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "about",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "health",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "detoks",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "advice",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "advice",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "4 min oldin",
+  //     type: "advice",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  //   {
+  //     img: sliderEx,
+  //     category: "#Ziravorlar",
+  //     time: "44 min oldin",
+  //     type: "advice",
+  //     theme:
+  //       'Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.',
+  //     info: "Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud.",
+  //   },
+  // ];
+  const { data } = useSelector((state) => state.getNews);
+  console.log(data);
 
-  const magic2 = new Audio(magic)
-  const playy = () =>{
-    magic2.play()
-  }
+  const magic2 = new Audio(magic);
+  const playy = () => {
+    magic2.play();
+  };
+
+  // const sortFunc = (e) => {
+  //   const arrr = [];
+  //   if (e.target.id === "all") {
+  //     setActive(lastNews);
+  //   } else {
+  //     lastNews.filter((item) => {
+  //       if (e.target.id === item.type) {
+  //         arrr.push(item);
+  //         setActive(arrr);
+  //       }
+  //     });
+  //   }
+  //   playy();
+  // };
 
   const sortFunc = (e) => {
     const arrr = [];
     if (e.target.id === "all") {
-      setActive(lastNews);
+      setActive(data);
     } else {
-      lastNews.filter((item) => {
-        if (e.target.id === item.type) {
+      data.filter((item) => {
+        if (item.hashtag.includes(e.target.id)) {
           arrr.push(item);
           setActive(arrr);
         }
       });
-    } 
-    playy()
+    }
+    playy();
   };
+  const dispatch = useDispatch();
+  useEffect(() => {
+    Api.get("/news/").then((respons) =>
+      dispatch(actionGetNews(respons?.data?.data))
+    );
+  }, []);
 
   return (
     <>
@@ -224,7 +250,7 @@ function Home() {
                   </li>
                   <li
                     className="Myli"
-                    id="about"
+                    id="Ziravorlar"
                     onClick={(e) => sortFunc(e)}
                     tabIndex={1}
                   >
@@ -278,25 +304,25 @@ function Home() {
               className="mySwiper"
             >
               {active.length === 0
-                ? lastNews.map((item) => (
+                ? data.map((item) => (
                     <SwiperSlide>
                       <NewsCard
-                        img={item.img}
-                        category={item.category}
-                        time={item.time}
-                        theme={item.theme}
-                        info={item.info}
+                        img={"http://207.154.244.140:8000/" + item.image}
+                        category={item.hashtag}
+                        time={item.created_at}
+                        theme={item.name}
+                        info={item.description}
                       />
                     </SwiperSlide>
                   ))
                 : active.map((item) => (
                     <SwiperSlide>
                       <NewsCard
-                        img={item.img}
-                        category={item.category}
-                        time={item.time}
-                        theme={item.theme}
-                        info={item.info}
+                        img={"http://207.154.244.140:8000/" + item.image}
+                        category={item.hashtag}
+                        time={item.created_at}
+                        theme={item.name}
+                        info={item.description}
                       />
                     </SwiperSlide>
                   ))}

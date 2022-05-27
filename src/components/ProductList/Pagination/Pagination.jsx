@@ -25,7 +25,7 @@ const Pagination = ({
     setNumbers(fakeNumbers);
   }, [length]);
 
-  console.log(numbers);
+
 
   let styledNumber = () => {
     if (numbers.length === 1) return 1;
@@ -47,7 +47,7 @@ const Pagination = ({
     else if (item % 3 === 2) setTranslate(1);
   };
 
-  console.log(prevNumbers);
+
 
   return (
     <div className="product-list__pagination">
