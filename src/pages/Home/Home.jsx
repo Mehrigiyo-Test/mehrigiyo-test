@@ -25,6 +25,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import ProductList from "../../components/ProductList/ProductsList";
+import magic from "./magic.mp3"
+
 
 function Home() {
   const imginfo = { img3: <img src={leaves} alt="" /> };
@@ -153,6 +155,11 @@ function Home() {
     },
   ];
 
+  const magic2 = new Audio(magic)
+  const playy = () =>{
+    magic2.play()
+  }
+
   const sortFunc = (e) => {
     const arrr = [];
     if (e.target.id === "all") {
@@ -164,7 +171,8 @@ function Home() {
           setActive(arrr);
         }
       });
-    }
+    } 
+    playy()
   };
 
   return (
