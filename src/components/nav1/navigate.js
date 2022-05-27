@@ -8,21 +8,24 @@ import { onSubmit, onSubmit2 } from '../../api/registration'
 function Navigate() {
   const nav = [
     {
-      name: "Mahsulotlar katalogi"
+      name: "Mahsulotlar katalogi",
     },
     {
-      name: "Foto-lavhalar"
+      name: "Foto-lavhalar",
     },
     {
-      name: "Yetkazib berish va to'lash"
+      name: "Yetkazib berish va to'lash",
     },
     {
-      name: "Aksiya"
+      name: "Aksiya",
     },
     {
-      name: "Yangi"
-    }
-  ]
+      name: "Yangi",
+    },
+  ];
+
+  // Api.get('/specialist/doctors/')
+  //   .then((response) => console.log(response))
 
   return (
     <div className="navigate">
@@ -55,8 +58,7 @@ function Navigate() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navigate
-
+export default Navigate;
