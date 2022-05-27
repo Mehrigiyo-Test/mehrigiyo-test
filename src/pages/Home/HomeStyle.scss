@@ -35,7 +35,6 @@
     margin-right: 100px;
 }
 .slideComp{
-    display: flex;
     gap: 30px;
 }
 .myH3{
@@ -53,7 +52,7 @@
 .Myul{
     padding-left: unset;
 }
-.Myul .Myli:hover{
+.Myul .Myli:focus{
     color: #53B175;
 }
 .swiper-pagination-bullet {

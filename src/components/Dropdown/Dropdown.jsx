@@ -16,23 +16,20 @@ function Dropdown(img,text) {
 
     
     const handleClick = () => {
-        setIsOpen(true)
-    }
-    const handleClose = () => {
-        setIsOpen(false)
+        setIsOpen(!isOpen)
     }
 
     const uzb = () =>{
         setFlag(uzbFlag)
-        handleClose()
+        handleClick()
     }
     const rus = () =>{
         setFlag(rusFlag)
-        handleClose()
+        handleClick()
     }
     const eng = () =>{
         setFlag(engFlag)
-        handleClose()
+        handleClick()
     }
     return (
         <>
@@ -53,11 +50,11 @@ function Dropdown(img,text) {
                         <div className="langText">O'zbekcha</div>
                     </div>
                     <div className="flex pdleft hover space-between" onClick={rus}>
-                        <div className="ddImg"><img id="rus" src={rusFlag} alt="" /></div>
+                        <div className="ddImg"><img id="uzb" src={rusFlag} alt="" /></div>
                         <div className="centerText">Russkiy</div>
                     </div>
                     <div className="flex pdleft hover space-between" onClick={eng}>
-                        <div className="ddImg"><img id="eng" src={engFlag} alt="" /></div>
+                        <div className="ddImg"><img id="uzb" src={engFlag} alt="" /></div>
                         <div className="centerText">English</div>
                     </div>
                 </div> : null}

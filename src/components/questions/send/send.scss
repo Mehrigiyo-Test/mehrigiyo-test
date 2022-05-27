@@ -63,6 +63,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    width: 350px;
 }
 .more-btn {
     display: flex;
@@ -74,7 +75,13 @@
     padding: 10px 20px;
     border-radius: 50px;
     width: 180px;
+    cursor: pointer;
   }
+
+  .drop{
+      display: flex;
+  }
+
   .leaves{
       position: absolute;
       top: -20px;
