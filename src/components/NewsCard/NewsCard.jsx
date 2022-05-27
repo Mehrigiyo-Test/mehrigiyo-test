@@ -22,10 +22,12 @@ function NewsCard({ img, category, time, theme, display, info }) {
     <>
       <div className="wrapper">
         <div className="img_wrapper">
-          <img className="sldImg" src={img}  alt="" />
-          <span className="imgPlay">
-            <img src={imgPlay} alt="" />
-          </span>
+          <img className="sldImg" src={img} alt="" />
+          <a href="https://www.youtube.com/watch?v=bCtlituS9p8" target="_blank"> 
+            <span className="imgPlay">
+              <img src={imgPlay} alt="" />
+            </span>
+          </a>
         </div>
         <div className="txt">
           <div className="category">

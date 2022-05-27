@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomeStyle.scss";
 import NewsCard from "../../components/NewsCard/NewsCard";
-import sliderEx from "./../../images/sliderEx.png";
 import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
 import OrganicPlantation from "./../../components/SectionPlantation/OrganicPlantation";
 import OnlineDoctor from "./../../components/OnlineDoctor/OnlineDoctor";
