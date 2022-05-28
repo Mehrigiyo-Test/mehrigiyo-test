@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomeStyle.scss";
-import NewsCard from "../../components/NewsCard/NewsCard";
-import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
 
-import "./HomeStyle.scss";
 // COMPONENTS
 import OrganicPlantation from "./../../components/SectionPlantation/OrganicPlantation";
 import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
@@ -32,7 +29,6 @@ import leaves from "../../images/Groupffff.png";
 //SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import ProductList from "../../components/ProductList/ProductsList";
 import magic from "./magic.mp3";
 import Api from "../../api/requestApi";
 import { useDispatch, useSelector } from "react-redux";
