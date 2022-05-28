@@ -9,7 +9,7 @@ const ProductCard = ({ cost, discount, id, image, name, title, type , api }) => 
   const [like, setLike] = useState(false);
 
   return (
-    <div className="product-lists-item">
+    <div className="product-lists-item" tabIndex={10}>
       <div className="product-item__image">
         <img src={api + image} alt="" />
         {like ? (

@@ -10,6 +10,16 @@ import { actionGetProduct } from "../../store/getProducts/action";
 import { useDispatch, useSelector } from "react-redux";
 import { actionGetProductsTypes } from "../../store/getProductsTypes/action";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper";
+
+
+
 const ProductList = ({ API }) => {
   const [sortedData, setSortedData] = useState([]);
   const [active, setActive] = useState("products");
@@ -85,10 +95,20 @@ const ProductList = ({ API }) => {
           Tabletkalar
         </p>
       </nav>
-
+    <Swiper
+    slidesPerView={5}
+    spaceBetween={30}
+    freeMode={true}
+    pagination={{
+      clickable: true
+    }}
+    modules={{FreeMode, Pagination}}
+    className="mySwiper"
+    >
       <div className="products-list">
         {sortedData.length === 0
           ? data.map((item) => (
+            <SwiperSlide>
               <ProductCard
                 cost={item.cost}
                 discount={item.discount}
@@ -99,8 +119,10 @@ const ProductList = ({ API }) => {
                 type={item.type_medicine}
                 api={API}
               />
+              </SwiperSlide>
             ))
           : sortedData.map((item) => (
+            <SwiperSlide>
               <ProductCard
                 cost={item.cost}
                 discount={item.discount}
@@ -111,8 +133,10 @@ const ProductList = ({ API }) => {
                 type={item.type_medicine}
                 api={API}
               />
+              </SwiperSlide>
             ))}
       </div>
+      </Swiper>
 
       <div className="product-list-footer">
         <button className="all-products">
