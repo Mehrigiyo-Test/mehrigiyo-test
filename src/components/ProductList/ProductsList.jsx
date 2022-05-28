@@ -42,11 +42,10 @@ const ProductList = ({ API }) => {
     } else {
       data.filter((item) => {
         types.forEach((item2) => {
-          if (e.target.id == item2) {
-            if (item.type_medicine === item2) {
+          if (e.target.id == item2 && item.type_medicine === item2) {
               array.push(item);
               setSortedData(array);
-            }
+            
           }
         });
       });
