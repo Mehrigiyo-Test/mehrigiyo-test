@@ -3,320 +3,53 @@ import Basket_card__img from "../../images/product-item__image.png";
 import ArrowRight from "../../images/arrow-right.svg";
 import ArrowBottom from "../../images/Caret.svg";
 import "./ProductList.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard/ProductCard";
-import Pagination from "./Pagination/Pagination";
+import Api from "../../api/requestApi";
+import { actionGetProduct } from "../../store/getProducts/action";
+import { useDispatch, useSelector } from "react-redux";
+import { actionGetProductsTypes } from "../../store/getProductsTypes/action";
 
-const ProductList = () => {
-  const data = [
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "oil",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "spices",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "tea",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tea",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "spices",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "oil",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "5555",
-      info: "Erkaklar kuchi",
-      type: "tea",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "spices",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "oil",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tea",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "spices",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "oil",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "tablets",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rastaropsha MAX",
-      info: "Mavjud",
-      type: "honey",
-      currentPrice: "16 000",
-      previousPrice: "17 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "Rohat Sirop",
-      info: "Erkaklar kuchi",
-      type: "tea",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "spices",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-    {
-      title: "ROHAT Yog`i №2",
-      info: "Mavjud",
-      type: "oil",
-      currentPrice: "150 000",
-      previousPrice: "200 190",
-      image: Basket_card__img,
-      id: Math.random(),
-    },
-  ];
-
+const ProductList = ({ API }) => {
   const [sortedData, setSortedData] = useState([]);
   const [active, setActive] = useState("products");
+  const [types, setTypes] = useState([]);
 
-  const [pagination, setPagination] = useState(0);
+  const { data } = useSelector((state) => state.getProducts);
+  const { getType } = useSelector((state) => state.getProductsTypes);
+  console.log(data, "bu daata");
+  console.log(getType, "bu getType");
+  const dispatch = useDispatch();
 
-  const handleActive = (e) => {
-    const arr = ["products", "tea", "oil", "spices", "honey", "tablets"];
+  useEffect(() => {
+    Api.get("/shop/medicines/").then((res) =>
+      dispatch(actionGetProduct(res?.data?.data))
+    );
+  }, []);
 
-    for (let i = 0; i < arr.length; i++) {
-      if (e.target.id !== arr[i]) {
-        document.getElementById(arr[i]).classList.remove("active");
-      } else {
-        const sorted = [];
+  useEffect(() => {
+    Api.get("/shop/types/").then((respon) =>
+      dispatch(actionGetProductsTypes(respon?.data?.data))
+    );
+  }, []);
 
-        e.target.classList.toggle("active");
-        setActive(arr[i]);
-        for (let item of data) {
-          setPagination(0);
-          if (item.type === arr[i]) {
-            sorted.push(item);
+  const handleSort = (e) => {
+    const array = [];
+    const arr = getType.map((item) => item.id);
+    setTypes(arr);
+    if (e.target.id === "all") {
+      setSortedData(data);
+    } else {
+      data.filter((item) => {
+        types.forEach((item2) => {
+          if (e.target.id == item2) {
+            if (item.type_medicine === item2) {
+              array.push(item);
+              setSortedData(array);
+            }
           }
-        }
-        setSortedData(sorted);
-      }
+        });
+      });
     }
   };
 
@@ -333,34 +66,52 @@ const ProductList = () => {
       </div>
 
       <nav className="product-list-header">
-        <p className="active" id="products" onClick={(e) => handleActive(e)}>
+        <p className="active" id="all" onClick={(e) => handleSort(e)}>
           Hammasi
         </p>
-        <p id="tea" onClick={(e) => handleActive(e)}>
+        <p id="2" onClick={(e) => handleSort(e)}>
           Choy
         </p>
-        <p id="oil" onClick={(e) => handleActive(e)}>
+        <p id="3" onClick={(e) => handleSort(e)}>
           Yog’lar
         </p>
-        <p id="spices" onClick={(e) => handleActive(e)}>
+        <p id="4" onClick={(e) => handleSort(e)}>
           Ziravorlar
         </p>
-        <p id="honey" onClick={(e) => handleActive(e)}>
+        <p id="5" onClick={(e) => handleSort(e)}>
           Asal
         </p>
-        <p id="tablets" onClick={(e) => handleActive(e)}>
+        <p id="6" onClick={(e) => handleSort(e)}>
           Tabletkalar
         </p>
       </nav>
 
       <div className="products-list">
-        {active === "products"
-          ? data
-              .slice(0 + 5 * pagination, 5 + pagination * 5)
-              .map((item) => <ProductCard key={item.id} data={item} />)
-          : sortedData
-              .slice(0 + 5 * pagination, 5 + pagination * 5)
-              .map((item) => <ProductCard key={item.id} data={item} />)}
+        {sortedData.length === 0
+          ? data.map((item) => (
+              <ProductCard
+                cost={item.cost}
+                discount={item.discount}
+                id={item.id}
+                image={item.image}
+                name={item.name}
+                title={item.title}
+                type={item.type_medicine}
+                api={API}
+              />
+            ))
+          : sortedData.map((item) => (
+              <ProductCard
+                cost={item.cost}
+                discount={item.discount}
+                id={item.id}
+                image={item.image}
+                name={item.name}
+                title={item.title}
+                type={item.type_medicine}
+                api={API}
+              />
+            ))}
       </div>
 
       <div className="product-list-footer">
@@ -368,13 +119,6 @@ const ProductList = () => {
           <p>Barcha mahsulotlarni ko’rish</p>
           <img src={ArrowRight} alt="" />
         </button>
-        <Pagination
-          data={data}
-          sortedData={sortedData}
-          setPagination={setPagination}
-          pagination={pagination}
-          active={active}
-        />
       </div>
     </div>
   );

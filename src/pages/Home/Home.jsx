@@ -88,7 +88,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
-        <ProductList />
+        <ProductList API={API} />
         <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
