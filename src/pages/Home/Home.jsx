@@ -2,32 +2,44 @@ import React, { useEffect, useState } from "react";
 import "./HomeStyle.scss";
 import NewsCard from "../../components/NewsCard/NewsCard";
 import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
+
+import "./HomeStyle.scss";
+// COMPONENTS
 import OrganicPlantation from "./../../components/SectionPlantation/OrganicPlantation";
+import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
+import GlobalSponsors from "../../components/GlobalSponsors/GloblaSponsors";
+import ApplicationSec from "../../components/ApplicationSec/ApplicationSec";
 import OnlineDoctor from "./../../components/OnlineDoctor/OnlineDoctor";
-import Ambulance from "./../../components/Ambulance/Ambulance";
-import BannerForm from "../../components/bannerForm/bannerForm";
-import BannerInputIcon from "../../images/BannerInputIcon.png";
-import BannerButtonIcon from "../../images/lupa.png";
+import ProductList from "../../components/ProductList/ProductsList";
 import BannerPhoto from "../../components/bannerPhoto/bannerPhoto";
-import Banner from "../Banner/Banner";
-import Infosection from "../InfoSection/InfoSection";
 import Bannercard from "./../../components/bannerCard/bannerCard";
 import InfoBanner from "../../components/InfoBanner/InfoBanner";
-import { OnlineRecommend } from "../../components/OnlineRecommend/OnlineRecommend";
-import Global from "../../components/GlobalBtn/GlobalBtn";
-import GlobalSponsors from "../../components/GlobalSponsors/GloblaSponsors";
+import BannerForm from "../../components/bannerForm/bannerForm";
+import Ambulance from "./../../components/Ambulance/Ambulance";
 import Asked from "../../components/questions/asked/asked";
+import Global from "../../components/GlobalBtn/GlobalBtn";
+import NewsCard from "../../components/NewsCard/NewsCard";
 import Send from "../../components/questions/send/send";
+import Infosection from "../InfoSection/InfoSection";
+import Banner from "../Banner/Banner";
+
+//PNG
+import BannerInputIcon from "../../images/BannerInputIcon.png";
+import BannerButtonIcon from "../../images/lupa.png";
+import sliderEx from "./../../images/sliderEx.png";
 import leaves from "../../images/Groupffff.png";
+
+//SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import ProductList from "../../components/ProductList/ProductsList";
 import magic from "./magic.mp3";
 import Api from "../../api/requestApi";
 import { useDispatch, useSelector } from "react-redux";
 import { actionGetNews } from "../../store/getNews/action";
+import "swiper/css/pagination";
+import "swiper/css";
+
 
 function Home() {
   const imginfo = { img3: <img src={leaves} alt="" /> };

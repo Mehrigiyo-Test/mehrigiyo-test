@@ -8,31 +8,28 @@ import Polygon from "./../../images/Polygon.png"
 
 
 
-function Dropdown(img,text) {
-    
+function Dropdown(img, text) {
+
     const [isOpen, setIsOpen] = useState(false);
-    const [flag, setFlag] = useState(uzbFlag)
+    const [flag, setFlag] = useState(uzbFlag);
 
 
-    
+
     const handleClick = () => {
-        setIsOpen(true)
-    }
-    const handleClose = () => {
-        setIsOpen(false)
+        setIsOpen(!isOpen)
     }
 
-    const uzb = () =>{
+    const uzb = () => {
         setFlag(uzbFlag)
-        handleClose()
+        handleClick()
     }
-    const rus = () =>{
+    const rus = () => {
         setFlag(rusFlag)
-        handleClose()
+        handleClick()
     }
-    const eng = () =>{
+    const eng = () => {
         setFlag(engFlag)
-        handleClose()
+        handleClick()
     }
     return (
         <>
@@ -40,15 +37,15 @@ function Dropdown(img,text) {
                 <div className="relativ">
                     <img className="changableFlag" src={flag} alt="uz" />
                 </div>
-                <div style={{paddingTop: "3px"}}> 
+                <div style={{ paddingTop: "3px" }}>
                     <img src={NavVector} alt="" />
                 </div>
             </div>
 
             {isOpen ?
                 <div className="dropdown_wrapper" >
-                    <div className="polyAbsolutes"><img  src={Polygon} alt="" /></div>
-                    <div className="flex hover space-between"  onClick={uzb}>
+                    <div className="polyAbsolutes"><img src={Polygon} alt="" /></div>
+                    <div className="flex hover space-between" onClick={uzb}>
                         <div className="ddImg ii"><img id="uzb" src={uzbFlag} alt="" /></div>
                         <div className="langText">O'zbekcha</div>
                     </div>
@@ -66,4 +63,4 @@ function Dropdown(img,text) {
 
 }
 
-export default Dropdown
+export default Dropdown;

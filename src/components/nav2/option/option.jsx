@@ -5,14 +5,14 @@ import Polygon from "./../../../images/Polygon.png"
 function Option(link) {
   return (
     <>
-    <div>
-        <div><img src={Polygon} alt="" /></div>
+      <div>
+        <div><img src={Polygon} alt="img"/></div>
         <select className='optionWrapper'>
             <option className='link55'>{link}</option>
         </select>
-    </div>
+      </div>
     </>
   )
 }
 
-export default Option
+export default Option;

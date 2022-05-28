@@ -1,7 +1,7 @@
 .gap{
-    gap: 10px;
-    padding-right: 10px;
-    
+    margin-right: 15px;
+    margin-top: -5px;
+
 }
 .space-between{
     display: flex;
@@ -42,6 +42,5 @@
     size: 50px;
 }
 .relativ{
-    position: relative;
-    top: -4px;
+    display: flex;
 }
