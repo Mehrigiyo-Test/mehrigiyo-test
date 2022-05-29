@@ -28,8 +28,7 @@ const ApplicationSec = () => {
             textBtn="SMS yuboring"
             width="471px"
             padding=" 17px 19px"
-            
-            />
+          />
         </div>
 
         <div className="App-sec__text__btns">

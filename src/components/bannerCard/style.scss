@@ -1,8 +1,9 @@
-.banner-card-wrapper{
+.banner-card-wrapper {
     position: relative;
+    z-index: 10;
 }
 
-.banner-card{
+.banner-card {
     position: absolute;
     top: -283px;
     left: 168px;
@@ -14,31 +15,30 @@
     border-radius: 15px;
 }
 
-.card2{
+.card2 {
     position: absolute;
     top: -130px;
     left: 1070px;
 }
 
-.banner-card__titles{
+.banner-card__titles {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 6px;
 }
 
-.banner-card__titles__title{
+.banner-card__titles__title {
     font-weight: 700;
     font-size: 16px;
     color: #000;
     cursor: pointer;
 }
 
-.banner-card__text{
+.banner-card__text {
     width: 155px;
     font-weight: 400;
     color: #C3C3C3;
     font-size: 12px;
     text-align: left;
 }
-
