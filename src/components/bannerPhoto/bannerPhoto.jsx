@@ -2,11 +2,8 @@ import React from "react";
 import MainPhoto from "../../images/main.png";
 import MainPhoto2 from "../../images/main2.png";
 import "./style.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
-
 import { Autoplay } from "swiper";
 
 const Bannerinput = () => {

@@ -1,28 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TopDoctors.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
+import { MdOutlineBookmarkAdded } from "react-icons/md";
 
-const TopDoctors = ({ text1, text2, img, setopen, func , id , setactive}) => {
-  const gg = () =>{
-    setopen('open')
-    setactive('active')
-    func(id)
-  }
+const TopDoctors = ({ text1, text2, img, setopen, func, id, setactive }) => {
+  const gg = () => {
+    setopen("open");
+    setactive("active");
+    func(id);
+  };
+  const [clickSave, setClickSave] = useState(true);
+
   return (
     <div className="topDoctors">
       <div className="topDoctors__img">
         <div className="imgFirst">
-          {" "}
           <img src={img} alt="  " />
           <button className="imgFirst__btn">TOP</button>
         </div>
-        <span className="imgSecond" >
-          <MdOutlineBookmarkAdd className="colorYellow" tabIndex={1}/>
+        <span className="imgSecond">
+          {clickSave ? (
+            <MdOutlineBookmarkAdd onClick={() => setClickSave(!clickSave)} />
+          ) : (
+            <MdOutlineBookmarkAdded onClick={() => setClickSave(!clickSave)} />
+          )}
         </span>
       </div>
       <p className="topDoctors__paragraph1">{text1}</p>
       <p className="topDoctors__paragraph2">{text2}</p>
-      <button className="topDoctors__btn" onClick={gg}>Appoinment</button>
+      <button className="topDoctors__btn" onClick={gg}>
+        Appoinment
+      </button>
     </div>
   );
 };
