@@ -36,11 +36,14 @@ const Companysupport = () => {
       <div className="support-cards">
         {arr.map((item, index) => (
           <div key={index} className="support-cards__card">
-              <span><img src={item.img} alt=""/></span>
-              <p className="support-cards__card__text">{item.text}</p>
+            <span><img src={item.img} /></span>
+            <p className="support-cards__card__text">{item.text}</p>
           </div>
         ))}
+
       </div>
+
+
       <div className="support-bottom-titeles">
         <p className="support-bottom-titeles__text">
           “Mehrigiyo” shifobaxsh mahsulotlari kasalliklarning
@@ -53,8 +56,8 @@ const Companysupport = () => {
         </p>
         <div className="support__bc">
           <span>
-            <img src={Bc_leaf_support} alt="" />
-            <img src={SupportBcg} alt="" />
+            <img src={Bc_leaf_support} alt="img" />
+            <img src={SupportBcg} alt="img" />
           </span>
         </div>
       </div>

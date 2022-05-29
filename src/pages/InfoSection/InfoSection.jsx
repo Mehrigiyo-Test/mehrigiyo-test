@@ -45,8 +45,8 @@ const Infosection = () => {
                     </div>
                 </div>
             </div>
-            <div className='line-group lg2'>
-                <img className='line' src={Line} alt="line" />
+            <div className='line-group'>
+                <img className='line l2' src={Line} alt="line" />
             </div>
         </div>
     );

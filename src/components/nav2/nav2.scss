@@ -1,60 +1,60 @@
 .nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 45px 30px 90px;
-
-  .navcontainer {
-    width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-  .nav_Head {
+    padding: 30px 45px 30px 90px;
+  
+    .navcontainer {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav_Head {
+        position: relative;
+    }
+    .nav_Link {
+      a::before {
+        content: url("./../../images/Vector2.png") !important;
+        position: absolute !important;
+        top: -2px;
+        right: -15px;
+      }
+    }
+  
+    .nav_Item {
+      text-decoration: none;
       position: relative;
-  }
-  .nav_Link {
-    a::before {
-      content: url("./../../images/Vector2.png") !important;
-      position: absolute !important;
-      top: -2px;
-      right: -15px;
+      list-style: none;
+      color: #282828 !important;
+      font-size: 16px;
+      opacity: 0.4;
+    }
+  
+    .nav_Item:focus {
+      color: #000000 !important;
+      opacity: 1 !important;
+      font-weight: 600;
+    }
+  
+    .nav_Item::after {
+      content: "";
+      margin-top: 28px;
+      background-color: #53b175;
+      height: 4px;
+      width: 0%;
+      left: 50%;
+      position: absolute;
+      transition: width 0.3s ease-in-out;
+      transform: translateX(-50%);
+    }
+  
+    .nav_Item:focus:after {
+      width: 22px;
     }
   }
-
-  .nav_Item {
-    text-decoration: none;
-    position: relative;
-    list-style: none;
-    color: #282828 !important;
-    font-size: 16px;
-    opacity: 0.4;
+  
+  .dropBackground {
+    height: 10px;
+    width: 20px;
+    background-color: red;
   }
-
-  .nav_Item:focus {
-    color: #000000 !important;
-    opacity: 1 !important;
-    font-weight: 600;
-  }
-
-  .nav_Item::after {
-    content: "";
-    margin-top: 28px;
-    background-color: #53b175;
-    height: 4px;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    transition: width 0.3s ease-in-out;
-    transform: translateX(-50%);
-  }
-
-  .nav_Item:focus:after {
-    width: 22px;
-  }
-}
-
-.dropBackground {
-  height: 10px;
-  width: 20px;
-  background-color: red;
-}
