@@ -44,54 +44,16 @@ let settings = {
 };
 
 function OnlineDoctor() {
-  const { data } = useSelector((state) => state.getDoctors);
-
-  console.log(data?.data?.data, "BU DATA res");
-  // const gg = data.data.data
-
-  console.log(data?.data?.data.map((item) => item.full_name));
-
+  const { dataDoctors } = useSelector((state) => state.getDoctors);
+console.log(dataDoctors, "bu dokorlar datasi")
   const dispatch = useDispatch();
+  const API = "http://207.154.244.140:8000/";
 
   useEffect(() => {
-    Api.get("/specialist/doctors/").then((respons) =>
-      dispatch(actionDoctors(respons))
+    Api.get('/specialist/doctors/').then((res) =>
+      dispatch(actionDoctors(res?.data?.data))
     );
   }, []);
-
-  const doctorSlide = [
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-    {
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-    },
-  ];
-
   return (
     <>
       <Warning />
@@ -113,12 +75,12 @@ function OnlineDoctor() {
           </Link>
         </div>
         <Slider {...settings}>
-          {doctorSlide.map((item, index) => (
-            <div key={index}>
+          {dataDoctors.map((item) => (
+            <div key={item.id}>
               <TopDoctors
-                img={item.img}
-                text1={item.text1}
-                text2={item.text2}
+                img={API+item.image}
+                text1={item.full_name}
+                text2={item.type_doctor.name}
               />
             </div>
           ))}

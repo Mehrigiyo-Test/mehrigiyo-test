@@ -11,6 +11,13 @@ const TopDoctors = ({ text1, text2, img, setopen, func, id, setactive }) => {
   };
   const [clickSave, setClickSave] = useState(true);
 
+  const ggg = (item) => {
+    const firstName = item.split('')[0]
+    const lastName = item.split(' ')[1]
+    return `${firstName}. ${lastName}`
+  }
+ 
+
   return (
     <div className="topDoctors">
       <div className="topDoctors__img">
@@ -26,7 +33,7 @@ const TopDoctors = ({ text1, text2, img, setopen, func, id, setactive }) => {
           )}
         </span>
       </div>
-      <p className="topDoctors__paragraph1">{text1}</p>
+      <p className="topDoctors__paragraph1">{ggg(text1)}</p>
       <p className="topDoctors__paragraph2">{text2}</p>
       <button className="topDoctors__btn" onClick={gg}>
         Appoinment

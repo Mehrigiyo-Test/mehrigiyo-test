@@ -1,13 +1,13 @@
 import { DOCTORS } from "./types";
 
 const initialState = {
-  data: [],
+  dataDoctors: [],
 };
 
 export const getDoctors = (state = initialState, { type, payload }) => {
   switch (type) {
     case DOCTORS:
-      return { ...state, data: payload };
+      return { ...state, dataDoctors: payload };
     default:
       return state;
   }
