@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import Googleplay from '../../images/Googleplay-button.png'
 import Appstore from '../../images/Appstore-button.png'
 import footerhome from '../../images/footerhome.png'
+import { Link } from 'react-router-dom';
 
 function footer() {
   return (
@@ -76,9 +77,9 @@ function footer() {
             <div className='dons'>© 1996-2021. Mehrigiyo. Barcha huquqlar himoyalangan. </div>
             <div className='dons'>Saytdan olingan barcha maʼlumotlar chop etilganda veb-saytga havola qilish majburiy.</div></div>
           <div className='footer-menu'>
-            <p className='menu-text'>Bosh sahifa</p>
-            <p className='menu-text'>Biz haqimizda</p>
-            <p className='menu-text'>Yangiliklar</p>
+            <Link to="/" className='menu-text'>Bosh sahifa</Link>
+            <Link to="/aboutUs" className='menu-text'>Biz haqimizda</Link>
+            <Link to="/news" className='menu-text'>Yangiliklar</Link>
           </div>
         </div>
       </div>

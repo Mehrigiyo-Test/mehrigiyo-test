@@ -7,6 +7,7 @@ import img4 from '../../images/Shape4.png';
 import Bacground from '../../images/Groupffff.png';
 import Global from "../GlobalBtn/GlobalBtn";
 import Profession from "../GlobalProfession/Profession";
+import { Link } from "react-router-dom";
 
 
 export default function OnlineDoctor() {
@@ -39,7 +40,7 @@ export default function OnlineDoctor() {
             <div className="bacgroundImg"></div>
             <div className="onlineDoctorContainer">
                 <h3>Har qanday sog'liq bilan bog'liq muammolar uchun
-                    <span className="greenDoctor"> onlayn shifokorlarga</span> murojaat qiling</h3>
+                    <Link to="/onlineDoctor" className="greenDoctor"> onlayn shifokorlarga</Link> murojaat qiling</h3>
                 <p>Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>
                 <div className="boxContainer">
                     {data.map(item => (
