@@ -59,7 +59,7 @@ function footer() {
           <p className='parag'>Maxfiylik siyosati</p>
           <p className='parag'>Xizmat ko'rsatish shartlari</p>
           <p className='parag'>Huquqni muhofaza qilish</p>
-          <div className='homeimg'><img src={footerhome} alt="iocn"/></div>
+          <div className='homeimg'><img src={footerhome} alt="icon"/></div>
         </div>
 
         <div className='section_b'>
