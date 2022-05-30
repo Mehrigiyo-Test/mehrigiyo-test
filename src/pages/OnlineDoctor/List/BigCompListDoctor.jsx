@@ -16,11 +16,15 @@ import MeetingSucceed from "../../../components/waiting/MeetingSucceed/MeetingSu
 import DoctorTtypeInfo from "../../../components/waiting/DoctorTtypeInfo/DoctorTtypeInfo";
 import Modal from "../../../components/Modal";
 import img1 from "../../../images/doctorBahrom.svg"
+import { useSelector } from "react-redux";
 
 function BigCompListDoctor() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("active");
   const [num, setNum] = useState("");
+  const {dataDoctors} = useSelector((state) => state.getDoctors);
+  const API = "http://207.154.244.140:8000/";
+
   const cate = [ 
     {
       name: "Hammasi",
@@ -45,49 +49,49 @@ function BigCompListDoctor() {
     },
   ];
 
-  const doctors = [
-    {
-      id: 1,
-      img: img1,
-      text1: "A. Bahrom",
-      text2: "⭐️ 4.5 (135 reviews)",
-      tajriba: "5 yil",
-      job: "Nevropatolog",
-      setOpen,
-      setActive,
-    },
-    {
-      id: 2,
-      img: img1,
-      text1: "A. Ibrohim",
-      text2: "⭐️ 4.5 (135 reviews)",
-      tajriba: "45 yil",
-      job: "Genetika",
-      setOpen,
-      setActive,
-    },
-    {
-      id: 3,
-      img: img1,
-      text1: "A. Xurshid",
-      text2: "⭐️ 4.5 (135 reviews)",
-      job: "Jarroh",
-      setOpen,
-      setActive,
-    },
-    {
-      id: 4,
-      img: img1,
-      text1: "A. Abdulaziz",
-      text2: "⭐️ 4.5 (135 reviews)",
-      job: "Kardiolog",
-      setOpen,
-      setActive,
-    },
-  ];
+  // const doctors = [
+  //   {
+  //     id: 1,
+  //     img: img1,
+  //     text1: "A. Bahrom",
+  //     text2: "⭐️ 4.5 (135 reviews)",
+  //     tajriba: "5 yil",
+  //     job: "Nevropatolog",
+  //     setOpen,
+  //     setActive,
+  //   },
+  //   {
+  //     id: 2,
+  //     img: img1,
+  //     text1: "A. Ibrohim",
+  //     text2: "⭐️ 4.5 (135 reviews)",
+  //     tajriba: "45 yil",
+  //     job: "Genetika",
+  //     setOpen,
+  //     setActive,
+  //   },
+  //   {
+  //     id: 3,
+  //     img: img1,
+  //     text1: "A. Xurshid",
+  //     text2: "⭐️ 4.5 (135 reviews)",
+  //     job: "Jarroh",
+  //     setOpen,
+  //     setActive,
+  //   },
+  //   {
+  //     id: 4,
+  //     img: img1,
+  //     text1: "A. Abdulaziz",
+  //     text2: "⭐️ 4.5 (135 reviews)",
+  //     job: "Kardiolog",
+  //     setOpen,
+  //     setActive,
+  //   },
+  // ];
 
   const func = (param) => {
-    const id = doctors.filter((a) => a.id === param);
+    const id = dataDoctors.filter((a) => a.id === param);
     setNum(Number(id.map((a) => a.id)));
   };
   const btn = () => {
@@ -137,13 +141,14 @@ function BigCompListDoctor() {
               </Link>
             </p>
           </div>
-          <div className="display doc">
+          <div className="doc">
+            <div className="displayLeft">
             <span>
               <h1>Shifokorlar</h1>
             </span>
-            <span className="display rowFilter gap">
-              <span>Saralash:</span>
-              <div className="gap News1_wrapper ">
+            <span className="rowFilter">
+              <div className="News1_wrapper beetwenUs ">
+                <span>Saralash:</span>
                 <span tabIndex={1} className="doctype">
                   Yangi
                 </span>
@@ -158,9 +163,12 @@ function BigCompListDoctor() {
                 </span>
               </div>
             </span>
+            </div>
+            <div className="displayRight">
             <span className="Qidiruv">
-              <Search />
+              <Search top={'75px'}/>
             </span>
+            </div>
           </div>
           <div className="display">
             <div className="categoryFilter">
@@ -187,22 +195,22 @@ function BigCompListDoctor() {
             </div>
 
             <div className="DocInfo">
-              {doctors.map((a) => (
+              {dataDoctors.map((a) => (
                 <TopDoctors
                   id={a.id}
-                  img={a.img}
-                  text1={a.text1}
-                  text2={a.text2}
-                  job={a.job}
-                  setopen={a.setOpen}
-                  func={func}
-                  setactive={a.setActive}
+                  img={API+a.image}
+                  text1={a.full_name}
+                  // text2={a.text2}
+                  // job={a.job}
+                  // setopen={a.setOpen}
+                  // func={func}
+                  // setactive={a.setActive}
                 />
               ))}
             </div>
           </div>
         </div>
-        <div>
+        <div className="leaveBak">
           <img className="bak" src={Bak} alt="" />
         </div>
       </div>
@@ -214,7 +222,7 @@ function BigCompListDoctor() {
               children={
                 <DoctorFullCard
                   setOpen={setOpen}
-                  data={doctors}
+                  data={dataDoctors}
                   props={num}
                   btn={btn}
                   active={setActive}
@@ -242,7 +250,7 @@ function BigCompListDoctor() {
           ) : active === "info" ? (
             <Modal
               children={
-                <DoctorTtypeInfo setOpen={setOpen} props={num} data={doctors} />
+                <DoctorTtypeInfo setOpen={setOpen} props={num} data={dataDoctors} />
               }
             />
           ) : null}

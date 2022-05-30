@@ -5,8 +5,9 @@
 .Onlinewr{
     padding-left: 100px;
     padding-right: 50px;
-    position: relative;
-    
+    position: relative; 
+    // overflow: hidden;
+    margin-bottom: 20px;
 }
 .GreyTxt{
     font-family: 'Poppins';
@@ -24,6 +25,7 @@
     align-items: center;
     padding: 5px 20px 5px 20px;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 .AttentComp{
     display: flex;
@@ -31,13 +33,21 @@
     align-items: center;
 }
 .DoctorNav{
-    padding: 40px 0 0 0;
+    padding: 40px 0 15px 0;
 }
 .doc{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // align-items: center;
+    .displayLeft {
+        gap: 200px;
+        display: flex;
+        align-items: center;
+    }
+    // .displayRight {
+
+    // }
 }
+
 .doctype{
     cursor: pointer;
     text-decoration: none;
@@ -93,9 +103,12 @@
     color: #53B175;
     text-decoration: underline;
 }
-.rowFilter{
-    /* padding-left: 222px; */
-    /* padding-right: 530px; */
+// .rowFilter{
+//      padding-left: 222px; 
+//      padding-right: 530px; 
+// }
+.beetwenUs {
+    gap: 20px;
 }
 .filterBg{
     background-color: white;
@@ -109,13 +122,15 @@
     gap: 36px;
     margin-left: 80px;
     margin-top: 25px;
-    margin-bottom: 350px;
+    margin-bottom: 650px;
 }
-.bak{
+.leaveBak {
     position: absolute;
-    top: 1440px;
-    left: 1000px;
-    opacity: 0.05;
+    left: 970px;
+    top: 700px;
+    .bak {
+        opacity: .1;
+    }
 }
 .AdvDay{
     margin-top: 50px;
