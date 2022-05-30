@@ -37,7 +37,7 @@ export default function OnlineDoctor() {
           berishadi.
         </p>
         <div className="boxContainer">
-          {info.map((item) => (
+          {info.filter((_, index) => index < 4).map((item) => (
             <Profession key={item.id} data={item} />
           ))}
         </div>
