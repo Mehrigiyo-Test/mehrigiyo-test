@@ -42,3 +42,9 @@ body{
   border-radius: 50px;
   border: 0 solid transparent;
 }
+.slick-track{
+  display: flex !important;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 100px;
+}

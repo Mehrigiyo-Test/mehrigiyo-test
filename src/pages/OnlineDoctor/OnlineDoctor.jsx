@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-import { Pagination, Autoplay } from "swiper";
+// import { Pagination, Autoplay } from "swiper";
 import FreeAdvice from "../../components/FreeAdvice/FreeAdvice";
 import Ambulance from "../../components/Ambulance/Ambulance";
 import TypeDoctor from "../../components/TypesOfDoctors/TypeDoctor";
@@ -19,22 +19,78 @@ import Api from "../../api/requestApi";
 import { useDispatch, useSelector } from "react-redux";
 import { actionDoctors } from "../../store/getDoctors/action";
 
+import Slider from "react-slick";
+
+let settings = {
+  dots: false,
+  infinite: true,
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth: true,
+  speed: 3000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1370,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      },
+    },
+  ],
+};
+
 function OnlineDoctor() {
-  
-  const { data }  = useSelector((state) => state.getDoctors);
+  const { data } = useSelector((state) => state.getDoctors);
 
   console.log(data?.data?.data, "BU DATA res");
   // const gg = data.data.data
-  
-  console.log(data?.data?.data.map(item=>item.full_name))
 
+  console.log(data?.data?.data.map((item) => item.full_name));
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    Api.get("/specialist/doctors/")
-      .then((respons) => dispatch(actionDoctors(respons)));
+    Api.get("/specialist/doctors/").then((respons) =>
+      dispatch(actionDoctors(respons))
+    );
   }, []);
+
+  const doctorSlide = [
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+    {
+      img: img1,
+      text1: "A. Bahrom",
+      text2: "⭐️ 4.5 (135 reviews)",
+    },
+  ];
 
   return (
     <>
@@ -56,74 +112,17 @@ function OnlineDoctor() {
             />
           </Link>
         </div>
-        <Swiper
-          slidesPerView={5.7}
-          spaceBetween={1}
-          loop={true}
-          autoplay={{ delay: 2000 }}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="asf"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TopDoctors
-              img={img1}
-              text1="A. Bahrom"
-              text2="⭐️ 4.5 (135 reviews)"
-            />
-          </SwiperSlide>
-        </Swiper>
+        <Slider {...settings}>
+          {doctorSlide.map((item, index) => (
+            <div key={index}>
+              <TopDoctors
+                img={item.img}
+                text1={item.text1}
+                text2={item.text2}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
       <ApplicationSec />
       <GlobalSponsors />
