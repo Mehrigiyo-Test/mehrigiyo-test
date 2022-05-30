@@ -30,18 +30,40 @@
         img {
             cursor: pointer;
         }
-
-        .product-select {
-            cursor: pointer;
-            border: 0.5px solid #B0B7C3;
-            border-radius: 100px;
-
-
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 6.5px 21.5px;
-        }
+     
+            .product-select {
+                cursor: pointer;
+                border: 0.5px solid #B0B7C3;
+                border-radius: 100px;
+                
+                
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 6.5px 21.5px;
+                .drDown{
+                    background: inherit;
+                    border: none;
+                    // padding: 20px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    overflow: hidden;   
+                    
+                    option{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;  
+                    }
+                }
+            }
+           
+        
+        
     }
 
     .product-list-header {
