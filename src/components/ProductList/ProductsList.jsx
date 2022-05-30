@@ -31,6 +31,8 @@ const ProductList = ({ API }) => {
   console.log(getType, "bu getType");
   const dispatch = useDispatch();
 
+ 
+
   useEffect(() => {
     Api.get("/shop/medicines/").then((res) =>
       dispatch(actionGetProduct(res?.data?.data))
@@ -62,16 +64,28 @@ const ProductList = ({ API }) => {
     }
   };
 
+
+
   return (
     <div className="ProductList">
       <div className="product-list-top-header">
         <h4>Mahsulotlarimiz ro'yxati</h4>
         <img src={SearchIcon} alt="" />
 
+        
         <div className="product-select">
-          <p>narx bo'yicha</p>
-          <img src={ArrowBottom} alt="" />
+          <p><select className="drDown" name="cars" id="option">
+            <optgroup label="ㅤㅤㅤ">
+            <option className="drDown_opt" value="volvo">narx bo'yicha</option>
+            <option className="drDown_opt" value="saab">Lorem bo'yicha</option>
+            <option className="drDown_opt" value="opel">Opel bo'yicha</option>
+            <option className="drDown_opt" value="audi">Audi bo'yicha</option>
+            </optgroup>
+              </select></p>
         </div>
+
+       
+
       </div>
 
       <nav className="product-list-header">
