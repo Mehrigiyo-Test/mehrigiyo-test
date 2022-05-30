@@ -37,15 +37,16 @@
     border-radius: 50%;
     height: 40px;
     transition: 0.7s;
-    
+    color: #ccc;
+
 }
+
 .telegram:hover{
     background-color: white;
 
 }
 .telegram:hover .icon{
     color: rgba(36, 35, 35, 0.74);
-    
 } 
 .icon:hover{
     transition: 0.5;
@@ -130,6 +131,7 @@
     width: 162px;
     height: 48px;
     padding: 20px 0;
+    cursor: pointer;
 }
 .imgbutton{
     width: 162px;

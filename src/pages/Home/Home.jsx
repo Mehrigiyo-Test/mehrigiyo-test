@@ -92,7 +92,7 @@ function Home() {
         <Bannercard />
         <Infosection />
 
-        <OnlineDoctor />
+        <OnlineDoctor/>
         <OrganicPlantation />
         <Ambulance />
         <ProductList API={API} />
