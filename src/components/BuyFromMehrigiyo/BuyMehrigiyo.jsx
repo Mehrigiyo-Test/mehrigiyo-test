@@ -69,7 +69,7 @@ export default function BuyMehrigiyo() {
                     {buyinfo.map((item) => (
                         <div className="buyInfo" key={item.title}>
                             <p>{item.title}</p>
-                            <img src={item.img} alt=""/>
+                            <img src={item.img} alt="icon"/>
                         </div>
                     ))}
                 </div>
