@@ -6,6 +6,7 @@ import GlobalSponsorLogo4 from "../../images/globalSponsor4.png";
 import GlobalSponsorLogo5 from "../../images/globalSponsor5.png";
 import GlobalSponsorLogo6 from "../../images/globalSponsor6.png";
 import Slider from "react-slick";
+import "./style.scss";
 
 let settings = {
   dots: false,

@@ -1,30 +1,35 @@
-.wrapperSwiper{
+.wrapperSwiper {
     max-width: 1550px;
     margin: 0 auto;
     padding-left: 100px;
     position: relative;
-    .imgLeaf{
-        img{
+    overflow: hidden;
+
+    .imgLeaf {
+        img {
             opacity: 0.1;
             position: absolute;
             width: 360px;
             height: 240px;
             left: -100px;
-            bottom: -5px;
+            bottom: -60px;
         }
     }
-    .sliderTop{
+
+    .sliderTop {
         display: flex;
         justify-content: space-between;
         padding-right: 130px;
         margin-bottom: 45px;
-        .sliderTopText{
+
+        .sliderTopText {
             font-weight: 600;
             font-size: 24px;
             line-height: 36px;
         }
     }
 }
-.TopDoctors-wrapper{
+
+.TopDoctors-wrapper {
     display: flex;
 }
