@@ -55,7 +55,7 @@ function OnlineDoctor() {
   const [num, setNum] = useState("");
 
   const { dataDoctors } = useSelector((state) => state.getDoctors);
-  console.log(dataDoctors, "bu dokorlar datasi");
+
   const dispatch = useDispatch();
   const API = "http://207.154.244.140:8000/";
 

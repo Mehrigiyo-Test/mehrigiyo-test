@@ -8,7 +8,6 @@ const TopDoctors = ({ text1,  img, setopen, func, id, setactive,}) => {
     setopen("open");
     setactive("active");
     func(id);
-    console.log("bu gg function");
   };
   const [clickSave, setClickSave] = useState(true);
 
