@@ -98,8 +98,8 @@ function AboutUs() {
         </div>
       </div>
       <CertificatesMehrigiyo />
-      <Globlasponsors />
       <Companysupport />
+      <Globlasponsors />
     </>
   );
 }
