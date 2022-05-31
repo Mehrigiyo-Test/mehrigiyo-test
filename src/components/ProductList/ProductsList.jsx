@@ -27,8 +27,7 @@ const ProductList = ({ API }) => {
 
   const { data } = useSelector((state) => state.getProducts);
   const { getType } = useSelector((state) => state.getProductsTypes);
-  console.log(data, "bu daata");
-  console.log(getType, "bu getType");
+
   const dispatch = useDispatch();
 
  

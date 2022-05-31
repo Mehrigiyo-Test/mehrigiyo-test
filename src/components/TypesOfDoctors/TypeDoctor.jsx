@@ -7,7 +7,9 @@ import { useSelector } from "react-redux";
 
 export default function TypeDoctor() {
   const { info } = useSelector((state) => state.getDoctorType);
+  const { dataDoctors } = useSelector((state) => state.getDoctors);
   const [sort, setSort] = useState(false);
+ 
   return (
     <div className="container GlobalWrapper">
       <div className="headDoctor">
@@ -21,10 +23,10 @@ export default function TypeDoctor() {
           ? info
               .filter((_, index) => index < 12)
               .map((item) => (
-                <Profession key={item.id} data={item} immg={immg} />
+                <Profession key={item.id} data={item} immg={immg} info={dataDoctors} />
               ))
           : info.map((item) => (
-              <Profession key={item.id} data={item} immg={immg} />
+              <Profession key={item.id} data={item} immg={immg} info={dataDoctors}  />
             ))}
       </div>
       <div className="backImg">

@@ -13,7 +13,8 @@ import Api from "../../api/requestApi";
 
 export default function OnlineDoctor() {
   const { info } = useSelector((state) => state.getDoctorType);
-
+  const { dataDoctors } = useSelector((state) => state.getDoctors);
+  
   const dispatch = useDispatch();
   useEffect(() => {
     Api.get("/specialist/types/").then((res) =>
@@ -38,7 +39,7 @@ export default function OnlineDoctor() {
         </p>
         <div className="boxContainer">
           {info.filter((_, index) => index < 4).map((item) => (
-            <Profession key={item.id} data={item} />
+            <Profession key={item.id} data={item} info={dataDoctors} />
           ))}
         </div>
         <Global
