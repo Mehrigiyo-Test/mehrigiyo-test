@@ -108,16 +108,16 @@ const ProductList = ({ API }) => {
           Tabletkalar
         </p>
       </nav>
-    <Swiper
-    slidesPerView={5}
-    spaceBetween={30}
-    freeMode={true}
-    pagination={{
-      clickable: true
-    }}
-    modules={{FreeMode, Pagination}}
-    className="mySwiper"
-    >
+      <Swiper
+      slidesPerView={5}
+      spaceBetween={30}
+      freeMode={true}
+      pagination={{
+        clickable: true
+      }}
+      modules={{FreeMode, Pagination}}
+      className="mySwiper"
+      >
       <div className="products-list">
         {sortedData.length === 0
           ? data.map((item) => (
