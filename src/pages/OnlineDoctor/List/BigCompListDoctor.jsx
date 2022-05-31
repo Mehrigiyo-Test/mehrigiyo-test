@@ -49,46 +49,6 @@ function BigCompListDoctor() {
     },
   ];
 
-  // const doctors = [
-  //   {
-  //     id: 1,
-  //     img: img1,
-  //     text1: "A. Bahrom",
-  //     text2: "⭐️ 4.5 (135 reviews)",
-  //     tajriba: "5 yil",
-  //     job: "Nevropatolog",
-  //     setOpen,
-  //     setActive,
-  //   },
-  //   {
-  //     id: 2,
-  //     img: img1,
-  //     text1: "A. Ibrohim",
-  //     text2: "⭐️ 4.5 (135 reviews)",
-  //     tajriba: "45 yil",
-  //     job: "Genetika",
-  //     setOpen,
-  //     setActive,
-  //   },
-  //   {
-  //     id: 3,
-  //     img: img1,
-  //     text1: "A. Xurshid",
-  //     text2: "⭐️ 4.5 (135 reviews)",
-  //     job: "Jarroh",
-  //     setOpen,
-  //     setActive,
-  //   },
-  //   {
-  //     id: 4,
-  //     img: img1,
-  //     text1: "A. Abdulaziz",
-  //     text2: "⭐️ 4.5 (135 reviews)",
-  //     job: "Kardiolog",
-  //     setOpen,
-  //     setActive,
-  //   },
-  // ];
 
   const func = (param) => {
     const id = dataDoctors.filter((a) => a.id === param);
@@ -200,11 +160,9 @@ function BigCompListDoctor() {
                   id={a.id}
                   img={API+a.image}
                   text1={a.full_name}
-                  // text2={a.text2}
-                  // job={a.job}
-                  // setopen={a.setOpen}
-                  // func={func}
-                  // setactive={a.setActive}
+                  setopen={setOpen}
+                  func={func}
+                  setactive={setActive}
                 />
               ))}
             </div>

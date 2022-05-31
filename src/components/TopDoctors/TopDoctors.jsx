@@ -3,11 +3,12 @@ import "./TopDoctors.scss";
 import { MdOutlineBookmarkAdd } from "react-icons/md";
 import { MdOutlineBookmarkAdded } from "react-icons/md";
 
-const TopDoctors = ({ text1, text2, img, setopen, func, id, setactive }) => {
+const TopDoctors = ({ text1,  img, setopen, func, id, setactive,}) => {
   const gg = () => {
     setopen("open");
     setactive("active");
     func(id);
+    console.log("bu gg function");
   };
   const [clickSave, setClickSave] = useState(true);
 
@@ -34,7 +35,7 @@ const TopDoctors = ({ text1, text2, img, setopen, func, id, setactive }) => {
         </span>
       </div>
       <p className="topDoctors__paragraph1">{ggg(text1)}</p>
-      <p className="topDoctors__paragraph2">{text2}</p>
+      {/* <p className="topDoctors__paragraph2">{text2}</p> */}
       <button className="topDoctors__btn" onClick={gg}>
         Appoinment
       </button>

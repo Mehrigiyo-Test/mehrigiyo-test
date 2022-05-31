@@ -20,6 +20,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { actionDoctors } from "../../store/getDoctors/action";
 
 import Slider from "react-slick";
+import Modal from "../../components/Modal";
+import DoctorFullCard from "../../components/DoctorFullInfoCard/DoctorFullCard";
+import AdviceDayBooking from "../../components/adviceDayBooking/adviceDayBooking";
+import Waiting from "../../components/waiting/waiting";
+import MeetingSucceed from "../../components/waiting/MeetingSucceed/MeetingSucceed";
+import DoctorTtypeInfo from "../../components/waiting/DoctorTtypeInfo/DoctorTtypeInfo";
 
 let settings = {
   dots: false,
@@ -44,16 +50,32 @@ let settings = {
 };
 
 function OnlineDoctor() {
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
+  const [num, setNum] = useState("");
+
   const { dataDoctors } = useSelector((state) => state.getDoctors);
-console.log(dataDoctors, "bu dokorlar datasi")
+  console.log(dataDoctors, "bu dokorlar datasi");
   const dispatch = useDispatch();
   const API = "http://207.154.244.140:8000/";
 
   useEffect(() => {
-    Api.get('/specialist/doctors/').then((res) =>
+    Api.get("/specialist/doctors/").then((res) =>
       dispatch(actionDoctors(res?.data?.data))
     );
   }, []);
+  const func = (param) => {
+    const id = dataDoctors.filter((a) => a.id === param);
+    setNum(Number(id.map((a) => a.id)));
+  };
+  const btn = () => {
+    setActive("hh");
+  };
+  const set = () => {
+    setTimeout(() => {
+      <Waiting />;
+    }, 500);
+  };
   return (
     <>
       <Warning />
@@ -78,9 +100,13 @@ console.log(dataDoctors, "bu dokorlar datasi")
           {dataDoctors.map((item) => (
             <div key={item.id}>
               <TopDoctors
-                img={API+item.image}
+                id={item.id}
+                img={API + item.image}
                 text1={item.full_name}
                 text2={item.type_doctor.name}
+                setopen={setOpen}
+                func={func}
+                setactive={setActive}
               />
             </div>
           ))}
@@ -88,6 +114,52 @@ console.log(dataDoctors, "bu dokorlar datasi")
       </div>
       <ApplicationSec />
       <GlobalSponsors />
+
+      {open ? (
+        <div>
+          {active === "active" ? (
+            <Modal
+              children={
+                <DoctorFullCard
+                  setOpen={setOpen}
+                  data={dataDoctors}
+                  props={num}
+                  btn={btn}
+                  active={setActive}
+                />
+              }
+            />
+          ) : active === "hh" ? (
+            <Modal
+              children={
+                <AdviceDayBooking
+                  setOpen={setOpen}
+                  setActive={setActive}
+                  set={set}
+                />
+              }
+            />
+          ) : active === "waiting" ? (
+            <Modal children={<Waiting />} />
+          ) : active === "meeting" ? (
+            <Modal
+              children={
+                <MeetingSucceed setOpen={setOpen} setActive={setActive} />
+              }
+            />
+          ) : active === "info" ? (
+            <Modal
+              children={
+                <DoctorTtypeInfo
+                  setOpen={setOpen}
+                  props={num}
+                  data={dataDoctors}
+                />
+              }
+            />
+          ) : null}
+        </div>
+      ) : null}
     </>
   );
 }
