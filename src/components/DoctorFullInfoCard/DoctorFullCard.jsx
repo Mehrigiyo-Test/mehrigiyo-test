@@ -1,72 +1,98 @@
-import React from 'react'
-import "./DoctorFullCardStyle.css"
+import React from "react";
+import "./DoctorFullCardStyle.css";
 // import madrid from "./../../../src/images/madrid2.jpg"
-import selected from "./../../images/BlIzbranniy.png"
-import share from "./../../images/BlShare.png"
-import stars from "./../../images/stars.png"
-import close from "./../../images/Close.png"
-import barg from "./../../images/leafAnother.png"
-import TaemOfLeaf from "./../../images/TeamOfLeaf.png"
-import kidney from "./../../images/kidney5.png"
-import info from "./../../images/Vector1.png"
+import selected from "./../../images/BlIzbranniy.png";
+import share from "./../../images/BlShare.png";
+import stars from "./../../images/stars.png";
+import close from "./../../images/Close.png";
+import barg from "./../../images/leafAnother.png";
+import TaemOfLeaf from "./../../images/TeamOfLeaf.png";
+import kidney from "./../../images/kidney5.png";
+import info from "./../../images/Vector1.png";
 
-function DoctorFullCard({setOpen, data , props, btn, active, job}) {
-    const gg = ()=>{
+function DoctorFullCard({ setOpen, data, props, btn, active }) {
+  const gg = () => {
+    setOpen("");
+  };
+  const API = "http://207.154.244.140:8000/";
 
-        setOpen('')
-    }
   return (
     <>
-    <div className='DocFuulINWR'>
-    {data.filter(b=> b.id === props).map(a=>(
-        <div className='centerInfo' key={a}>
-            <div className='BigCircleIMg'><img src={a.img} alt="" /></div>
-            <div>
-                    <div className='DoctorName'>
-                    <h2>{a.text1}</h2>
-                    <div className='display gap'>
-                    <div className='selected'><img src={selected} alt="" /></div>
-                    <div className='selected'><img src={share} alt="" /></div>
+      <div className="DocFuulINWR">
+        {data
+          .filter((b) => b.id === props)
+          .map((a) => (
+            <div className="centerInfo" key={a.id}>
+              <div className="BigCircleIMg">
+                <img src={API + a.image} alt="" />
+              </div>
+              <div>
+                <div className="DoctorName">
+                  <h2>{a.full_name}</h2>
+                  <div className="display gap">
+                    <div className="selected">
+                      <img src={selected} alt="" />
                     </div>
+                    <div className="selected">
+                      <img src={share} alt="" />
                     </div>
-                    <div><img src={stars} alt="" /></div>
-                    <div className='DocInfCards'>
-                    <div className='DoctorPract'>
-                        <div>
-                        <div>Shaharlar</div>
-                        <h2 className='twoHundred'>233+</h2>
-                        </div>
+                  </div>
+                </div>
+                <div>
+                  <img src={stars} alt="" />
+                </div>
+                <div className="DocInfCards">
+                  <div className="DoctorPract">
+                    <div>
+                      <div>Shaharlar</div>
+                      <h2 className="twoHundred">233+</h2>
                     </div>
-                    <div className='DoctorPract'>
-                        <div>
-                        <div>Tajriba</div>
-                        <h2 className='five'>5 yil</h2>
-                        </div>
+                  </div>
+                  <div className="DoctorPract">
+                    <div>
+                      <div>Tajriba</div>
+                      <h2 className="five">{a.experience}</h2>
                     </div>
-                    <div className='DoctorPract'>
-                        <div>
-                            <div className='DoctorPractINfoicon'><img src={info} alt="" /></div>
-                        <div className='doctorPractImg'><img src={kidney} alt="" /></div>
-                        <p>{a.job}</p>
-                        </div>
+                  </div>
+                  <div className="DoctorPract">
+                    <div>
+                      <div className="DoctorPractINfoicon">
+                        <img src={info} alt="" />
+                      </div>
+                      <div className="doctorPractImg">
+                        <img src={API + a.type_doctor.image} alt="" />
+                      </div>
+                      <p>{a.type_doctor.name}</p>
                     </div>
-                    </div>
-                    <div className='DocPractInf'>
-                        <h6>About Doctor</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra donec turpis integer ipsum, et enim orci amet.</p>
-                    </div>
-                   
-              
+                  </div>
+                </div>
+                <div className="DocPractInf">
+                  <h6>About Doctor</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pharetra donec turpis integer ipsum, et enim orci amet.
+                  </p>
+                </div>
+              </div>
             </div>
+          ))}
+        <div>
+          <button className="DocButton" onClick={btn}>
+            Appointment
+          </button>
         </div>
-         ))}
-        <div ><button className='DocButton' onClick={btn}>Appointment</button></div>
-        <div className='close' onClick={gg}><img src={close} alt="" /></div>
-        <div className='modalBak'><img src={barg} alt="" /></div>
-        <div className='TeamLeaf'><img src={TaemOfLeaf} alt="" /></div>
-    </div>
+        <div className="close" onClick={gg}>
+          <img src={close} alt="" />
+        </div>
+        <div className="modalBak">
+          <img src={barg} alt="" />
+        </div>
+        <div className="TeamLeaf">
+          <img src={TaemOfLeaf} alt="" />
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default DoctorFullCard
+export default DoctorFullCard;
