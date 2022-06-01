@@ -15,7 +15,6 @@ import Waiting from "./../../../components/waiting/waiting.jsx";
 import MeetingSucceed from "../../../components/waiting/MeetingSucceed/MeetingSucceed";
 import DoctorTtypeInfo from "../../../components/waiting/DoctorTtypeInfo/DoctorTtypeInfo";
 import Modal from "../../../components/Modal";
-import img1 from "../../../images/doctorBahrom.svg"
 import { useSelector } from "react-redux";
 
 function BigCompListDoctor() {

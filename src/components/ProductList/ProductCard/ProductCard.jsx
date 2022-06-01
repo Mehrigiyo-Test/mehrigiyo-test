@@ -20,7 +20,7 @@ const ProductCard = ({ cost, discount, id, image, name, title, type , api }) => 
       </div>
       <div className="product-item__content">
         <p className="product-item__title">{name}</p>
-        <p className="product-item__info">{title}</p>
+        <p className="product-item__info">{title}</p> 
         <div className="product-item__prices">
           <div className="product-item__price">
             <p className="product-item__previousPrice">

@@ -17,7 +17,7 @@ import Basket from './pages/Basket/Basket';
 import FavoriteDoctors from './pages/FavoriteDoctors/FavoriteDoctors';
 import FavoriteDrug from './pages/FavoriteDrug/FavoriteDrug';
 import BigCompListDoctor from './pages/OnlineDoctor/List/BigCompListDoctor'
-
+import SortGoods from './pages/SortGoods/SortGoods'
 function App() {
 
   return (
@@ -39,6 +39,7 @@ function App() {
         <Route path='/favoriteDoctors' element={<FavoriteDoctors/>}/>
         <Route path='/favoriteDrug' element={<FavoriteDrug/>}/>
         <Route path='/OnlineDoctor/BigCompListDoctor' element={<BigCompListDoctor/>}/>
+        <Route path='/products/SortGoods' element={<SortGoods/>}/>
       </Routes>
       <Footer/>
     </Router>
