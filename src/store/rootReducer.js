@@ -12,4 +12,5 @@ const rootReducer = combineReducers({
   getProductsTypes,
   getDoctorType,
 });
+
 export default rootReducer;

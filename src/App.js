@@ -16,6 +16,7 @@ import Basket from "./pages/Basket/Basket";
 import FavoriteDoctors from "./pages/FavoriteDoctors/FavoriteDoctors";
 import FavoriteDrug from "./pages/FavoriteDrug/FavoriteDrug";
 import BigCompListDoctor from "./pages/OnlineDoctor/List/BigCompListDoctor";
+import SortGoods from "./pages/SortGoods/SortGoods";
 import { useEffect } from "react";
 import Api from "./api/requestApi";
 import { actionGetNews } from "./store/getNews/action";
@@ -24,6 +25,7 @@ import { actionDoctorType } from "./store/getDoctorType/action";
 import { actionDoctors } from "./store/getDoctors/action";
 import { actionGetProductsTypes } from "./store/getProductsTypes/action";
 import { actionGetProduct } from "./store/getProducts/action";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -71,6 +73,7 @@ function App() {
             path="/OnlineDoctor/BigCompListDoctor"
             element={<BigCompListDoctor />}
           />
+          <Route path="/products/sortGoods" element={<SortGoods />} />
         </Routes>
         <Footer />
       </Router>
