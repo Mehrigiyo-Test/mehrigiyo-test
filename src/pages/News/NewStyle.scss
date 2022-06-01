@@ -35,4 +35,6 @@
     padding-bottom: 145px;
     gap: 100px;
     width: 1166px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
