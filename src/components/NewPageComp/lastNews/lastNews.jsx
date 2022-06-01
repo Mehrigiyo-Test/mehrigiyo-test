@@ -68,7 +68,7 @@ function LastNews({ img, category, time, theme, info }) {
               </div>
               <h4>{creat_at.name}</h4>
               <h6>{creat_at.description}</h6>
-              <div>
+              <div className="moreBnt">
                 <Global
                   text={"Ko'proq o'qish"}
                   width={"188px"}
