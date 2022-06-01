@@ -17,6 +17,7 @@
     }
     .headText {
         margin-top: 25px;
+        color: #ccc;
     }
     p {
         font-weight: 500;
@@ -38,5 +39,15 @@
             top: 0;
             right: 0;
         }
+    }
+}
+
+.text-groupM{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .text-groupM__texts{
+        line-height: 45px;
+        color: rgb(83, 81, 81);
     }
 }
