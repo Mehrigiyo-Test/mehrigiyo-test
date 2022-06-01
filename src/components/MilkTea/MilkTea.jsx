@@ -11,10 +11,12 @@ export default function MilkTea() {
                     <img src={LeftImg} />
                 </div>
                 <div className="text">
-                    <div>
+                    <div className='text-groupM'>
                         <p className='headText'>Mehrigiyo</p>
-                        <h3>50% chegirma </h3>
-                        <h3> sutli choyda</h3>
+                        <div className='text-groupM__texts'>
+                            <h3>50% chegirma </h3>
+                            <h3> sutli choyda</h3>
+                        </div>
                         <p className='bodyText'>1+1 choy bilan xarid qilganingizda</p>
                     </div>
                     <div className="rightImg">
