@@ -39,16 +39,6 @@ function LastNews({ img, category, time, theme, info }) {
             <p>
               <a href="/news">Yangiliklar</a>
             </p>
-            <span>/</span>
-            <p>
-              <Link to="/news/MexrigiyoPresentation">
-                Mehrigiyo kompaniyasi ...
-              </Link>
-            </p>
-            <span>/</span>
-            <p>
-              <Link to="/news/BeingHealthy">Salomatlik sari</Link>
-            </p>
           </div>
           <h2 className="lasteNews_txt">So’ngi yangiliklar</h2>
         </div>
