@@ -110,12 +110,13 @@
 .beetwenUs {
   gap: 20px;
 }
-.filterBg {
-  background-color: white;
-  padding: 25px;
-  border-radius: 15px;
-  width: 300px;
-}
+
+  .filterWr{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    }
 .DocInfo {
   display: flex;
   flex-wrap: wrap;
@@ -124,3 +125,4 @@
   margin-top: 25px;
   margin-bottom: 350px;
 }
+

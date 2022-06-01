@@ -25,6 +25,7 @@ import { actionDoctorType } from "./store/getDoctorType/action";
 import { actionDoctors } from "./store/getDoctors/action";
 import { actionGetProductsTypes } from "./store/getProductsTypes/action";
 import { actionGetProduct } from "./store/getProducts/action";
+import ScrollTop from "./../src/components/ScrollTop/ScrollTop"
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
   return (
     <>
       <Router>
+        
         <Navigate />
         <Navigate2 />
         <GlobalCallSms />
@@ -76,6 +78,7 @@ function App() {
           <Route path="/products/sortGoods" element={<SortGoods />} />
         </Routes>
         <Footer />
+        <ScrollTop/>
       </Router>
     </>
   );
