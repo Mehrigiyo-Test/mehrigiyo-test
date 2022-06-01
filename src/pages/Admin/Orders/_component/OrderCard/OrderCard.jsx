@@ -1,9 +1,9 @@
 import styles from "./OrderCard.module.scss";
-import Marker from "../../../../images/Marker.png";
+import Marker from "../../../../../images/Admin/Marker.png";
 
-import { user } from "../../../../constants/user";
-import { ReactComponent as Car } from "../../../../icons/Car.svg";
-import { ReactComponent as Shop } from "../../../../icons/Shop.svg";
+import { user } from "../../../../../constants/user";
+import { ReactComponent as Car } from "../../../../../icons/Car.svg";
+import { ReactComponent as Shop } from "../../../../../icons/Shop.svg";
 
 const OrderCard = ({ children, background }) => {
   return (

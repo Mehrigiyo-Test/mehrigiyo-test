@@ -1,5 +1,5 @@
 import React from "react";
-import Supplier from "../../../../icons/Supplier.svg";
+import Supplier from "../../../../../icons/Supplier.svg";
 import styles from "./Delivery.module.scss";
 
 function Delivery() {

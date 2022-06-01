@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Title from "../../components/Title/Title";
+import Title from "../../../components/Admin/Title/Title";
 import styles from "./Orders.module.scss";
 import Delivery from "./_component/Delivery/Delivery";
 import Error from "./_component/Error/Error";
 import OrderCard from "./_component/OrderCard/OrderCard";
 import Success from "./_component/Succsess/Success";
-import GlobalChangableBtns from "../../components/GlobalChangableBtns/GlobalChangableBtns";
+import GlobalChangableBtns from "../../../components/Admin/GlobalChangableBtns/GlobalChangableBtns";
 import NoOngoing from "./_component/NoOngoing/NoOngoing";
 import NoFinishid from "./_component/NoFinishid/NoFinishid";
 

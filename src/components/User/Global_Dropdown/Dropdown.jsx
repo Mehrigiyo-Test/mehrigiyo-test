@@ -1,10 +1,16 @@
 import "./Dropdown.scss";
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { actionChangeRouter } from "../../../store/changeRouter/action";
 
 export default function Dropdown({ title, link, items }) {
   const [open, setOpen] = useState(false);
-  
+  const dispatch = useDispatch()
+  const changeUserRouter = (param) => {
+    dispatch(actionChangeRouter('user'))
+    setOpen(param)
+  }
   return (
     <div className="dropdown">
       <div className="nav_Link" onClick={()=>setOpen(!open)}>
@@ -15,12 +21,12 @@ export default function Dropdown({ title, link, items }) {
 
       {open ? (
         <div className="dropdownBox">
-          <section className="section_Container" onClick={() => setOpen(!open)}>
+          <section className="section_Container" onClick={() => changeUserRouter(!open)}>
             {items.map((item, index) => (
               <Link key={index} to={link}>
                 <div
                   className="dropdown_Item"
-                  onClick={() => setOpen(!open)}
+                  onClick={() => changeUserRouter(!open)}
                 >
                   <Link to={link}>{item.title}</Link>
                 </div>

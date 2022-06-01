@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AddAddress.module.scss";
 import Button from "../../../Buttons/Button";
 import { useForm } from "react-hook-form";
-import requestApi from "../../../../services/api/request";
+import requestApi from "../../../../../Servis/api/request";
 function AddAddress({ setOpen }) {
   const { register, handleSubmit } = useForm();
 

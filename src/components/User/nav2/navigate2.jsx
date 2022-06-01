@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../../images/User/Mehrigiyo_logo.png";
 import NavIcon1 from "../../../images/User/nav-icon1.png";
 import NavIcon2 from "../../../images/User/nav-icon2.png";
@@ -7,15 +7,18 @@ import NavIcon3 from "../../../images/User/nav-icon3.png";
 import { NavLink } from "react-router-dom";
 import Dropdown from "../Global_Dropdown/Dropdown";
 import "./nav2.scss";
+import AdminRouter from "../../Admin/AdminRouter/AdminRouter";
+import { useDispatch } from "react-redux";
+import { actionChangeRouter } from "../../../store/changeRouter/action";
 
 const Navigate2 = () => {
   const [link, setLink] = useState(true);
-
   const navinfo = [
     {
       title: "Bosh sahifa",
       link: "/",
       set: true,
+      path: "user",
     },
     {
       title: "Onlayn shifokorlar",
@@ -63,54 +66,78 @@ const Navigate2 = () => {
       ],
     },
   ];
-
+  const [adminRouter, setAdminRouter] = useState(false);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const changeUserRouter = (param) => {
+    dispatch(actionChangeRouter("user"));
+    setLink(param);
+  };
+  const changeAdminRouter = () => {
+    dispatch(actionChangeRouter("admin"));
+    navigate("/admin/control-panel");
+  };
+  const user = localStorage.getItem("user");
   return (
-    <div className="nav2  GlobalWrapper">
-      <div className="nav__wrapper">
-        <NavLink to="/" className="nav-logo">
-          <img src={Logo} alt="logo" />
-        </NavLink>
+    <>
+      <div className="nav2  GlobalWrapper">
+        <div className="nav__wrapper">
+          <NavLink to="/" className="nav-logo">
+            <img src={Logo} alt="logo" />
+          </NavLink>
 
-        <div className="navcontainer">
-          {navinfo.map((item, index) => (
-            <div key={index} className={`nav_Head `}>
-              {item.dropdown ? (
-                <Dropdown
-                  title={item.title}
-                  link={item.link}
-                  items={item.dropdown}
-                  setLink={setLink}
-                />
-              ) : (
-                <NavLink
-                  className="nav_Item"
-                  to={item.link}
-                  onClick={() => setLink(item.set)}
-                >
-                  {item.title}
-                </NavLink>
-              )}
-            </div>
-          ))}
-        </div>
+          <div className="navcontainer">
+            {navinfo.map((item, index) => (
+              <div key={index} className={`nav_Head `}>
+                {item.dropdown ? (
+                  <Dropdown
+                    title={item.title}
+                    link={item.link}
+                    items={item.dropdown}
+                    setLink={setLink}
+                  />
+                ) : (
+                  <NavLink
+                    className="nav_Item"
+                    to={item.link}
+                    onClick={() => changeUserRouter(item.set)}
+                  >
+                    {item.title}
+                  </NavLink>
+                )}
+              </div>
+            ))}
+          </div>
 
-        <div className="nav-icons">
-          <a href="http://localhost:3001/">
-            <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
-          </a>
-
-          <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
-          <img
+          <div className="nav-icons">
+          { user !== null ?
+           <img
+              className="nav-icons__icon"
+              src={NavIcon1}
+              alt="icon"
+              onClick={() => changeAdminRouter()}
+            /> 
+            :  <Link to={'/favoriteDoctors'}>
+            <img
             className="nav-icons__icon"
-            src={NavIcon2}
-            alt="icon"
-            hidden={link}
-          />
+            src={NavIcon1}
+            alt="icon" />
+            </Link>
+            }
 
-          <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+            <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
+            <img
+              className="nav-icons__icon"
+              src={NavIcon2}
+              alt="icon"
+              hidden={link}
+            />
+
+            <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

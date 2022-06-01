@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Video.module.scss";
 
-import { ReactComponent as Clock } from "../../../icons/Clock.svg";
-import { ReactComponent as Camera } from "../../../icons/Camera.svg";
+import { ReactComponent as Clock } from "../../../../icons/Clock.svg";
+import { ReactComponent as Camera } from "../../../../icons/Camera.svg";
 const VideoCallBox = ({ name, surname, profession, img }) => {
   return (
     <section className={styles.container}>

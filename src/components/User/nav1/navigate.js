@@ -1,11 +1,14 @@
-import React from 'react'
-import "./navStyles.scss"
-import lokatsa from '../../../images/User/Vector.png'
-import profile from '../../../images/User/profile.png'
-import Dropdown from '../Dropdown/Dropdown'
-// import { onSubmit, onSubmit2 } from '../../api/registration'
+import React, { useState } from "react";
+import "./navStyles.scss";
+import lokatsa from "../../../images/User/Vector.png";
+import profile from "../../../images/User/profile.png";
+import Dropdown from "../Dropdown/Dropdown";
+import Modal from "../../Admin/Modal/Modal";
+import Login from "../../Admin/Modal/_components/Login/Login";
+
 
 function Navigate() {
+  const [open, setOpen] = useState(false);
   const nav = [
     {
       name: "Mahsulotlar katalogi",
@@ -24,39 +27,41 @@ function Navigate() {
     },
   ];
 
-  // Api.get('/specialist/doctors/')
-  //   .then((response) => console.log(response))
+ 
+    const user = localStorage.getItem("user");
+   const userObj = JSON.parse(user);
+  
 
   return (
     <div className="navigate">
-      <div className='navigate__wrapper GlobalWrapper'>
-        <nav className='nav1'>
-          <ul className='ul'>
-            {nav.map(item => (
+      <div className="navigate__wrapper GlobalWrapper">
+        <nav className="nav1">
+          <ul className="ul">
+            {nav.map((item) => (
               <li key={item.name}>{item.name}</li>
             ))}
           </ul>
         </nav>
 
-        <div className='navigate2'>
-         <Dropdown/>
-          <div className='location'>
-            <p className='locat'>
-              Toshkent shahar
-            </p>
-            <div className='lokatsa'>
-              <img src={lokatsa} alt=""/>
+        <div className="navigate2">
+          <Dropdown />
+          <div className="location">
+            <p className="locat" >Toshkent shahar</p>
+            <div className="lokatsa">
+              <img src={lokatsa} alt="" />
             </div>
           </div>
-          <div className='login'>
-            <p className='locat' >
-              Kirish
-            </p>
-            <div className='profil'> <img src={profile} /></div>
-          </div>
-
+          {user === null ? <div className="login" onClick={()=> setOpen(true)}>
+            <p className="locat">Kirish</p>
+            <div className="profil">
+              <img src={profile} />
+            </div>
+          </div> : <div>{userObj.last_name[0] + '.' + userObj.first_name}</div>}
         </div>
       </div>
+
+      {open && <Modal children={<Login setOpen={setOpen}/>}  prop={setOpen} />}
+
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "././Success.module.scss";
-import { ReactComponent as Delivered } from "../../../../icons/Delivered.svg";
+import { ReactComponent as Delivered } from "../../../../../icons/Delivered.svg";
 
 function Success() {
   return (

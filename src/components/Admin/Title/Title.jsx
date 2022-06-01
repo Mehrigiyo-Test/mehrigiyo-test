@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./Title.module.scss";
-import { ReactComponent as Search } from "./../../icons/Search.svg";
+import { ReactComponent as Search } from "./../../../icons/Search.svg";
 const Title = ({ title, subtitle, edit }) => {
   const [show, setShow] = useState(false);
   return (

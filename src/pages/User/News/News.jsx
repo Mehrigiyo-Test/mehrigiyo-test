@@ -17,11 +17,11 @@ import { Pagination } from "swiper";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);
-  const ad = data.map((_, index) => index);
+  const ad = data?.map((_, index) => index);
   const er = ad[ad.length - 1];
 
   const rev = data
-    .filter((_, i) => i < er)
+    ?.filter((_, i) => i < er)
     .map((item) => item)
     .reverse();
   console.log(rev, "BU DATA2");
@@ -50,7 +50,7 @@ function News() {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {rev.map((item) => (
+              {rev?.map((item) => (
                 <SwiperSlide>
                   <RowNewsCard
                     img={API + item.image}

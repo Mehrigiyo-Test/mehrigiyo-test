@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import "../../../../_global.scss";
+import "../../../../../_global.scss";
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-import { ReactComponent as NoAvatar } from "../../../../icons/NoAvatar.svg";
-import { ReactComponent as Optinal } from "../../../../icons/Optinal.svg";
-import { ReactComponent as EyeHidden } from "../../../../icons/EyeHidden.svg";
-import { ReactComponent as EyeShow } from "../../../../icons/EyeShow.svg";
+import { ReactComponent as NoAvatar } from "../../../../../icons/NoAvatar.svg";
+import { ReactComponent as Optinal } from "../../../../../icons/Optinal.svg";
+import { ReactComponent as EyeHidden } from "../../../../../icons/EyeHidden.svg";
+import { ReactComponent as EyeShow } from "../../../../../icons/EyeShow.svg";
 import Button from "../../../Buttons/Button";
 import { MaskedInput } from "antd-mask-input";
-import { setCurrentUser, setToken } from "../../../../services/auth-service";
-import requestApi from "../../../../services/api/request";
-
+import { setCurrentUser, setToken } from "../../../../../Servis/auth-service";
+import requestApi from "../../../../../Servis/api/request";
+import './Login.scss'
 const Login = ({ setOpen }) => {
   const [show, setShow] = useState(true);
   const [tab, setTab] = useState(true);
@@ -84,13 +84,13 @@ const Login = ({ setOpen }) => {
 
   return (
     <section>
-      <div className="pt-[70px] px-25">
-        <div className="bg-[#F8F8F8] flex p-[5px] gap-[30px] rounded-[100px] items-center mx-[60px]">
+      <div className="loginTab">
+        <div className="loginTab__box">
           <span
             className={
               tab
-                ? "text-[#53B175] font-semibold relative z-20 px-12 py-1 "
-                : "text-[#B0B7C3] cursor-pointer relative z-20  px-[53px]"
+                ? "activeTab "
+                : "tab"
             }
             onClick={() => setTab(true)}
           >
@@ -98,7 +98,7 @@ const Login = ({ setOpen }) => {
           </span>
           <span
             className={
-              "bg-white absolute h-8 rounded-[100px] shadow-lg z-10 duration-500 w-32"
+              "tabBg"
             }
             style={
               tab
@@ -109,8 +109,8 @@ const Login = ({ setOpen }) => {
           <span
             className={
               tab
-                ? "text-[#B0B7C3] px-7.5 pr-[20px] cursor-pointer relative z-20  "
-                : "text-[#53B175] font-semibold  rounded-[100px] px-7.5  py-1 relative z-20"
+                ? "tab2"
+                : " activeTab2"
             }
             onClick={() => setTab(false)}
           >
@@ -120,9 +120,9 @@ const Login = ({ setOpen }) => {
       </div>
 
       {tab ? (
-        <form action="" className="pt-12 px-[86px]" onSubmit={handleSubmit}>
-          <div className="flex flex-col relative">
-            <label htmlFor="number" className="text-sm text-gray4 mb-1.5">
+        <form className="loginContainer" onSubmit={handleSubmit}>
+          <div className="loginContainer__1">
+            <label htmlFor="number" className=" loginContainer__2">
               Telefon raqam
             </label>
             <Controller
@@ -133,7 +133,7 @@ const Login = ({ setOpen }) => {
                 <MaskedInput
                   mask={input ? "+998(00) 000-00-00" : ""}
                   onKeyDown={() => setInput(true)}
-                  className="border-b bg-transparent outline-none pb-3 pl-7 relative  focus:border-[#53B175]"
+                  className=" maskedInput"
                   {...field}
                 />
                 

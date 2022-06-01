@@ -6,16 +6,16 @@ import Modal from "../../Modal/Modal";
 import Edit from "../../Modal/_components/Edit/Edit";
 import EditUpdate from "../../Modal/_components/Update/Update";
 
-import { ReactComponent as Pen } from "./../../../icons/Sidebar/Pen.svg";
-import { ReactComponent as ControlPanel } from "./../../../icons/Sidebar/ControlPanel.svg";
-import { ReactComponent as Consultation } from "./../../../icons/Sidebar/Consultation.svg";
-import { ReactComponent as DeliveryAddress } from "./../../../icons/Sidebar/DeliveryAddress.svg";
-import { ReactComponent as LogOut } from "./../../../icons/Sidebar/LogOut.svg";
-import { ReactComponent as Notification } from "./../../../icons/Sidebar/Notification.svg";
-import { ReactComponent as Orders } from "./../../../icons/Sidebar/Orders.svg";
-import { ReactComponent as PaymentMethods } from "./../../../icons/Sidebar/PaymentMethods.svg";
-import { ReactComponent as Setting } from "./../../../icons/Sidebar/Setting.svg";
-import { getCurrentUser, logout } from "../../../services/auth-service";
+import { ReactComponent as Pen } from "./../../../../icons/Sidebar/Pen.svg";
+import { ReactComponent as ControlPanel } from "./../../../../icons/Sidebar/ControlPanel.svg";
+import { ReactComponent as Consultation } from "./../../../../icons/Sidebar/Consultation.svg";
+import { ReactComponent as DeliveryAddress } from "./../../../../icons/Sidebar/DeliveryAddress.svg";
+import { ReactComponent as LogOut } from "./../../../../icons/Sidebar/LogOut.svg";
+import { ReactComponent as Notification } from "./../../../../icons/Sidebar/Notification.svg";
+import { ReactComponent as Orders } from "./../../../../icons/Sidebar/Orders.svg";
+import { ReactComponent as PaymentMethods } from "./../../../../icons/Sidebar/PaymentMethods.svg";
+import { ReactComponent as Setting } from "./../../../../icons/Sidebar/Setting.svg";
+import { getCurrentUser, logout } from "../../../../Servis/auth-service";
 
 const SideBar = () => {
   const [open, setOpen] = useState(false);

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Setting.module.scss';
-import Title from '../../components/Title/Title';
-import ModeIcon from '../../icons/Mode.svg';
-import Language from '../../icons/Language.svg';
-import SmallArrow from '../../icons/SmallArrow.svg';
+import Title from '../../../components/Admin/Title/Title';
+import ModeIcon from '../../../icons/Mode.svg';
+import Language from '../../../icons/Language.svg';
+import SmallArrow from '../../../icons/SmallArrow.svg';
 
 const Setting = () => {
 

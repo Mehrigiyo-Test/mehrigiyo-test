@@ -58,8 +58,6 @@ function Home() {
     playy();
   };
 
-  
-
   return (
     <>
       <div className="lightGreenItem"></div>
@@ -84,7 +82,7 @@ function Home() {
         <Bannercard />
         <Infosection />
 
-        <OnlineDoctor/>
+        <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
         <ProductList API={API} />

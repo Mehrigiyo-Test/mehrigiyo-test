@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./../Header.module.scss";
-import { ReactComponent as UzbFlag } from "./../../../../icons/Header/UzbFlag.svg";
-import { ReactComponent as Arrow } from "./../../../../icons/Header/Arrow.svg";
-import { ReactComponent as Location } from "./../../../../icons/Header/Location.svg";
-import { getCurrentUser } from "../../../../services/auth-service";
+import { ReactComponent as UzbFlag } from "./../../../../../icons/Header/UzbFlag.svg";
+import { ReactComponent as Arrow } from "./../../../../../icons/Header/Arrow.svg";
+import { ReactComponent as Location } from "./../../../../../icons/Header/Location.svg";
+import { getCurrentUser } from "../../../../../Servis/auth-service";
 
 const TopHeader = () => {
   const [user, setUser] = useState(null);

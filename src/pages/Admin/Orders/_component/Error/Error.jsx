@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "./Error.module.scss";
-import { ReactComponent as Cancel } from "../../../../icons/Cancel.svg";
+import { ReactComponent as Cancel } from "../../../../../icons/Cancel.svg";
 
 function Error() {
   return (

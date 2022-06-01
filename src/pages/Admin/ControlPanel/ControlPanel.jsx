@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./ControlPanel.module.scss";
 
-import Title from "../../components/Title/Title";
+import Title from "../../../components/Admin/Title/Title";
 import VideoCallBox from "./_components/VideoCallBox";
 import LastNoticeBox from "./_components/LastNoticeBox";
 import TableCard from "./_components/TableCard";
 
-import { doctors } from "../../constants/doctors";
-import { ReactComponent as BoldArrow } from "../../icons/BoldArrow.svg";
-import leafs from "../../images/Leafs.png";
-import NoUpcoming from "../../images/NoUpcoming.png";
+import { doctors } from "../../../constants/doctors";
+import { ReactComponent as BoldArrow } from "../../../icons/BoldArrow.svg";
+import leafs from "../../../images/Admin/Leafs.png";
+import NoUpcoming from "../../../images/Admin/NoUpcoming.png";
 
 const ControlPanel = () => {
   const arr = [

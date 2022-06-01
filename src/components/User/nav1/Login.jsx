@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import imgUzb from "../../images/imgUzb.svg";
+import imgUzb from "../../../images/User/imgUzb.svg";
 import { VscError } from "react-icons/vsc";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import imgOptinal from "../../images/imgOptinal.png";
+import imgOptinal from "../../../images/User/imgOptinal.png";
 
-const Login = ({ setModalActive, tab, setTab, setShoww }) => {
-  const [show, setShow] = useState(false);
-
+const Login = () => {
+  const [show, setShow] = useState(true);
+  const [tab, setTab] = useState(false);
+  const [showw,setShoww] = useState
   return (
     <>
       <div className="ModalLogin">
         <span
           className="ModalLogin__span"
-          onClick={() => setModalActive(false)}
+        
         >
           <VscError />
         </span>
@@ -97,7 +98,7 @@ const Login = ({ setModalActive, tab, setTab, setShoww }) => {
                 <span> Foydalanish shartlarini qabul qilgan xisoblanasiz.</span>
               </p>
               <div className="Registration__form__btn">
-                <button onClick={() => setModalActive("Verification")}>
+                <button >
                   Ro’yxatdan o’tish
                 </button>
               </div>

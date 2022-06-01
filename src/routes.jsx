@@ -1,13 +1,12 @@
-import ControlPanel from "./pages/ControlPanel/ControlPanel";
-import Orders from "./pages/Orders/Orders";
-import Consultation from "./pages/Consultation/Consultation";
-import DeliveryAddress from "./pages/DeliveryAddress/DeliveryAddress";
-import Notifications from "./pages/Notifications/Notifications";
-import PaymentMethods from "./pages/PaymentMethods/PaymentMethods";
-import Setting from "./pages/Setting/Setting";
+import ControlPanel from "./pages/Admin/ControlPanel/ControlPanel"
+import Orders from "./pages/Admin/Orders/Orders";
+import Consultation from "./pages/Admin/Consultation/Consultation";
+import DeliveryAddress from "./pages/Admin/DeliveryAddress/DeliveryAddress";
+import Notifications from "./pages/Admin/Notifications/Notifications";
+import PaymentMethods from "./pages/Admin/PaymentMethods/PaymentMethods";
+import Setting from "./pages/Admin/Setting/Setting";
 
 const routes = [
-  { path: `/`, element: <ControlPanel /> },
   { path: `/admin/control-panel`, element: <ControlPanel /> },
   { path: `/admin/orders`, element: <Orders /> },
   { path: `/admin/consultation`, element: <Consultation /> },

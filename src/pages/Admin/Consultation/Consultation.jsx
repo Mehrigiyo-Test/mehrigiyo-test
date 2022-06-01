@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import styles from "./Consultation.module.scss";
 
-import Title from "../../components/Title/Title";
-import GlobalChangableBtns from "../../components/GlobalChangableBtns/GlobalChangableBtns";
+import Title from "../../../components/Admin/Title/Title";
+import GlobalChangableBtns from "../../../components/Admin/GlobalChangableBtns/GlobalChangableBtns";
 
-import img from "../../images/NoUpcoming.png";
-import leaf from "../../images/Leafs.png";
-import doctor1 from "../../images/Doctor1.png";
-import doctor2 from "../../images/Doctor2.png";
-import doctor3 from "../../images/Doctor3.png";
-import doctor4 from "../../images/Doctor4.png";
-import missedMessage from "../../icons/MissedMessage.svg";
-import clock from "../../icons/Clock.svg";
+import img from "../../../images/Admin/NoUpcoming.png";
+import leaf from "../../../images/Admin/Leafs.png";
+import doctor1 from "../../../images/Admin/Doctor1.png";
+import doctor2 from "../../../images/Admin/Doctor2.png";
+import doctor3 from "../../../images/Admin/Doctor3.png";
+import doctor4 from "../../../images/Admin/Doctor4.png";
+import missedMessage from "../../../icons/MissedMessage.svg";
+import clock from "../../../icons/Clock.svg";
 
 const Consultation = () => {
   const data = [{}];

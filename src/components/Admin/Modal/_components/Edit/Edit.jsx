@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Edit.module.scss";
 import Button from "../../../Buttons/Button";
-import { getCurrentUser } from "../../../../services/auth-service";
+import { getCurrentUser } from "../../../../../Servis/auth-service";
 
 const Edit = ({ setShow }) => {
   const [user, setUser] = useState(null);

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Last.module.scss";
 
-import { ReactComponent as Arrow } from "../../../icons/RightArrow.svg";
+import { ReactComponent as Arrow } from "../../../../icons/RightArrow.svg";
 const LastNoticeBox = ({ title, subtitle, bgColor, color }) => {
   return (
     <section className={styles.container} style={{ backgroundColor: bgColor }}>

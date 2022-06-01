@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Modal.module.scss";
-import { ReactComponent as Exit } from "../../icons/Exit.svg";
+import { ReactComponent as Exit } from "../../../icons/Exit.svg";
 
 const Modal = ({ children, prop,bolean }) => {
   return (

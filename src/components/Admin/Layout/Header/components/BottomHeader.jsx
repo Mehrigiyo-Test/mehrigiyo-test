@@ -1,19 +1,19 @@
 import React from "react";
 import style from "./../Header.module.scss";
 
-import { ReactComponent as Logo } from "./../../../../icons/Header/Logo.svg";
-import { ReactComponent as Search } from "./../../../../icons/Header/Search.svg";
-import { ReactComponent as Cabinet } from "./../../../../icons/Header/Cabinet.svg";
-import { ReactComponent as Heart } from "./../../../../icons/Header/Heart.svg";
-import { ReactComponent as Cart } from "./../../../../icons/Header/Cart.svg";
+import { ReactComponent as Logo } from "./../../../../../icons/Header/Logo.svg";
+import { ReactComponent as Search } from "./../../../../../icons/Header/Search.svg";
+import { ReactComponent as Cabinet } from "./../../../../../icons/Header/Cabinet.svg";
+import { ReactComponent as Heart } from "./../../../../../icons/Header/Heart.svg";
+import { ReactComponent as Cart } from "./../../../../../icons/Header/Cart.svg";
 import {
   onlineDoctors,
   products,
   news,
   helps,
-} from "./../../../../constants/header";
+} from "./../../../../../constants/header";
 import Dropdown from "../../../Dropdown/Dropdown";
-import {port} from '../../../../constants/port'
+import {port} from '../../../../../constants/port'
 
 const BottomHeader = () => {
   const navElements = [

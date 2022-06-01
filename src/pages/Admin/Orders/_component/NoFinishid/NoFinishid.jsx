@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NoFinishid.module.scss";
-import Nofinished from "../../../../images/NoFinished.png";
+import Nofinished from "../../../../../images/Admin/NoFinished.png";
 
 function NoFinishid() {
   return (

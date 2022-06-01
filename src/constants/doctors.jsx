@@ -1,7 +1,7 @@
-import doctor1 from "../images/Doctor1.png";
-import doctor2 from "../images/Doctor2.png";
-import doctor3 from "../images/Doctor3.png";
-import doctor4 from "../images/Doctor4.png";
+import doctor1 from "../images/Admin/Doctor1.png";
+import doctor2 from "../images/Admin/Doctor2.png";
+import doctor3 from "../images/Admin/Doctor3.png";
+import doctor4 from "../images/Admin/Doctor4.png";
 export const doctors = [
   {
     name: "Gavhar",

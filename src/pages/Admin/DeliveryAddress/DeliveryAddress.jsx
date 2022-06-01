@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Inputradio from "../../components/InputRadio/InputRadio";
-import Title from "../../components/Title/Title";
+import Inputradio from "../../../components/Admin/InputRadio/InputRadio";
+import Title from "../../../components/Admin/Title/Title";
 import "./DeliveryAddress.scss";
-import AddIcon from "../../icons/Add.svg";
-import HomeImg from "../../images/Home.png";
-import SmallArrow from "../../icons/SmallArrow.svg";
-import Modal from "../../components/Modal/Modal";
-import AddAddress from "../../components/Modal/_components/AddAddress/AddAddress";
+import AddIcon from "../../../icons/Add.svg";
+import HomeImg from "../../../images/Admin/Home.png";
+import SmallArrow from "../../../icons/SmallArrow.svg";
+import Modal from "../../../components/Admin/Modal/Modal";
+import AddAddress from "../../../components/Admin/Modal/_components/AddAddress/AddAddress";
 
 const DeliveryAddress = () => {
   const [open, setOpen] = useState(false);

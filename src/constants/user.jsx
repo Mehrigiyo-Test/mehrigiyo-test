@@ -1,4 +1,4 @@
-import avatar from "../images/user.png";
+import avatar from "../images/Admin/user.png";
 
 export const user = {
   name: "Mahmud",

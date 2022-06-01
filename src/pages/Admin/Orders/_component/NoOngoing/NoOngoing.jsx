@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NoOngoing.module.scss";
-import Ongoing from "../../../../images/NoOngoing.png";
+import Ongoing from "../../../../../images/Admin/NoOngoing.png";
 
 function NoOngoing() {
   return (

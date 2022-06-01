@@ -1,7 +1,7 @@
 import React from "react";
 import "./Notifications.scss";
-import Title from "../../components/Title/Title";
-import NoNotification from "../../images/NoNotification.png";
+import Title from "../../../components/Admin/Title/Title";
+import NoNotification from "../../../images/Admin/NoNotification.png";
 
 const Notifications = () => {
   return (

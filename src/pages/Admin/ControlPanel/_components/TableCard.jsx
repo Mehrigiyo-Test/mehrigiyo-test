@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Table.module.scss";
-import { ReactComponent as Add } from "../../../icons/AddTable.svg";
-import bgTable from "../../../images/BgTable.png"
+import { ReactComponent as Add } from "../../../../icons/AddTable.svg";
+import bgTable from "../../../../images/Admin/BgTable.png"
 const TableCard = ({ name, surname, img, profession }) => {
   return (
     <section className={styles.container}>

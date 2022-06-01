@@ -4,12 +4,12 @@ import Button from "../../../Buttons/Button";
 
 import { useForm } from "react-hook-form";
 
-import { ReactComponent as NoAvatar } from "../../../../icons/NoAvatar.svg";
-import { ReactComponent as Optinal } from "../../../../icons/Optinal.svg";
-import { ReactComponent as EyeShow } from "../../../../icons/EyeShow.svg";
-import { ReactComponent as EyeHidden } from "../../../../icons/EyeHidden.svg";
-import { getCurrentUser } from "../../../../services/auth-service";
-import { putUserMe } from "../../../../services/user-service";
+import { ReactComponent as NoAvatar } from "../../../../../icons/NoAvatar.svg";
+import { ReactComponent as Optinal } from "../../../../../icons/Optinal.svg";
+import { ReactComponent as EyeShow } from "../../../../../icons/EyeShow.svg";
+import { ReactComponent as EyeHidden } from "../../../../../icons/EyeHidden.svg";
+import { getCurrentUser } from "../../../../../Servis/auth-service";
+import { putUserMe } from "../../../../../Servis/user-service";
 
 const EditUpdate = ({ setOpen }) => {
   const [show, setShow] = useState(false);

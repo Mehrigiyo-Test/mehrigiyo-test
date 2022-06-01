@@ -24,6 +24,9 @@ import { actionDoctorType } from "./store/getDoctorType/action";
 import { actionDoctors } from "./store/getDoctors/action";
 import { actionGetProductsTypes } from "./store/getProductsTypes/action";
 import { actionGetProduct } from "./store/getProducts/action";
+import LayoutUser from "./components/User/Layout/Layout";
+import UserRouter from "./components/User/UserRouter/UserRouter";
+import AdminRouter from "./components/Admin/AdminRouter/AdminRouter";
 
 function App() {
   const dispatch = useDispatch();
@@ -45,35 +48,15 @@ function App() {
       dispatch(actionDoctors(res?.data?.data))
     );
   }, []);
+  const { changeRouterData } = useSelector((state) => state.changeRouter);
 
   return (
     <>
-      <Router>
-        <Navigate />
-        <Navigate2 />
-        <GlobalCallSms />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/onlineDoctor" element={<OnlineDoctor />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/help" element={<Help />} />
-          <Route
-            path="/news/MexrigiyoPresentation"
-            element={<MexrigiyoPresentation />}
-          />
-          <Route path="/news/BeingHealthy" element={<BeingHealthy />} />
-          <Route path="/basket" element={<Basket />} />
-          <Route path="/favoriteDoctors" element={<FavoriteDoctors />} />
-          <Route path="/favoriteDrug" element={<FavoriteDrug />} />
-          <Route
-            path="/OnlineDoctor/BigCompListDoctor"
-            element={<BigCompListDoctor />}
-          />
-        </Routes>
-        <Footer />
-      </Router>
+      {changeRouterData === "user" ? (
+        <UserRouter />
+      ) : changeRouterData === "admin" ? (
+        <AdminRouter />
+      ) : null}
     </>
   );
 }
