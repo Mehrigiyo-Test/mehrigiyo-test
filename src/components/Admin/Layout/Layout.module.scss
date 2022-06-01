@@ -1,0 +1,26 @@
+.layoutContainer {
+  max-width: 100vw;
+  min-height: 100vh;
+  .wrapper {
+    display: flex;
+    padding-right: 100px;
+    .child {
+      margin-top: 20px;
+      margin-left: 32px;
+    }
+  }
+}
+.progressWrapper {
+  background-color: rgb(238, 235, 235);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  .progress {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #53B175;
+  }
+}

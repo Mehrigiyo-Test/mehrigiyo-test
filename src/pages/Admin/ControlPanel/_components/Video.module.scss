@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: #F4F4F4;
+    padding: 17px 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+    &:hover{
+        border: 1px solid #6db224;
+        cursor: pointer;
+    }
+    .doctor{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .img{
+            width: 55px;
+            height: 55px;
+            border-radius: 40px;
+            img{
+                width: 100%;
+            }
+        }
+        div{
+            h4{
+                font-size: 14px;
+                color: #505050;
+            }
+            p{
+                font-size: 12px;
+                color: #505050;
+                font-weight: 600;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .time{
+        background-color: #EAF4EF;
+        padding: 13px 16px;
+        border-radius: 16px;
+        .timeBox{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span{
+                    font-size: 12px;
+                }
+            }
+            h4{
+                font-size: 16px;
+                color: #E64C3C;
+            }
+        }
+    }
+    .camera{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px 8px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+}

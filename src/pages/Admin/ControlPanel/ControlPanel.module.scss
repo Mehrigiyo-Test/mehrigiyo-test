@@ -1,0 +1,74 @@
+@import "./../../_global.scss";
+.container {
+  padding-top: 60px;
+  position: relative;
+  .wrapper {
+    display: flex;
+    padding: 15px 0 60px 0;
+    gap: 40px;
+    .nextTable {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 20px 15px 0;
+      h4 {
+        color: $black;
+        font-size: 16px;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p {
+          color: $grey;
+          font-size: 12px;
+        }
+      }
+    }
+    .date {
+      font-size: 14px;
+      color: $grey;
+      padding-left: 20px;
+    }
+    .importantTable {
+      h4 {
+        padding: 25px 0 13px 15px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .leafs {
+        position: absolute;
+        top: 130px;
+        right: -100px;
+        z-index: -1;
+      }
+      .noData {
+        text-align: center;
+        margin-top: 50px;
+        img{
+          display: inline-block;
+        }
+        .titles {
+          h4 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+            color: #b0b7c3;
+          }
+        }
+        .btn {
+          text-align: center;
+          margin: auto;
+          padding: 9px 30px;
+          background-color: #e9f4ef;
+          border-radius: 20px;
+          margin-top: 26px;
+          width: 232px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

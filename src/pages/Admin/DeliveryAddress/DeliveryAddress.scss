@@ -1,0 +1,39 @@
+@import "../../global";
+
+.delivery {
+  margin-top: 60px;
+}
+
+.input-radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
+  padding-right: 672px;
+}
+
+.add-address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(107, 119, 154, 0.06);
+  border-radius: 13px;
+  width: 366px;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &__text {
+    font-size: 16px;
+    color: #a5a7b2;
+  }
+}
+
+.home-img {
+  position: relative;
+  width: 625px;
+  top: 50px;
+  left: 400px;
+}

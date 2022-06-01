@@ -1,0 +1,77 @@
+.container {
+  margin-top: 60px;
+
+  .settings {
+      margin-top: 40px;
+      padding-right: 644px;
+
+      .my_acc {
+          display: flex;
+
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 13px;
+
+          border: 1px solid rgba(226, 226, 226, 0.4);
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+          box-sizing: border-box;
+          border-radius: 13px;
+          cursor: pointer;
+
+          &__text {
+              font-size: 16px;
+              color: #181725;
+          }
+
+          .edit {
+              display: flex;
+              align-items: center;
+              gap: 22px;
+              width: 360px;
+           
+          }
+          .my_acc__icon2{
+              opacity: 0.25;
+          }
+      }
+
+      &__bottom {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          border: 1px solid rgba(226, 226, 226, 0.4);
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.05));
+          border-radius: 13px;
+          &::after{
+              content: "";
+              width: 325px;
+              height: 1px;
+              top: -60px;
+              left: 68px;
+              background-color: rgba(226, 226, 226, 0.4);
+              position: relative;
+          }
+          &__1 {
+              padding: 15px 13px;
+              justify-content: space-between;
+              display: flex;
+              align-items: center;
+
+              &__title {
+                  font-size: 16px;
+                  color: #181725;
+
+              }
+
+              &__group {
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  margin-left: 120px;
+                  opacity: 0.25;
+              }
+          }
+      }
+  }
+}

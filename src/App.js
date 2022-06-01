@@ -1,21 +1,21 @@
 import "./App.css";
-import Navigate from "./components/nav1/navigate";
-import Footer from "./components/footer/footer";
-import Home from "./pages/Home/Home";
-import OnlineDoctor from "./pages/OnlineDoctor/OnlineDoctor";
-import Products from "./pages/Products/Products";
-import AboutUs from "./pages/AboutUs/AboutUs";
-import News from "./pages/News/News";
-import Help from "./pages/Help/Help";
+import Navigate from "./components/User/nav1/navigate";
+import Footer from "./components/User/footer/footer";
+import Home from "./pages/User/Home/Home";
+import OnlineDoctor from "./pages/User/OnlineDoctor/OnlineDoctor";
+import Products from "./pages/User/Products/Products";
+import AboutUs from "./pages/User/AboutUs/AboutUs";
+import News from "./pages/User/News/News";
+import Help from "./pages/User/Help/Help";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navigate2 from "./components/nav2/navigate2";
-import GlobalCallSms from "./components/Global/GlobalCallSms";
-import MexrigiyoPresentation from "./components/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation";
-import BeingHealthy from "./components/NewPageComp/BeingHealthy/BeingHealthy";
-import Basket from "./pages/Basket/Basket";
-import FavoriteDoctors from "./pages/FavoriteDoctors/FavoriteDoctors";
-import FavoriteDrug from "./pages/FavoriteDrug/FavoriteDrug";
-import BigCompListDoctor from "./pages/OnlineDoctor/List/BigCompListDoctor";
+import Navigate2 from "./components/User/nav2/navigate2";
+import GlobalCallSms from "./components/User/Global/GlobalCallSms";
+import MexrigiyoPresentation from "./components/User/NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation";
+import BeingHealthy from "./components/User/NewPageComp/BeingHealthy/BeingHealthy";
+import Basket from "./pages/User/Basket/Basket";
+import FavoriteDoctors from "./pages/User/FavoriteDoctors/FavoriteDoctors";
+import FavoriteDrug from "./pages/User/FavoriteDrug/FavoriteDrug";
+import BigCompListDoctor from "./pages/User/OnlineDoctor/List/BigCompListDoctor";
 import { useEffect } from "react";
 import Api from "./api/requestApi";
 import { actionGetNews } from "./store/getNews/action";
@@ -44,7 +44,7 @@ function App() {
     Api.get("/specialist/doctors/").then((res) =>
       dispatch(actionDoctors(res?.data?.data))
     );
-  }, [data]);
+  }, []);
 
   return (
     <>

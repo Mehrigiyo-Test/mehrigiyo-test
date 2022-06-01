@@ -1,0 +1,32 @@
+@import "../../global";
+
+.notificationsWrapper {
+  margin-top: 60px;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  padding: 200px 238.5px;
+  margin-top: -5px;
+
+  &__img {
+    width: 200px;
+  }
+
+  &__titles {
+    width: 336px;
+
+    &__title {
+      font-size: 24px;
+      color: #282828;
+    }
+
+    &__text {
+      font-size: 14px;
+      color: #c3c3c3;
+    }
+  }
+}

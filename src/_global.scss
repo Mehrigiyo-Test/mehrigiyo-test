@@ -1,0 +1,33 @@
+$black: #282828;
+$grey: #b0b7c3;
+$green: #53b175;
+$orange: #f26701;
+
+.animat {
+  color: #fff;
+  animation: animat 0.5s infinite forwards;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 121, 121);
+}
+
+@keyframes animat {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,88 @@
+.headerTopContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 100px;
+  align-items: center;
+  background-color: #fff;
+  .title {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+  }
+  .about {
+    display: flex;
+    .dropdown {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .dropdown > span {
+      display: flex;
+    }
+    .dropdown::after {
+      content: "";
+      background-color: #b0b7c366;
+      width: 1px;
+      height: 20px;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: #000;
+      font-size: 14px;
+    }
+    .userAvatar {
+      border-radius: 50%;
+      border: 1px solid green;
+      background-color: #000;
+      width: 25px;
+      height: 25px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .userWithoutAvatar {
+      color: white;
+      font-size: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}
+
+.headerBottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px 0;
+  .actions {
+    display: flex;
+    align-items: center;
+    .bottomTitle {
+      display: flex;
+      gap: 26px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #282828;
+      padding-left: 55px;
+    }
+  }
+  .actions > span {
+    display: flex;
+  }
+}
+.container {
+  top: 0;
+  z-index: 50;
+  position: sticky;
+  background-color: #fafbfc;
+}

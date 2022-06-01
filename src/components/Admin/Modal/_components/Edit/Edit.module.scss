@@ -1,0 +1,45 @@
+.container {
+  padding: 63px 86px 50px;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #181725;
+  }
+  .img {
+    margin: auto;
+    margin-top: 30px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid green;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    .userWithoutAvatar{
+      color: #fff;
+    }
+  }
+  .title {
+    padding-top: 50px;
+    padding-right: 124px;
+    div {
+      padding-bottom: 35px;
+      h6 {
+        font-size: 14px;
+        color: #c3c3c3;
+        font-weight: 400;
+      }
+      p {
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+}

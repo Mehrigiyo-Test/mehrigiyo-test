@@ -1,0 +1,34 @@
+  .container {
+      padding: 19px 24px 14px;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    .caruselBox {
+      display: flex;
+      gap: 5px;
+      
+      span {
+        &:nth-child(4) {
+          display: flex;
+          background: #ffffff;
+          border-radius: 21.4286px;
+          padding: 2.5px 12px;
+        }
+        display: flex;
+        background: #ffc648;
+        border-radius: 21.4286px;
+        padding: 2.5px 5px;
+      }
+    }
+    img {
+        position: absolute;
+        right: 20px;
+        left: 8px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 10px;
+      color: #ffffff;
+      margin-top: 100px;
+    }
+  }
