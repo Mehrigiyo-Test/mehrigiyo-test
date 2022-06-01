@@ -45,7 +45,7 @@ function footer() {
           <div className='green-place'>
             <div className='green_innter-text'>
               <div className='first'>E-mail</div>
-              <a href='info@mehrigiyo.uz' className='next'>info@mehrigiyo.uz</a>
+              <a href='info@mehrigiyo.uz' target="_blank" className='next'>info@mehrigiyo.uz</a>
             </div>
             <div className='green_innter-text'>
               <div className='first'>Bizga qo'ng'iroq qiling</div>

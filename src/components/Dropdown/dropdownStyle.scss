@@ -15,12 +15,14 @@
     position: absolute;
     background: white;
     width: 206px;
-    top: 40px;
+    top: 30px;
     border-radius: 5px;
     z-index: 10;
 }
 .ddImg{
     padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 .ii{
     position: absolute;
@@ -38,9 +40,18 @@
 }
 .polyAbsolutes{
     position: absolute;
-    bottom: 98px;
+    bottom: 102px;
     size: 50px;
 }
 .relativ{
     display: flex;
+}
+.drwr{
+    position: relative;
+}
+.Russian{
+    font-family: Roboto;
+}
+.rusFlag{
+    margin-top: 5px;
 }
