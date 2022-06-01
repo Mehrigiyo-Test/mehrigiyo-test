@@ -34,6 +34,20 @@
     max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
+
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 4px !important;
+        border-radius: 100px !important;
+        transition: 0.5s !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 25px !important;
+        height: 4px !important;
+        border-radius: 100px !important;
+        // transition: 0.5s !important;
+    }
 }
 
 .NewsCardpadding {
