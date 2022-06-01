@@ -10,6 +10,10 @@ import ColumnCardTxt from "./../../components/NewPageComp/ColumnCardNewsTxt/Colu
 import NewsCard from "../../components/NewsCard/NewsCard";
 import sliderEx from "./../../images/sliderEx.png";
 import { useSelector } from "react-redux";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);
@@ -41,16 +45,27 @@ function News() {
             <LastNews />
           </div>
           <div className="display">
-            {rev.map((item) => (
-              <RowNewsCard
-                img={API + item.image}
-                Greenholder={Placeholder}
-                events={item.hashtag}
-                time={item.create_at}
-                theme={item.name}
-                txt={item.description}
-              />
-            ))}
+            <Swiper
+              slidesPerView={2}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {rev.map((item) => (
+                <SwiperSlide>
+                  <RowNewsCard
+                    img={API + item.image}
+                    Greenholder={Placeholder}
+                    events={item.hashtag}
+                    time={item.create_at}
+                    theme={item.name}
+                    txt={item.description}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
           <div>
