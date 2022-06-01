@@ -33,7 +33,7 @@ function NewsCard({ img, category, time, theme, display, info }) {
           <div className="category">
             <p>#{category}</p>
             <li className="lii"></li>
-            <li className="time">{formatDate(newDate)}</li>
+            <li className="time" style={{listStyle: 'none'}}>{formatDate(newDate)}</li>
           </div>
           <h4>{theme}</h4>
           <h6>{info}</h6>
