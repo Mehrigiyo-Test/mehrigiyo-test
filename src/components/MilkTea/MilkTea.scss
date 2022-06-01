@@ -3,6 +3,7 @@
     padding: 0 95px;
     margin-bottom: 124px;
     margin-top: 30px;
+
     .milkBox {
         position: relative;
         height: 300px;
@@ -12,27 +13,33 @@
         box-shadow: 0px 15px 60px #0000001a, 0px 15px 60px #0000001a;
         border-radius: 25px;
     }
+
     .text {
         padding-left: 32px;
     }
+
     .headText {
         margin-top: 25px;
         color: #ccc;
     }
+
     p {
         font-weight: 500;
         font-size: 20px;
     }
+
     h3 {
         font-weight: 700;
         font-size: 40px;
     }
+
     .leftImg {
         img {
             position: relative;
             top: 33px;
         }
     }
+
     .rightImg {
         img {
             position: absolute;
@@ -42,11 +49,20 @@
     }
 }
 
+<<<<<<< HEAD
 .text-groupM{
     display: flex;
     flex-direction: column;
     gap: 25px;
     .text-groupM__texts{
+=======
+.text-groupM {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .text-groupM__texts {
+>>>>>>> 4b464057eb6620a24450a9c7efd52b679df745de
         line-height: 45px;
         color: rgb(83, 81, 81);
     }

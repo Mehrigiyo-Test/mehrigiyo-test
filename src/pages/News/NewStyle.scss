@@ -43,17 +43,3 @@
     display: grid;
     grid-template-columns: auto auto auto;
 }
-
-.display {
-    .swiper-pagination-bullet {
-        width: 15px !important;
-        height: 4px !important;
-        border-radius: 100px !important;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 25px !important;
-        height: 4px !important;
-        border-radius: 100px !important;
-    }
-}

@@ -17,6 +17,9 @@ import { Pagination } from "swiper";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);
+  console.log(data, "bu dataaa")
+
+
   const ad = data.map((_, index) => index);
   const er = ad[ad.length - 1];
 
