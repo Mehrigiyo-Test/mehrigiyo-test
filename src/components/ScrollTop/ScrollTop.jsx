@@ -31,7 +31,7 @@ const ScrollTop = () => {
   return (
     <>
     <div className='Scrollbar' >
-     <img onClick={scrollToTop} className={classNames(isVisible ?   : "opacity-0",)} src={Scrolltop} alt="" />
+     <img onClick={scrollToTop} className={classNames(isVisible ?  "opacity-100" : "opacity-0",)} src={Scrolltop} alt="" />
     {/* top */}
     </div>
     </>
