@@ -89,7 +89,9 @@ console.log(data);
           </div>
           <div className="headContainer">
             <div className="containerBox">
-              <div className="filterBg">
+              <div>
+                <div className="filterWr">
+
                 <div className="display clearFF">
                   <h5>Kategoriyalar</h5>
                   <span className="clearFilter">
@@ -99,8 +101,8 @@ console.log(data);
                 </div>
                 <div className="checkGoods">
                     {goods.map((item, index) => (
-                        <Checkbox key={index} name={item.name} />
-                    ))}
+                      <Checkbox key={index} name={item.name} />
+                      ))}
                 </div>
                 <div className="moore">
                   <div>
@@ -108,7 +110,9 @@ console.log(data);
                   </div>
                   <div>Ko'proq</div>
                 </div>
+                      </div>
               </div>
+              
               <div className="productGoods">
                 {data.map(item => (
                 <ProductCard 
