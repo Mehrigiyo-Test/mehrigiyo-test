@@ -15,13 +15,6 @@ export default function OnlineDoctor() {
   const { info } = useSelector((state) => state.getDoctorType);
   const { dataDoctors } = useSelector((state) => state.getDoctors);
   
-  const dispatch = useDispatch();
-  useEffect(() => {
-    Api.get("/specialist/types/").then((res) =>
-      dispatch(actionDoctorType(res?.data?.data))
-    );
-  }, []);
-
   return (
     <div className="containerDoctor GlobalWrapper">
       <div className="bacgroundImg"></div>

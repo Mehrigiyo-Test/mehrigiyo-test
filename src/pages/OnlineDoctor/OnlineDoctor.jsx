@@ -59,11 +59,7 @@ function OnlineDoctor() {
   const dispatch = useDispatch();
   const API = "http://207.154.244.140:8000/";
 
-  useEffect(() => {
-    Api.get("/specialist/doctors/").then((res) =>
-      dispatch(actionDoctors(res?.data?.data))
-    );
-  }, []);
+ 
   const func = (param) => {
     const id = dataDoctors.filter((a) => a.id === param);
     setNum(Number(id.map((a) => a.id)));

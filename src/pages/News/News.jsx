@@ -13,7 +13,6 @@ import { useSelector } from "react-redux";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);
-
   const ad = data.map((_, index) => index);
   const er = ad[ad.length - 1];
 

@@ -40,7 +40,6 @@ function Home() {
   const imginfo = { img3: <img src={leaves} alt="" /> };
   const [active, setActive] = useState([]);
   const { data } = useSelector((state) => state.getNews);
-  const dispatch = useDispatch();
   const API = "http://207.154.244.140:8000/";
   const magic2 = new Audio(magic);
   const playy = () => {
@@ -62,11 +61,7 @@ function Home() {
     playy();
   };
 
-  useEffect(() => {
-    Api.get("/news/").then((respons) =>
-      dispatch(actionGetNews(respons?.data?.data))
-    );
-  }, []);
+  
 
   return (
     <>
