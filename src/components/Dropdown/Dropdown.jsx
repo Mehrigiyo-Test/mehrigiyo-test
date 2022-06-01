@@ -33,6 +33,8 @@ function Dropdown(img, text) {
     }
     return (
         <>
+        <div className="drwr">
+
             <div className="flex gap" onClick={handleClick}>
                 <div className="relativ">
                     <img className="changableFlag" src={flag} alt="uz" />
@@ -50,14 +52,15 @@ function Dropdown(img, text) {
                         <div className="langText">O'zbekcha</div>
                     </div>
                     <div className="flex pdleft hover space-between" onClick={rus}>
-                        <div className="ddImg"><img id="rus" src={rusFlag} alt="" /></div>
-                        <div className="centerText">Russkiy</div>
+                        <div className="ddImg"><img id="rus" className="rusFlag" src={rusFlag} alt="" /></div>
+                        <div className="centerText Russian">Русский</div>
                     </div>
                     <div className="flex pdleft hover space-between" onClick={eng}>
-                        <div className="ddImg"><img id="eng" src={engFlag} alt="" /></div>
+                        <div className="ddImg"><img id="eng" className="rusFlag" src={engFlag} alt="" /></div>
                         <div className="centerText">English</div>
                     </div>
                 </div> : null}
+                    </div>
         </>
     )
 

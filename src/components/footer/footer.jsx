@@ -45,7 +45,7 @@ function footer() {
           <div className='green-place'>
             <div className='green_innter-text'>
               <div className='first'>E-mail</div>
-              <a href='info@mehrigiyo.uz' className='next'>info@mehrigiyo.uz</a>
+              <a href='info@mehrigiyo.uz' target="_blank" className='next'>info@mehrigiyo.uz</a>
             </div>
             <div className='green_innter-text'>
               <div className='first'>Bizga qo'ng'iroq qiling</div>
@@ -56,17 +56,27 @@ function footer() {
 
         <div className='section_a'>
           <h3 className='legalty'>Huquqiy</h3>
+          <a href="#">
           <p className='parag'>Maxfiylik siyosati</p>
+          </a>
+          <a href="#">
           <p className='parag'>Xizmat ko'rsatish shartlari</p>
+          </a>
+          <a href="#">
           <p className='parag'>Huquqni muhofaza qilish</p>
+          </a>
           <div className='homeimg'><img src={footerhome} alt="icon"/></div>
         </div>
 
         <div className='section_b'>
           <h3 className='footer_h3'>Ilovani yuklab olish</h3>
           <div className='grid'>
+            <a href="https://play.google.com/store/games" target="_blank">
             <div className='buttons'><img className='imgbutton' src={Googleplay} /></div>
+            </a>
+            <a href="https://www.apple.com/ru/app-store/" target="_blank">
             <div className='buttons'><img className='imgbutton' src={Appstore} /></div>
+            </a>
           </div>
         </div>
       </div>

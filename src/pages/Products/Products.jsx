@@ -7,6 +7,7 @@ import ApplicationSec from '../../components/ApplicationSec/ApplicationSec';
 import GlobalSponsors from '../../components/GlobalSponsors/GloblaSponsors';
 import SortGoods from '../SortGoods/SortGoods';
 import "./Products.scss"
+import TopProduct from "../../components/TopProduct/TopProduct"
 
 function Products() {
   return (
@@ -15,6 +16,7 @@ function Products() {
       <ThreeBox />
       <BuyMehrigiyo />
       <MilkTea />
+      <TopProduct/>
       <ApplicationSec />
       <GlobalSponsors />
       <SortGoods/>

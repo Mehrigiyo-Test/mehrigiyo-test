@@ -1,4 +1,4 @@
-.row_wrapper{
+.row_wrapper {
     background-color: #FFFFFF;
     width: 684px;
     padding: 20px;
@@ -6,26 +6,33 @@
     border-radius: 20px;
     position: relative;
 }
-.rowTxt{
+
+.rowTxt {
     width: 365px;
     padding-left: 20px;
     padding-top: 20px;
 }
-.rowImg{
+
+.rowImg {
     width: 272px;
+    height: 170px;
+
+    img {
+        width: 272px;
+        height: 170px;
+        border-radius: 13px;
+    }
 }
-.rowImg img{
-    width: 100%;
-    
-}
-.rowTxt h4{
+
+.rowTxt h4 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
 }
-.rowTxt p{
+
+.rowTxt p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -33,14 +40,16 @@
     line-height: 21px;
     color: #B0B7C3;
 }
-.PLaceholderImg{
+
+.PLaceholderImg {
     position: absolute;
     left: 100px;
     top: 30px;
     width: 78px;
     left: 207px;
 }
-.events{
+
+.events {
     color: white;
     top: 32px;
     left: 220px;
@@ -50,22 +59,26 @@
     font-size: 12px;
     line-height: 165%;
 }
-.timeData{
+
+.timeData {
     color: white;
     font-family: 'Poppins';
-    font-style: normal; 
+    font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 165%;
 }
-.rowNewsWrapper{
+
+.rowNewsWrapper {
     margin-right: 30px;
 }
-.UploadRow{
+
+.UploadRow {
     display: flex;
     align-items: center;
 }
-.InnerShadow{
+
+.InnerShadow {
     position: absolute;
     display: flex;
     justify-content: center;
