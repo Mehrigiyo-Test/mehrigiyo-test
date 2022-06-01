@@ -1,9 +1,10 @@
-.leafs{
+.leafs {
     z-index: 0;
     position: absolute;
     left: -100px;
 }
-.plant{
+
+.plant {
     z-index: 0;
     position: absolute;
     top: 80px;
@@ -11,28 +12,46 @@
     width: 400px;
     transform: rotate(30deg);
 }
-.plantImg{
+
+.plantImg {
     width: 400px;
     opacity: 0.1;
 }
-.LastNews_p{
+
+.LastNews_p {
     z-index: 2;
 }
-.News_wrapper{
+
+.News_wrapper {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
     margin-left: 100px;
 }
-.News{
+
+.News {
     background-color: #FAFBFC;
-    /* z-index: -1; */
     max-width: 1440px;
     margin: 0 auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-.NewsCardpadding{
+
+.NewsCardpadding {
     padding-bottom: 145px;
     gap: 100px;
     width: 1166px;
+}
+
+.display {
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 4px !important;
+        border-radius: 100px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 25px !important;
+        height: 4px !important;
+        border-radius: 100px !important;
+    }
 }
