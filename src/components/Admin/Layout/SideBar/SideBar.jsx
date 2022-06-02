@@ -16,7 +16,7 @@ import { ReactComponent as Orders } from "./../../../../icons/Sidebar/Orders.svg
 import { ReactComponent as PaymentMethods } from "./../../../../icons/Sidebar/PaymentMethods.svg";
 import { ReactComponent as Setting } from "./../../../../icons/Sidebar/Setting.svg";
 import { getCurrentUser, logout } from "../../../../Servis/auth-service";
-
+import men from "../../../../images/Admin/Men.jpg"
 const SideBar = () => {
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState("edit");
@@ -75,9 +75,10 @@ const SideBar = () => {
                 {user.avatar != null ? (
                   <img src={user.avatar} alt="user" />
                 ) : (
-                  <span className={style.userWithoutAvatar}>
-                    {user.first_name[0] + user.last_name[0]}
-                  </span>
+                  // <span className={style.userWithoutAvatar}>
+                  //   {user.first_name[0] + user.last_name[0]}
+                  // </span>
+                    <img src={men} alt="" />
                 )}
               </span>
               <span>

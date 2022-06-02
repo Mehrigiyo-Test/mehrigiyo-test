@@ -140,7 +140,7 @@ const Login = ({ setOpen }) => {
               )}
             />
           
-            <div className="absolute top-8">
+            <div className="absolute top-8 ">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Uzbekistan.png/1200px-Flag_of_Uzbekistan.png"
                 alt=""
