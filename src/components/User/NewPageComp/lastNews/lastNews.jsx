@@ -37,22 +37,13 @@ function LastNews({ img, category, time, theme, info }) {
             </p>
             <span>/</span>
             <p>
-              <a href="/news">Yangiliklar</a>
-            </p>
-            <span>/</span>
-            <p>
-              <Link to="/news/MexrigiyoPresentation">
-                Mehrigiyo kompaniyasi ...
-              </Link>
-            </p>
-            <span>/</span>
-            <p>
-              <Link to="/news/BeingHealthy">Salomatlik sari</Link>
+              <a href="/news" className="myGreen">
+                Yangiliklar
+              </a>
             </p>
           </div>
           <h2 className="lasteNews_txt">So’ngi yangiliklar</h2>
         </div>
-
         <section className="display sectiona">
           <div className="bigImgNews">
             <img src={API + creat_at.image} alt="" />

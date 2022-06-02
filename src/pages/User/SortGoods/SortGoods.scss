@@ -1,0 +1,128 @@
+.OnlineDoctorPg2GW {
+  position: relative;
+  overflow: hidden;
+}
+.Onlinewr {
+  padding-left: 100px;
+  padding-right: 50px;
+  position: relative;
+  // overflow: hidden;
+  margin-bottom: 50px;
+}
+.GreyTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6b779a;
+  padding-left: 20px;
+}
+.Attention {
+  background-color: #eceef2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.AttentComp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DoctorNav {
+  padding: 40px 0 15px 0;
+}
+.doc {
+  display: flex;
+  justify-content: center;
+}
+.displayLeft {
+  display: flex;
+  gap: 145px !important;
+  align-items: center;
+  margin-left: 20px;
+}
+.displayRight {
+  margin-right: 650px;
+}
+.doctype {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.doctype:focus {
+  color: #53b175;
+}
+.doctype:hover {
+  color: #53b175;
+}
+.clearFilter {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.clearFilter img {
+  width: 20px;
+  height: 20px;
+}
+.clearFilter p {
+  color: grey;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.containerBox {
+    display: flex !important;
+    gap: 90px;
+    margin-top: 20px;
+}
+
+.containerBox h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+.clearFF {
+  display: flex;
+  justify-content: space-between;
+}
+.productGoods {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.moore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+.moore div {
+  color: #53b175;
+  text-decoration: underline;
+}
+.beetwenUs {
+  gap: 20px;
+}
+
+  .filterWr{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    }
+.DocInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-left: 80px;
+  margin-top: 25px;
+  margin-bottom: 350px;
+}
+

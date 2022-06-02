@@ -10,6 +10,7 @@ import News from '../../../pages/User/News/News'
 import BigCompListDoctor from '../../../pages/User/OnlineDoctor/List/BigCompListDoctor'
 import OnlineDoctor from '../../../pages/User/OnlineDoctor/OnlineDoctor'
 import Products from '../../../pages/User/Products/Products'
+import SortGoods from '../../../pages/User/SortGoods/SortGoods'
 import LayoutUser from '../Layout/Layout'
 import BeingHealthy from '../NewPageComp/BeingHealthy/BeingHealthy'
 import MexrigiyoPresentation from '../NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation'
@@ -36,6 +37,8 @@ const UserRouter = () => {
             path="/OnlineDoctor/BigCompListDoctor"
             element={<BigCompListDoctor />}
           />
+          <Route path="/products/sortGoods" element={<SortGoods />} />
+
         </Routes>
     </LayoutUser>
   )

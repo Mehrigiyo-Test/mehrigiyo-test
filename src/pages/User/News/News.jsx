@@ -69,54 +69,25 @@ function News() {
             <ColumnCardTxt />
           </div>
           <div className="display NewsCardpadding">
-            <div>
-              <NewsCard
+            {/* <div> */}
+              {/* <NewsCard
                 img={sliderEx}
                 category="#Ziravorlar"
                 time="4 min oldin"
                 theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
                 info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-              <NewsCard
-                img={sliderEx}
-                category="#Ziravorlar"
-                time="4 min oldin"
-                theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
-                info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-            </div>
-            <div>
-              <NewsCard
-                img={sliderEx}
-                category="#Ziravorlar"
-                time="4 min oldin"
-                theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
-                info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-              <NewsCard
-                img={sliderEx}
-                category="#Ziravorlar"
-                time="4 min oldin"
-                theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
-                info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-            </div>
-            <div>
-              <NewsCard
-                img={sliderEx}
-                category="#Ziravorlar"
-                time="4 min oldin"
-                theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
-                info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-              <NewsCard
-                img={sliderEx}
-                category="#Ziravorlar"
-                time="4 min oldin"
-                theme='Mehrigiyo kompaniyasi "Detaksioma - 100% tabiy vosita" mahsulotini taqdim etadi.'
-                info="Uning tarkibida kimyoviy o'g'it ishlatmasdan O'zbekistonning ekologik toza hududida yetishtiril-gan tabiiy komponentlar mavjud."
-              />
-            </div>
+              /> */}
+              {data.map((item) => (
+                <NewsCard 
+                key={item.id}
+                  img={API + item.image}
+                  category={item.hashtag}
+                  time={item.created_at}
+                  theme={item.name}
+                  info={item.description_uz}
+                />
+              ))}
+            {/* </div> */}
           </div>
         </div>
       </div>

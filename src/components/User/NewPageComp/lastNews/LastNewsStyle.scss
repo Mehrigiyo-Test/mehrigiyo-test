@@ -14,6 +14,11 @@
 
 .News1_wrapper {
     display: flex;
+    gap: 7px;
+
+    .myGreen {
+        color: #53B175;
+    }
 }
 
 .lasteNews_txt {

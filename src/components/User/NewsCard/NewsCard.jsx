@@ -23,7 +23,7 @@ function NewsCard({ img, category, time, theme, display, info }) {
       <div className="wrapper">
         <div className="img_wrapper">
           <img className="sldImg" src={img} alt="" />
-          <a href="https://www.youtube.com/watch?v=bCtlituS9p8" target="_blank"> 
+          <a href="https://www.youtube.com/watch?v=bCtlituS9p8" target="_blank">
             <span className="imgPlay">
               <img src={imgPlay} alt="" />
             </span>
@@ -33,7 +33,9 @@ function NewsCard({ img, category, time, theme, display, info }) {
           <div className="category">
             <p>#{category}</p>
             <li className="lii"></li>
-            <li className="time">{formatDate(newDate)}</li>
+            <li className="time" style={{ listStyle: "none" }}>
+              {formatDate(newDate)}
+            </li>
           </div>
           <h4>{theme}</h4>
           <h6>{info}</h6>

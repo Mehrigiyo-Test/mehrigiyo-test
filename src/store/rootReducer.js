@@ -13,4 +13,5 @@ const rootReducer = combineReducers({
   getDoctorType,
   changeRouter
 });
+
 export default rootReducer;

@@ -1,0 +1,16 @@
+.Scrollbar{
+    position: fixed;
+    width: 60px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 3%;
+    top: 660px;
+    z-index: 9;
+    // background-color: red;
+    img{
+        width: 60px;
+        // height: 60px;
+    }
+}
