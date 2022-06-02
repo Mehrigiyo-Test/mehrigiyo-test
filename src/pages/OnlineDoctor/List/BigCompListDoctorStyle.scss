@@ -103,10 +103,6 @@
     color: #53B175;
     text-decoration: underline;
 }
-// .rowFilter{
-//      padding-left: 222px; 
-//      padding-right: 530px; 
-// }
 .beetwenUs {
     gap: 20px;
 }
@@ -122,12 +118,12 @@
     gap: 36px;
     margin-left: 80px;
     margin-top: 25px;
-    margin-bottom: 650px;
+    margin-bottom: 350px;
 }
 .leaveBak {
-    position: absolute;
-    left: 970px;
-    top: 700px;
+    position: relative;
+    left: 8 70px !important;
+    // top: 700px;
     .bak {
         opacity: .1;
     }

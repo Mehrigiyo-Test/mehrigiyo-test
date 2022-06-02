@@ -1,19 +1,25 @@
 import React from "react";
-import Groupffff from "../../images/Groupffff.png";
-import "./NewStyle.scss";
-import LastNews from "../../components/NewPageComp/lastNews/lastNews";
-import RowNewsCard from "../../components/NewPageComp/RowNewsCard/RowNewsCard";
-import Group from "./../../images/Group.png";
-import rowImg from "./../../images/rowImg.png";
-import Placeholder from "./../../images/Placeholder.png";
-import ColumnCardTxt from "./../../components/NewPageComp/ColumnCardNewsTxt/ColumnCardTxt";
-import NewsCard from "../../components/NewsCard/NewsCard";
-import sliderEx from "./../../images/sliderEx.png";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Pagination } from "swiper";
+
+
+import ColumnCardTxt from "./../../components/NewPageComp/ColumnCardNewsTxt/ColumnCardTxt";
+import RowNewsCard from "../../components/NewPageComp/RowNewsCard/RowNewsCard";
+import LastNews from "../../components/NewPageComp/lastNews/lastNews";
+import NewsCard from "../../components/NewsCard/NewsCard";
+
+
+import Placeholder from "./../../images/Placeholder.png";
+import Groupffff from "../../images/Groupffff.png";
+// import sliderEx from "./../../images/sliderEx.png";
+// import rowImg from "./../../images/rowImg.png";
+import Group from "./../../images/Group.png";
+
+
+import "swiper/css";
+import "./NewStyle.scss";
+import "swiper/css/pagination";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);

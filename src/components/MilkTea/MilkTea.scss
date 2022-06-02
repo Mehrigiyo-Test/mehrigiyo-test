@@ -49,20 +49,12 @@
     }
 }
 
-<<<<<<< HEAD
-.text-groupM{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    .text-groupM__texts{
-=======
 .text-groupM {
     display: flex;
     flex-direction: column;
     gap: 25px;
 
     .text-groupM__texts {
->>>>>>> 4b464057eb6620a24450a9c7efd52b679df745de
         line-height: 45px;
         color: rgb(83, 81, 81);
     }
