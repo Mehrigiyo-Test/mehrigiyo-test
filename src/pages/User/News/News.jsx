@@ -10,7 +10,7 @@ import NewsCard from "../../../components/User/NewsCard/NewsCard";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import Groupffff from "../../../images/User/Groupffff.png";
+
 import "swiper/css";
 import "./NewStyle.scss";
 import "swiper/css/pagination";
