@@ -125,7 +125,7 @@ const Navigate2 = () => {
             </Link>
             }
 
-            <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
+         <Link to={'/favoriteDrug'}>   <img className="nav-icons__icon" src={NavIcon2} alt="icon" /></Link>
             <img
               className="nav-icons__icon"
               src={NavIcon2}
@@ -133,7 +133,7 @@ const Navigate2 = () => {
               hidden={link}
             />
 
-            <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
+            <Link to={'/basket'}><img className="nav-icons__icon" src={NavIcon3} alt="icon" /></Link>
           </div>
         </div>
       </div>
