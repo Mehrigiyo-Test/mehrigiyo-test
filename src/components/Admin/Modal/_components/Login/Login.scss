@@ -1,0 +1,81 @@
+.loginTab {
+  padding-top: 70px;
+  padding: 0 100px;
+  &__box {
+    background-color: #f8f8f8;
+    display: flex;
+    padding: 5px;
+    gap: 30px;
+    border-radius: 100px;
+    align-items: center;
+    margin: 0 60px;
+    .activeTab {
+      color: #53b175;
+      font-weight: 400;
+      position: relative;
+      z-index: 20;
+      padding: 0 12px;
+      padding: 4px 0;
+    }
+    .tab {
+      color: #b0b7c3;
+      cursor: pointer;
+      position: relative;
+      z-index: 20;
+      padding: 0 53px;
+    }
+    .tabBg {
+      background-color: #fff;
+      position: absolute;
+      border-radius: 100px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+      z-index: 10;
+      transition-duration: 500s;
+      width: 128px;
+    }
+    .activeTab2 {
+      color: #53b175;
+      font-weight: 400;
+      border-radius: 100px;
+      position: relative;
+      z-index: 20;
+      padding: 0 30px;
+      padding: 4px 0;
+    }
+    .tab2 {
+      color: #b0b7c3;
+      cursor: pointer;
+      position: relative;
+      z-index: 20;
+      padding: 0 30px;
+      padding-right: 20px;
+    }
+  }
+}
+.loginContainer {
+  padding-top: 48px;
+  padding: 0 86px;
+  .loginContainer__1 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .loginContainer__2 {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 6px;
+    }
+    .maskedInput {
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+        outline: none;
+        padding-bottom: 12px;
+        padding-left: 28px;
+        position: relative;
+        &:focus{
+            border: 1px solid #53b175;
+        }
+    }
+  }
+}

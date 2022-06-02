@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img {
+    margin-top: 59px !important;
+  }
+  p {
+    font-weight: 500;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 53px;
+  }
+}
