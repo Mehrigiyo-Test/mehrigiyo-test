@@ -1,6 +1,6 @@
 .loginTab {
-  padding-top: 70px;
-  padding: 0 100px;
+  padding: 70px 100px 50px 100px;
+
   &__box {
     background-color: #f8f8f8;
     display: flex;
@@ -9,6 +9,7 @@
     border-radius: 100px;
     align-items: center;
     margin: 0 60px;
+
     .activeTab {
       color: #53b175;
       font-weight: 400;
@@ -17,6 +18,7 @@
       padding: 0 12px;
       padding: 4px 0;
     }
+
     .tab {
       color: #b0b7c3;
       cursor: pointer;
@@ -24,6 +26,7 @@
       z-index: 20;
       padding: 0 53px;
     }
+
     .tabBg {
       background-color: #fff;
       position: absolute;
@@ -34,6 +37,7 @@
       transition-duration: 500s;
       width: 128px;
     }
+
     .activeTab2 {
       color: #53b175;
       font-weight: 400;
@@ -43,6 +47,7 @@
       padding: 0 30px;
       padding: 4px 0;
     }
+
     .tab2 {
       color: #b0b7c3;
       cursor: pointer;
@@ -53,29 +58,303 @@
     }
   }
 }
+
 .loginContainer {
   padding-top: 48px;
   padding: 0 86px;
+
   .loginContainer__1 {
     display: flex;
     flex-direction: column;
     position: relative;
+
     .loginContainer__2 {
       font-size: 14px;
       color: gray;
       margin-bottom: 6px;
     }
+
     .maskedInput {
+      border: none;
+      border-bottom: 1px solid #E2E2E2;
+      background-color: transparent;
+      outline: none;
+      padding-bottom: 12px;
+      padding-left: 40px;
+      position: relative;
+
+      &:focus {
+        border-bottom: 1px solid #53b175;
+      }
+    }
+
+    .inputFlag {
+      position: absolute;
+      top: 25px;
+
+      img {
+        width: 33px;
+        height: 23px;
+      }
+    }
+
+    .input-title {
+      position: absolute;
+      bottom: -20px;
+    }
+
+    .inputAnimation {
+      position: absolute;
+      bottom: 4px;
+      right: 8px;
+      color: red;
+      border-radius: 50%;
+    }
+  }
+
+  .divPassword {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    position: relative;
+
+    .labelPassword {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 6px;
+    }
+
+    .inputPassword {
+      border: none;
+      border-bottom: 1px solid #E2E2E2;
+      padding-right: 28px;
+      padding-bottom: 12px;
+      outline: none;
+
+      &:focus {
+        border-bottom: 1px solid #53B175;
+      }
+    }
+
+    .enterPassword {
+      position: absolute;
+      bottom: -1px;
+    }
+
+    .inputEyes {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .forgotPassword {
+    font-size: 12px;
+    color: grey;
+    text-align: right;
+    cursor: pointer
+  }
+
+  .enterSystem {
+    padding: 48px 0;
+  }
+}
+
+.modalRegistration {
+  .avatar {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .clickAvatar {
+      background-color: #EBEBEB;
+      position: relative;
+      border-radius: 50%;
+      width: 84px;
+      height: 84px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .clickAvatar-span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+      }
+    }
+
+    .avatarText {
+      font-size: 12px;
+      padding-top: 16px;
+    }
+  }
+
+  .form {
+    padding: 48px 86px 0 86px;
+
+    .formDiv1 {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 24px;
+      position: relative;
+
+      .formDiv1-input1 {
         border: none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #E2E2E2;
         background-color: transparent;
         outline: none;
         padding-bottom: 12px;
-        padding-left: 28px;
-        position: relative;
-        &:focus{
-            border: 1px solid #53b175;
+        text-transform: capitalize;
+
+        &:focus {
+          border-bottom: 1px solid #53B175;
         }
+      }
+
+      .formDiv1-text {
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+
+    .formDiv2 {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 24px;
+      position: relative;
+
+      .formDiv2-input2 {
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        background-color: transparent;
+        outline: none;
+        padding-bottom: 12px;
+        text-transform: capitalize;
+
+        &:focus {
+          border-bottom: 1px solid #53B175;
+        }
+
+        .formDiv2-text {
+          position: absolute;
+          top: 5px;
+          right: 0;
+        }
+      }
+    }
+
+    .formDiv3 {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .formDiv3-label {
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 6px;
+      }
+
+      .formDiv3-input3 {
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        background-color: transparent;
+        outline: none;
+        padding-bottom: 12px;
+
+        &:focus {
+          border-bottom: 1px solid #53B175;
+        }
+
+        .formDiv3-text {
+          position: absolute;
+          top: 30px;
+          right: 0;
+        }
+      }
+    }
+
+    .formDiv4 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      position: relative;
+
+      .formDiv4-label {
+        font-size: 12px;
+        color: grey;
+        margin-bottom: 6px;
+      }
+
+      .formDiv4-input4 {
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        background-color: transparent;
+        outline: none;
+        padding-bottom: 12px;
+
+        &:focus {
+          border-bottom: 1px solid #53B175;
+        }
+
+        .formDiv4-text {
+          position: absolute;
+          top: 50px;
+          right: 0;
+        }
+      }
+    }
+
+    .formDiv5 {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0;
+      position: relative;
+
+      .formDiv5-label {
+        font-size: 12px;
+        color: grey;
+        margin-bottom: 6px;
+      }
+
+      .formDiv5-input5 {
+        border: none;
+        border-bottom: 1px solid #E2E2E2;
+        background-color: transparent;
+        padding-right: 28px;
+        letter-spacing: 0.1em;
+        outline: none;
+        padding-bottom: 12px;
+
+        &:focus {
+          border-bottom: 1px solid #53B175;
+        }
+
+      }
+
+      .formDiv5-eyes {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        cursor: pointer;
+      }
+    }
+
+    .endText {
+      font-size: 12px;
+      color: grey;
+      text-align: center;
+
+      .endText-span {
+        color: #53B175;
+      }
+    }
+
+    .endBtn {
+      padding-bottom: 48px;
+      padding-top: 20px;
     }
   }
 }

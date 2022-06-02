@@ -17,13 +17,13 @@ export default function OnlineDoctor() {
     <div className="containerDoctor GlobalWrapper">
       <div className="bacgroundImg"></div>
       <div className="onlineDoctorContainer">
-        <h3>
-          Har qanday sog'liq bilan bog'liq muammolar uchun
+        <div>
+          <h3>Har qanday sog'liq bilan bog'liq muammolar  uchun<br />
           <Link to="/onlineDoctor" className="greenDoctor">
             onlayn shifokorlarga
           </Link>
-          murojaat qiling
-        </h3>
+          murojaat qiling</h3>
+        </div>
         <p>
           Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob
           berishadi.
