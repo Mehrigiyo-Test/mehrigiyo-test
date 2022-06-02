@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    padding: 16px 16px 20px 22px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+    &:hover{
+        border: 1px solid #6db224;
+        background-color: #EEF7F1;
+        cursor: pointer;
+    }
+    div{
+        h4{
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+        p{
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    }
+    .arrow{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+}

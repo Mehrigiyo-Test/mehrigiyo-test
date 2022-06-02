@@ -1,0 +1,100 @@
+.container {
+  position: relative;
+  background: linear-gradient(274.36deg, #53B175 0.52%, #53B175 21.68%, #63CB89 96.53%), rgba(83, 177, 117, 0.2);
+  box-shadow: 0px 25px 50px rgba(83, 177, 117, 0.3);
+  border-radius: 20px;
+  padding: 30px;  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+    .doctor {
+      display: flex;
+      gap: 5px;
+      .img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        img {
+          width: 100%;
+        }
+      }
+      span {
+        h5 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #fff;
+          padding-top: 10px;
+        }
+        p {
+          font-size: 14px;
+          color: #fff;
+          opacity: 0.7;
+        }
+        h6 {
+          font-size: 10px;
+          color: #fff;
+          opacity: 0.7;
+        }
+      }
+    }
+    .add {
+      padding-top: 10px;
+    }
+  }
+  .profession {
+    p {
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.7;
+      padding-top: 20px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+  .date {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    span {
+      p {
+        font-size: 14px;
+        color: #fff;
+        opacity: 0.7;
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 11px 50px;
+    border-radius: 30px;
+    margin-top: 40px;
+    gap: 50px;
+    h2 {
+      font-size: 12px;
+      color: #b0b7c3;
+    }
+    .time {
+      font-size: 14px;
+      color: #e64c3c;
+    }
+  }
+  .bgImg {
+    position: absolute;
+    width: 221.35px;
+    height: 97px;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,198 @@
+@import "../../../global";
+
+.container {
+  padding-top: 60px;
+
+  .btnsWrapper {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  .filledBox {
+    padding: 33px 30px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    position: relative;
+
+    .talkingDoctor {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.5px solid #d7d7d7;
+      padding-bottom: 20px;
+
+      // width: 100%;
+      .avatarText {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-right: 669px;
+
+        .avatar {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .text {
+          .name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #181725;
+            line-height: 21px;
+          }
+
+          .job {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #181725cc;
+          }
+
+          .missedMessages {
+            // font-weight: 300;
+            font-size: 10px;
+            line-height: 15px;
+            color: #f26701;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .missed {
+        .talkingTime {
+          color: #f26701;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+          display: block;
+          text-align: end;
+          margin-bottom: 8px;
+        }
+
+        .littleWrapper {
+          gap: 5px;
+          display: flex;
+          width: 125px;
+
+          .talkingData {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+
+        .minute_ago {
+          color: $green;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 15px;
+        }
+
+        .missed_message {
+          display: block;
+          margin-top: 15px;
+          text-align: end;
+
+          img {
+            display: unset !important;
+            vertical-align: unset !important;
+          }
+        }
+
+        .timeMessage {
+          display: block;
+          text-align: end;
+          color: rgba(24, 23, 37, 0.8);
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .talkingDoctor_opacity {
+      opacity: 0.5;
+    }
+
+    .talkingDoctor_brdNone {
+      border-bottom: none;
+      padding-bottom: none;
+    }
+
+    .talkingDoctor_margin {
+      margin-bottom: 20px;
+    }
+
+    .talkingDoctor_padding {
+      padding-right: 758px !important;
+    }
+
+    .imgLeaf {
+      position: absolute;
+      right: -100px;
+      top: -35px;
+      z-index: -1;
+    }
+  }
+
+  .emptyBox {
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 56px;
+    padding: 0 264px 0 264px;
+
+    .imgNoUpcoming {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .emptyText {
+      width: 50%;
+
+      .title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $black;
+        margin-top: 35px;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey;
+        margin-bottom: 30px;
+      }
+
+      .emptyBtn {
+        padding: 9px 26px;
+        background-color: rgba(83, 177, 117, 0.1);
+        border-radius: 20px;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181725;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          color: #fff;
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
