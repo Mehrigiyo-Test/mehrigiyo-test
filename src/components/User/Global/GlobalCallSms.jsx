@@ -8,11 +8,12 @@ import "./GlobalCallSms.scss";
 const GlobalCallSms = () => {
   return (
     <div className='banner-card__icons'>
-      <a href="tel:+998901234567"><img src={CallIcon} alt="icon" /></a>
-      <img src={MessageIcon} alt="icon" />
-      
+      <div id="app">
+          <i className='fas fa-phone' id='app__call'></i>
+          <i class="fa-solid fa-comment" id='app__sms'></i>
+      </div>
     </div>
   )
 }
 
-export default GlobalCallSms
+export default GlobalCallSms;
