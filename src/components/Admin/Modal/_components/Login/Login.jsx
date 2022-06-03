@@ -11,7 +11,7 @@ import Button from "../../../Buttons/Button";
 import { MaskedInput } from "antd-mask-input";
 import { setCurrentUser, setToken } from "../../../../../Servis/auth-service";
 import requestApi from "../../../../../Servis/api/request";
-import './Login.scss'
+import "./Login.scss";
 const Login = ({ setOpen }) => {
   const [show, setShow] = useState(true);
   const [tab, setTab] = useState(true);
@@ -40,7 +40,7 @@ const Login = ({ setOpen }) => {
     phoneNumber = phoneNumber.replace(/[^0-9]+/g, "");
     data.username = phoneNumber;
     console.log(data);
-    
+
     requestApi.post("/login/", data).then((response) => {
       if (response.status === 200) {
         setToken(response.data.access);
@@ -67,8 +67,10 @@ const Login = ({ setOpen }) => {
     let phoneNumber = data.username;
     phoneNumber = phoneNumber.replace(/[^0-9]+/g, "");
     data.username = phoneNumber;
-    data.first_name = data.first_name.charAt(0).toUpperCase() + data.first_name.slice(1);
-    data.last_name = data.last_name.charAt(0).toUpperCase() + data.last_name.slice(1);
+    data.first_name =
+      data.first_name.charAt(0).toUpperCase() + data.first_name.slice(1);
+    data.last_name =
+      data.last_name.charAt(0).toUpperCase() + data.last_name.slice(1);
 
     requestApi.post("/user/registration/", data).then((response) => {
       if (response.status === 200 && response.data.status === "success") {
@@ -87,19 +89,13 @@ const Login = ({ setOpen }) => {
       <div className="loginTab">
         <div className="loginTab__box">
           <span
-            className={
-              tab
-                ? "activeTab "
-                : "tab"
-            }
+            className={tab ? "activeTab " : "tab"}
             onClick={() => setTab(true)}
           >
             Kirish
           </span>
           <span
-            className={
-              "tabBg"
-            }
+            className={"tabBg"}
             style={
               tab
                 ? { transform: "translateX(0)", width: "140px" }
@@ -107,11 +103,7 @@ const Login = ({ setOpen }) => {
             }
           ></span>
           <span
-            className={
-              tab
-                ? "tab2"
-                : " activeTab2"
-            }
+            className={tab ? "tab2" : " activeTab2"}
             onClick={() => setTab(false)}
           >
             Ro'yxatdan o'tish
@@ -136,11 +128,10 @@ const Login = ({ setOpen }) => {
                   className=" maskedInput"
                   {...field}
                 />
-                
               )}
             />
-          
-            <div className="absolute top-8 ">
+
+            <div className="inputFlag">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Uzbekistan.png/1200px-Flag_of_Uzbekistan.png"
                 alt=""
@@ -150,32 +141,30 @@ const Login = ({ setOpen }) => {
             </div>
             {errors.username && (
               <div>
-                <div className="error-message absolute bottom-[-20px]">
+                <div className="error-message input-title">
                   Raqamingizni kiriting
                 </div>
-                <div className="absolute bottom-1 right-2 text-[red] rounded-full animat">
-                  !
-                </div>
+                <div className="animat inputAnimation">!</div>
               </div>
             )}
           </div>
-          <div className="flex flex-col py-6 relative">
-            <label htmlFor="password" className="text-sm text-gray4 mb-1.5">
+          <div className="divPassword">
+            <label htmlFor="password" className="labelPassword">
               Parol
             </label>
             <input
               id="password"
               type={show ? "password" : "text"}
-              className="border-b  pr-7  outline-none pb-3 focus:border-[#53B175]"
+              className="inputPassword"
               {...register("password", { required: true, minLength: 4 })}
             />
             {errors.password && (
-              <span className="error-message absolute bottom-[1px]">
+              <span className="error-message enterPassword">
                 Parolingizni kiriting
               </span>
             )}
 
-            <div className="absolute right-0 top-[50%] cursor-pointer">
+            <div className="inputEyes">
               {show ? (
                 <div onClick={() => setShow(false)}>
                   <EyeHidden />
@@ -187,72 +176,70 @@ const Login = ({ setOpen }) => {
               )}
             </div>
           </div>
-          <p className="text-xs text-gray4 text-right cursor-pointer">
-            Parolni unutdingizmi?
-          </p>
-          <div className="py-12" onClick={handleSubmit(onSubmit)}>
+          <p className="forgotPassword">Parolni unutdingizmi?</p>
+          <div className="enterSystem" onClick={handleSubmit(onSubmit)}>
             <Button title={"Tizimga kirish"} />
           </div>
         </form>
       ) : (
-        <section>
-          <div className="pt-10 flex flex-col items-center">
-            <div className="bg-[#EBEBEB] relative rounded-full w-[84px] h-[84px] flex justify-center items-center">
+        <section className="modalRegistration">
+          <div className="avatar">
+            <div className="clickAvatar">
               <NoAvatar />
-              <span className="absolute bottom-0 right-0 cursor-pointer">
+              <span className="clickAvatar-span">
                 <Optinal />
               </span>
             </div>
-            <p className="text-xs pt-4">Fotosurat yuklang (optinal)</p>
+            <p className="avatarText">Fotosurat yuklang (optinal)</p>
           </div>
-          <form action="" className="pt-12 px-[86px]" onSubmit={handleSubmit2}>
-            <div className="flex flex-col pb-6 relative">
+          <form action="" className="form" onSubmit={handleSubmit2}>
+            <div className="formDiv1">
               <input
                 type="text"
                 placeholder="Ismingiz"
-                className="border-b bg-transparent outline-none pb-3 focus:border-primaryGreen capitalize"
+                className="formDiv1-input1"
                 {...register2("first_name", { required: true })}
               />
               {errors2.first_name && (
-                <span className="error-message absolute top-[5px] right-0">
+                <span className="error-message formDiv1-text">
                   Ismingizni kiriting
                 </span>
               )}
             </div>
-            <div className="flex flex-col pb-6 relative">
+            <div className="formDiv2">
               <input
                 type="text"
                 placeholder="Familiyangiz"
-                className="border-b bg-transparent outline-none pb-3 focus:border-primaryGreen capitalize"
+                className="formDiv2-input2"
                 {...register2("last_name", { required: true })}
               />
               {errors2.last_name && (
-                <span className="error-message absolute top-[5px] right-0">
+                <span className="error-message formDiv2-text">
                   Familiyangizni kiriting
                 </span>
               )}
             </div>
-            <div className="flex flex-col relative">
-              <label htmlFor="email" className="text-sm text-gray4 mb-1.5">
+            <div className="formDiv3">
+              <label htmlFor="email" className="formDiv3-label">
                 Elektron pochta (optinal)
               </label>
               <input
                 id="email"
                 type="email"
-                className="border-b bg-transparent outline-none pb-3 focus:border-primaryGreen"
+                className="formDiv3-input3"
                 {...register2("email", {
                   required: true,
                   pattern: "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[.]{1}[a-zA-Z]{2,}",
                 })}
               />
               {errors2.email && (
-                <span className="error-message absolute top-[30px] right-0">
+                <span className="error-message formDiv3-text">
                   Pochtangizni kiriting
                 </span>
               )}
             </div>
-            <div className="flex flex-col pt-5 relative">
-              <label htmlFor="email" className="text-sm text-gray4 mb-1.5">
+            <div className="formDiv4">
+              <label htmlFor="email" className="formDiv4-label">
                 Telefon raqamingiz
               </label>
               <Controller
@@ -263,28 +250,28 @@ const Login = ({ setOpen }) => {
                   <MaskedInput
                     mask={input ? "+998(00) 000-00-00" : ""}
                     onKeyDown={() => setInput(true)}
-                    className="border-b bg-transparent outline-none pb-3 focus:border-primaryGreen"
+                    className="formDiv4-input4"
                     {...field}
                   />
                 )}
               />
               {errors2.username && (
-                <span className="error-message absolute top-[50px] right-0">
+                <span className="error-message formDiv4-text">
                   Raqamingizni kiriting
                 </span>
               )}
             </div>
-            <div className="flex flex-col py-6 relative">
-              <label htmlFor="password" className="text-sm text-gray4 mb-1.5">
+            <div className="formDiv5">
+              <label htmlFor="password" className="formDiv5-label">
                 Parolni o’ylab toping
               </label>
               <input
                 id="password"
                 type={show ? "password" : "text"}
-                className="border-b bg-transparent pr-7 tracking-widest outline-none pb-3 focus:border-primaryGreen"
+                className="formDiv5-input5"
                 {...register2("password", { required: true })}
               />
-              <div className="absolute right-0 top-[50%] cursor-pointer">
+              <div className="formDiv5-eyes">
                 {show ? (
                   <div onClick={() => setShow(false)}>
                     <EyeHidden />
@@ -296,13 +283,13 @@ const Login = ({ setOpen }) => {
                 )}
               </div>
             </div>
-            <p className="text-xs text-gray3 text-center">
+            <p className="endText">
               “Ro’yxatdan o’tish” tugmasini bosgan holda, Siz <br />
-              <span className="text-[#53B175]">
+              <span className="endText-span">
                 Foydalanish shartlarini qabul qilgan xisoblanasiz.
               </span>
             </p>
-            <div className="pb-12 pt-5" onClick={handleSubmit2(registration)}>
+            <div className="endBtn" onClick={handleSubmit2(registration)}>
               <Button title={"Ro’yxatdan o’tish"} />
             </div>
           </form>
