@@ -7,10 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: -95px;
+
     .navTitles {
       list-style: none;
       display: flex;
-      gap: 38px;
+      gap: 40px;
       li {
         float: left;
         padding-bottom: 10px;
@@ -33,7 +35,21 @@
         right: -15px;
       }
     }
-
+    .title p {
+      color: #000000;
+      font-weight: 600;
+      &::after {
+        content: "";
+        background-color: #53b175;
+        height: 4px;
+        width: 20px;
+        bottom: 0px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        // transition: width 0.3s ease-in-out;
+      }
+    }
     .title2 ul li {
       display: none;
     }
@@ -90,7 +106,7 @@
       right: -15px;
     }
   }
-  
+
   .nav_Item {
     text-decoration: none;
     position: relative;
@@ -103,8 +119,7 @@
     color: #000000;
     font-weight: 600;
   }
-
-  .nav_Item::after{
+  .nav_Item::after {
     content: "";
     margin-top: 5px;
     background-color: #53b175;

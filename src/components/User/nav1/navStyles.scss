@@ -5,6 +5,8 @@ nav ul {
   cursor: pointer;
   margin-bottom: 0;
   list-style: none;
+  font-size: 12px;
+ 
 }
 
 nav ul li a {
@@ -16,14 +18,17 @@ nav ul li a {
   font-size: 5px;
   line-height: 18px;
   text-decoration: none;
+ 
+}
+.nav1 ul li {
+  &:nth-child(4){
+    color: #ab7a19;
+  }
+  &:nth-child(5){
+    color: #53b175;
+  }
 }
 
-.nav1 ul li a:focus {
-  color: #ab7a19;
-}
-.nav1 ul li a:hover {
-  color: #53b175;
-}
 .navigate {
   position: relative;
   justify-content: space-between;
@@ -48,6 +53,10 @@ select {
   position: relative;
   .AdminNav {
     display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-left: solid 2px #b0b7c366;
+    height: 20px;
     gap: 10px;
     .AdminNavImg {
       border-radius: 50px;
@@ -79,14 +88,14 @@ select {
   border-left: solid 2px #b0b7c366;
   padding: 0 10px;
   cursor: pointer;
-  height: 28px;
+  height: 20px;
 }
 .login {
   display: flex;
   padding-left: 10px;
   cursor: pointer;
   border-left: solid 2px #b0b7c366;
-  height: 28px;
+  height: 20px;
 }
 .lokatsa {
   width: 10px;

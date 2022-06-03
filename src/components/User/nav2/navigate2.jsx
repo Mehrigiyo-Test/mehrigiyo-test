@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "../../../images/User/Mehrigiyo_logo.png";
 import NavIcon1 from "../../../images/User/nav-icon1.png";
 import NavIcon2 from "../../../images/User/nav-icon2.png";
 import NavIcon3 from "../../../images/User/nav-icon3.png";
-import { NavLink } from "react-router-dom";
 import "./nav2.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { actionChangeRouter } from "../../../store/changeRouter/action";
 
 const Navigate2 = () => {
   const navElements = {
-    title1: `Bosh sahifa`,
+    title: `Bosh sahifa`,
     title2: `Onlayn shifokorlar`,
     title3: `Mahsulotlar`,
     title4: `Biz haqimizda`,
@@ -43,6 +42,8 @@ const Navigate2 = () => {
   ];
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const path = location.pathname
   const { changeRouterData } = useSelector((state) => state.changeRouter);
   const changeUserRouter = (param) => {
     if (changeRouterData === "admin") {
@@ -57,8 +58,8 @@ const Navigate2 = () => {
     dispatch(actionChangeRouter("admin"));
     navigate("/admin/control-panel");
   };
-
   const user = localStorage.getItem("user");
+
   return (
     <>
       <div className="nav2  GlobalWrapper">
@@ -70,13 +71,20 @@ const Navigate2 = () => {
           <div className="navcontainer">
             <div className="navTitles">
               <li
-                className="title1 nav_Item "
+                className={path === "/" && "title nav_Item"}
                 onClick={() => changeUserRouter("/")}
-                tabIndex={1}
+              
               >
-                <p>{navElements.title1}</p>
+                <p>{navElements.title}</p>
               </li>
-              <li className="title2 item nav_Item" tabIndex={1}>
+
+              <li
+                className={
+                  path === "/onlineDoctor"
+                    ? "title2 item title"
+                    : "title2 item"
+                }
+              >
                 <p>{navElements.title2}</p>
                 <ul>
                   {onlineDoctors.map((item) => (
@@ -86,7 +94,8 @@ const Navigate2 = () => {
                   ))}
                 </ul>
               </li>
-              <li className="title3 item nav_Item" tabIndex={1}>
+
+              <li className={path === '/products' ? "title3 item title" : 'title3 item'} >
                 <p>{navElements.title3}</p>
                 <ul>
                   {products.map((item) => (
@@ -97,13 +106,13 @@ const Navigate2 = () => {
                 </ul>
               </li>
               <li
-                className="title4 nav_Item"
-                tabIndex={1}
+                className={path === '/aboutUs' && "title nav_Item"}
+              
                 onClick={() => changeUserRouter("/aboutUs")}
               >
                 <p>{navElements.title4}</p>
               </li>
-              <li className="title5 item nav_Item" tabIndex={1}>
+              <li className={path === '/news' ? "title5 item title" : "title5 item"}>
                 <p>{navElements.title5}</p>
                 <ul>
                   {news.map((item) => (
@@ -113,7 +122,7 @@ const Navigate2 = () => {
                   ))}
                 </ul>
               </li>
-              <li className="title6 item nav_Item" tabIndex={1}>
+              <li className={path === '/help' ? "title6 item title" : "title6 item"}>
                 <p>{navElements.title6}</p>
                 <ul>
                   {helps.map((item) => (
