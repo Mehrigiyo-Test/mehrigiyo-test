@@ -10,11 +10,12 @@
     .navTitles {
       list-style: none;
       display: flex;
-      gap: 35px;
+      gap: 38px;
       li {
         float: left;
         padding-bottom: 10px;
         font-size: 15px;
+        cursor: pointer;
       }
     }
     .item {
@@ -25,7 +26,7 @@
           font-size: 15px;
         }
       }
-      &::before{
+      &::before {
         content: url("./../../../images/User/Vector2.png") !important;
         position: absolute;
         top: -2px;
@@ -89,25 +90,23 @@
       right: -15px;
     }
   }
-
+  
   .nav_Item {
     text-decoration: none;
     position: relative;
     list-style: none;
-    color: #282828 !important;
+    color: #282828;
     font-size: 16px;
-    opacity: 0.4;
   }
 
-  .nav_Item:focus {
-    color: #000000 !important;
-    opacity: 1 !important;
+  .nav_Item:focus p {
+    color: #000000;
     font-weight: 600;
   }
 
-  .nav_Item::after {
+  .nav_Item::after{
     content: "";
-    margin-top: 28px;
+    margin-top: 5px;
     background-color: #53b175;
     height: 4px;
     width: 0%;

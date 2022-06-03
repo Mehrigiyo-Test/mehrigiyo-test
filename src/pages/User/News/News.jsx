@@ -69,7 +69,7 @@ function News() {
             <ColumnCardTxt />
           </div>
           <div className="display NewsCardpadding">
-            {data.map((item) => (
+            {data?.map((item) => (
               <NewsCard
                 key={item.id}
                 img={API + item.image}
