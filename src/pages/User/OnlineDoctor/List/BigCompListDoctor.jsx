@@ -22,46 +22,49 @@ function BigCompListDoctor() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("active");
   const [num, setNum] = useState("");
-  const {dataDoctors} = useSelector((state) => state.getDoctors);
+  const [all, setAll] = useState(true);
+  const { dataDoctors } = useSelector((state) => state.getDoctors);
+  const { categories } = useSelector((state) => state.sortDoctorsType);
+  const { info } = useSelector((state) => state.getDoctorType);
   const API = "http://207.154.244.140:8000/";
 
-  const cate = [ 
-    {
-      name: "Hammasi",
-    },
-    {
-      name: "Nevropatolog",
-    },
-    {
-      name: "Genetika",
-    },
-    {
-      name: "Stomatologiya",
-    },
-    {
-      name: "Jarroh",
-    },
-    {
-      name: "Kardiolog",
-    },
-    {
-      name: "Dermotolog",
-    },
-  ];
+  console.log(info, "bu info info info");
 
+  const sortArr = categories
+    .filter((e) => e.checked === true)
+    .map((item) => item.name);
+  const str = sortArr.map((item) => item).join("");
+
+  const docType = dataDoctors.filter((item) =>
+    str.includes(item.type_doctor.name)
+  );
 
   const func = (param) => {
     const id = dataDoctors.filter((a) => a.id === param);
     setNum(Number(id.map((a) => a.id)));
   };
+
   const btn = () => {
     setActive("hh");
   };
+
   const set = () => {
     setTimeout(() => {
       <Waiting />;
     }, 500);
   };
+
+  function clean() {
+    var ele = document.getElementsByName("chec");
+    for (var i = 0; i < ele.length; i++) {
+      if (ele[i].type == "checkbox") {
+        ele[i].checked = false;
+        categories.forEach((element) => {
+          element.checked = false;
+        });
+      }
+    }
+  }
   return (
     <>
       <div className="GlobalWrapper Onlinewr">
@@ -80,54 +83,41 @@ function BigCompListDoctor() {
           </div>
         </div>
         <div className="OnlineDoctorPg2GW">
-          <div className="News1_wrapper DoctorNav gap">
-            <p>
-              <Link to="/">Bosh sahifa</Link>
-            </p>
-            <span>/</span>
-            <p>
-              <a tabIndex={1} className="doctype" href="/OnlineDoctor">
-                Onlayn Shifokorlar
-              </a>
-            </p>
-            <span>/</span>
-            <p>
-              <Link
-                tabIndex={1}
-                className="doctype"
-                to="/OnlineDoctor/BigCompListDoctor"
-              >
-                Shifokorlar
-              </Link>
-            </p>
+          <div className="titles">
+            <Link to={"/"}>
+              <span className="title item">Bosh sahifa</span>
+            </Link>
+            <Link to={"/onlineDoctor"}>
+              <span className="title item">Onlayn shifokorlar</span>
+            </Link>
+            <span className="title active">Shifokorlar</span>
           </div>
-          <div className="doc">
+          <div className="docc">
             <div className="displayLeft">
-            <span>
-              <h1>Shifokorlar</h1>
-            </span>
-            <span className="rowFilter">
-              <div className="News1_wrapper beetwenUs ">
-                <span>Saralash:</span>
-                <span tabIndex={1} className="doctype">
-                  Yangi
-                </span>
-                <span tabIndex={1} className="doctype">
-                  Top
-                </span>
-                <span tabIndex={1} className="doctype">
-                  Ayol
-                </span>
-                <span tabIndex={1} className="doctype">
-                  Erkak
-                </span>
-              </div>
-            </span>
+              <span>
+                <h1>Shifokorlar</h1>
+              </span>
             </div>
-            <div className="displayRight">
-            <span className="Qidiruv">
-              <Search top={'75px'}/>
-            </span>
+            <div className="docc_r">
+              <span className="rowFilter">
+                <div className="News1_wrapper beetwenUs ">
+                  <span style={{ fontWeight: "700" }}>Saralash:</span>
+                  <span tabIndex={1} className="doctype">
+                    Yangi
+                  </span>
+                  <span tabIndex={1} className="doctype">
+                    Top
+                  </span>
+                  <span tabIndex={1} className="doctype">
+                    Ayol
+                  </span>
+                  <span tabIndex={1} className="doctype">
+                    Erkak
+                  </span>
+                </div>
+              </span>
+
+              <Search top={"50px"} />
             </div>
           </div>
           <div className="display">
@@ -137,34 +127,60 @@ function BigCompListDoctor() {
                   <h5>Kategoriyalar</h5>
                   <span className="clearFilter">
                     <img src={reload} alt="reload" />
-                    <p>Tozalash</p>
+                    <p onClick={() => clean()} style={{cursor: 'pointer'}}>Tozalash</p>
                   </span>
                 </div>
                 <div>
-                  {cate.map((item) => (
-                    <Checkbox name={item.name} />
-                  ))}
+                  {all
+                    ? categories
+                        .filter((_, index) => index < 8)
+                        .map((item) => (
+                          <Checkbox item={item} docType={docType} />
+                        ))
+                    : categories.map((item) => (
+                        <Checkbox item={item} docType={docType} />
+                      ))}
                 </div>
-                <div className="moore">
-                  <div>
-                    <img src={down} alt="" />
+                {all ? (
+                  <div className="moore">
+                    <div>
+                      <img src={down} alt="" />
+                    </div>
+                    <div onClick={() => setAll(!all)}>Ko'proq</div>
                   </div>
-                  <div>Ko'proq</div>
-                </div>
+                ) : (
+                  <div className="moore">
+                    <div>
+                      <img src={down} alt="" className="down"/>
+                    </div>
+                    <div onClick={() => setAll(!all)}>Kamroq</div>
+                  </div>
+                )}
               </div>
             </div>
 
             <div className="DocInfo">
-              {dataDoctors.map((a) => (
-                <TopDoctors
-                  id={a.id}
-                  img={API+a.image}
-                  text1={a.full_name}
-                  setopen={setOpen}
-                  func={func}
-                  setactive={setActive}
-                />
-              ))}
+              {docType.length === 0
+                ? dataDoctors.map((a) => (
+                    <TopDoctors
+                      id={a.id}
+                      img={API + a.image}
+                      text1={a.full_name}
+                      setopen={setOpen}
+                      func={func}
+                      setactive={setActive}
+                    />
+                  ))
+                : docType.map((a) => (
+                    <TopDoctors
+                      id={a.id}
+                      img={API + a.image}
+                      text1={a.full_name}
+                      setopen={setOpen}
+                      func={func}
+                      setactive={setActive}
+                    />
+                  ))}
             </div>
           </div>
         </div>
@@ -208,7 +224,11 @@ function BigCompListDoctor() {
           ) : active === "info" ? (
             <Modal
               children={
-                <DoctorTtypeInfo setOpen={setOpen} props={num} data={dataDoctors} />
+                <DoctorTtypeInfo
+                  setOpen={setOpen}
+                  props={num}
+                  data={dataDoctors}
+                />
               }
             />
           ) : null}

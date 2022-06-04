@@ -77,7 +77,7 @@ const Navigate2 = () => {
               </li>
               <li
                 className={
-                  path === "/onlineDoctor" ? "title2 item title" : "title2 item"
+                  path.includes('/onlineDoctor') ? "title2 item title" : "title2 item"
                 }
               >
                 <p>{navElements.title2}</p>
