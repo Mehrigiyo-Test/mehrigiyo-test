@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { actionSortDoctorsType } from "../../../../../store/sortDoctorsType/action";
 import "./CeckboxStyle.scss";
 
-const Checkbox = ({ item,docType}) => {
+const Checkbox = ({ item}) => {
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.sortDoctorsType);
 
