@@ -26,7 +26,7 @@ export const OnlineRecommend = () => {
           lineHei="17px"
         />
         <p className="OnlineRecommend__text__paragraph">
-          Bepul onlayn maslahatlar oyiga <span
+          Bepul onlayn maslahatlar  <br /> oyiga <span 
           style={{color:"#53B175"}}> 100 000 </span> so’mdan boshlanadi
         </p>
         <GlobalGreenBtn

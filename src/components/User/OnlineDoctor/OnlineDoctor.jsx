@@ -21,8 +21,8 @@ export default function OnlineDoctor() {
           <h3>Har qanday sog'liq bilan bog'liq muammolar  uchun<br />
           <Link to="/onlineDoctor" className="greenDoctor">
             onlayn shifokorlarga
-          </Link>
-          murojaat qiling</h3>
+          </Link> <span></span>
+           murojaat qiling</h3>
         </div>
         <p>
           Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob
