@@ -12,6 +12,8 @@ import { MaskedInput } from "antd-mask-input";
 import { setCurrentUser, setToken } from "../../../../../Servis/auth-service";
 import requestApi from "../../../../../Servis/api/request";
 import "./Login.scss";
+import { useDispatch } from "react-redux";
+import { actionChangeRouter } from "../../../../../store/changeRouter/action";
 const Login = ({ setOpen }) => {
   const [show, setShow] = useState(true);
   const [tab, setTab] = useState(true);
@@ -31,8 +33,12 @@ const Login = ({ setOpen }) => {
     handleSubmit: handleSubmit2,
   } = useForm();
 
+  const changeAdminRouter = () => {
+    dispatch(actionChangeRouter("admin"));
+    navigate("/admin/control-panel");
+  };
   const navigate = useNavigate();
-
+  const dispatch = useDispatch()
   // login - tizimga kirish
 
   const onSubmit = (data) => {
@@ -49,7 +55,7 @@ const Login = ({ setOpen }) => {
           if (response.status === 200) {
             let user = response.data.data;
             setCurrentUser(user);
-            navigate("/");
+            changeAdminRouter()
             window.location.reload(false);
           }
         });
