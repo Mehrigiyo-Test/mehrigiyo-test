@@ -152,7 +152,7 @@ const Navigate2 = () => {
               ></p>
             ) : (
               <Link to={"/favoriteDoctors"}>
-                <p className="user1"></p>
+                <p  className={path.includes('favoriteDoctors') ? "user2" : "user1"}></p>
               </Link>
             )}
             <p

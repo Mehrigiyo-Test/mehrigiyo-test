@@ -14,6 +14,7 @@ import requestApi from "../../../../../Servis/api/request";
 import "./Login.scss";
 import { useDispatch } from "react-redux";
 import { actionChangeRouter } from "../../../../../store/changeRouter/action";
+
 const Login = ({ setOpen }) => {
   const [show, setShow] = useState(true);
   const [tab, setTab] = useState(true);
@@ -39,8 +40,9 @@ const Login = ({ setOpen }) => {
   };
   const navigate = useNavigate();
   const dispatch = useDispatch()
-  // login - tizimga kirish
 
+  
+  // login - tizimga kirish
   const onSubmit = (data) => {
     let phoneNumber = data.username;
     phoneNumber = phoneNumber.replace(/[^0-9]+/g, "");
@@ -301,6 +303,8 @@ const Login = ({ setOpen }) => {
           </form>
         </section>
       )}
+
+
     </section>
   );
 };
