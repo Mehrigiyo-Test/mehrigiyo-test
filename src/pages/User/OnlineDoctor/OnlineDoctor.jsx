@@ -17,7 +17,6 @@ import "./OnlineDoctor.scss";
 
 import { useDispatch, useSelector } from "react-redux";
 
-
 import Slider from "react-slick";
 import Modal from "../../../components/User/Modal";
 import DoctorFullCard from "../../../components/User/DoctorFullInfoCard/DoctorFullCard";
@@ -55,10 +54,8 @@ function OnlineDoctor() {
 
   const { dataDoctors } = useSelector((state) => state.getDoctors);
 
-  const dispatch = useDispatch();
   const API = "http://207.154.244.140:8000/";
 
- 
   const func = (param) => {
     const id = dataDoctors.filter((a) => a.id === param);
     setNum(Number(id.map((a) => a.id)));
@@ -83,7 +80,7 @@ function OnlineDoctor() {
         </div>
         <div className="sliderTop">
           <p className="sliderTopText">Top Shifokorlar</p>
-          <Link to="/OnlineDoctor/BigCompListDoctor">
+          <Link to={"/onlineDoctor/BigCompListDoctor"}>
             <GlobalBtn
               style={{ textDecoration: "none" }}
               text="Batafsil"

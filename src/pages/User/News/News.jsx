@@ -4,16 +4,16 @@ import "./NewStyle.scss";
 import LastNews from "../../../components/User/NewPageComp/lastNews/lastNews";
 import RowNewsCard from "../../../components/User/NewPageComp/RowNewsCard/RowNewsCard";
 import Group from "./../../../images/User/Group.png";
-import rowImg from "./../../../images/User/rowImg.png";
 import Placeholder from "./../../../images/User/Placeholder.png";
 import ColumnCardTxt from "./../../../components/User/NewPageComp/ColumnCardNewsTxt/ColumnCardTxt";
 import NewsCard from "../../../components/User/NewsCard/NewsCard";
-import sliderEx from "./../../../images/User/sliderEx.png";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Pagination } from "swiper";
+
+import "swiper/css";
+import "./NewStyle.scss";
+import "swiper/css/pagination";
 
 function News() {
   const { data } = useSelector((state) => state.getNews);
@@ -69,7 +69,7 @@ function News() {
             <ColumnCardTxt />
           </div>
           <div className="display NewsCardpadding">
-            {data.map((item) => (
+            {data?.map((item) => (
               <NewsCard
                 key={item.id}
                 img={API + item.image}

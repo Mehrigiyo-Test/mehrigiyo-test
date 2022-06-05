@@ -9,6 +9,9 @@
         border-radius: 8px;
         width: 1242px;
         align-items: center;
+        img{
+            cursor: pointer;
+        }
     }
     .leftBox {
         display: flex;

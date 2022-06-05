@@ -39,7 +39,7 @@ function Dropdown(img, text) {
                 <div className="relativ">
                     <img className="changableFlag" src={flag} alt="uz" />
                 </div>
-                <div style={{ paddingTop: "3px" }}>
+                <div style={{ paddingTop: "1px" }}>
                     <img src={NavVector} alt="" />
                 </div>
             </div>

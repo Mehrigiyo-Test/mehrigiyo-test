@@ -5,7 +5,7 @@ import Search from "../OnlineDoctor/Search/Search";
 import Checkbox from "../OnlineDoctor/List/Checkbox/Checkbox";
 import ProductCard from "../../../components/User/ProductList/ProductCard/ProductCard";
 import { Link } from "react-router-dom";
-import './SortGoods.scss';
+import "./SortGoods.scss";
 import { useSelector } from "react-redux";
 
 function SortGoods() {
@@ -41,8 +41,11 @@ function SortGoods() {
     },
   ];
 
-  const {data} = useSelector((state) => state.getProducts);
-console.log(data);
+  const { data } = useSelector((state) => state.getProducts);
+  console.log(data);
+
+
+
   return (
     <>
       <div className="GlobalWrapper Onlinewr">
@@ -83,7 +86,7 @@ console.log(data);
             </div>
             <div className="displayRight">
               <span className="Qidiruv">
-                <Search top={"75px"} right={'60px'} />
+                <Search top={"75px"} right={"60px"} />
               </span>
             </div>
           </div>
@@ -91,38 +94,44 @@ console.log(data);
             <div className="containerBox">
               <div>
                 <div className="filterWr">
-
-                <div className="display clearFF">
-                  <h5>Kategoriyalar</h5>
-                  <span className="clearFilter">
-                    <img src={reload} alt="reload" />
-                    <p>Tozalash</p>
-                  </span>
-                </div>
-                <div className="checkGoods">
-                    {goods.map((item, index) => (
-                      <Checkbox key={index} name={item.name} />
-                      ))}
-                </div>
-                <div className="moore">
-                  <div>
-                    <img src={down} alt="" />
+                  <div className="display clearFF">
+                    <h5>Kategoriyalar</h5>
+                    <span className="clearFilter">
+                      <img src={reload} alt="reload" />
+                      <p>Tozalash</p>
+                    </span>
                   </div>
-                  <div>Ko'proq</div>
-                </div>
+                  <div className="checkGoods">
+                    {goods.map((item) => (
+                      <div>
+                        <input
+                          type="checkbox"
+                          id={item.name}
+                          name="good"
+                        />
+                        <label for={item.name}>{item.name}</label>
                       </div>
+                    ))}
+                  </div>
+                  <div className="moore">
+                    <div>
+                      <img src={down} alt="" />
+                    </div>
+                    <div>Ko'proq</div>
+                  </div>
+                </div>
               </div>
-              
+
               <div className="productGoods">
-                {data.map(item => (
-                <ProductCard 
-                  image={item.image}
-                  name={item.name}
-                  title={item.title}
-                  cost={item.cost}
-                  discount={item.discount}
-                  api={API}
-                />
+                {data.map((item) => (
+                  <ProductCard
+                    image={item.image}
+                    name={item.name}
+                    title={item.title}
+                    cost={item.cost}
+                    discount={item.discount}
+                    api={API}
+                  />
                 ))}
               </div>
             </div>
