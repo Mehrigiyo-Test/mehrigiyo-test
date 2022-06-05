@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes} from 'react-router-dom'
 import LayoutAdmin from '../Layout/Layout'
 import routes from "../../../routes"
+
 function AdminRouter() {
  
   return (
