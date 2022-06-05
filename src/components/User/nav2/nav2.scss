@@ -50,29 +50,79 @@
         // transition: width 0.3s ease-in-out;
       }
     }
+
     .title2 ul li {
       display: none;
     }
-    .title2:hover ul li {
-      display: block;
+
+    .title2:hover ul {
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        transform: rotate(43deg);
+      }
+      li {
+        display: block;
+      }
     }
     .title3 ul li {
       display: none;
     }
-    .title3:hover ul li {
-      display: block;
-    }
+    .title3:hover ul {
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        transform: rotate(43deg);
+      }
+      li {
+        display: block;
+      }
+    } 
     .title5 ul li {
       display: none;
     }
-    .title5:hover ul li {
-      display: block;
+    .title5:hover ul {
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        transform: rotate(43deg);
+      }
+      li {
+        display: block;
+      }
     }
     .title6 ul li {
       display: none;
     }
-    .title6:hover ul li {
-      display: block;
+    .title6:hover ul {
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: -5px;
+        left: 30px;
+        transform: rotate(43deg);
+      }
+      li {
+        display: block;
+      }
     }
     .navTitles li ul {
       display: flex;
@@ -140,4 +190,104 @@
   height: 10px;
   width: 20px;
   background-color: red;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 16px;
+  .user1 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url("../../../images/User/user1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .user2 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #53b175;
+    background-image: url("../../../images/User/user2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: shadow 0.15s ease-in-out;
+  }
+  .shop1 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url("../../../images/User/shop1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .shop2 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #53b175;
+    background-image: url("../../../images/User/shop2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: shadow 0.15s ease-in-out;
+  }
+  .heart1 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url("../../../images/User/heart1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .heart2 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #53b175;
+    background-image: url("../../../images/User/heart2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: shadow 0.15s ease-in-out;
+  }
+  .search1 {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url("../../../images/User/search1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: none;
+  }
 }
