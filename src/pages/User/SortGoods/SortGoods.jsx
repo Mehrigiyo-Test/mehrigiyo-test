@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import reload from "./../../../images/User/reload.png";
 import down from "./../../../images/User/Down.png";
 import Search from "../OnlineDoctor/Search/Search";
@@ -6,45 +6,59 @@ import Checkbox from "../OnlineDoctor/List/Checkbox/Checkbox";
 import ProductCard from "../../../components/User/ProductList/ProductCard/ProductCard";
 import { Link } from "react-router-dom";
 import "./SortGoods.scss";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { actionSortProduct } from "../../../store/sortProduct/action";
 
 function SortGoods() {
+  const [all, setAll] = useState(true);
+  const [sortData, setSortData] = useState([])
   const API = "http://207.154.244.140:8000/";
-
-  const goods = [
-    {
-      name: "Hammasi",
-    },
-    {
-      name: "Choy",
-    },
-    {
-      name: "Asal",
-    },
-    {
-      name: "Yog’",
-    },
-    {
-      name: "Non",
-    },
-    {
-      name: "Ziravorlar",
-    },
-    {
-      name: "Sharbatlar",
-    },
-    {
-      name: "Lolipoplar",
-    },
-    {
-      name: "Tabletkalar",
-    },
-  ];
-
+  const { productType } = useSelector((state) => state.sortProductType);
+  const { getType } = useSelector((state) => state.getProductsTypes);
+  const dispatch = useDispatch();
   const { data } = useSelector((state) => state.getProducts);
   console.log(data);
+  console.log(productType, " bu productType data ");
 
 
+
+
+
+
+  function selects() {
+    var ele = document.getElementsByName("good");
+    for (var i = 0; i < ele.length; i++) {
+      if (ele[i].type == "checkbox") ele[i].checked = true;
+      productType.forEach((element) => {
+        element.checked = true;
+      });
+    }
+    return console.log();
+  }
+  const sortArr = productType
+    .filter((e) => e.checked === true)
+    .map((item) => item.name);
+  const str = sortArr.map((item) => item).join("");
+  console.log(str, "bu bosilgan type");
+  
+  
+
+
+//   const prodType = productType.filter((item) =>
+//   str.includes(item)
+// );
+// console.log(prodType, " bu prod fddfdf");
+
+
+  const getProductId = (e,item) => {
+    if (e.target.id === "Hammasi") {
+      selects();
+      return dispatch(actionSortProduct({}));
+    } else {
+      item.checked = !item.checked;
+      return dispatch(actionSortProduct({}));
+    }
+  };
 
   return (
     <>
@@ -102,23 +116,34 @@ function SortGoods() {
                     </span>
                   </div>
                   <div className="checkGoods">
-                    {goods.map((item) => (
+                    {productType.map((item) => (
                       <div>
                         <input
                           type="checkbox"
                           id={item.name}
                           name="good"
+                          onClick={(e) => getProductId(e,item)}
+                          
                         />
                         <label for={item.name}>{item.name}</label>
                       </div>
                     ))}
                   </div>
-                  <div className="moore">
-                    <div>
-                      <img src={down} alt="" />
+                  {all ? (
+                    <div className="moore">
+                      <div>
+                        <img src={down} alt="" />
+                      </div>
+                      <div onClick={() => setAll(!all)}>Ko'proq</div>
                     </div>
-                    <div>Ko'proq</div>
-                  </div>
+                  ) : (
+                    <div className="moore">
+                      <div>
+                        <img src={down} alt="" className="down" />
+                      </div>
+                      <div onClick={() => setAll(!all)}>Kamroq</div>
+                    </div>
+                  )}
                 </div>
               </div>
 
