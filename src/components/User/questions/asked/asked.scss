@@ -15,12 +15,25 @@
 .section4,
 .section5 {
   display: flex;
-  border-bottom: 1px solid #ECECF1;
+  border-top: 1px solid #ECECF1;
   justify-content: space-between;
   align-items: center;
   width: 820px;
   padding: 20px 0;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   
+}
+.cestion1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 820px;
+  padding: 20px 0;
 }
 .accordion-txt{
   font-family: 'Montserrat';
@@ -43,7 +56,15 @@ b{
 .more-text4,
 .more-text5 {
   width: 600px;
-  padding: 10px 40px 20px 40px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: grey;
+    margin-left: 50px;
+  padding: 10px -10px 20px 100px !important;
   transition: 5s;
 }
 .asked-heading {

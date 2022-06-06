@@ -76,7 +76,7 @@ function SortGoods() {
                     Top
                   </span>
                   <span tabIndex={1} className="doctype">
-                    Ayol
+                    Narx
                   </span>
                   <span tabIndex={1} className="doctype">
                     Erkak
