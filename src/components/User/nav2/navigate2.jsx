@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo2 from "../../../icons/Header/Logo.svg";
+import user1 from "../../../images/User/user1.png";
 import NavIcon1 from "../../../images/User/nav-icon1.png";
 import NavIcon2 from "../../../images/User/nav-icon2.png";
 import NavIcon3 from "../../../images/User/nav-icon3.png";
@@ -77,7 +78,9 @@ const Navigate2 = () => {
               </li>
               <li
                 className={
-                  path.includes('/onlineDoctor') ? "title2 item title" : "title2 item"
+                  path.includes("/onlineDoctor")
+                    ? "title2 item title"
+                    : "title2 item"
                 }
               >
                 <p>{navElements.title2}</p>
@@ -141,26 +144,25 @@ const Navigate2 = () => {
           </div>
 
           <div className="nav-icons">
+            <p className="search1" hidden={path === "/" ? true : false}></p>
             {user !== null ? (
-              <img
-                className="nav-icons__icon"
-                src={NavIcon1}
-                alt="icon"
+              <p
+                className={path.includes("admin") ? "user2" : "user1"}
                 onClick={() => changeAdminRouter()}
-              />
+              ></p>
             ) : (
               <Link to={"/favoriteDoctors"}>
-                <img className="nav-icons__icon" src={NavIcon1} alt="icon" />
+                <p  className={path.includes('favoriteDoctors') ? "user2" : "user1"}></p>
               </Link>
             )}
-
-            <Link to={"/favoriteDrug"}>
-              <img className="nav-icons__icon" src={NavIcon2} alt="icon" />
-            </Link>
-
-            <Link to={"/basket"}>
-              <img className="nav-icons__icon" src={NavIcon3} alt="icon" />
-            </Link>
+            <p
+              className={path.includes("favoriteDrug") ? "heart2" : "heart1"}
+              onClick={() => changeUserRouter("/favoriteDrug")}
+            ></p>
+            <p
+              className={path.includes("basket") ? "shop2" : "shop1"}
+              onClick={() => changeUserRouter("/basket")}
+            ></p>
           </div>
         </div>
       </div>
