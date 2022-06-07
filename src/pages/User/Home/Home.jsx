@@ -13,7 +13,7 @@ import Bannercard from "./../../../components/User/bannerCard/bannerCard";
 import InfoBanner from "../../../components/User/InfoBanner/InfoBanner";
 import BannerForm from "../../../components/User/bannerForm/bannerForm";
 import Ambulance from "./../../../components/User/Ambulance/Ambulance";
-import Asked from "../../../components/User/questions/asked/asked";
+import Asked from "../../../components/User/questions/asked";
 import Global from "../../../components/User/GlobalBtn/GlobalBtn";
 import NewsCard from "../../../components/User/NewsCard/NewsCard";
 import Send from "../../../components/User/questions/send/send";
