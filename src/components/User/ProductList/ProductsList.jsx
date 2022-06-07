@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import ProductCard from "./ProductCard/ProductCard";
 // import required modules
 import { FreeMode, Pagination } from "swiper";
+import { Link } from "react-router-dom";
 
 const ProductList = ({ API }) => {
   const [sortedData, setSortedData] = useState([]);
@@ -131,10 +132,12 @@ const ProductList = ({ API }) => {
       </Swiper>
 
       <div className="product-list-footer">
+          <Link to="/products/sortGoods">
         <button className="all-products">
-          <p>Barcha mahsulotlarni ko’rish</p>
-          <img src={ArrowRight} alt="" />
+            <p>Barcha mahsulotlarni ko’rish</p>
+            <img src={ArrowRight} alt="" />
         </button>
+          </Link>
       </div>
     </div>
   );
