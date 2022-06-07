@@ -29,7 +29,7 @@ export default function Asked() {
           </div>
           <div className="accordion">
             <div className="big-div">
-              <div className="section">
+              <div className="cestion1">
                 <div className="text">
                   <b>01</b>{" "}
                   <span className="accordion-txt">
@@ -53,11 +53,11 @@ export default function Asked() {
                   className="more-text"
                   style={
                     show
-                      ? { height: "0", fontSize: "0px", transition: "1s" }
+                      ? { height: "0", fontSize: "0px", transition: "0s" }
                       : {
                           height: "500",
                           fontSize: "16px",
-                          transition: "1s",
+                          transition: "0s",
                           paddingBottom: "100px",
                         }
                   }
@@ -93,11 +93,11 @@ export default function Asked() {
                   className="more-text"
                   style={
                     show2
-                      ? { height: "0", fontSize: "0px", transition: "1s" }
+                      ? { height: "0", fontSize: "0px", transition: "0s" }
                       : {
                           height: "500",
                           fontSize: "16px",
-                          transition: "1s",
+                          transition: "0s",
                           paddingBottom: "100px",
                         }
                   }
@@ -134,11 +134,11 @@ export default function Asked() {
                   className="more-text"
                   style={
                     show3
-                      ? { height: "0", fontSize: "0px", transition: "1s" }
+                      ? { height: "0", fontSize: "0px", transition: "0s" }
                       : {
                           height: "500",
                           fontSize: "16px",
-                          transition: "1s",
+                          transition: "0s",
                           paddingBottom: "100px",
                         }
                   }
@@ -174,11 +174,11 @@ export default function Asked() {
                   className="more-text"
                   style={
                     show4
-                      ? { height: "0", fontSize: "0px", transition: "1s" }
+                      ? { height: "0", fontSize: "0px", transition: "0s" }
                       : {
                           height: "500",
                           fontSize: "16px",
-                          transition: "1s",
+                          transition: "0s",
                           paddingBottom: "100px",
                         }
                   }
@@ -214,11 +214,11 @@ export default function Asked() {
                   className="more-text"
                   style={
                     show5
-                      ? { height: "0", fontSize: "0px", transition: "1s" }
+                      ? { height: "0", fontSize: "0px", transition: "0s" }
                       : {
                           height: "500",
                           fontSize: "16px",
-                          transition: "1s",
+                          transition: "0s",
                           paddingBottom: "100px",
                         }
                   }

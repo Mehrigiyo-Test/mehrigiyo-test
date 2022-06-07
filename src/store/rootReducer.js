@@ -6,6 +6,7 @@ import { getProductsTypes } from "./getProductsTypes/reducer";
 import { getDoctorType } from "./getDoctorType/reducer";
 import {changeRouter} from "./changeRouter/reducer"
 import {sortDoctorsType} from "./sortDoctorsType/reducer"
+import {sortProductType} from "./sortProduct/reducer"
 const rootReducer = combineReducers({
   getDoctors,
   getNews,
@@ -13,7 +14,8 @@ const rootReducer = combineReducers({
   getProductsTypes,
   getDoctorType,
   changeRouter,
-  sortDoctorsType
+  sortDoctorsType,
+  sortProductType
 });
 
 export default rootReducer;
