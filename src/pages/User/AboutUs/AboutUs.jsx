@@ -15,7 +15,9 @@ import Companysupport from "../../../components/User/CompanySupport/CompanySuppo
 function AboutUs() {
   return (
     <>
-      <AboutBox />
+      <div className="aboutBox__container">
+        <AboutBox />
+      </div>
       <HistoryMehrigiyo />
       <OriginMehrigiyo />
       <Achievements />
