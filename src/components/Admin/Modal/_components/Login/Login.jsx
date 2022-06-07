@@ -39,9 +39,8 @@ const Login = ({ setOpen }) => {
     navigate("/admin/control-panel");
   };
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  
   // login - tizimga kirish
   const onSubmit = (data) => {
     let phoneNumber = data.username;
@@ -57,7 +56,7 @@ const Login = ({ setOpen }) => {
           if (response.status === 200) {
             let user = response.data.data;
             setCurrentUser(user);
-            changeAdminRouter()
+            changeAdminRouter();
             window.location.reload(false);
           }
         });
@@ -303,8 +302,6 @@ const Login = ({ setOpen }) => {
           </form>
         </section>
       )}
-
-
     </section>
   );
 };

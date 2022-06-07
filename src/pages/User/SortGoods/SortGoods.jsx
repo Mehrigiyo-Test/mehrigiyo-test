@@ -1,31 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import reload from "./../../../images/User/reload.png";
 import down from "./../../../images/User/Down.png";
 import Search from "../OnlineDoctor/Search/Search";
-import Checkbox from "../OnlineDoctor/List/Checkbox/Checkbox";
 import ProductCard from "../../../components/User/ProductList/ProductCard/ProductCard";
 import { Link } from "react-router-dom";
 import "./SortGoods.scss";
-import { useDispatch, useSelector } from "react-redux";
-import { actionSortProduct } from "../../../store/sortProduct/action";
+import { useSelector } from "react-redux";
+
 
 function SortGoods() {
   const [all, setAll] = useState(true);
-  const [sortData, setSortData] = useState([])
   const API = "http://207.154.244.140:8000/";
-  const { productType } = useSelector((state) => state.sortProductType);
   const { getType } = useSelector((state) => state.getProductsTypes);
-  const dispatch = useDispatch();
+  const [productType, setProductType] = useState([]);
+  
   const { data } = useSelector((state) => state.getProducts);
-  console.log(data);
-  console.log(productType, " bu productType data ");
+  const [products, setProducts] = useState(data);
 
+  useEffect(() => {
+    if (data) {
+      setProducts(data);
+    }
 
+    if (getType) {
+      getType.forEach((item) => {
+        item["checked"] = false;
+        return item;
+      });
+      setProductType(getType);
+    }
+  }, [data]);
 
-
-
-
-  function selects() {
+  function selectAll() {
     var ele = document.getElementsByName("good");
     for (var i = 0; i < ele.length; i++) {
       if (ele[i].type == "checkbox") ele[i].checked = true;
@@ -33,56 +39,64 @@ function SortGoods() {
         element.checked = true;
       });
     }
-    return console.log();
+    sortProducts();
   }
-  const sortArr = productType
-    .filter((e) => e.checked === true)
-    .map((item) => item.name);
-  const str = sortArr.map((item) => item).join("");
-  console.log(str, "bu bosilgan type");
-  
-  
 
-
-//   const prodType = productType.filter((item) =>
-//   str.includes(item)
-// );
-// console.log(prodType, " bu prod fddfdf");
-
-
-  const getProductId = (e,item) => {
-    if (e.target.id === "Hammasi") {
-      selects();
-      return dispatch(actionSortProduct({}));
-    } else {
-      item.checked = !item.checked;
-      return dispatch(actionSortProduct({}));
+  function clean() {
+    var ele = document.getElementsByName("good");
+    for (var i = 0; i < ele.length; i++) {
+      if (ele[i].type == "checkbox") {
+        ele[i].checked = false;
+        getType.forEach((item) => {
+          item.checked = false;
+          return item;
+        });
+        setProductType(getType);
+        setProducts(data);
+      }
     }
+  }
+
+  const sortProducts = () => {
+    let sortedDataIds = productType
+      .filter((e) => e.checked === true)
+      .map((m) => m.id);
+
+    let res = data.filter((e) => sortedDataIds.indexOf(e.type_medicine) > -1);
+
+    setProducts(res);
+  };
+
+  const getProductId = (e, item) => {
+    document.getElementById("all").checked = false;
+    item.checked = !item.checked;
+    sortProducts();
+    // return ;
   };
 
   return (
     <>
       <div className="GlobalWrapper Onlinewr">
         <div className="OnlineDoctorPg2GW">
-          <div className="News1_wrapper DoctorNav">
+          <div className="News1_wrapper DoctorNav title">
             <p>
               <Link to="/">Bosh sahifa</Link>
             </p>
             <span>/</span>
             <p>
-              <a tabIndex={1} className="doctype" href="/OnlineDoctor">
+              <a className="doctype" >
                 Mahsulotlar
               </a>
             </p>
           </div>
           <div className="doc">
-            <div className="displayLeft">
+            <div className="displayLeft doc_left">
               <span>
                 <h1>Mahsulotlar</h1>
               </span>
               <span className="rowFilter">
                 <div className="News1_wrapper beetwenUs ">
-                  <span>Saralash:</span>
+                  <span style={{fontWeight: "700"}}>Saralash:</span>
                   <span tabIndex={1} className="doctype">
                     Yangi
                   </span>
@@ -110,22 +124,40 @@ function SortGoods() {
                 <div className="filterWr">
                   <div className="display clearFF">
                     <h5>Kategoriyalar</h5>
-                    <span className="clearFilter">
+                    <span className="clearFilter" onClick={clean}>
                       <img src={reload} alt="reload" />
                       <p>Tozalash</p>
                     </span>
                   </div>
                   <div className="checkGoods">
-                    {productType.map((item) => (
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="all"
+                        name="good"
+                        onClick={selectAll}
+                      />
+                      <label for="all" style={{paddingLeft: '10px'}}>Hammasi</label>
+                    </div>
+                    {all ? productType.filter((_,index) => index < 8).map((item) => (
                       <div>
                         <input
                           type="checkbox"
-                          id={item.name}
+                          id={item.id}
                           name="good"
-                          onClick={(e) => getProductId(e,item)}
-                          
+                          onClick={(e) => getProductId(e, item)}
                         />
-                        <label for={item.name}>{item.name}</label>
+                        <label for={item.id} style={{paddingLeft: '10px'}}>{item.name}</label>
+                      </div>
+                    )):productType.map((item) => (
+                      <div>
+                        <input
+                          type="checkbox"
+                          id={item.id}
+                          name="good"
+                          onClick={(e) => getProductId(e, item)}
+                        />
+                        <label for={item.id} style={{paddingLeft: '10px'}}>{item.name}</label>
                       </div>
                     ))}
                   </div>
@@ -148,7 +180,7 @@ function SortGoods() {
               </div>
 
               <div className="productGoods">
-                {data.map((item) => (
+                {products.map((item) => (
                   <ProductCard
                     image={item.image}
                     name={item.name}

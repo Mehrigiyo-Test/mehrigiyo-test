@@ -1,0 +1,16 @@
+.progressWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 9999;
+    .progressBox{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #53b175;
+    }
+}

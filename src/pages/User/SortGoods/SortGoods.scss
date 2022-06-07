@@ -1,6 +1,20 @@
 .OnlineDoctorPg2GW {
   position: relative;
   overflow: hidden;
+  .title{
+    margin-left: 5px;
+    .doctype{
+      color: #53b175
+    }
+  }
+  .doc{
+    .doc_left{
+      display: flex;
+      gap: 185px !important;
+      align-items: center;
+      margin-left: 60px;
+    }
+  }
 }
 .Onlinewr {
   padding-left: 100px;
@@ -67,11 +81,15 @@
 .clearFilter img {
   width: 20px;
   height: 20px;
+  cursor: pointer;
+
 }
 .clearFilter p {
   color: grey;
   text-decoration: underline;
   margin-bottom: 0;
+  cursor: pointer;
+
 }
 
 .containerBox {
@@ -116,6 +134,14 @@
     padding: 25px;
     border-radius: 15px;
     width: 300px;
+    .checkGoods{
+      input{
+        cursor: pointer;
+      }
+      label{
+        cursor: pointer;
+      }
+    }
     }
 .DocInfo {
   display: flex;

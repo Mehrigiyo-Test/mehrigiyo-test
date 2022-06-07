@@ -8,6 +8,7 @@ import NavIcon3 from "../../../images/User/nav-icon3.png";
 import "./nav2.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { actionChangeRouter } from "../../../store/changeRouter/action";
+import Progress from "../Progress/Progress";
 
 const Navigate2 = () => {
   const navElements = {
@@ -60,7 +61,6 @@ const Navigate2 = () => {
     navigate("/admin/control-panel");
   };
   const user = localStorage.getItem("user");
-
   return (
     <>
       <div className="nav2  GlobalWrapper">
@@ -94,7 +94,7 @@ const Navigate2 = () => {
               </li>
               <li
                 className={
-                  path === "/products" ? "title3 item title" : "title3 item"
+                  path.includes("/products") ? "title3 item title" : "title3 item"
                 }
               >
                 <p>{navElements.title3}</p>

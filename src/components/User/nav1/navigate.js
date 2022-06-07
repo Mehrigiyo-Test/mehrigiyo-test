@@ -5,7 +5,7 @@ import profile from "../../../images/User/profile.png";
 import Dropdown from "../Dropdown/Dropdown";
 import Modal from "../../Admin/Modal/Modal";
 import Login from "../../Admin/Modal/_components/Login/Login";
-import avatar from "../../../images/Admin/Men.jpg"
+import avatar from "../../../images/Admin/Men.jpg";
 function Navigate() {
   const [open, setOpen] = useState(false);
   const nav = [
@@ -28,6 +28,7 @@ function Navigate() {
 
   const user = localStorage.getItem("user");
   const userObj = JSON.parse(user);
+
 
   return (
     <div className="navigate">
@@ -57,14 +58,19 @@ function Navigate() {
             </div>
           ) : (
             <div className="AdminNav">
-              <div className="AdminNavImg"><img src={avatar} alt=""/></div>
-              <div className="AdminNavTitle">{userObj.last_name[0] + "." + userObj.first_name}</div>{" "}
+              <div className="AdminNavImg">
+                <img src={avatar} alt="" />
+              </div>
+              <div className="AdminNavTitle">
+                {userObj.last_name[0] + "." + userObj.first_name}
+              </div>{" "}
             </div>
           )}
         </div>
       </div>
 
-      {open && <Modal children={<Login setOpen={setOpen} />} prop={setOpen} />}
+      {open && <Modal children={<Login setOpen={setOpen}/>} prop={setOpen} />}
+      
     </div>
   );
 }
