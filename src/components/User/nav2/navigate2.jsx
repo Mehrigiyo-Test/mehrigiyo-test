@@ -8,7 +8,7 @@ import NavIcon3 from "../../../images/User/nav-icon3.png";
 import "./nav2.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { actionChangeRouter } from "../../../store/changeRouter/action";
-import Progress from "../Progress/Progress";
+// import Progress from "../Progress/Progress";
 
 const Navigate2 = () => {
   const navElements = {
