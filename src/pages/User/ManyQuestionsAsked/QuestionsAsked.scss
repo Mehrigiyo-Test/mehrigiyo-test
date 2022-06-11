@@ -4,6 +4,7 @@
 }
 .asked-background_Container {
   position: relative;
+  overflow: hidden;
   margin-top: 78px;
   margin-bottom: 127px;
 
@@ -48,7 +49,6 @@
     line-height: 45px;
     letter-spacing: 0em;
     text-align: left;
-    // margin-bottom: 13px;
   }
 
   .extra-p {
