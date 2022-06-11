@@ -8,8 +8,8 @@ function Question({ num, title, text, width }) {
   return (
     <>
       <section className="question" style={{width: width}}>
-        <header className="headBox">
-          <div className="headBoxLeft" onClick={() => setShowInfo(!showInfo)}>
+        <header className="headBox"onClick={() => setShowInfo(!showInfo)}>
+          <div className="headBoxLeft">
             <span className="number">{num}</span>
             <p className="accardionHeader">{title}</p>
           </div>
