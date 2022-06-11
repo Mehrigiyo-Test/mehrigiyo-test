@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import leaf from "../../../images/User/send_background.png";
 import accardionData from "./asked/accardionData";
@@ -17,17 +18,19 @@ export default function Asked() {
             <p className="extra-p">
               Qo‘shimcha ma‘lumot uchun <br /> biz bilan bog‘laning
             </p>
+            <Link to='/help/ManyQuestions'>
             <button className="more-btn">
               <span>Batafsil</span>
               <span className="icon-right">
                 <BsArrowRight />
               </span>
             </button>
+            </Link>
           </div>
           <div className="accordion">
               <div className="section">
                   {show.map((item) => (
-                    <Question key={item.id} {...item} />
+                    <Question width='805px' key={item.id} {...item} />
                   ))}
               </div>
           </div>
