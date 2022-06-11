@@ -1,5 +1,4 @@
 .question {
-  width: 805px;
   position: relative;
   z-index: 9;
   border-bottom: 2px solid #ECECF1;
@@ -46,7 +45,9 @@
   .accardionText {
     font-family: 'Montserrat';
     color: #B0B7C3;
-    padding: 0 120px 20px 38px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 80px 20px 45px;
     margin-top: -26px;
     line-height: 20px;
   }

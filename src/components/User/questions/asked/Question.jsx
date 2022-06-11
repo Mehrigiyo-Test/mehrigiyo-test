@@ -2,12 +2,12 @@ import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import "./Question.scss";
 
-function Question({ num, title, text }) {
+function Question({ num, title, text, width }) {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
     <>
-      <section className="question">
+      <section className="question" style={{width: width}}>
         <header className="headBox">
           <div className="headBoxLeft" onClick={() => setShowInfo(!showInfo)}>
             <span className="number">{num}</span>

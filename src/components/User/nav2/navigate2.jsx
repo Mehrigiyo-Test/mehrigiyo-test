@@ -39,7 +39,7 @@ const Navigate2 = () => {
   ];
   const helps = [
     { label: `Yordam`, path: `/help` },
-    { label: `Ko'p so'raladigan savollar`, path: `/help` },
+    { label: `Ko'p so'raladigan savollar`, path: `/help/ManyQuestions` },
   ];
   const dispatch = useDispatch();
   const navigate = useNavigate();

@@ -14,6 +14,7 @@ import SortGoods from "../../../pages/User/SortGoods/SortGoods";
 import LayoutUser from "../Layout/Layout";
 import BeingHealthy from "../NewPageComp/BeingHealthy/BeingHealthy";
 import MexrigiyoPresentation from "../NewPageComp/MexrigiyoPresentation/MexrigiyoPresentation";
+import QuestionsAsked from "../../../pages/User/ManyQuestionsAsked/QuestionsAsked";
 
 const UserRouter = () => {
   return (
@@ -38,6 +39,7 @@ const UserRouter = () => {
           element={<BigCompListDoctor />}
         />
         <Route path="/products/sortGoods" element={<SortGoods />} />
+        <Route path="/help/ManyQuestions" element={<QuestionsAsked />} />
       </Routes>
     </LayoutUser>
   );
