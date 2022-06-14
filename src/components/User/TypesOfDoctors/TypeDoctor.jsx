@@ -11,7 +11,7 @@ export default function TypeDoctor() {
   const [sort, setSort] = useState(false);
  
   return (
-    <div className="container GlobalWrapper">
+    <div id="typeDoctor" className="container GlobalWrapper">
       <div className="headDoctor">
         <h3>Shifokorlar turlari</h3>
         <p className="type" onClick={() => setSort(!sort)}>

@@ -9,7 +9,7 @@ export default function OrganicPlantation() {
 
     return (
         <>
-            <div    className="organicContiner GlobalWrapper">
+            <div className="organicContiner GlobalWrapper">
                 <div className="organicText">
                     <div className="organicBody">
                         <p className="organicWelcome">MEHRIGIYOGA Xush kelibsiz</p>
@@ -18,8 +18,12 @@ export default function OrganicPlantation() {
                         <img src={Organic} alt="organic" />
                     </div>
                     <div className="organicSection">
-                    <Global text="Batafsil" width={'200px'}/>
-                        <img src={PlayButton} alt="play button" />
+                        <a href="/aboutUs/#historyMehrigiyo">
+                            <Global text="Batafsil" width={'200px'} />
+                        </a>
+                        <a target="_blank" href="https://youtube.com">
+                            <img src={PlayButton} alt="play button" />
+                        </a>
                     </div>
                 </div>
                 <div className="organicImg">

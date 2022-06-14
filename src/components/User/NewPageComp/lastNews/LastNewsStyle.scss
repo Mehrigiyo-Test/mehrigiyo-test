@@ -3,6 +3,7 @@
 }
 
 .News1_wrapper p a {
+    font-size: 12px;
     text-decoration: none;
     list-style: none;
     color: #505050;
@@ -14,11 +15,22 @@
 
 .News1_wrapper {
     display: flex;
+    align-items: center;
     gap: 7px;
 
     .myGreen {
-        color: #53B175;
+        color: #69fc8e;
+        font-size: 12px;
+        margin-top: 4px;
     }
+}
+
+.newsPg__container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: -71px;
+    margin-top: 18px;
 }
 
 .lasteNews_txt {
