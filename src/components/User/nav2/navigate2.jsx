@@ -8,7 +8,7 @@ import NavIcon3 from "../../../images/User/nav-icon3.png";
 import "./nav2.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { actionChangeRouter } from "../../../store/changeRouter/action";
-import Progress from "../Progress/Progress";
+// import Progress from "../Progress/Progress";
 
 const Navigate2 = () => {
   const navElements = {
@@ -40,7 +40,7 @@ const Navigate2 = () => {
   ];
   const helps = [
     { label: `Yordam`, path: `/help` },
-    { label: `Ko'p so'raladigan savollar`, path: `/help` },
+    { label: `Ko'p so'raladigan savollar`, path: `/help/ManyQuestions` },
   ];
   const dispatch = useDispatch();
   const navigate = useNavigate();

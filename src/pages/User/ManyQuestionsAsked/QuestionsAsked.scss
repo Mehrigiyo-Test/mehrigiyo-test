@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.asked-background_Container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 78px;
+  margin-bottom: 127px;
+  overflow: hidden;
+
+  .asked-wrapper_Box {
+    position: relative;
+    display: flex;
+    margin-left: -40px;
+    gap: 66px;
+    align-items: center;
+    // justify-content: center;
+  }
+
+  .left-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  .directionBox {
+    display: flex;
+    gap: 10px;
+
+    .directionLink {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #505050;
+      &:hover {
+        color: #53b175;
+      }
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .asked-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .extra-p {
+    color: #53b175;
+    margin-bottom: 46px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .icon-right {
+    color: #53b175;
+  }
+  .leaf {
+    width: 762px;
+    height: 731px;
+    opacity: 5%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+  .accordion {
+    display: flex;
+    align-items: center;
+    margin-top: 47px;
+
+    .section {
+      margin: auto;
+    }
+  }
+}

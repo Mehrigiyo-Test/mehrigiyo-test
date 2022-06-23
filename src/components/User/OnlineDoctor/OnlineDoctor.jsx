@@ -19,10 +19,10 @@ export default function OnlineDoctor() {
       <div className="onlineDoctorContainer">
         <div>
           <h3>Har qanday sog'liq bilan bog'liq muammolar  uchun<br />
-          <Link to="/onlineDoctor" className="greenDoctor">
-            onlayn shifokorlarga
-          </Link> <span></span>
-           murojaat qiling</h3>
+            <Link to="/onlineDoctor" className="greenDoctor">
+              onlayn shifokorlarga
+            </Link> <span></span>
+            murojaat qiling</h3>
         </div>
         <p>
           Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob
@@ -35,12 +35,15 @@ export default function OnlineDoctor() {
               <Profession key={item.id} data={item} info={dataDoctors} />
             ))}
         </div>
-        <Global
-          text="Bepul maslahat olish"
-          width={"260px"}
-          position={"absolute"}
-          top={"368px"}
-        />
+        <a style={{cursor: "pointer"}} href="/onlineDoctor">
+          <Global
+            text="Bepul maslahat olish"
+            width={"260px"}
+            position={"absolute"}
+            top={"368px"}
+            left={"36rem"}
+          />
+        </a>
       </div>
       <div className="bacgroundImg2">
         <img src={Bacground} alt="" />

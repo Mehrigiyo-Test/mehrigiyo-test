@@ -6,7 +6,7 @@ import Logo from '../../../images/User/online1.png';
 import Global from "../GlobalBtn/GlobalBtn";
 
 export default function Ambulance() {
-    
+
     return (
         <>
             <section className="container">
@@ -15,13 +15,15 @@ export default function Ambulance() {
                     <div className="textBox" md="5">
                         <h3>Shoshilinch onlayn yordam</h3>
                         <p>Bizga shoshilinch sog'liq bo'yicha maslahatchini ayting
-                         va biz 60 soniya ichida eng yaxshi shifokorni tayinlaymiz.</p>
-                         <Global text="Onlayn uchrashuv belgilash" width={'306px'}/>
+                            va biz 60 soniya ichida eng yaxshi shifokorni tayinlaymiz.</p>
+                        <a href="/onlineDoctor">
+                            <Global text="Onlayn uchrashuv belgilash" width={'306px'} />
+                        </a>
                     </div>
                     <div className="imgBox" md="5">
                         <div className="logodiv">
                             <div className="logoImg">
-                                <img src={Logo} alt="" />
+                                <img src={Logo} alt="icon" />
                                 <h5>Onlayn shifokorlar</h5>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Ut ullamcorper in et amet.</p>
