@@ -1,70 +1,84 @@
-
-.send-background{
+.send-background {
     background-image: url(../../../../images/User/asked_background.png);
     background-repeat: no-repeat;
-    height: 900px;
-    padding: 100px 0;
+    padding: 80px 0;
     position: relative;
-    margin-top: 200px;
 }
-.send{
+
+.send {
     margin-top: 200px;
     margin-bottom: 200px;
     display: flex;
     justify-content: center;
     gap: 100px;
 }
+
 .helpDoctor {
     display: flex;
-    position: absolute;
-    top: -95px;
     gap: 70px;
 }
+
+.leavesss{
+    height: 305px;
+    margin-top: 10px;
+}
+
+.textDoctor{
+    margin: 15px 30px;
+}
+
 .textDoctor .textSlash {
     font-size: 12px;
     color: #505050;
     padding-bottom: 10px;
 }
+
 .textDoctor span {
     color: #69fc8e;
 }
+
 .backgroundImg {
     opacity: .1;
 }
-.textDoctor {
-    padding-top: 100px;
-}
+
 .textDoctor .headText {
     font-weight: 600;
     font-size: 30px;
+    width: 480px;
 }
-.input-div{
+
+.input-div {
     border-bottom: 1px solid #B0B7C3;
     width: 350px;
     margin-bottom: 20px;
 }
-.send-h3{
+
+.send-h3 {
     color: #53B175;
     font-size: 16px;
     font-weight: 400;
 }
-.send-h2{
+
+.send-h2 {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 40px;
     margin-top: 5px;
 }
-.input-h5{
+
+.input-h5 {
     font-size: 14px;
     color: #B0B7C3;
     font-weight: 400;
 }
-.name{
+
+.name {
     border: none;
     outline: none;
     background-color: transparent;
     width: 350px;
 }
+
 .more-btn {
     display: flex;
     justify-content: space-between;
@@ -76,14 +90,8 @@
     border-radius: 50px;
     width: 180px;
     cursor: pointer;
-  }
+}
 
-  .drop{
-      display: flex;
-  }
-
-  .leaves{
-      position: absolute;
-      top: -20px;
-      right: -50px;
-  }
+.drop {
+    display: flex;
+}

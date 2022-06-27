@@ -2,14 +2,14 @@ import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import "./Question.scss";
 
-function Question({ num, title, text }) {
+function Question({ num, title, text, width }) {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
     <>
-      <section className="question">
-        <header className="headBox">
-          <div className="headBoxLeft" onClick={() => setShowInfo(!showInfo)}>
+      <section className="question" style={{width: width}}>
+        <header className="headBox"onClick={() => setShowInfo(!showInfo)}>
+          <div className="headBoxLeft">
             <span className="number">{num}</span>
             <p className="accardionHeader">{title}</p>
           </div>

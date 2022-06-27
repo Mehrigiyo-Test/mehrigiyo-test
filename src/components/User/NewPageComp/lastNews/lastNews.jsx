@@ -30,7 +30,7 @@ function LastNews({ img, category, time, theme, info }) {
   return (
     <>
       <div className="NewsPg1">
-        <div>
+        <div className="newsPg__container">
           <div className="News1_wrapper padding1 gap">
             <p>
               <Link to="/">Bosh sahifa </Link>
@@ -44,7 +44,7 @@ function LastNews({ img, category, time, theme, info }) {
         </div>
         <section className="display sectiona">
           <div className="bigImgNews">
-            <img src={API + creat_at.image} alt="" />
+            <img src={API + creat_at.image} alt="" /> 
           </div>
           <div className="NewsTxtWrapper">
             <div className="txt1">

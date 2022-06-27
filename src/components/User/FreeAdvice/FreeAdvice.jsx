@@ -12,12 +12,12 @@ export default function FreeAdvice() {
 
     const info = [
         {
-            imgBackground: <img src={Leaves} />,
+            imgBackground: <img id="leav" src={Leaves} />,
             clickMe: <p className="headText">Bosh sahifa  /  <span> Onlayn shifokorlar </span></p>,
             headerText: <h3>Bepul shifokor maslahatini oling</h3>,
             text: <p className="infoText">Eng yaxshi shifokorlarimiz, Sizning barcha savolaringizga javob berishadi.</p>,
-            buttonGlobal: <GlobalBtn text='Bepul maslahat olish' width={'260px'} />,
-            playBtn: <img src={PlayButton} alt="play button" />,
+            buttonGlobal: <a href="/onlineDoctor/BigCompListDoctor/#sortGoods"><GlobalBtn text='Bepul maslahat olish' width={'260px'} /></a> ,
+            playBtn: <a href="https://youtube.com"><img src={PlayButton} alt="play button" /></a> ,
             img1: <img className="ovalBig" src={Oval2} />,
             img2: <img src={Doctor} />,
             img3: <img className="ovalSmall" src={Oval} />

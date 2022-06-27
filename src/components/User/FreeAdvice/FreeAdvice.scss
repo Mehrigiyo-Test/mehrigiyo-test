@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 56px;
+    align-items: center;
     .adviceText {
         margin: 46px 97px 116px 66px;
         .headText {
@@ -28,6 +29,10 @@
         img {
             cursor: pointer;
         }
+    }
+
+    #leav{
+        margin-top: 15px;
     }
     .adviceImg {
         .ovalBig {

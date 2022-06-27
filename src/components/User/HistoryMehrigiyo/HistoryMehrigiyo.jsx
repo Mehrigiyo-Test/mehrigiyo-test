@@ -5,7 +5,7 @@ import imgLeaf from "../../../images/User/leafAnother.png";
 
 const HistoryMehrigiyo = () => {
   return (
-    <section className="HistoryMehrigiyo-S">
+    <section id="historyMehrigiyo" className="HistoryMehrigiyo-S">
       <div className="HistoryMehrigiyo ">
         <div className="HistoryMehrigiyo__img">
           <img src={img} alt="history of Megrigiyo" />

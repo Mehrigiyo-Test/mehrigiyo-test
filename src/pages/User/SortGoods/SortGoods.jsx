@@ -76,7 +76,7 @@ function SortGoods() {
 
   return (
     <>
-      <div className="GlobalWrapper Onlinewr">
+      <div id="sortGoods" className="GlobalWrapper Onlinewr">
         <div className="OnlineDoctorPg2GW">
           <div className="News1_wrapper DoctorNav title">
             <p>

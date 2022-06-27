@@ -24,6 +24,7 @@ export const GlobalGreenBtn = ({
           lineHeight: lineHei,
           fontWeight: fontW,
           borderRadius: brdRadius,
+          cursor: "pointer",
           border: "none",
           display: "flex",
           alignItems: "center",
