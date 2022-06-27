@@ -6,6 +6,9 @@ import Dropdown from "../Dropdown/Dropdown";
 import Modal from "../../Admin/Modal/Modal";
 import Login from "../../Admin/Modal/_components/Login/Login";
 import avatar from "../../../images/Admin/Men.jpg";
+import { actionChangeRouter } from "../../../store/changeRouter/action";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 function Navigate() {
   const [open, setOpen] = useState(false);
   const nav = [
@@ -29,7 +32,12 @@ function Navigate() {
   const user = localStorage.getItem("user");
   const userObj = JSON.parse(user);
 
-
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const changeAdminRouter = () => {
+    dispatch(actionChangeRouter("admin"));
+    navigate("/admin/control-panel");
+  };
   return (
     <div className="navigate">
       <div className="navigate__wrapper GlobalWrapper">
@@ -61,7 +69,7 @@ function Navigate() {
               <div className="AdminNavImg">
                 <img src={avatar} alt="" />
               </div>
-              <div className="AdminNavTitle">
+              <div className="AdminNavTitle" onClick={() => changeAdminRouter()}>
                 {userObj.last_name[0] + "." + userObj.first_name}
               </div>{" "}
             </div>

@@ -5,7 +5,7 @@ const Progress = () => {
   return (
     <div className={style.progressWrapper}>
      <div className={style.progressBox}>
-     <CircularProgress size={100} color="inherit"/>
+     <CircularProgress size={100} color="inherit" />
      </div>
     </div>
   );

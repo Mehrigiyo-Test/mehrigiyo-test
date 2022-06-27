@@ -94,7 +94,9 @@ const Navigate2 = () => {
               </li>
               <li
                 className={
-                  path.includes("/products") ? "title3 item title" : "title3 item"
+                  path.includes("/products")
+                    ? "title3 item title"
+                    : "title3 item"
                 }
               >
                 <p>{navElements.title3}</p>
@@ -145,16 +147,12 @@ const Navigate2 = () => {
 
           <div className="nav-icons">
             <p className="search1" hidden={path === "/" ? true : false}></p>
-            {user !== null ? (
-              <p
-                className={path.includes("admin") ? "user2" : "user1"}
-                onClick={() => changeAdminRouter()}
-              ></p>
-            ) : (
-              <Link to={"/favoriteDoctors"}>
-                <p  className={path.includes('favoriteDoctors') ? "user2" : "user1"}></p>
-              </Link>
-            )}
+
+            <p
+              className={path.includes("favoriteDoctors") ? "user2" : "user1"}
+              onClick={() => changeUserRouter("/favoriteDoctors")}
+            ></p>
+
             <p
               className={path.includes("favoriteDrug") ? "heart2" : "heart1"}
               onClick={() => changeUserRouter("/favoriteDrug")}
