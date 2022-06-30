@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -24,6 +24,10 @@ import AdviceDayBooking from "../../../components/User/adviceDayBooking/adviceDa
 import Waiting from "../../../components/User/waiting/waiting";
 import MeetingSucceed from "../../../components/User/waiting/MeetingSucceed/MeetingSucceed";
 import DoctorTtypeInfo from "../../../components/User/waiting/DoctorTtypeInfo/DoctorTtypeInfo";
+import FavoriteDoctors from "../FavoriteDoctors/FavoriteDoctors";
+import { actionFavoriteDoc } from "../../../store/getFavoriteDoctors/action";
+import { actionDoctors } from "../../../store/getDoctors/action";
+import Api from "../../../Servis/api/requestNotToken";
 
 let settings = {
   dots: false,
@@ -53,8 +57,17 @@ function OnlineDoctor() {
   const [num, setNum] = useState("");
 
   const { dataDoctors } = useSelector((state) => state.getDoctors);
+  const { favoriteDoc=[] } = useSelector((state) => state.getFavoriteDoctors);
 
   const API = "http://207.154.244.140:8000/";
+
+  const addedFav = (id) => {
+    return favoriteDoc.filter((a) => a.id === id).length > 0;
+  };
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(actionFavoriteDoc())
+  },[])
 
   const func = (param) => {
     const id = dataDoctors.filter((a) => a.id === param);
@@ -68,6 +81,7 @@ function OnlineDoctor() {
       <Waiting />;
     }, 500);
   };
+  
   return (
     <>
       <Warning />
@@ -79,7 +93,7 @@ function OnlineDoctor() {
           <img src={imgLeaf} />
         </div>
         <div className="sliderTop">
-          <p className="sliderTopText">Top Shifokorlar</p>
+          <p className="sliderTopText" id="topdoc">Top Shifokorlar</p>
           <Link to={"/onlineDoctor/BigCompListDoctor"}>
             <GlobalBtn
               style={{ textDecoration: "none" }}
@@ -92,6 +106,7 @@ function OnlineDoctor() {
           {dataDoctors.map((item) => (
             <div key={item.id}>
               <TopDoctors
+                data={item}
                 id={item.id}
                 img={API + item.image}
                 text1={item.full_name}
@@ -99,6 +114,7 @@ function OnlineDoctor() {
                 setopen={setOpen}
                 func={func}
                 setactive={setActive}
+                addedFav={addedFav}
               />
             </div>
           ))}

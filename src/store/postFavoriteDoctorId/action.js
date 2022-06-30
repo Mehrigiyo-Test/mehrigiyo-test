@@ -14,3 +14,4 @@ export const actionFavoriteDocId = (id) => async (dispatch) => {
     dispatch({ type: FAVORITE_DOC_ERROR, payload: error });
   }
 };
+

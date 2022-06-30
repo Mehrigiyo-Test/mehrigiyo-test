@@ -21,7 +21,7 @@ const ProductList = ({ API }) => {
 
   const { data } = useSelector((state) => state.getProducts);
   const { getType } = useSelector((state) => state.getProductsTypes);
-
+  console.log(data, "bu produckt data");
   const handleSort = (e) => {
     const array = [];
     const arr = getType.map((item) => item.id);
