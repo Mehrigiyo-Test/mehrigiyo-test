@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./FavoriteDrug.scss";
-import Basket__img from '../../../images/User/basket__main.png';
+import Basket__img from '../../../images/User/box.gif';
 import Back1 from '../../../images/User/BackgroundLeaves.png'
 
 function FavoriteDrug() {

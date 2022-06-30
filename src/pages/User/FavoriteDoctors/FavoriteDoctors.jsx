@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./FavoriteDoctors.scss";
 import Basket__img from "../../../images/User/basket__main.png";
 import Back1 from "../../../images/User/BackgroundLeaves.png";
+import box from "../../../images/User/box.gif"
 import { useDispatch, useSelector } from "react-redux";
 
 function FavoriteDoctors() {
@@ -24,7 +25,7 @@ function FavoriteDoctors() {
 
       <div className="basket-details">
         <div className="with-img">
-          <img className="basket-img" src={Basket__img} alt="" />
+          <img className="basket-img" src={box} alt="" />
           <div className="basket-number">0</div>
         </div>
         <h1 className="top-text">Saqlangan shifokorlar bo’sh!</h1>

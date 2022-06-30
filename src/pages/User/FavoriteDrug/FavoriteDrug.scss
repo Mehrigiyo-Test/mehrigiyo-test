@@ -38,6 +38,11 @@
     position: relative;
     .with-img{
         position: relative;
+        .basket-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 25px;
+        }
         .basket-number{
             position: absolute;
             bottom: -20px;
