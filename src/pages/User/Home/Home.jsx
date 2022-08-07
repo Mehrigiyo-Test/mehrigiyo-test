@@ -37,7 +37,8 @@ function Home() {
   const imginfo = { img3: <img src={leaves} alt="" /> };
   const [active, setActive] = useState([]);
   const { data } = useSelector((state) => state.getNews);
-  const API = "http://207.154.244.140:8000/";
+  console.log(data, "bu news data data")
+  // const API = "http://207.154.244.140:8000/";
   const magic2 = new Audio(magic);
   const playy = () => {
     magic2.play();
@@ -85,7 +86,7 @@ function Home() {
         <OnlineDoctor />
         <OrganicPlantation />
         <Ambulance />
-        <ProductList API={API} />
+        <ProductList />
         <InfoBanner />
         <ApplicationSec />
         <div className="SliderWrapper">
@@ -164,7 +165,7 @@ function Home() {
                 ? data.map((item) => (
                     <SwiperSlide>
                       <NewsCard
-                        img={API + item.image}
+                        img={item.image}
                         category={item.hashtag}
                         time={item.created_at}
                         theme={item.name}
@@ -175,7 +176,7 @@ function Home() {
                 : active.map((item) => (
                     <SwiperSlide>
                       <NewsCard
-                        img={API + item.image}
+                        img={item.image}
                         category={item.hashtag}
                         time={item.created_at}
                         theme={item.name}

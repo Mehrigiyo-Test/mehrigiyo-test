@@ -11,6 +11,7 @@ import Profession from "../GlobalProfession/Profession";
 
 export default function OnlineDoctor() {
   const { info } = useSelector((state) => state.getDoctorType);
+
   const { dataDoctors } = useSelector((state) => state.getDoctors);
 
   return (

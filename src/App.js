@@ -18,25 +18,25 @@ function App() {
   const { data } = useSelector((state) => state.getNews);
   console.log(data, "bu news data");
   useEffect(() => {
-    Api.get("/news/").then((respons) =>
-      dispatch(actionGetNews(respons?.data?.data))
-    );
-    Api.get("/specialist/types/").then((res) =>
-      dispatch(actionDoctorType(res?.data?.data))
-    );
-    Api.get("/shop/medicines/").then((res) =>
-      dispatch(actionGetProduct(res?.data?.data))
-    );
-    Api.get("/shop/types/").then((respon) =>
-      dispatch(actionGetProductsTypes(respon?.data?.data))
-    );
+    Api.get("/news/news/ ").then((respons) => {
+      dispatch(actionGetNews(respons?.data?.results));
+    });
+    Api.get("/specialist/types/").then((res) => {
+      dispatch(actionDoctorType(res?.data?.results));
+    });
+    Api.get("/shop/medicines/").then((res) => {
+      dispatch(actionGetProduct(res?.data?.results));
+    });
+    Api.get("/shop/types/").then((respon) => {
+      dispatch(actionGetProductsTypes(respon?.data?.results));
+    });
     Api.get("/specialist/doctors/").then((res) =>
-      dispatch(actionDoctors(res?.data?.data))
+      dispatch(actionDoctors(res?.data?.results))
     );
-    adminRefresh()
+    adminRefresh();
   }, []);
   const { changeRouterData } = useSelector((state) => state.changeRouter);
-  
+
   const adminRefresh = () => {
     if (location.pathname.includes("/admin")) {
       return dispatch(actionChangeRouter("admin"));

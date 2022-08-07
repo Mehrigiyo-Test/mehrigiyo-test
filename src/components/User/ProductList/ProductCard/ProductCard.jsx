@@ -5,13 +5,13 @@ import ArrowRight from "../../../../images/User/eva_arrow-ios-back-outline.svg";
 import "./ProductCard.scss";
 import { useState } from "react";
 
-const ProductCard = ({ cost, discount, id, image, name, title, type , api }) => {
+const ProductCard = ({ cost, discount, id, image, name, title, type }) => {
   const [like, setLike] = useState(false);
 
   return (
     <div className="product-lists-item" tabIndex={10}>
       <div className="product-item__image">
-        <img src={api + image} alt="" />
+        <img src={image} alt="" />
         {like ? (
           <LikeIcon onClick={() => setLike(!like)} />
         ) : (

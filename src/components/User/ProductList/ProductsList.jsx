@@ -15,7 +15,7 @@ import ProductCard from "./ProductCard/ProductCard";
 import { FreeMode, Pagination } from "swiper";
 import { Link } from "react-router-dom";
 
-const ProductList = ({ API }) => {
+const ProductList = () => {
   const [sortedData, setSortedData] = useState([]);
   const [types, setTypes] = useState([]);
 
@@ -100,7 +100,7 @@ const ProductList = ({ API }) => {
       >
         <div className="products-list">
           {sortedData.length === 0
-            ? data.map((item) => (
+            ? data?.map((item) => (
                 <SwiperSlide>
                   <ProductCard
                     cost={item.cost}
@@ -110,7 +110,7 @@ const ProductList = ({ API }) => {
                     name={item.name}
                     title={item.title}
                     type={item.type_medicine}
-                    api={API}
+                  
                   />
                 </SwiperSlide>
               ))
@@ -124,7 +124,7 @@ const ProductList = ({ API }) => {
                     name={item.name}
                     title={item.title}
                     type={item.type_medicine}
-                    api={API}
+                   
                   />
                 </SwiperSlide>
               ))}

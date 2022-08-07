@@ -108,7 +108,7 @@ function OnlineDoctor() {
               <TopDoctors
                 data={item}
                 id={item.id}
-                img={API + item.image}
+                img={item.image}
                 text1={item.full_name}
                 text2={item.type_doctor.name}
                 setopen={setOpen}
